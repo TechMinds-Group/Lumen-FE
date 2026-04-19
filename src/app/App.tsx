@@ -2,8 +2,8 @@ import { useState, useRef } from "react";
 import { Sidebar } from "./components/Sidebar";
 import { Header } from "./components/Header";
 import { ThinkerCard } from "./components/ThinkerCard";
-import thinkersData from "../imports/pasted_text/thinkers.json";
-import metaData from "../imports/pasted_text/meta.json";
+import thinkersData from "../../assets/thinkers.json";
+import metaData from "../../assets/meta.json";
 
 export default function App() {
   const [searchQuery, setSearchQuery] = useState("");
