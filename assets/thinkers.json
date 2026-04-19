@@ -9,7 +9,13 @@
           "name": "Platão",
           "period": "427–347 a.C.",
           "description": "Aristocracia dos filósofos-reis; desconfiança da democracia.",
-          "tags": ["authority", "state", "tradition", "collective", "rational"],
+          "tags": [
+            "authority",
+            "state",
+            "tradition",
+            "collective",
+            "rational"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Autoridade filosófica sobre a liberdade popular",
             "state_vs_market": "Estado planificado e hierárquico",
@@ -18,7 +24,10 @@
             "method": "Racionalismo: ideias como realidade superior"
           },
           "historical_context": "Atenas pós-guerra do Peloponeso; crise da democracia direta",
-          "influences": ["Sócrates", "Pitágoras"],
+          "influences": [
+            "Sócrates",
+            "Pitágoras"
+          ],
           "impact": [
             "Agostinho",
             "Neoplatonismo",
@@ -27,7 +36,7 @@
           "works": [
             {
               "title": "A República",
-              "download_url": ""
+              "download_url": "https://www.gutenberg.org/ebooks/1497"
             },
             {
               "title": "O Político",
@@ -44,7 +53,13 @@
           "name": "Aristóteles",
           "period": "384–322 a.C.",
           "description": "Governo misto e moderado; virtude no meio-termo.",
-          "tags": ["freedom", "state", "tradition", "individual", "empirical"],
+          "tags": [
+            "freedom",
+            "state",
+            "tradition",
+            "individual",
+            "empirical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade cívica moderada — nem tirania nem anarquia",
             "state_vs_market": "Estado moderado com propriedade privada",
@@ -53,16 +68,22 @@
             "method": "Empírico: observou 158 constituições reais"
           },
           "historical_context": "Atenas clássica; tutor de Alexandre o Grande",
-          "influences": ["Platão"],
-          "impact": ["Tomás de Aquino", "Republicanismo", "Constitucionalismo"],
+          "influences": [
+            "Platão"
+          ],
+          "impact": [
+            "Tomás de Aquino",
+            "Republicanismo",
+            "Constitucionalismo"
+          ],
           "works": [
             {
               "title": "Política",
-              "download_url": ""
+              "download_url": "https://www.gutenberg.org/ebooks/6762"
             },
             {
               "title": "Ética a Nicômaco",
-              "download_url": ""
+              "download_url": "https://www.gutenberg.org/ebooks/8438"
             },
             {
               "title": "Constituição de Atenas",
@@ -75,7 +96,13 @@
           "name": "Cícero",
           "period": "106–43 a.C.",
           "description": "República mista e direito natural como base da lei.",
-          "tags": ["freedom", "state", "tradition", "individual", "rational"],
+          "tags": [
+            "freedom",
+            "state",
+            "tradition",
+            "individual",
+            "rational"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade sob a lei — libertas republicana",
             "state_vs_market": "Estado republicano misto; propriedade privada sagrada",
@@ -84,7 +111,10 @@
             "method": "Racional e retórico: direito natural como razão universal"
           },
           "historical_context": "República Romana em colapso; guerras civis de César e Pompeu",
-          "influences": ["Aristóteles", "Estoicos gregos"],
+          "influences": [
+            "Aristóteles",
+            "Estoicos gregos"
+          ],
           "impact": [
             "Locke",
             "Constitucionalismo moderno",
@@ -143,7 +173,13 @@
           "name": "Sun Tzu",
           "period": "c. século V a.C.",
           "description": "Estratégia, guerra e prudência política.",
-          "tags": ["authority", "state", "tradition", "historical", "rational"],
+          "tags": [
+            "authority",
+            "state",
+            "tradition",
+            "historical",
+            "rational"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Autoridade estratégica e disciplina como meios de vitória.",
             "state_vs_market": "Estado forte e eficiente em tempos de conflito.",
@@ -153,7 +189,11 @@
           },
           "historical_context": "China antiga, guerras entre estados rivais.",
           "influences": [],
-          "impact": ["Teoria militar", "Estratégia política", "Management"],
+          "impact": [
+            "Teoria militar",
+            "Estratégia política",
+            "Management"
+          ],
           "works": [
             {
               "title": "A Arte da Guerra",
@@ -188,7 +228,10 @@
             "method": "Histórico-empírico: lições de Roma e observação direta"
           },
           "historical_context": "Itália fragmentada; invasões estrangeiras; colapso de Florença",
-          "influences": ["Tucídides", "Tito Lívio"],
+          "influences": [
+            "Tucídides",
+            "Tito Lívio"
+          ],
           "impact": [
             "Hobbes",
             "Realismo político",
@@ -197,7 +240,7 @@
           "works": [
             {
               "title": "O Príncipe",
-              "download_url": ""
+              "download_url": "https://www.gutenberg.org/ebooks/1232"
             },
             {
               "title": "Discursos sobre a primeira década de Tito Lívio",
@@ -210,7 +253,13 @@
           "name": "Thomas Hobbes",
           "period": "1588–1679",
           "description": "Estado absoluto como antídoto ao caos natural.",
-          "tags": ["authority", "state", "rupture", "individual", "rational"],
+          "tags": [
+            "authority",
+            "state",
+            "rupture",
+            "individual",
+            "rational"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Autoridade absoluta do soberano como único antídoto",
             "state_vs_market": "Leviatã onipotente e indivisível",
@@ -219,7 +268,10 @@
             "method": "Racionalismo geométrico: deduz a política como se deduz geometria"
           },
           "historical_context": "Guerra Civil inglesa; regicídio de Carlos I",
-          "influences": ["Galileu (método)", "Tucídides (realismo)"],
+          "influences": [
+            "Galileu (método)",
+            "Tucídides (realismo)"
+          ],
           "impact": [
             "Rousseau (contrato)",
             "Realismo nas relações internacionais"
@@ -227,7 +279,7 @@
           "works": [
             {
               "title": "Leviatã",
-              "download_url": ""
+              "download_url": "https://www.gutenberg.org/ebooks/3207"
             },
             {
               "title": "Do Cidadão",
@@ -240,7 +292,13 @@
           "name": "John Locke",
           "period": "1632–1704",
           "description": "Pai do liberalismo: propriedade, consentimento e direito à revolução.",
-          "tags": ["freedom", "market", "rupture", "individual", "empirical"],
+          "tags": [
+            "freedom",
+            "market",
+            "rupture",
+            "individual",
+            "empirical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade natural preexiste ao Estado; governos que a violam podem ser derrubados",
             "state_vs_market": "Estado limitado que protege propriedade; mercado como extensão natural",
@@ -249,7 +307,11 @@
             "method": "Empírico: a mente como tábula rasa; conhecimento pela experiência"
           },
           "historical_context": "Revolução Gloriosa inglesa de 1688; ascensão do parlamento",
-          "influences": ["Hooker", "Grotius", "Empirismo baconiano"],
+          "influences": [
+            "Hooker",
+            "Grotius",
+            "Empirismo baconiano"
+          ],
           "impact": [
             "Voltaire",
             "Declaração de Independência dos EUA",
@@ -259,11 +321,11 @@
           "works": [
             {
               "title": "Dois Tratados sobre o Governo",
-              "download_url": ""
+              "download_url": "https://www.gutenberg.org/ebooks/7370"
             },
             {
               "title": "Ensaio sobre o Entendimento Humano",
-              "download_url": ""
+              "download_url": "https://www.gutenberg.org/ebooks/10615"
             }
           ]
         }
@@ -294,7 +356,10 @@
             "method": "Histórico-comparativo: analisa leis de múltiplas civilizações"
           },
           "historical_context": "França absolutista; admiração pelo parlamentarismo inglês",
-          "influences": ["Locke", "Direito natural"],
+          "influences": [
+            "Locke",
+            "Direito natural"
+          ],
           "impact": [
             "Constituição americana",
             "Federalistas",
@@ -332,7 +397,10 @@
             "method": "Racional-especulativo: estado de natureza como experimento mental"
           },
           "historical_context": "França pré-revolucionária; crescente desigualdade no Ancien Régime",
-          "influences": ["Locke", "Platão"],
+          "influences": [
+            "Locke",
+            "Platão"
+          ],
           "impact": [
             "Revolução Francesa",
             "Marx",
@@ -359,7 +427,13 @@
           "name": "Adam Smith",
           "period": "1723–1790",
           "description": "Mercado livre e mão invisível — com crítica aos monopólios.",
-          "tags": ["freedom", "market", "rupture", "individual", "empirical"],
+          "tags": [
+            "freedom",
+            "market",
+            "rupture",
+            "individual",
+            "empirical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade econômica como condição da prosperidade geral",
             "state_vs_market": "Mercado livre com Estado mínimo — Smith alertava contra abusos do capital",
@@ -368,7 +442,11 @@
             "method": "Empírico-moral: combina observação econômica com filosofia moral"
           },
           "historical_context": "Revolução Industrial nascente; mercantilismo dominante na Inglaterra",
-          "influences": ["Hume", "Hutcheson", "Fisiocratas franceses"],
+          "influences": [
+            "Hume",
+            "Hutcheson",
+            "Fisiocratas franceses"
+          ],
           "impact": [
             "Ricardo",
             "Mill",
@@ -392,7 +470,13 @@
           "name": "Bentham",
           "period": "1748–1832",
           "description": "Utilitarismo: a maior felicidade para o maior número.",
-          "tags": ["freedom", "state", "rupture", "collective", "empirical"],
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "collective",
+            "empirical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade instrumental: válida quando maximiza a felicidade coletiva",
             "state_vs_market": "Estado reformador quando aumenta o bem-estar geral",
@@ -401,7 +485,11 @@
             "method": "Empírico-quantitativo: cálculo felicífico"
           },
           "historical_context": "Industrialização e reformas legais na Inglaterra vitoriana",
-          "influences": ["Hume", "Helvétius", "Locke"],
+          "influences": [
+            "Hume",
+            "Helvétius",
+            "Locke"
+          ],
           "impact": [
             "John Stuart Mill",
             "Progressismo",
@@ -424,7 +512,13 @@
           "name": "Thomas Paine",
           "period": "1737–1809",
           "description": "Democracia radical e proposta pioneira de renda básica.",
-          "tags": ["freedom", "state", "rupture", "collective", "rational"],
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "collective",
+            "rational"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade plena: direitos inalienáveis de todos os homens",
             "state_vs_market": "Estado republicano com redistribuição — propôs dividendo de terra",
@@ -433,7 +527,10 @@
             "method": "Racional: direitos deduzidos da razão natural, não da tradição"
           },
           "historical_context": "Revoluções americana e francesa; colonialismo britânico",
-          "influences": ["Locke", "Rousseau"],
+          "influences": [
+            "Locke",
+            "Rousseau"
+          ],
           "impact": [
             "Socialismo",
             "Renda básica universal (UBI)",
@@ -475,7 +572,10 @@
             "method": "Histórico-comparativo, observação social e institucional."
           },
           "historical_context": "França e Estados Unidos do século XIX, observação da democracia moderna.",
-          "influences": ["Montesquieu", "Revolução Francesa"],
+          "influences": [
+            "Montesquieu",
+            "Revolução Francesa"
+          ],
           "impact": [
             "Liberalismo político",
             "Sociologia",
@@ -519,7 +619,11 @@
             "method": "Dialético: tese → antítese → síntese como lógica da história"
           },
           "historical_context": "Europa napoleônica; ascensão do Estado-nação prussiano",
-          "influences": ["Kant", "Rousseau", "Revolução Francesa"],
+          "influences": [
+            "Kant",
+            "Rousseau",
+            "Revolução Francesa"
+          ],
           "impact": [
             "Marx (inverteu Hegel)",
             "Conservadorismo prussiano",
@@ -561,7 +665,10 @@
             "method": "Histórico-empírico: rejeita a razão abstrata; confia na experiência"
           },
           "historical_context": "Revolução Francesa de 1789; Burke escrevia da Inglaterra parlamentar",
-          "influences": ["Montesquieu", "Common law inglês"],
+          "influences": [
+            "Montesquieu",
+            "Common law inglês"
+          ],
           "impact": [
             "Conservadorismo anglo-saxão",
             "Oakeshott",
@@ -580,7 +687,13 @@
           "name": "John Stuart Mill",
           "period": "1806–1873",
           "description": "Liberdade individual, princípio do dano e direitos das mulheres.",
-          "tags": ["freedom", "market", "rupture", "individual", "empirical"],
+          "tags": [
+            "freedom",
+            "market",
+            "rupture",
+            "individual",
+            "empirical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade máxima: só pode ser limitada para evitar dano a outros",
             "state_vs_market": "Mercado livre com Estado que corrige falhas e garante educação",
@@ -589,8 +702,16 @@
             "method": "Empírico-utilitário, corrigindo Bentham"
           },
           "historical_context": "Industrialização vitoriana; movimento sufragista nascente",
-          "influences": ["Bentham", "James Mill", "Tocqueville"],
-          "impact": ["Liberalismo progressista", "Feminismo liberal", "Rawls"],
+          "influences": [
+            "Bentham",
+            "James Mill",
+            "Tocqueville"
+          ],
+          "impact": [
+            "Liberalismo progressista",
+            "Feminismo liberal",
+            "Rawls"
+          ],
           "works": [
             {
               "title": "Sobre a Liberdade",
@@ -626,8 +747,15 @@
             "method": "Crítico e social, com forte ênfase institucional."
           },
           "historical_context": "França do século XIX, debates socialistas e operários.",
-          "influences": ["Saint-Simon", "Revolução Francesa"],
-          "impact": ["Anarquismo", "Sindicalismo", "Federalismo social"],
+          "influences": [
+            "Saint-Simon",
+            "Revolução Francesa"
+          ],
+          "impact": [
+            "Anarquismo",
+            "Sindicalismo",
+            "Federalismo social"
+          ],
           "works": [
             {
               "title": "O que é a Propriedade?",
@@ -644,7 +772,13 @@
           "name": "Karl Marx",
           "period": "1818–1883",
           "description": "Materialismo histórico, luta de classes e superação do capitalismo.",
-          "tags": ["rupture", "state", "collective", "dialectic", "historical"],
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "dialectic",
+            "historical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade real só é possível após abolir as classes — antes é ilusão burguesa",
             "state_vs_market": "Estado = instrumento de dominação de classe; deve ser superado",
@@ -653,7 +787,12 @@
             "method": "Dialético-materialista: inverte Hegel — matéria e relações de produção como base"
           },
           "historical_context": "Industrialização brutal; miséria do proletariado europeu; revoluções de 1848",
-          "influences": ["Hegel", "Ricardo", "Owen", "Feuerbach"],
+          "influences": [
+            "Hegel",
+            "Ricardo",
+            "Owen",
+            "Feuerbach"
+          ],
           "impact": [
             "Lenin",
             "Gramsci",
@@ -701,7 +840,11 @@
             "method": "Histórico-empírico e dialético: combina pesquisa de campo com dialética"
           },
           "historical_context": "Manchester industrial; miséria operária documentada em primeira mão",
-          "influences": ["Marx", "Morgan (antropologia)", "Hegel"],
+          "influences": [
+            "Marx",
+            "Morgan (antropologia)",
+            "Hegel"
+          ],
           "impact": [
             "Leninismo",
             "Feminismo marxista",
@@ -738,7 +881,11 @@
             "method": "Voluntarista: a vontade revolucionária pode superar o determinismo"
           },
           "historical_context": "Europa revolucionária; Primeira Internacional; conflito com Marx",
-          "influences": ["Proudhon", "Hegel jovem", "Stirner"],
+          "influences": [
+            "Proudhon",
+            "Hegel jovem",
+            "Stirner"
+          ],
           "impact": [
             "Anarco-comunismo",
             "Sindicalismo revolucionário",
@@ -780,7 +927,10 @@
             "Pré-socráticos",
             "Wagner (depois rompeu)"
           ],
-          "impact": ["Existencialismo", "Foucault (método genealógico)"],
+          "impact": [
+            "Existencialismo",
+            "Foucault (método genealógico)"
+          ],
           "works": [
             {
               "title": "Assim Falou Zaratustra",
@@ -801,7 +951,12 @@
           "name": "Kropotkin",
           "period": "1842–1921",
           "description": "Anarco-comunismo: apoio mútuo como lei natural superior à competição.",
-          "tags": ["freedom", "rupture", "collective", "empirical"],
+          "tags": [
+            "freedom",
+            "rupture",
+            "collective",
+            "empirical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade máxima através da cooperação voluntária sem Estado",
             "state_vs_market": "Contra Estado e capital; comunas autônomas e federadas",
@@ -810,7 +965,11 @@
             "method": "Empírico-científico: usa biologia e etnografia para refutar o darwinismo social"
           },
           "historical_context": "Rússia czarista; darwinismo social dominante; movimento anarquista europeu",
-          "influences": ["Bakunin", "Darwin (releitura)", "Proudhon"],
+          "influences": [
+            "Bakunin",
+            "Darwin (releitura)",
+            "Proudhon"
+          ],
           "impact": [
             "Ecologia política",
             "Anarco-comunismo",
@@ -842,7 +1001,13 @@
           "name": "Gramsci",
           "period": "1863–1931",
           "description": "Hegemonia cultural: a dominação se exerce mais pelo consenso que pela força.",
-          "tags": ["rupture", "state", "collective", "historical", "dialectic"],
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "historical",
+            "dialectic"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade exige disputa cultural antes da tomada do poder político",
             "state_vs_market": "Estado ampliado inclui a sociedade civil como arena de hegemonia",
@@ -851,7 +1016,11 @@
             "method": "Histórico-dialético com ênfase na superestrutura cultural"
           },
           "historical_context": "Itália fascista; Gramsci preso por Mussolini (1926–1935)",
-          "influences": ["Marx", "Croce", "Maquiavel (releitura)"],
+          "influences": [
+            "Marx",
+            "Croce",
+            "Maquiavel (releitura)"
+          ],
           "impact": [
             "Escola de Frankfurt",
             "Laclau",
@@ -875,7 +1044,13 @@
           "name": "Keynes",
           "period": "1883–1950",
           "description": "O Estado deve intervir na economia para evitar depressões e desemprego.",
-          "tags": ["freedom", "state", "rupture", "collective", "empirical"],
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "collective",
+            "empirical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade real requer estabilidade econômica — desemprego é a negação da liberdade",
             "state_vs_market": "Estado gestor da demanda; mercado falha em crises e precisa de estímulo",
@@ -884,7 +1059,10 @@
             "method": "Empírico-macroeconômico: dados agregados, não axiomas dedutivos"
           },
           "historical_context": "Grande Depressão de 1929; colapso do laissez-faire clássico",
-          "influences": ["Marshall", "Malthus (releitura)"],
+          "influences": [
+            "Marshall",
+            "Malthus (releitura)"
+          ],
           "impact": [
             "Social-democracia",
             "Welfare state",
@@ -907,7 +1085,13 @@
           "name": "Trotsky",
           "period": "1879–1940",
           "description": "Revolução permanente e internacionalismo; crítico feroz do stalinismo.",
-          "tags": ["rupture", "state", "collective", "dialectic", "historical"],
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "dialectic",
+            "historical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade só na revolução internacional — socialismo num só país é traição",
             "state_vs_market": "Estado operário transitório rumo à abolição de todas as classes",
@@ -916,7 +1100,11 @@
             "method": "Dialético-materialista com análise política e militar detalhada"
           },
           "historical_context": "Rússia revolucionária; derrota para Stalin; exílio e assassinato",
-          "influences": ["Marx", "Engels", "Lenin"],
+          "influences": [
+            "Marx",
+            "Engels",
+            "Lenin"
+          ],
           "impact": [
             "Trotskismo",
             "IV Internacional",
@@ -948,7 +1136,13 @@
           "name": "Vladimir Lenin",
           "period": "1870-1924",
           "description": "Vanguarda revolucionária, partido organizado e tomada do poder pelo proletariado.",
-          "tags": ["rupture", "state", "collective", "dialectic", "historical"],
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "dialectic",
+            "historical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade ligada à derrubada da dominação de classe.",
             "state_vs_market": "Estado revolucionário como instrumento de transição ao socialismo.",
@@ -957,7 +1151,10 @@
             "method": "Dialético-pragmático, estratégia revolucionária e análise concreta."
           },
           "historical_context": "Rússia czarista, Revolução de 1917 e guerra civil.",
-          "influences": ["Marx", "Engels"],
+          "influences": [
+            "Marx",
+            "Engels"
+          ],
           "impact": [
             "Leninismo",
             "Partidos comunistas",
@@ -983,7 +1180,13 @@
           "name": "Ludwig von Mises",
           "period": "1881-1973",
           "description": "Economia de mercado, ação humana e crítica ao planejamento central.",
-          "tags": ["freedom", "market", "tradition", "individual", "rational"],
+          "tags": [
+            "freedom",
+            "market",
+            "tradition",
+            "individual",
+            "rational"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade econômica como condição de coordenação social.",
             "state_vs_market": "Mercado livre como mecanismo superior ao planejamento central.",
@@ -992,8 +1195,15 @@
             "method": "Praxeológico, dedutivo e racional."
           },
           "historical_context": "Áustria, entre-guerras, ascensão do socialismo e do intervencionismo.",
-          "influences": ["Carl Menger", "Escola Austríaca"],
-          "impact": ["Hayek", "Chicago School", "Libertarianismo"],
+          "influences": [
+            "Carl Menger",
+            "Escola Austríaca"
+          ],
+          "impact": [
+            "Hayek",
+            "Chicago School",
+            "Libertarianismo"
+          ],
           "works": [
             {
               "title": "Ação Humana",
@@ -1030,7 +1240,11 @@
             "method": "Racionalismo crítico + teoria da informação descentralizada"
           },
           "historical_context": "Guerra Fria; expansão do Estado de bem-estar; socialismo real",
-          "influences": ["Mises", "Böhm-Bawerk", "Mach (epistemologia)"],
+          "influences": [
+            "Mises",
+            "Böhm-Bawerk",
+            "Mach (epistemologia)"
+          ],
           "impact": [
             "Friedman",
             "Thatcher",
@@ -1074,7 +1288,11 @@
             "method": "Falsificacionismo: teorias são científicas se podem ser refutadas"
           },
           "historical_context": "Ascensão do nazismo e stalinismo; Viena intelectual do entre-guerras",
-          "influences": ["Einstein", "Russell", "Kant"],
+          "influences": [
+            "Einstein",
+            "Russell",
+            "Kant"
+          ],
           "impact": [
             "Liberalismo epistemológico",
             "Soros",
@@ -1112,7 +1330,11 @@
             "method": "Fenomenológico-dialético: analisa a consciência e a práxis histórica"
           },
           "historical_context": "Ocupação nazista da França; descolonização; Guerra Fria cultural",
-          "influences": ["Husserl", "Heidegger", "Marx (tardio)"],
+          "influences": [
+            "Husserl",
+            "Heidegger",
+            "Marx (tardio)"
+          ],
           "impact": [
             "Existencialismo político",
             "Beauvoir (feminismo)",
@@ -1154,7 +1376,11 @@
             "method": "Histórico-fenomenológico: análise das origens e estruturas do totalitarismo"
           },
           "historical_context": "Holocaust, julgamento Eichmann, Guerra Fria, movimento pelos direitos civis",
-          "influences": ["Heidegger", "Jaspers", "Tradição republicana"],
+          "influences": [
+            "Heidegger",
+            "Jaspers",
+            "Tradição republicana"
+          ],
           "impact": [
             "Republicanismo",
             "Teoria política feminista",
@@ -1180,7 +1406,13 @@
           "name": "Milton Friedman",
           "period": "1908–2004",
           "description": "Monetarismo, capitalismo como liberdade e Estado mínimo.",
-          "tags": ["freedom", "market", "tradition", "individual", "empirical"],
+          "tags": [
+            "freedom",
+            "market",
+            "tradition",
+            "individual",
+            "empirical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade econômica e liberdade política são inseparáveis",
             "state_vs_market": "Mercado livre + banco central independente; contra toda intervenção",
@@ -1189,7 +1421,11 @@
             "method": "Empírico-monetarista: análise histórica de dados monetários"
           },
           "historical_context": "Guerra Fria; New Deal; expansão do welfare state americano",
-          "influences": ["Hayek", "Knight", "Escola de Chicago"],
+          "influences": [
+            "Hayek",
+            "Knight",
+            "Escola de Chicago"
+          ],
           "impact": [
             "Neoliberalismo",
             "Reagan",
@@ -1232,7 +1468,11 @@
             "method": "Racional-construtivista: experimento mental do véu da ignorância"
           },
           "historical_context": "EUA pós-guerra; movimento pelos direitos civis; debate liberalismo vs. utilitarismo",
-          "influences": ["Kant", "Mill", "Contratualismo clássico"],
+          "influences": [
+            "Kant",
+            "Mill",
+            "Contratualismo clássico"
+          ],
           "impact": [
             "Social-liberalismo",
             "Democracia deliberativa",
@@ -1273,7 +1513,11 @@
             "method": "Genealógico-arqueológico: rastreia a emergência histórica dos discursos"
           },
           "historical_context": "França pós-guerra; maio de 1968; expansão das ciências humanas",
-          "influences": ["Nietzsche (método)", "Heidegger", "Canguilhem"],
+          "influences": [
+            "Nietzsche (método)",
+            "Heidegger",
+            "Canguilhem"
+          ],
           "impact": [
             "Estudos de gênero e sexualidade",
             "Teoria queer",
@@ -1357,7 +1601,12 @@
             "method": "Desconstrução: lê os textos contra si mesmos para revelar suas aporias"
           },
           "historical_context": "França pós-estruturalista; pós-maio de 1968; crise das metanarrativas",
-          "influences": ["Heidegger", "Husserl", "Nietzsche", "Freud"],
+          "influences": [
+            "Heidegger",
+            "Husserl",
+            "Nietzsche",
+            "Freud"
+          ],
           "impact": [
             "Teoria pós-colonial",
             "Estudos literários críticos",
@@ -1384,7 +1633,13 @@
           "name": "Nozick",
           "period": "1934–2002",
           "description": "Estado mínimo: redistribuição forçada viola direitos individuais.",
-          "tags": ["freedom", "market", "tradition", "individual", "rational"],
+          "tags": [
+            "freedom",
+            "market",
+            "tradition",
+            "individual",
+            "rational"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade como inviolabilidade dos direitos — nenhum fim justifica violá-los",
             "state_vs_market": "Estado ultra-mínimo: apenas proteção contra força e fraude",
@@ -1393,7 +1648,11 @@
             "method": "Racional-analítico: argumentação filosófica formal"
           },
           "historical_context": "EUA dos anos 70; resposta direta a Rawls",
-          "influences": ["Locke", "Kant", "Hayek"],
+          "influences": [
+            "Locke",
+            "Kant",
+            "Hayek"
+          ],
           "impact": [
             "Libertarismo de direita",
             "Filosofia do Estado mínimo",
@@ -1431,7 +1690,12 @@
             "method": "Histórico-fenomenológico: estética e arquitetura como acesso ao político"
           },
           "historical_context": "Inglaterra pós-68; ascensão do relativismo cultural e do multiculturalismo",
-          "influences": ["Burke", "Wittgenstein", "T.S. Eliot", "Hegel"],
+          "influences": [
+            "Burke",
+            "Wittgenstein",
+            "T.S. Eliot",
+            "Hegel"
+          ],
           "impact": [
             "Conservadorismo anglófono filosófico",
             "Pensamento cristão-democrata europeu"
@@ -1456,7 +1720,13 @@
           "name": "Bauman",
           "period": "1925–2017",
           "description": "Modernidade líquida: identidades e vínculos cada vez mais fluidos.",
-          "tags": ["rupture", "state", "collective", "historical", "empirical"],
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "historical",
+            "empirical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade líquida: sedutora mas geradora de ansiedade e solidão",
             "state_vs_market": "Capitalismo tardio dissolve comunidades e converte cidadãos em consumidores",
@@ -1465,7 +1735,12 @@
             "method": "Sociológico-histórico com forte dimensão ensaística e cultural"
           },
           "historical_context": "Globalização; colapso do bloco soviético; crise das identidades coletivas",
-          "influences": ["Marx", "Gramsci", "Escola de Frankfurt", "Simmel"],
+          "influences": [
+            "Marx",
+            "Gramsci",
+            "Escola de Frankfurt",
+            "Simmel"
+          ],
           "impact": [
             "Sociologia crítica",
             "Estudos sobre consumo",
@@ -1497,7 +1772,13 @@
           "name": "Žižek",
           "period": "1949–present",
           "description": "Marxismo lacaniano; critica o capitalismo liberal e a esquerda identitária.",
-          "tags": ["rupture", "state", "collective", "dialectic", "historical"],
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "dialectic",
+            "historical"
+          ],
           "dimensions": {
             "freedom_vs_authority": "Liberdade real exige romper com a ideologia que a constitui como desejo",
             "state_vs_market": "Capitalismo como Real lacaniano — aquilo que não para de não funcionar",
@@ -1506,7 +1787,12 @@
             "method": "Dialético com psicanálise lacaniana: lê cultura pop e política com Hegel"
           },
           "historical_context": "Pós-queda do muro; ascensão do politicamente correto; crise da esquerda",
-          "influences": ["Marx", "Lacan", "Hegel", "Althusser"],
+          "influences": [
+            "Marx",
+            "Lacan",
+            "Hegel",
+            "Althusser"
+          ],
           "impact": [
             "Esquerda intelectual pós-89",
             "Teoria crítica",

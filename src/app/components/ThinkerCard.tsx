@@ -167,21 +167,35 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels }
                 {fieldLabels.works || 'Obras Principais'}
               </div>
               <div className="space-y-1.5">
-                {works.map((work, idx) => (
-                  <div key={idx} className="flex items-center justify-between gap-2 p-2 bg-[#faf9f7] rounded border border-[#e5e3df] hover:bg-[#f5f4f0] transition-colors">
-                    <span className="text-xs text-[#2c3e50] flex-1">{work.title}</span>
-                    <a
-                      href={work.download_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1 px-2 py-1 bg-[#2c3e50] text-white rounded text-xs hover:bg-[#34495e] transition-colors"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <Download size={12} />
-                      <span className="hidden sm:inline">Baixar</span>
-                    </a>
-                  </div>
-                ))}
+                {works.map((work, idx) => {
+                  const hasValidUrl = work.download_url &&
+                    work.download_url !== 'https://www.gutenberg.org' &&
+                    work.download_url.trim() !== '';
+
+                  return (
+                    <div key={idx} className="flex items-center justify-between gap-2 p-2 bg-[#faf9f7] rounded border border-[#e5e3df] hover:bg-[#f5f4f0] transition-colors">
+                      <span className="text-xs text-[#2c3e50] flex-1">{work.title}</span>
+                      {hasValidUrl ? (
+                        <a
+                          href={work.download_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center gap-1 px-2 py-1 bg-[#2c3e50] text-white rounded text-xs hover:bg-[#34495e] transition-colors"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          <Download size={12} />
+                          <span className="hidden sm:inline">Baixar</span>
+                        </a>
+                      ) : (
+                        <span className="flex items-center gap-1 px-2 py-1 bg-amber-50 text-amber-700 rounded text-xs border border-amber-200">
+                          <span className="text-[10px]">⚠️</span>
+                          <span className="hidden sm:inline">Indisponível</span>
+                          <span className="sm:hidden">N/D</span>
+                        </span>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
