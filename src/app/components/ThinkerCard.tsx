@@ -1,50 +1,53 @@
 import { useState } from 'react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, Download } from 'lucide-react';
+
+interface Work {
+  title: string;
+  download_url: string;
+}
 
 interface Thinker {
   id: string;
-  nome: string;
-  periodo: string;
-  descricao: string;
+  name: string;
+  period: string;
+  description: string;
   tags: string[];
-  dimensoes: Record<string, string>;
-  contexto_historico?: string;
-  contextohistorico?: string;
-  influencias_recebidas?: string[];
-  influenciasrecebidas?: string[];
-  herdeiros_e_impacto?: string[];
-  herdeiroseimpacto?: string[];
-  obras_principais?: string[];
-  obrasprincipais?: string[];
+  dimensions: Record<string, string>;
+  historical_context?: string;
+  influences?: string[];
+  impact?: string[];
+  works?: Work[];
 }
 
 interface ThinkerCardProps {
   thinker: Thinker;
   tagLabels: Record<string, string>;
+  dimensionLabels: Record<string, string>;
+  fieldLabels: Record<string, string>;
 }
 
 const TAG_COLORS: Record<string, string> = {
-  liberdade: 'bg-blue-50 text-blue-700 border-blue-200',
-  autoridade: 'bg-red-50 text-red-700 border-red-200',
-  estado: 'bg-purple-50 text-purple-700 border-purple-200',
-  mercado: 'bg-green-50 text-green-700 border-green-200',
-  tradicao: 'bg-amber-50 text-amber-800 border-amber-200',
-  ruptura: 'bg-orange-50 text-orange-700 border-orange-200',
+  freedom: 'bg-blue-50 text-blue-700 border-blue-200',
+  authority: 'bg-red-50 text-red-700 border-red-200',
+  state: 'bg-purple-50 text-purple-700 border-purple-200',
+  market: 'bg-green-50 text-green-700 border-green-200',
+  tradition: 'bg-amber-50 text-amber-800 border-amber-200',
+  rupture: 'bg-orange-50 text-orange-700 border-orange-200',
   individual: 'bg-cyan-50 text-cyan-700 border-cyan-200',
-  coletivo: 'bg-indigo-50 text-indigo-700 border-indigo-200',
-  racional: 'bg-pink-50 text-pink-700 border-pink-200',
-  empirico: 'bg-teal-50 text-teal-700 border-teal-200',
-  dialetico: 'bg-violet-50 text-violet-700 border-violet-200',
-  historico: 'bg-rose-50 text-rose-700 border-rose-200'
+  collective: 'bg-indigo-50 text-indigo-700 border-indigo-200',
+  rational: 'bg-pink-50 text-pink-700 border-pink-200',
+  empirical: 'bg-teal-50 text-teal-700 border-teal-200',
+  dialectic: 'bg-violet-50 text-violet-700 border-violet-200',
+  historical: 'bg-rose-50 text-rose-700 border-rose-200'
 };
 
-export function ThinkerCard({ thinker, tagLabels }: ThinkerCardProps) {
+export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels }: ThinkerCardProps) {
   const [showDetails, setShowDetails] = useState(false);
 
-  const influencias = thinker.influencias_recebidas || thinker.influenciasrecebidas || [];
-  const herdeiros = thinker.herdeiros_e_impacto || thinker.herdeiroseimpacto || [];
-  const obras = thinker.obras_principais || thinker.obrasprincipais || [];
-  const contexto = thinker.contexto_historico || thinker.contextohistorico || '';
+  const influences = thinker.influences || [];
+  const impact = thinker.impact || [];
+  const works = thinker.works || [];
+  const historicalContext = thinker.historical_context || '';
 
   return (
     <div
@@ -53,9 +56,9 @@ export function ThinkerCard({ thinker, tagLabels }: ThinkerCardProps) {
     >
       <div className="mb-3">
         <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2 mb-2">
-          <span className="text-xs text-[#7f8c8d]">{thinker.periodo}</span>
+          <span className="text-xs text-[#7f8c8d]">{thinker.period}</span>
           <h3 className="font-['Playfair_Display'] text-lg sm:text-xl text-[#1a1a1a]">
-            {thinker.nome}
+            {thinker.name}
           </h3>
         </div>
 
@@ -71,7 +74,7 @@ export function ThinkerCard({ thinker, tagLabels }: ThinkerCardProps) {
         </div>
 
         <p className="text-sm text-[#4a4a4a] leading-relaxed">
-          {thinker.descricao}
+          {thinker.description}
         </p>
       </div>
 
@@ -89,21 +92,25 @@ export function ThinkerCard({ thinker, tagLabels }: ThinkerCardProps) {
       </div>
 
       {showDetails && (
-        <div className="mt-4 pt-4 border-t border-[#e5e3df] space-y-3">
-          {contexto && (
+        <div className="mt-4 pt-4 border-t border-[#e5e3df] space-y-3" onClick={(e) => e.stopPropagation()}>
+          {historicalContext && (
             <div>
-              <div className="text-xs font-medium text-[#7f8c8d] mb-1">Contexto Histórico</div>
-              <div className="text-xs sm:text-sm text-[#2c3e50]">{contexto}</div>
+              <div className="text-xs font-medium text-[#7f8c8d] mb-1">
+                {fieldLabels.historical_context || 'Contexto Histórico'}
+              </div>
+              <div className="text-xs sm:text-sm text-[#2c3e50]">{historicalContext}</div>
             </div>
           )}
 
           <div>
-            <div className="text-xs font-medium text-[#7f8c8d] mb-2">Dimensões</div>
+            <div className="text-xs font-medium text-[#7f8c8d] mb-2">
+              {fieldLabels.dimensions || 'Dimensões'}
+            </div>
             <div className="space-y-2">
-              {Object.entries(thinker.dimensoes).map(([key, value]) => (
+              {Object.entries(thinker.dimensions).map(([key, value]) => (
                 <div key={key} className="text-xs">
                   <span className="text-[#7f8c8d]">
-                    {key.replace(/_/g, ' ').replace(/vs/g, 'vs.')}:
+                    {dimensionLabels[key] || key.replace(/_/g, ' ')}:
                   </span>{' '}
                   <span className="text-[#2c3e50]">{value}</span>
                 </div>
@@ -112,11 +119,13 @@ export function ThinkerCard({ thinker, tagLabels }: ThinkerCardProps) {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-3">
-            {influencias.length > 0 && (
+            {influences.length > 0 && (
               <div>
-                <div className="text-xs font-medium text-[#7f8c8d] mb-1.5">Influências</div>
+                <div className="text-xs font-medium text-[#7f8c8d] mb-1.5">
+                  {fieldLabels.influences || 'Influências'}
+                </div>
                 <div className="flex flex-wrap gap-1">
-                  {influencias.map((inf, idx) => (
+                  {influences.map((inf, idx) => (
                     <span
                       key={idx}
                       className="px-1.5 py-0.5 bg-blue-50 border border-blue-200 rounded text-xs text-blue-700"
@@ -128,21 +137,23 @@ export function ThinkerCard({ thinker, tagLabels }: ThinkerCardProps) {
               </div>
             )}
 
-            {herdeiros.length > 0 && (
+            {impact.length > 0 && (
               <div>
-                <div className="text-xs font-medium text-[#7f8c8d] mb-1.5">Impacto</div>
+                <div className="text-xs font-medium text-[#7f8c8d] mb-1.5">
+                  {fieldLabels.impact || 'Impacto'}
+                </div>
                 <div className="flex flex-wrap gap-1">
-                  {herdeiros.slice(0, 3).map((her, idx) => (
+                  {impact.slice(0, 3).map((imp, idx) => (
                     <span
                       key={idx}
                       className="px-1.5 py-0.5 bg-green-50 border border-green-200 rounded text-xs text-green-700"
                     >
-                      {her}
+                      {imp}
                     </span>
                   ))}
-                  {herdeiros.length > 3 && (
+                  {impact.length > 3 && (
                     <span className="px-1.5 py-0.5 text-xs text-[#7f8c8d]">
-                      +{herdeiros.length - 3}
+                      +{impact.length - 3}
                     </span>
                   )}
                 </div>
@@ -150,17 +161,28 @@ export function ThinkerCard({ thinker, tagLabels }: ThinkerCardProps) {
             )}
           </div>
 
-          {obras.length > 0 && (
+          {works.length > 0 && (
             <div>
-              <div className="text-xs font-medium text-[#7f8c8d] mb-1.5">Obras Principais</div>
-              <ul className="text-xs text-[#2c3e50] space-y-0.5">
-                {obras.slice(0, 3).map((obra, idx) => (
-                  <li key={idx}>• {obra}</li>
+              <div className="text-xs font-medium text-[#7f8c8d] mb-2">
+                {fieldLabels.works || 'Obras Principais'}
+              </div>
+              <div className="space-y-1.5">
+                {works.map((work, idx) => (
+                  <div key={idx} className="flex items-center justify-between gap-2 p-2 bg-[#faf9f7] rounded border border-[#e5e3df] hover:bg-[#f5f4f0] transition-colors">
+                    <span className="text-xs text-[#2c3e50] flex-1">{work.title}</span>
+                    <a
+                      href={work.download_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 px-2 py-1 bg-[#2c3e50] text-white rounded text-xs hover:bg-[#34495e] transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <Download size={12} />
+                      <span className="hidden sm:inline">Baixar</span>
+                    </a>
+                  </div>
                 ))}
-                {obras.length > 3 && (
-                  <li className="text-[#7f8c8d]">+{obras.length - 3} obras</li>
-                )}
-              </ul>
+              </div>
             </div>
           )}
         </div>

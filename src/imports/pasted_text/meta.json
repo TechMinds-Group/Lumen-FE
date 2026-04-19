@@ -1,0 +1,59 @@
+{
+  "title": "Pensadores políticos — mapa multidimensional",
+  "version": "1.0",
+  "axes": [
+    {
+      "id": "freedom_vs_authority",
+      "label": "Liberdade vs. Autoridade",
+      "values": ["freedom", "authority"]
+    },
+    {
+      "id": "state_vs_market",
+      "label": "Estado vs. Mercado",
+      "values": ["state", "market"]
+    },
+    {
+      "id": "tradition_vs_rupture",
+      "label": "Tradição vs. Ruptura",
+      "values": ["tradition", "rupture"]
+    },
+    {
+      "id": "individual_vs_collective",
+      "label": "Individual vs. Coletivo",
+      "values": ["individual", "collective"]
+    },
+    {
+      "id": "method",
+      "label": "Método",
+      "values": ["rational", "empirical", "dialectic", "historical"]
+    }
+  ],
+  "tag_labels": {
+    "freedom": "Liberdade",
+    "authority": "Autoridade",
+    "state": "Estado forte",
+    "market": "Mercado livre",
+    "tradition": "Tradição",
+    "rupture": "Ruptura",
+    "individual": "Individual",
+    "collective": "Coletivo",
+    "rational": "Racional",
+    "empirical": "Empírico",
+    "dialectic": "Dialético",
+    "historical": "Histórico"
+  },
+  "dimension_labels": {
+    "freedom_vs_authority": "Liberdade vs. Autoridade",
+    "state_vs_market": "Estado vs. Mercado",
+    "tradition_vs_rupture": "Tradição vs. Ruptura",
+    "individual_vs_collective": "Individual vs. Coletivo",
+    "method": "Método"
+  },
+  "field_labels": {
+    "historical_context": "Contexto Histórico",
+    "influences": "Influências",
+    "impact": "Impacto",
+    "works": "Obras Principais",
+    "dimensions": "Dimensões"
+  }
+}

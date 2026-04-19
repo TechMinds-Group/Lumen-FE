@@ -4,7 +4,7 @@ import { useState } from 'react';
 interface Axis {
   id: string;
   label: string;
-  valores: string[];
+  values: string[];
 }
 
 interface HeaderProps {
@@ -15,6 +15,7 @@ interface HeaderProps {
   onFilterChange: (axisId: string, value: string) => void;
   onClearFilters: () => void;
   onMenuClick: () => void;
+  tagLabels: Record<string, string>;
 }
 
 export function Header({
@@ -24,7 +25,8 @@ export function Header({
   selectedFilters,
   onFilterChange,
   onClearFilters,
-  onMenuClick
+  onMenuClick,
+  tagLabels
 }: HeaderProps) {
   const [showFilters, setShowFilters] = useState(false);
   const hasActiveFilters = Object.values(selectedFilters).some(v => v !== 'all');
@@ -94,9 +96,9 @@ export function Header({
                     className="w-full lg:w-auto px-3 py-1.5 text-xs lg:text-sm border border-[#dfe6e9] rounded bg-white hover:border-[#2c3e50]/30 transition-colors"
                   >
                     <option value="all">{axis.label}: Todos</option>
-                    {axis.valores.map((valor) => (
-                      <option key={valor} value={valor}>
-                        {valor.charAt(0).toUpperCase() + valor.slice(1)}
+                    {axis.values.map((value) => (
+                      <option key={value} value={value}>
+                        {tagLabels[value] || value.charAt(0).toUpperCase() + value.slice(1)}
                       </option>
                     ))}
                   </select>
@@ -110,17 +112,17 @@ export function Header({
                       {axis.label}:
                     </span>
                     <div className="flex flex-wrap gap-1.5 lg:gap-1">
-                      {axis.valores.map((valor) => (
+                      {axis.values.map((value) => (
                         <button
-                          key={valor}
-                          onClick={() => onFilterChange(axis.id, valor)}
+                          key={value}
+                          onClick={() => onFilterChange(axis.id, value)}
                           className={`px-2.5 lg:px-2 py-1 lg:py-0.5 text-xs rounded transition-colors ${
-                            selectedFilters[axis.id] === valor
+                            selectedFilters[axis.id] === value
                               ? 'bg-[#2c3e50] text-white'
                               : 'bg-white text-[#2c3e50] hover:bg-[#34495e]/10'
                           }`}
                         >
-                          {valor.charAt(0).toUpperCase() + valor.slice(1)}
+                          {tagLabels[value] || value.charAt(0).toUpperCase() + value.slice(1)}
                         </button>
                       ))}
                     </div>

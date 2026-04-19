@@ -1,0 +1,1819 @@
+{
+  "eras": [
+    {
+      "id": "antiquity",
+      "label": "Antiguidade",
+      "thinkers": [
+        {
+          "id": "platao",
+          "name": "Platão",
+          "period": "427–347 a.C.",
+          "description": "Aristocracia dos filósofos-reis; desconfiança da democracia.",
+          "tags": [
+            "authority",
+            "state",
+            "tradition",
+            "collective",
+            "rational"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Autoridade filosófica sobre a liberdade popular",
+            "state_vs_market": "Estado planificado e hierárquico",
+            "tradition_vs_rupture": "Tradição das formas eternas e da ordem natural",
+            "individual_vs_collective": "Coletivo: o indivíduo serve a cidade",
+            "method": "Racionalismo: ideias como realidade superior"
+          },
+          "historical_context": "Atenas pós-guerra do Peloponeso; crise da democracia direta",
+          "influences": [
+            "Sócrates",
+            "Pitágoras"
+          ],
+          "impact": [
+            "Agostinho",
+            "Neoplatonismo",
+            "Totalitarismos modernos (Popper o acusa)"
+          ],
+          "works": [
+            {
+              "title": "A República",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "O Político",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "As Leis",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "aristoteles",
+          "name": "Aristóteles",
+          "period": "384–322 a.C.",
+          "description": "Governo misto e moderado; virtude no meio-termo.",
+          "tags": [
+            "freedom",
+            "state",
+            "tradition",
+            "individual",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade cívica moderada — nem tirania nem anarquia",
+            "state_vs_market": "Estado moderado com propriedade privada",
+            "tradition_vs_rupture": "Tradição: instituições acumulam sabedoria prática",
+            "individual_vs_collective": "Equilíbrio entre telos individual e animal político",
+            "method": "Empírico: observou 158 constituições reais"
+          },
+          "historical_context": "Atenas clássica; tutor de Alexandre o Grande",
+          "influences": [
+            "Platão"
+          ],
+          "impact": [
+            "Tomás de Aquino",
+            "Republicanismo",
+            "Constitucionalismo"
+          ],
+          "works": [
+            {
+              "title": "Política",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Ética a Nicômaco",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Constituição de Atenas",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "cicero",
+          "name": "Cícero",
+          "period": "106–43 a.C.",
+          "description": "República mista e direito natural como base da lei.",
+          "tags": [
+            "freedom",
+            "state",
+            "tradition",
+            "individual",
+            "rational"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade sob a lei — libertas republicana",
+            "state_vs_market": "Estado republicano misto; propriedade privada sagrada",
+            "tradition_vs_rupture": "Tradição: mos maiorum como fundamento da República",
+            "individual_vs_collective": "Individual: direitos naturais precedem o Estado",
+            "method": "Racional e retórico: direito natural como razão universal"
+          },
+          "historical_context": "República Romana em colapso; guerras civis de César e Pompeu",
+          "influences": [
+            "Aristóteles",
+            "Estoicos gregos"
+          ],
+          "impact": [
+            "Locke",
+            "Constitucionalismo moderno",
+            "Direitos naturais"
+          ],
+          "works": [
+            {
+              "title": "De Re Publica",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "De Legibus",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "De Officiis",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "confucio",
+          "name": "Confúcio",
+          "period": "551-479 a.C.",
+          "description": "Ética relacional, ordem moral e governo exemplar.",
+          "tags": [
+            "authority",
+            "tradition",
+            "collective",
+            "historical",
+            "rational"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Autoridade moral legítima baseada no exemplo.",
+            "state_vs_market": "Estado como ordem ritual e educativa.",
+            "tradition_vs_rupture": "Tradição ritual e continuidade como fonte de estabilidade.",
+            "individual_vs_collective": "Coletivo relacional, o self é formado por vínculos.",
+            "method": "Ético-prático e normativo."
+          },
+          "historical_context": "China da primavera e outono, crise da ordem feudal.",
+          "influences": [],
+          "impact": [
+            "Neoconfucionismo",
+            "Ética asiática",
+            "Filosofia política chinesa"
+          ],
+          "works": [
+            {
+              "title": "Analectos",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "suntzu",
+          "name": "Sun Tzu",
+          "period": "c. século V a.C.",
+          "description": "Estratégia, guerra e prudência política.",
+          "tags": [
+            "authority",
+            "state",
+            "tradition",
+            "historical",
+            "rational"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Autoridade estratégica e disciplina como meios de vitória.",
+            "state_vs_market": "Estado forte e eficiente em tempos de conflito.",
+            "tradition_vs_rupture": "Tradição de prudência e adaptação ao contexto.",
+            "individual_vs_collective": "Coletivo organizado e hierárquico.",
+            "method": "Estratégico e contextual."
+          },
+          "historical_context": "China antiga, guerras entre estados rivais.",
+          "influences": [],
+          "impact": [
+            "Teoria militar",
+            "Estratégia política",
+            "Management"
+          ],
+          "works": [
+            {
+              "title": "A Arte da Guerra",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renaissance_modernity",
+      "label": "Renascimento e Modernidade",
+      "thinkers": [
+        {
+          "id": "maquiavel",
+          "name": "Maquiavel",
+          "period": "1469–1527",
+          "description": "Realismo político: o poder como é, não como deveria ser.",
+          "tags": [
+            "authority",
+            "state",
+            "rupture",
+            "individual",
+            "empirical",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Neutro — descreve o poder sem prescrever",
+            "state_vs_market": "Estado forte e unificado como fim em si mesmo",
+            "tradition_vs_rupture": "Ruptura: separa política da moral e da religião pela 1ª vez",
+            "individual_vs_collective": "Individual: o príncipe age por virtù própria",
+            "method": "Histórico-empírico: lições de Roma e observação direta"
+          },
+          "historical_context": "Itália fragmentada; invasões estrangeiras; colapso de Florença",
+          "influences": [
+            "Tucídides",
+            "Tito Lívio"
+          ],
+          "impact": [
+            "Hobbes",
+            "Realismo político",
+            "Teoria das elites (Mosca, Pareto)"
+          ],
+          "works": [
+            {
+              "title": "O Príncipe",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Discursos sobre a primeira década de Tito Lívio",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "hobbes",
+          "name": "Thomas Hobbes",
+          "period": "1588–1679",
+          "description": "Estado absoluto como antídoto ao caos natural.",
+          "tags": [
+            "authority",
+            "state",
+            "rupture",
+            "individual",
+            "rational"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Autoridade absoluta do soberano como único antídoto",
+            "state_vs_market": "Leviatã onipotente e indivisível",
+            "tradition_vs_rupture": "Ruptura: funda o Estado no contrato racional, não no divino",
+            "individual_vs_collective": "Individual paradoxal: parte do indivíduo mas o anula no soberano",
+            "method": "Racionalismo geométrico: deduz a política como se deduz geometria"
+          },
+          "historical_context": "Guerra Civil inglesa; regicídio de Carlos I",
+          "influences": [
+            "Galileu (método)",
+            "Tucídides (realismo)"
+          ],
+          "impact": [
+            "Rousseau (contrato)",
+            "Realismo nas relações internacionais"
+          ],
+          "works": [
+            {
+              "title": "Leviatã",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Do Cidadão",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "locke",
+          "name": "John Locke",
+          "period": "1632–1704",
+          "description": "Pai do liberalismo: propriedade, consentimento e direito à revolução.",
+          "tags": [
+            "freedom",
+            "market",
+            "rupture",
+            "individual",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade natural preexiste ao Estado; governos que a violam podem ser derrubados",
+            "state_vs_market": "Estado limitado que protege propriedade; mercado como extensão natural",
+            "tradition_vs_rupture": "Ruptura com o absolutismo e com a monarquia de direito divino",
+            "individual_vs_collective": "Individual: direitos naturais à vida, liberdade e propriedade",
+            "method": "Empírico: a mente como tábula rasa; conhecimento pela experiência"
+          },
+          "historical_context": "Revolução Gloriosa inglesa de 1688; ascensão do parlamento",
+          "influences": [
+            "Hooker",
+            "Grotius",
+            "Empirismo baconiano"
+          ],
+          "impact": [
+            "Voltaire",
+            "Declaração de Independência dos EUA",
+            "Adam Smith",
+            "Hayek"
+          ],
+          "works": [
+            {
+              "title": "Dois Tratados sobre o Governo",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Ensaio sobre o Entendimento Humano",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "enlightenment",
+      "label": "Iluminismo",
+      "thinkers": [
+        {
+          "id": "montesquieu",
+          "name": "Montesquieu",
+          "period": "1689–1755",
+          "description": "Separação dos poderes; governo moderado e adaptado ao contexto histórico.",
+          "tags": [
+            "freedom",
+            "state",
+            "tradition",
+            "individual",
+            "empirical",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade pela separação e equilíbrio de poderes",
+            "state_vs_market": "Estado constitucional moderado; contra concentração de poder",
+            "tradition_vs_rupture": "Tradição: as leis devem respeitar o espírito de cada povo",
+            "individual_vs_collective": "Liberdade individual garantida pela estrutura institucional",
+            "method": "Histórico-comparativo: analisa leis de múltiplas civilizações"
+          },
+          "historical_context": "França absolutista; admiração pelo parlamentarismo inglês",
+          "influences": [
+            "Locke",
+            "Direito natural"
+          ],
+          "impact": [
+            "Constituição americana",
+            "Federalistas",
+            "Todo o constitucionalismo moderno"
+          ],
+          "works": [
+            {
+              "title": "O Espírito das Leis",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Cartas Persas",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "rousseau",
+          "name": "Rousseau",
+          "period": "1712–1778",
+          "description": "Vontade geral do povo; a propriedade corrompeu a igualdade natural.",
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "collective",
+            "rational",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade real = obedecer à lei que você mesmo fez (vontade geral)",
+            "state_vs_market": "Estado como expressão da soberania popular coletiva",
+            "tradition_vs_rupture": "Ruptura total: a civilização e a propriedade corrompem o homem bom",
+            "individual_vs_collective": "Coletivo paradoxal: a liberdade autêntica é a vontade geral",
+            "method": "Racional-especulativo: estado de natureza como experimento mental"
+          },
+          "historical_context": "França pré-revolucionária; crescente desigualdade no Ancien Régime",
+          "influences": [
+            "Locke",
+            "Platão"
+          ],
+          "impact": [
+            "Revolução Francesa",
+            "Marx",
+            "Socialismo",
+            "Republicanismo igualitário"
+          ],
+          "works": [
+            {
+              "title": "O Contrato Social",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Discurso sobre a Desigualdade",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Emílio",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "adam_smith",
+          "name": "Adam Smith",
+          "period": "1723–1790",
+          "description": "Mercado livre e mão invisível — com crítica aos monopólios.",
+          "tags": [
+            "freedom",
+            "market",
+            "rupture",
+            "individual",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade econômica como condição da prosperidade geral",
+            "state_vs_market": "Mercado livre com Estado mínimo — Smith alertava contra abusos do capital",
+            "tradition_vs_rupture": "Ruptura com o mercantilismo",
+            "individual_vs_collective": "Individual: cada um buscando seu interesse gera bem coletivo involuntário",
+            "method": "Empírico-moral: combina observação econômica com filosofia moral"
+          },
+          "historical_context": "Revolução Industrial nascente; mercantilismo dominante na Inglaterra",
+          "influences": [
+            "Hume",
+            "Hutcheson",
+            "Fisiocratas franceses"
+          ],
+          "impact": [
+            "Ricardo",
+            "Mill",
+            "Hayek",
+            "Friedman",
+            "Libertarismo econômico"
+          ],
+          "works": [
+            {
+              "title": "A Riqueza das Nações",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Teoria dos Sentimentos Morais",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "bentham",
+          "name": "Bentham",
+          "period": "1748–1832",
+          "description": "Utilitarismo: a maior felicidade para o maior número.",
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "collective",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade instrumental: válida quando maximiza a felicidade coletiva",
+            "state_vs_market": "Estado reformador quando aumenta o bem-estar geral",
+            "tradition_vs_rupture": "Ruptura: rejeita direitos naturais como absurdo em palafitas",
+            "individual_vs_collective": "Coletivo: a soma das felicidades individuais",
+            "method": "Empírico-quantitativo: cálculo felicífico"
+          },
+          "historical_context": "Industrialização e reformas legais na Inglaterra vitoriana",
+          "influences": [
+            "Hume",
+            "Helvétius",
+            "Locke"
+          ],
+          "impact": [
+            "John Stuart Mill",
+            "Progressismo",
+            "Welfare state",
+            "Análise custo-benefício"
+          ],
+          "works": [
+            {
+              "title": "Introdução aos Princípios da Moral e da Legislação",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "O Panóptico",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "thomas_paine",
+          "name": "Thomas Paine",
+          "period": "1737–1809",
+          "description": "Democracia radical e proposta pioneira de renda básica.",
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "collective",
+            "rational"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade plena: direitos inalienáveis de todos os homens",
+            "state_vs_market": "Estado republicano com redistribuição — propôs dividendo de terra",
+            "tradition_vs_rupture": "Ruptura máxima: contra monarquia, aristocracia e colonialismo",
+            "individual_vs_collective": "Coletivo-igualitário: a terra pertence originalmente a todos",
+            "method": "Racional: direitos deduzidos da razão natural, não da tradição"
+          },
+          "historical_context": "Revoluções americana e francesa; colonialismo britânico",
+          "influences": [
+            "Locke",
+            "Rousseau"
+          ],
+          "impact": [
+            "Socialismo",
+            "Renda básica universal (UBI)",
+            "Republicanismo radical"
+          ],
+          "works": [
+            {
+              "title": "Senso Comum",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Os Direitos do Homem",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A Era da Razão",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "tocqueville",
+          "name": "Alexis de Tocqueville",
+          "period": "1805-1859",
+          "description": "Democracia, igualdade e liberdade com forte atenção aos riscos do despotismo da maioria.",
+          "tags": [
+            "freedom",
+            "state",
+            "tradition",
+            "individual",
+            "empirical",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade política protegida por instituições e costumes cívicos.",
+            "state_vs_market": "Estado moderado, atento à sociedade civil e às associações.",
+            "tradition_vs_rupture": "Tradição cívica e religiosa como base da vida democrática.",
+            "individual_vs_collective": "Equilíbrio entre autonomia individual e vida associativa.",
+            "method": "Histórico-comparativo, observação social e institucional."
+          },
+          "historical_context": "França e Estados Unidos do século XIX, observação da democracia moderna.",
+          "influences": [
+            "Montesquieu",
+            "Revolução Francesa"
+          ],
+          "impact": [
+            "Liberalismo político",
+            "Sociologia",
+            "Teoria democrática"
+          ],
+          "works": [
+            {
+              "title": "A Democracia na América",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "O Antigo Regime e a Revolução",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nineteenth_century",
+      "label": "Século XIX",
+      "thinkers": [
+        {
+          "id": "hegel",
+          "name": "Hegel",
+          "period": "1770–1831",
+          "description": "O Estado como realização da razão; dialética histórica como motor do progresso.",
+          "tags": [
+            "authority",
+            "state",
+            "tradition",
+            "collective",
+            "dialectic",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade real = reconhecimento dentro do Estado ético racional",
+            "state_vs_market": "Estado como totalidade ética superior à sociedade civil",
+            "tradition_vs_rupture": "Tradição dialética: o presente sintetiza as contradições do passado",
+            "individual_vs_collective": "Coletivo: a consciência individual se realiza no espírito do povo (Volksgeist)",
+            "method": "Dialético: tese → antítese → síntese como lógica da história"
+          },
+          "historical_context": "Europa napoleônica; ascensão do Estado-nação prussiano",
+          "influences": [
+            "Kant",
+            "Rousseau",
+            "Revolução Francesa"
+          ],
+          "impact": [
+            "Marx (inverteu Hegel)",
+            "Conservadorismo prussiano",
+            "Existencialismo"
+          ],
+          "works": [
+            {
+              "title": "Filosofia do Direito",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Fenomenologia do Espírito",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Enciclopédia",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "burke",
+          "name": "Edmund Burke",
+          "period": "1773–1836",
+          "description": "Pai do conservadorismo: tradição, ordem orgânica e reformas graduais.",
+          "tags": [
+            "authority",
+            "state",
+            "tradition",
+            "collective",
+            "empirical",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade herdada, não abstrata — a das gerações anteriores",
+            "state_vs_market": "Estado como tutor da tradição",
+            "tradition_vs_rupture": "Anti-ruptura: a revolução destrói sabedoria acumulada em séculos",
+            "individual_vs_collective": "Coletivo-histórico: contrato entre mortos, vivos e os que nascerão",
+            "method": "Histórico-empírico: rejeita a razão abstrata; confia na experiência"
+          },
+          "historical_context": "Revolução Francesa de 1789; Burke escrevia da Inglaterra parlamentar",
+          "influences": [
+            "Montesquieu",
+            "Common law inglês"
+          ],
+          "impact": [
+            "Conservadorismo anglo-saxão",
+            "Oakeshott",
+            "Scruton",
+            "T.S. Eliot"
+          ],
+          "works": [
+            {
+              "title": "Reflexões sobre a Revolução na França",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "mill",
+          "name": "John Stuart Mill",
+          "period": "1806–1873",
+          "description": "Liberdade individual, princípio do dano e direitos das mulheres.",
+          "tags": [
+            "freedom",
+            "market",
+            "rupture",
+            "individual",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade máxima: só pode ser limitada para evitar dano a outros",
+            "state_vs_market": "Mercado livre com Estado que corrige falhas e garante educação",
+            "tradition_vs_rupture": "Ruptura com tradições opressoras, especialmente de gênero",
+            "individual_vs_collective": "Individual: a liberdade de experimentação é condição do progresso",
+            "method": "Empírico-utilitário, corrigindo Bentham"
+          },
+          "historical_context": "Industrialização vitoriana; movimento sufragista nascente",
+          "influences": [
+            "Bentham",
+            "James Mill",
+            "Tocqueville"
+          ],
+          "impact": [
+            "Liberalismo progressista",
+            "Feminismo liberal",
+            "Rawls"
+          ],
+          "works": [
+            {
+              "title": "Sobre a Liberdade",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Utilitarismo",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A Sujeição das Mulheres",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "proudhon",
+          "name": "Pierre-Joseph Proudhon",
+          "period": "1809-1865",
+          "description": "Mutualismo, federalismo e crítica pioneira da propriedade e do Estado.",
+          "tags": [
+            "rupture",
+            "collective",
+            "tradition",
+            "individual",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade baseada em associações livres, não em autoridade central.",
+            "state_vs_market": "Contra o Estado e contra o capitalismo concentrado.",
+            "tradition_vs_rupture": "Ruptura com propriedade absoluta e centralização política.",
+            "individual_vs_collective": "Coletivo federativo de pequenos produtores e associações.",
+            "method": "Crítico e social, com forte ênfase institucional."
+          },
+          "historical_context": "França do século XIX, debates socialistas e operários.",
+          "influences": [
+            "Saint-Simon",
+            "Revolução Francesa"
+          ],
+          "impact": [
+            "Anarquismo",
+            "Sindicalismo",
+            "Federalismo social"
+          ],
+          "works": [
+            {
+              "title": "O que é a Propriedade?",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Sistema das Contradições Econômicas",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "marx",
+          "name": "Karl Marx",
+          "period": "1818–1883",
+          "description": "Materialismo histórico, luta de classes e superação do capitalismo.",
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "dialectic",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade real só é possível após abolir as classes — antes é ilusão burguesa",
+            "state_vs_market": "Estado = instrumento de dominação de classe; deve ser superado",
+            "tradition_vs_rupture": "Ruptura total com todas as instituições burguesas",
+            "individual_vs_collective": "Coletivo: a consciência é determinada pela posição na produção",
+            "method": "Dialético-materialista: inverte Hegel — matéria e relações de produção como base"
+          },
+          "historical_context": "Industrialização brutal; miséria do proletariado europeu; revoluções de 1848",
+          "influences": [
+            "Hegel",
+            "Ricardo",
+            "Owen",
+            "Feuerbach"
+          ],
+          "impact": [
+            "Lenin",
+            "Gramsci",
+            "Trotsky",
+            "Escola de Frankfurt",
+            "Sartre"
+          ],
+          "works": [
+            {
+              "title": "O Capital",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Manifesto Comunista",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Grundrisse",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A Ideologia Alemã",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "engels",
+          "name": "Friedrich Engels",
+          "period": "1820–1895",
+          "description": "Co-criador do marxismo; origem da família, Estado e propriedade.",
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "dialectic",
+            "historical",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade = fim da exploração de classe e da dominação masculina",
+            "state_vs_market": "Estado burguês deve ser destruído pela revolução proletária",
+            "tradition_vs_rupture": "Ruptura: origem da família e do Estado ligada à propriedade privada",
+            "individual_vs_collective": "Coletivo: a emancipação é necessariamente coletiva",
+            "method": "Histórico-empírico e dialético: combina pesquisa de campo com dialética"
+          },
+          "historical_context": "Manchester industrial; miséria operária documentada em primeira mão",
+          "influences": [
+            "Marx",
+            "Morgan (antropologia)",
+            "Hegel"
+          ],
+          "impact": [
+            "Leninismo",
+            "Feminismo marxista",
+            "Socialismo científico"
+          ],
+          "works": [
+            {
+              "title": "A Origem da Família",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A Situação da Classe Trabalhadora na Inglaterra",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "bakunin",
+          "name": "Bakunin",
+          "period": "1821–1881",
+          "description": "Anarquismo: destruição imediata de todo Estado e hierarquia.",
+          "tags": [
+            "freedom",
+            "rupture",
+            "individual",
+            "collective",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade absoluta e imediata — nenhuma autoridade é legítima",
+            "state_vs_market": "Contra o Estado E o capital — ambos são formas de dominação",
+            "tradition_vs_rupture": "Ruptura máxima e imediata: não há Estado transitório que não se perpetue",
+            "individual_vs_collective": "Liberdade individual só no coletivo livre",
+            "method": "Voluntarista: a vontade revolucionária pode superar o determinismo"
+          },
+          "historical_context": "Europa revolucionária; Primeira Internacional; conflito com Marx",
+          "influences": [
+            "Proudhon",
+            "Hegel jovem",
+            "Stirner"
+          ],
+          "impact": [
+            "Anarco-comunismo",
+            "Sindicalismo revolucionário",
+            "Movimentos autonomistas"
+          ],
+          "works": [
+            {
+              "title": "Deus e o Estado",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Estatismo e Anarquia",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "nietzsche",
+          "name": "Nietzsche",
+          "period": "1844–1900",
+          "description": "Vontade de poder e crítica radical do igualitarismo e do niilismo.",
+          "tags": [
+            "freedom",
+            "rupture",
+            "individual",
+            "rational",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade criadora do indivíduo excepcional contra o gregarismo da moral",
+            "state_vs_market": "Desinteresse pelo Estado — mediocridade institucionalizada",
+            "tradition_vs_rupture": "Ruptura total com toda a moral ocidental (transvaloração dos valores)",
+            "individual_vs_collective": "Individual radical: a massa é obstáculo ao espírito elevado",
+            "method": "Genealógico: rastreia a origem histórica e psicológica dos valores"
+          },
+          "historical_context": "Alemanha pós-unificação; ascensão do niilismo e do nacionalismo",
+          "influences": [
+            "Schopenhauer",
+            "Pré-socráticos",
+            "Wagner (depois rompeu)"
+          ],
+          "impact": [
+            "Existencialismo",
+            "Foucault (método genealógico)"
+          ],
+          "works": [
+            {
+              "title": "Assim Falou Zaratustra",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Além do Bem e do Mal",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Genealogia da Moral",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "kropotkin",
+          "name": "Kropotkin",
+          "period": "1842–1921",
+          "description": "Anarco-comunismo: apoio mútuo como lei natural superior à competição.",
+          "tags": [
+            "freedom",
+            "rupture",
+            "collective",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade máxima através da cooperação voluntária sem Estado",
+            "state_vs_market": "Contra Estado e capital; comunas autônomas e federadas",
+            "tradition_vs_rupture": "Ruptura: a cooperação, não o domínio, é o motor evolutivo",
+            "individual_vs_collective": "Coletivo voluntário: a solidariedade não precisa de coerção",
+            "method": "Empírico-científico: usa biologia e etnografia para refutar o darwinismo social"
+          },
+          "historical_context": "Rússia czarista; darwinismo social dominante; movimento anarquista europeu",
+          "influences": [
+            "Bakunin",
+            "Darwin (releitura)",
+            "Proudhon"
+          ],
+          "impact": [
+            "Ecologia política",
+            "Anarco-comunismo",
+            "Movimentos de base"
+          ],
+          "works": [
+            {
+              "title": "O Apoio Mútuo",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A Conquista do Pão",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Campos, Fábricas e Oficinas",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turn_of_century",
+      "label": "Virada do século XIX–XX",
+      "thinkers": [
+        {
+          "id": "gramsci",
+          "name": "Gramsci",
+          "period": "1863–1931",
+          "description": "Hegemonia cultural: a dominação se exerce mais pelo consenso que pela força.",
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "historical",
+            "dialectic"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade exige disputa cultural antes da tomada do poder político",
+            "state_vs_market": "Estado ampliado inclui a sociedade civil como arena de hegemonia",
+            "tradition_vs_rupture": "Ruptura com o determinismo econômico do marxismo vulgar",
+            "individual_vs_collective": "Coletivo: intelectuais orgânicos devem organizar o bloco histórico",
+            "method": "Histórico-dialético com ênfase na superestrutura cultural"
+          },
+          "historical_context": "Itália fascista; Gramsci preso por Mussolini (1926–1935)",
+          "influences": [
+            "Marx",
+            "Croce",
+            "Maquiavel (releitura)"
+          ],
+          "impact": [
+            "Escola de Frankfurt",
+            "Laclau",
+            "Mouffe",
+            "Teoria pós-colonial",
+            "Esquerda cultural"
+          ],
+          "works": [
+            {
+              "title": "Cadernos do Cárcere",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Cartas do Cárcere",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "keynes",
+          "name": "Keynes",
+          "period": "1883–1950",
+          "description": "O Estado deve intervir na economia para evitar depressões e desemprego.",
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "collective",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade real requer estabilidade econômica — desemprego é a negação da liberdade",
+            "state_vs_market": "Estado gestor da demanda; mercado falha em crises e precisa de estímulo",
+            "tradition_vs_rupture": "Ruptura com o liberalismo econômico clássico",
+            "individual_vs_collective": "Coletivo pragmático: o bem-estar agregado como objetivo da política",
+            "method": "Empírico-macroeconômico: dados agregados, não axiomas dedutivos"
+          },
+          "historical_context": "Grande Depressão de 1929; colapso do laissez-faire clássico",
+          "influences": [
+            "Marshall",
+            "Malthus (releitura)"
+          ],
+          "impact": [
+            "Social-democracia",
+            "Welfare state",
+            "Samuelson",
+            "Política fiscal moderna"
+          ],
+          "works": [
+            {
+              "title": "Teoria Geral do Emprego, do Juro e da Moeda",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "As Consequências Econômicas da Paz",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "trotsky",
+          "name": "Trotsky",
+          "period": "1879–1940",
+          "description": "Revolução permanente e internacionalismo; crítico feroz do stalinismo.",
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "dialectic",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade só na revolução internacional — socialismo num só país é traição",
+            "state_vs_market": "Estado operário transitório rumo à abolição de todas as classes",
+            "tradition_vs_rupture": "Ruptura com o nacionalismo, com o reformismo e com o stalinismo",
+            "individual_vs_collective": "Coletivo internacionalista: a classe trabalhadora mundial como sujeito",
+            "method": "Dialético-materialista com análise política e militar detalhada"
+          },
+          "historical_context": "Rússia revolucionária; derrota para Stalin; exílio e assassinato",
+          "influences": [
+            "Marx",
+            "Engels",
+            "Lenin"
+          ],
+          "impact": [
+            "Trotskismo",
+            "IV Internacional",
+            "Esquerda anti-stalinista"
+          ],
+          "works": [
+            {
+              "title": "A Revolução Traída",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Minha Vida",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "História da Revolução Russa",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "twentieth_century",
+      "label": "Século XX",
+      "thinkers": [
+        {
+          "id": "lenin",
+          "name": "Vladimir Lenin",
+          "period": "1870-1924",
+          "description": "Vanguarda revolucionária, partido organizado e tomada do poder pelo proletariado.",
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "dialectic",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade ligada à derrubada da dominação de classe.",
+            "state_vs_market": "Estado revolucionário como instrumento de transição ao socialismo.",
+            "tradition_vs_rupture": "Ruptura revolucionária com o Estado burguês e o reformismo.",
+            "individual_vs_collective": "Coletivo-prático, partido e classe como sujeito político.",
+            "method": "Dialético-pragmático, estratégia revolucionária e análise concreta."
+          },
+          "historical_context": "Rússia czarista, Revolução de 1917 e guerra civil.",
+          "influences": [
+            "Marx",
+            "Engels"
+          ],
+          "impact": [
+            "Leninismo",
+            "Partidos comunistas",
+            "Revoluções do século XX"
+          ],
+          "works": [
+            {
+              "title": "O Que Fazer?",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "O Estado e a Revolução",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Imperialismo, Fase Superior do Capitalismo",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "mises",
+          "name": "Ludwig von Mises",
+          "period": "1881-1973",
+          "description": "Economia de mercado, ação humana e crítica ao planejamento central.",
+          "tags": [
+            "freedom",
+            "market",
+            "tradition",
+            "individual",
+            "rational"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade econômica como condição de coordenação social.",
+            "state_vs_market": "Mercado livre como mecanismo superior ao planejamento central.",
+            "tradition_vs_rupture": "Tradição liberal clássica contra o intervencionismo.",
+            "individual_vs_collective": "Individualismo metodológico e ação humana intencional.",
+            "method": "Praxeológico, dedutivo e racional."
+          },
+          "historical_context": "Áustria, entre-guerras, ascensão do socialismo e do intervencionismo.",
+          "influences": [
+            "Carl Menger",
+            "Escola Austríaca"
+          ],
+          "impact": [
+            "Hayek",
+            "Chicago School",
+            "Libertarianismo"
+          ],
+          "works": [
+            {
+              "title": "Ação Humana",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "O Socialismo",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Burocracia",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "hayek",
+          "name": "Hayek",
+          "period": "1899–1992",
+          "description": "Mercados livres e ordem espontânea; planejamento central leva ao totalitarismo.",
+          "tags": [
+            "freedom",
+            "market",
+            "tradition",
+            "individual",
+            "rational",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade negativa: ausência de coerção — qualquer outra é ilusória",
+            "state_vs_market": "Mercado como único mecanismo capaz de processar informação dispersa",
+            "tradition_vs_rupture": "Tradição das instituições espontâneas (common law, preços, costumes)",
+            "individual_vs_collective": "Individual: o conhecimento é irredutível ao coletivo",
+            "method": "Racionalismo crítico + teoria da informação descentralizada"
+          },
+          "historical_context": "Guerra Fria; expansão do Estado de bem-estar; socialismo real",
+          "influences": [
+            "Mises",
+            "Böhm-Bawerk",
+            "Mach (epistemologia)"
+          ],
+          "impact": [
+            "Friedman",
+            "Thatcher",
+            "Reagan",
+            "Neoliberalismo",
+            "Libertarismo de direita"
+          ],
+          "works": [
+            {
+              "title": "O Caminho da Servidão",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A Constituição da Liberdade",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A Arrogância Fatal",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "popper",
+          "name": "Popper",
+          "period": "1902–1994",
+          "description": "Sociedade aberta vs. totalitarismo; falseabilidade como critério científico.",
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "individual",
+            "rational",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade como condição da crítica e do progresso",
+            "state_vs_market": "Estado liberal com intervenção limitada para corrigir sofrimento evitável",
+            "tradition_vs_rupture": "Ruptura com o historicismo e com o utopismo",
+            "individual_vs_collective": "Individual: a engenharia social fragmentária respeita o indivíduo",
+            "method": "Falsificacionismo: teorias são científicas se podem ser refutadas"
+          },
+          "historical_context": "Ascensão do nazismo e stalinismo; Viena intelectual do entre-guerras",
+          "influences": [
+            "Einstein",
+            "Russell",
+            "Kant"
+          ],
+          "impact": [
+            "Liberalismo epistemológico",
+            "Soros",
+            "Teoria democrática",
+            "Filosofia da ciência"
+          ],
+          "works": [
+            {
+              "title": "A Lógica da Descoberta Científica",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A Sociedade Aberta e seus Inimigos",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "sartre",
+          "name": "Sartre",
+          "period": "1905–1980",
+          "description": "Existencialismo e engajamento marxista; a existência precede a essência.",
+          "tags": [
+            "freedom",
+            "rupture",
+            "individual",
+            "collective",
+            "dialectic"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade radical e angustiante — somos condenados a ser livres",
+            "state_vs_market": "Estado socialista como projeto de autenticidade coletiva",
+            "tradition_vs_rupture": "Ruptura com toda essência predeterminada — religiosa, nacional, de classe",
+            "individual_vs_collective": "Tensão central: liberdade individual absoluta vs. compromisso coletivo",
+            "method": "Fenomenológico-dialético: analisa a consciência e a práxis histórica"
+          },
+          "historical_context": "Ocupação nazista da França; descolonização; Guerra Fria cultural",
+          "influences": [
+            "Husserl",
+            "Heidegger",
+            "Marx (tardio)"
+          ],
+          "impact": [
+            "Existencialismo político",
+            "Beauvoir (feminismo)",
+            "Movimentos de libertação"
+          ],
+          "works": [
+            {
+              "title": "O Ser e o Nada",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Crítica da Razão Dialética",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "O Existencialismo é um Humanismo",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "arendt",
+          "name": "Hannah Arendt",
+          "period": "1906–1975",
+          "description": "Totalitarismo e o mal banal; a política como espaço de ação plural.",
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "individual",
+            "historical",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade como ação política plural — não ausência de coerção mas presença",
+            "state_vs_market": "Estado republicano plural; desconfia tanto do mercado quanto do partido único",
+            "tradition_vs_rupture": "Ruptura com toda tradição que prepara o totalitarismo (Platão a Marx)",
+            "individual_vs_collective": "Individual-plural: a política requer a pluralidade de perspectivas",
+            "method": "Histórico-fenomenológico: análise das origens e estruturas do totalitarismo"
+          },
+          "historical_context": "Holocaust, julgamento Eichmann, Guerra Fria, movimento pelos direitos civis",
+          "influences": [
+            "Heidegger",
+            "Jaspers",
+            "Tradição republicana"
+          ],
+          "impact": [
+            "Republicanismo",
+            "Teoria política feminista",
+            "Estudos do totalitarismo"
+          ],
+          "works": [
+            {
+              "title": "As Origens do Totalitarismo",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A Condição Humana",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Eichmann em Jerusalém",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "friedman",
+          "name": "Milton Friedman",
+          "period": "1908–2004",
+          "description": "Monetarismo, capitalismo como liberdade e Estado mínimo.",
+          "tags": [
+            "freedom",
+            "market",
+            "tradition",
+            "individual",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade econômica e liberdade política são inseparáveis",
+            "state_vs_market": "Mercado livre + banco central independente; contra toda intervenção",
+            "tradition_vs_rupture": "Tradição liberal clássica contra o consenso keynesiano do pós-guerra",
+            "individual_vs_collective": "Individual: a liberdade de escolha como valor supremo",
+            "method": "Empírico-monetarista: análise histórica de dados monetários"
+          },
+          "historical_context": "Guerra Fria; New Deal; expansão do welfare state americano",
+          "influences": [
+            "Hayek",
+            "Knight",
+            "Escola de Chicago"
+          ],
+          "impact": [
+            "Neoliberalismo",
+            "Reagan",
+            "Thatcher",
+            "Escola de Chicago"
+          ],
+          "works": [
+            {
+              "title": "Capitalismo e Liberdade",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Uma História Monetária dos EUA",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Livre para Escolher",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "rawls",
+          "name": "Rawls",
+          "period": "1921–2002",
+          "description": "Justiça como equidade: véu da ignorância e princípio da diferença.",
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "individual",
+            "collective",
+            "rational"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdades básicas iguais como primeiro princípio intocável",
+            "state_vs_market": "Estado redistributivo: desigualdades só são justas se beneficiam os mais pobres",
+            "tradition_vs_rupture": "Ruptura com o utilitarismo: direitos individuais não podem ser sacrificados pela soma",
+            "individual_vs_collective": "Síntese: liberdades individuais + redistribuição coletiva",
+            "method": "Racional-construtivista: experimento mental do véu da ignorância"
+          },
+          "historical_context": "EUA pós-guerra; movimento pelos direitos civis; debate liberalismo vs. utilitarismo",
+          "influences": [
+            "Kant",
+            "Mill",
+            "Contratualismo clássico"
+          ],
+          "impact": [
+            "Social-liberalismo",
+            "Democracia deliberativa",
+            "Habermas (diálogo crítico)"
+          ],
+          "works": [
+            {
+              "title": "Uma Teoria da Justiça",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "O Liberalismo Político",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "O Direito dos Povos",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "foucault",
+          "name": "Foucault",
+          "period": "1926–1984",
+          "description": "Poder e saber; genealogia das instituições disciplinares modernas.",
+          "tags": [
+            "freedom",
+            "rupture",
+            "individual",
+            "historical",
+            "dialectic"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade = resistência a dispositivos de poder que constituem o sujeito",
+            "state_vs_market": "Critica tanto o Estado quanto as formas de poder difuso — clínicas, prisões, escolas",
+            "tradition_vs_rupture": "Ruptura genealógica: toda verdade é efeito de relações de poder",
+            "individual_vs_collective": "Individual-crítico: o sujeito é constituído pelo poder, mas pode se recusar",
+            "method": "Genealógico-arqueológico: rastreia a emergência histórica dos discursos"
+          },
+          "historical_context": "França pós-guerra; maio de 1968; expansão das ciências humanas",
+          "influences": [
+            "Nietzsche (método)",
+            "Heidegger",
+            "Canguilhem"
+          ],
+          "impact": [
+            "Estudos de gênero e sexualidade",
+            "Teoria queer",
+            "Estudos pós-coloniais",
+            "Butler"
+          ],
+          "works": [
+            {
+              "title": "Vigiar e Punir",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A História da Sexualidade",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "As Palavras e as Coisas",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "habermas",
+          "name": "Habermas",
+          "period": "1929–present",
+          "description": "Democracia deliberativa e racionalidade comunicativa como fundamento político.",
+          "tags": [
+            "freedom",
+            "state",
+            "rupture",
+            "collective",
+            "rational",
+            "dialectic"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade comunicativa: falar sem coerção em espaço público racional",
+            "state_vs_market": "Estado democrático de direito como mediador do capitalismo",
+            "tradition_vs_rupture": "Ruptura com o pessimismo de Adorno/Horkheimer — a razão pode ser redimida",
+            "individual_vs_collective": "Coletivo-comunicativo: a legitimidade vem do discurso público livre",
+            "method": "Racional-comunicativo: teoria da ação comunicativa vs. estratégica"
+          },
+          "historical_context": "Alemanha pós-guerra; Escola de Frankfurt; crise da razão iluminista",
+          "influences": [
+            "Escola de Frankfurt",
+            "Mead",
+            "Rawls (diálogo crítico)"
+          ],
+          "impact": [
+            "Democracia deliberativa",
+            "Constitucionalismo cosmopolita",
+            "Teoria do direito"
+          ],
+          "works": [
+            {
+              "title": "Teoria da Ação Comunicativa",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Direito e Democracia",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "derrida",
+          "name": "Derrida",
+          "period": "1930–2004",
+          "description": "Desconstrução: todo texto contém contradições que subvertem sua unidade.",
+          "tags": [
+            "freedom",
+            "rupture",
+            "individual",
+            "rational",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade = abertura ao outro, à différance irredutível",
+            "state_vs_market": "Desconstrói as categorias — propriedade, soberania — sem propor sistema",
+            "tradition_vs_rupture": "Ruptura com toda presença, origem e centro — logocentrismo ocidental",
+            "individual_vs_collective": "Individual-outro: a alteridade radical como fundamento ético",
+            "method": "Desconstrução: lê os textos contra si mesmos para revelar suas aporias"
+          },
+          "historical_context": "França pós-estruturalista; pós-maio de 1968; crise das metanarrativas",
+          "influences": [
+            "Heidegger",
+            "Husserl",
+            "Nietzsche",
+            "Freud"
+          ],
+          "impact": [
+            "Teoria pós-colonial",
+            "Estudos literários críticos",
+            "Butler",
+            "Spivak"
+          ],
+          "works": [
+            {
+              "title": "Gramatologia",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "A Escritura e a Diferença",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Espectros de Marx",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "nozick",
+          "name": "Nozick",
+          "period": "1934–2002",
+          "description": "Estado mínimo: redistribuição forçada viola direitos individuais.",
+          "tags": [
+            "freedom",
+            "market",
+            "tradition",
+            "individual",
+            "rational"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade como inviolabilidade dos direitos — nenhum fim justifica violá-los",
+            "state_vs_market": "Estado ultra-mínimo: apenas proteção contra força e fraude",
+            "tradition_vs_rupture": "Tradição liberal lockeana contra o igualitarismo contemporâneo",
+            "individual_vs_collective": "Individual absoluto: os indivíduos não são recursos da sociedade",
+            "method": "Racional-analítico: argumentação filosófica formal"
+          },
+          "historical_context": "EUA dos anos 70; resposta direta a Rawls",
+          "influences": [
+            "Locke",
+            "Kant",
+            "Hayek"
+          ],
+          "impact": [
+            "Libertarismo de direita",
+            "Filosofia do Estado mínimo",
+            "Anarco-capitalismo"
+          ],
+          "works": [
+            {
+              "title": "Anarquia, Estado e Utopia",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Examinadas as Vidas",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "scruton",
+          "name": "Roger Scruton",
+          "period": "1935–2020",
+          "description": "Defesa filosófica do conservadorismo: tradição, beleza e sentido de lugar.",
+          "tags": [
+            "authority",
+            "state",
+            "tradition",
+            "collective",
+            "empirical",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade ordenada: a lei e a tradição como condições da liberdade real",
+            "state_vs_market": "Mercado moderado dentro de uma ordem cultural que o transcende",
+            "tradition_vs_rupture": "Anti-ruptura: o conservadorismo não é ideologia mas memória institucionalizada",
+            "individual_vs_collective": "Coletivo-orgânico: a nação e a herança cultural como lar do indivíduo",
+            "method": "Histórico-fenomenológico: estética e arquitetura como acesso ao político"
+          },
+          "historical_context": "Inglaterra pós-68; ascensão do relativismo cultural e do multiculturalismo",
+          "influences": [
+            "Burke",
+            "Wittgenstein",
+            "T.S. Eliot",
+            "Hegel"
+          ],
+          "impact": [
+            "Conservadorismo anglófono filosófico",
+            "Pensamento cristão-democrata europeu"
+          ],
+          "works": [
+            {
+              "title": "O Significado do Conservadorismo",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Filosofia Verde",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Beleza",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        },
+        {
+          "id": "bauman",
+          "name": "Bauman",
+          "period": "1925–2017",
+          "description": "Modernidade líquida: identidades e vínculos cada vez mais fluidos.",
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "historical",
+            "empirical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade líquida: sedutora mas geradora de ansiedade e solidão",
+            "state_vs_market": "Capitalismo tardio dissolve comunidades e converte cidadãos em consumidores",
+            "tradition_vs_rupture": "Diagnóstico da ruptura: a modernidade nunca para de se dissolver",
+            "individual_vs_collective": "Coletivo em crise: a solidariedade é solapada pela individualização forçada",
+            "method": "Sociológico-histórico com forte dimensão ensaística e cultural"
+          },
+          "historical_context": "Globalização; colapso do bloco soviético; crise das identidades coletivas",
+          "influences": [
+            "Marx",
+            "Gramsci",
+            "Escola de Frankfurt",
+            "Simmel"
+          ],
+          "impact": [
+            "Sociologia crítica",
+            "Estudos sobre consumo",
+            "Debates sobre comunidade"
+          ],
+          "works": [
+            {
+              "title": "Modernidade Líquida",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Medo Líquido",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Modernidade e Holocausto",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contemporary",
+      "label": "Contemporâneo",
+      "thinkers": [
+        {
+          "id": "zizek",
+          "name": "Žižek",
+          "period": "1949–present",
+          "description": "Marxismo lacaniano; critica o capitalismo liberal e a esquerda identitária.",
+          "tags": [
+            "rupture",
+            "state",
+            "collective",
+            "dialectic",
+            "historical"
+          ],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade real exige romper com a ideologia que a constitui como desejo",
+            "state_vs_market": "Capitalismo como Real lacaniano — aquilo que não para de não funcionar",
+            "tradition_vs_rupture": "Ruptura com o consenso liberal E com a esquerda identitária contemporânea",
+            "individual_vs_collective": "Coletivo-universal: a política de identidade fragmenta a classe trabalhadora",
+            "method": "Dialético com psicanálise lacaniana: lê cultura pop e política com Hegel"
+          },
+          "historical_context": "Pós-queda do muro; ascensão do politicamente correto; crise da esquerda",
+          "influences": [
+            "Marx",
+            "Lacan",
+            "Hegel",
+            "Althusser"
+          ],
+          "impact": [
+            "Esquerda intelectual pós-89",
+            "Teoria crítica",
+            "Populismo de esquerda (debate Laclau)"
+          ],
+          "works": [
+            {
+              "title": "O Sublime Objeto da Ideologia",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Bem-vindo ao Deserto do Real",
+              "download_url": "https://www.gutenberg.org"
+            },
+            {
+              "title": "Em Defesa das Causas Perdidas",
+              "download_url": "https://www.gutenberg.org"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
