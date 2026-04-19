@@ -36,15 +36,15 @@
           "works": [
             {
               "title": "A República",
-              "download_url": ""
+              "download_url": "https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/Platao_A_Republica.pdf"
             },
             {
               "title": "O Político",
-              "download_url": ""
+              "download_url": "https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/Platao_O_Politico.pdf"
             },
             {
               "title": "As Leis",
-              "download_url": ""
+              "download_url": "https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/As_leis_Platão.pdf"
             }
           ]
         },
