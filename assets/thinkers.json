@@ -803,7 +803,7 @@
           "works": [
             {
               "title": "O Capital",
-              "download_url": "/assets/works/o-capital-livro-1.pdf"
+              "download_url": "https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/o-capital-livro-1.pdf"
             },
             {
               "title": "Manifesto Comunista",
