@@ -5,167 +5,25 @@
       "label": "Antiguidade",
       "thinkers": [
         {
-          "id": "platao",
-          "name": "Platão",
-          "period": "427–347 a.C.",
-          "description": "Aristocracia dos filósofos-reis; desconfiança da democracia.",
-          "tags": [
-            "authority",
-            "state",
-            "tradition",
-            "collective",
-            "rational"
-          ],
-          "dimensions": {
-            "freedom_vs_authority": "Autoridade filosófica sobre a liberdade popular",
-            "state_vs_market": "Estado planificado e hierárquico",
-            "tradition_vs_rupture": "Tradição das formas eternas e da ordem natural",
-            "individual_vs_collective": "Coletivo: o indivíduo serve a cidade",
-            "method": "Racionalismo: ideias como realidade superior"
-          },
-          "historical_context": "Atenas pós-guerra do Peloponeso; crise da democracia direta",
-          "influences": [
-            "Sócrates",
-            "Pitágoras"
-          ],
-          "impact": [
-            "Agostinho",
-            "Neoplatonismo",
-            "Totalitarismos modernos (Popper o acusa)"
-          ],
-          "works": [
-            {
-              "title": "A República",
-              "download_url": "Platao_A_Republica.pdf"
-            },
-            {
-              "title": "O Político",
-              "download_url": "Platao_O_Politico.pdf"
-            },
-            {
-              "title": "As Leis",
-              "download_url": "As_leis_Platao.pdf"
-            }
-          ]
-        },
-        {
-          "id": "aristoteles",
-          "name": "Aristóteles",
-          "period": "384–322 a.C.",
-          "description": "Governo misto e moderado; virtude no meio-termo.",
-          "tags": [
-            "freedom",
-            "state",
-            "tradition",
-            "individual",
-            "empirical"
-          ],
-          "dimensions": {
-            "freedom_vs_authority": "Liberdade cívica moderada — nem tirania nem anarquia",
-            "state_vs_market": "Estado moderado com propriedade privada",
-            "tradition_vs_rupture": "Tradição: instituições acumulam sabedoria prática",
-            "individual_vs_collective": "Equilíbrio entre telos individual e animal político",
-            "method": "Empírico: observou 158 constituições reais"
-          },
-          "historical_context": "Atenas clássica; tutor de Alexandre o Grande",
-          "influences": [
-            "Platão"
-          ],
-          "impact": [
-            "Tomás de Aquino",
-            "Republicanismo",
-            "Constitucionalismo"
-          ],
-          "works": [
-            {
-              "title": "Política",
-              "download_url": "aristoteles_a_politica.pdf"
-            },
-            {
-              "title": "Ética a Nicômaco",
-              "download_url": "Etica-a-Nicomaco.pdf"
-            },
-            {
-              "title": "Constituição de Atenas",
-              "download_url": "Constituicao-dos-Atenienses.pdf"
-            }
-          ]
-        },
-        {
-          "id": "cicero",
-          "name": "Cícero",
-          "period": "106–43 a.C.",
-          "description": "República mista e direito natural como base da lei.",
-          "tags": [
-            "freedom",
-            "state",
-            "tradition",
-            "individual",
-            "rational"
-          ],
-          "dimensions": {
-            "freedom_vs_authority": "Liberdade sob a lei — libertas republicana",
-            "state_vs_market": "Estado republicano misto; propriedade privada sagrada",
-            "tradition_vs_rupture": "Tradição: mos maiorum como fundamento da República",
-            "individual_vs_collective": "Individual: direitos naturais precedem o Estado",
-            "method": "Racional e retórico: direito natural como razão universal"
-          },
-          "historical_context": "República Romana em colapso; guerras civis de César e Pompeu",
-          "influences": [
-            "Aristóteles",
-            "Estoicos gregos"
-          ],
-          "impact": [
-            "Locke",
-            "Constitucionalismo moderno",
-            "Direitos naturais"
-          ],
-          "works": [
-            {
-              "title": "De Re Publica",
-              "download_url": "Da_Republica_Marcus_Tullius_Cicero.pdf"
-            },
-            {
-              "title": "De Legibus",
-              "download_url": "Sobreasleis(DeLegibus).pdf"
-            },
-            {
-              "title": "De Officiis",
-              "download_url": "cicero_dos_deveres.pdf"
-            }
-          ]
-        },
-        {
           "id": "confucio",
           "name": "Confúcio",
-          "period": "551-479 a.C.",
+          "period": "551–479 a.C.",
           "description": "Ética relacional, ordem moral e governo exemplar.",
-          "tags": [
-            "authority",
-            "tradition",
-            "collective",
-            "historical",
-            "rational"
-          ],
+          "tags": ["authority", "tradition", "collective", "historical", "rational", "particularist"],
           "dimensions": {
-            "freedom_vs_authority": "Autoridade moral legítima baseada no exemplo.",
-            "state_vs_market": "Estado como ordem ritual e educativa.",
-            "tradition_vs_rupture": "Tradição ritual e continuidade como fonte de estabilidade.",
-            "individual_vs_collective": "Coletivo relacional, o self é formado por vínculos.",
-            "method": "Ético-prático e normativo."
+            "freedom_vs_authority": "Autoridade moral legítima baseada no exemplo e na virtude do governante.",
+            "state_vs_market": "Estado como ordem ritual e educativa, não econômica.",
+            "tradition_vs_rupture": "Tradição ritual e continuidade dinástica como fonte de estabilidade social.",
+            "individual_vs_collective": "Coletivo relacional: o self é constituído por vínculos de obrigação mútua.",
+            "method": "Ético-prático e normativo: aprendizado por exemplos e transmissão oral.",
+            "anthropology": "Otimista: o ser humano é aperfeiçoável pela educação e pelo ritual.",
+            "scope": "Particularista: pensamento enraizado na cultura e história chinesa."
           },
-          "historical_context": "China da primavera e outono, crise da ordem feudal.",
+          "historical_context": "China da primavera e outono; crise da ordem feudal dos Zhou.",
           "influences": [],
-          "impact": [
-            "Neoconfucionismo",
-            "Ética asiática",
-            "Filosofia política chinesa"
-          ],
+          "impact": ["Neoconfucionismo", "Ética asiática", "Filosofia política chinesa"],
           "works": [
-            {
-              "title": "Analectos",
-              "download_url": "Os-Analectos-Confucio.pdf"
-            }
+            { "title": "Analectos", "download_url": "Os-Analectos-Confucio.pdf" }
           ]
         },
         {
@@ -173,32 +31,93 @@
           "name": "Sun Tzu",
           "period": "c. século V a.C.",
           "description": "Estratégia, guerra e prudência política.",
-          "tags": [
-            "authority",
-            "state",
-            "tradition",
-            "historical",
-            "rational"
-          ],
+          "tags": ["authority", "state", "tradition", "historical", "rational", "realist"],
           "dimensions": {
-            "freedom_vs_authority": "Autoridade estratégica e disciplina como meios de vitória.",
-            "state_vs_market": "Estado forte e eficiente em tempos de conflito.",
-            "tradition_vs_rupture": "Tradição de prudência e adaptação ao contexto.",
-            "individual_vs_collective": "Coletivo organizado e hierárquico.",
-            "method": "Estratégico e contextual."
+            "freedom_vs_authority": "Autoridade estratégica e disciplina hierárquica como condição de eficácia.",
+            "state_vs_market": "Estado forte e eficiente; a economia serve à capacidade militar.",
+            "tradition_vs_rupture": "Tradição de prudência adaptativa: os princípios são estáveis, a tática é flexível.",
+            "individual_vs_collective": "Coletivo organizado e hierárquico; o comandante age pelo grupo.",
+            "method": "Estratégico-contextual: análise situacional antes de qualquer ação.",
+            "anthropology": "Pessimista: o conflito é condição permanente; a natureza humana é competitiva.",
+            "scope": "Contextual: princípios universais aplicados conforme terreno, clima e adversário."
           },
-          "historical_context": "China antiga, guerras entre estados rivais.",
+          "historical_context": "China antiga; período dos Reinos Combatentes; guerras entre estados rivais.",
           "influences": [],
-          "impact": [
-            "Teoria militar",
-            "Estratégia política",
-            "Management"
-          ],
+          "impact": ["Teoria militar", "Estratégia política", "Management contemporâneo"],
           "works": [
-            {
-              "title": "A Arte da Guerra",
-              "download_url": "a-arte-da-guerra.pdf"
-            }
+            { "title": "A Arte da Guerra", "download_url": "a-arte-da-guerra.pdf" }
+          ]
+        },
+        {
+          "id": "platao",
+          "name": "Platão",
+          "period": "427–347 a.C.",
+          "description": "Aristocracia dos filósofos-reis; desconfiança da democracia.",
+          "tags": ["authority", "state", "tradition", "collective", "rational", "idealist"],
+          "dimensions": {
+            "freedom_vs_authority": "Autoridade filosófica sobre a liberdade popular; o sábio deve governar o ignorante.",
+            "state_vs_market": "Estado planificado e hierárquico; a economia subordinada à virtude cívica.",
+            "tradition_vs_rupture": "Tradição das formas eternas e da ordem natural imutável.",
+            "individual_vs_collective": "Coletivo: o indivíduo existe para servir à cidade-estado segundo sua natureza.",
+            "method": "Racionalismo idealista: as ideias são mais reais que os fenômenos.",
+            "anthropology": "Mista: a alma tripartite permite tanto a virtude quanto a degradação.",
+            "scope": "Universalista: a cidade justa é um modelo válido para qualquer povo."
+          },
+          "historical_context": "Atenas pós-guerra do Peloponeso; crise da democracia direta; morte de Sócrates.",
+          "influences": ["Sócrates", "Pitágoras"],
+          "impact": ["Agostinho", "Neoplatonismo", "Totalitarismos modernos (Popper o acusa)"],
+          "works": [
+            { "title": "A República", "download_url": "Platao_A_Republica.pdf" },
+            { "title": "O Político", "download_url": "Platao_O_Politico.pdf" },
+            { "title": "As Leis", "download_url": "As_leis_Platao.pdf" }
+          ]
+        },
+        {
+          "id": "aristoteles",
+          "name": "Aristóteles",
+          "period": "384–322 a.C.",
+          "description": "Governo misto e moderado; virtude no meio-termo.",
+          "tags": ["freedom", "state", "tradition", "individual", "empirical"],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade cívica moderada: nem tirania nem anarquia; a lei como soberana.",
+            "state_vs_market": "Estado moderado com propriedade privada; riqueza a serviço da vida boa.",
+            "tradition_vs_rupture": "Tradição: as instituições acumulam sabedoria prática irredutível à teoria.",
+            "individual_vs_collective": "Equilíbrio: o homem é animal político, mas possui telos próprio.",
+            "method": "Empírico-comparativo: observação de 158 constituições reais.",
+            "anthropology": "Mista: a natureza humana inclina ao bem, mas requer educação e hábito.",
+            "scope": "Contextual: as melhores leis dependem do povo, do território e das circunstâncias."
+          },
+          "historical_context": "Atenas clássica; tutor de Alexandre o Grande; fundação do Liceu.",
+          "influences": ["Platão"],
+          "impact": ["Tomás de Aquino", "Republicanismo", "Constitucionalismo"],
+          "works": [
+            { "title": "Política", "download_url": "aristoteles_a_politica.pdf" },
+            { "title": "Ética a Nicômaco", "download_url": "Etica-a-Nicomaco.pdf" },
+            { "title": "Constituição de Atenas", "download_url": "Constituicao-dos-Atenienses.pdf" }
+          ]
+        },
+        {
+          "id": "cicero",
+          "name": "Cícero",
+          "period": "106–43 a.C.",
+          "description": "República mista e direito natural como base da lei.",
+          "tags": ["freedom", "state", "tradition", "individual", "rational"],
+          "dimensions": {
+            "freedom_vs_authority": "Liberdade sob a lei — libertas republicana como herança institucional.",
+            "state_vs_market": "Estado republicano misto; propriedade privada como fundamento da ordem civil.",
+            "tradition_vs_rupture": "Tradição: o mos maiorum como reservatório de sabedoria prática romana.",
+            "individual_vs_collective": "Individual: direitos naturais precedem o Estado, mas se realizam na República.",
+            "method": "Racional e retórico: o direito natural como razão universal acessível pela filosofia.",
+            "anthropology": "Otimista: o ser humano é naturalmente sociável e capaz de justiça.",
+            "scope": "Universalista: o direito natural é comum a toda humanidade."
+          },
+          "historical_context": "República Romana em colapso; guerras civis de César e Pompeu.",
+          "influences": ["Aristóteles", "Estoicos gregos"],
+          "impact": ["Locke", "Constitucionalismo moderno", "Direitos naturais"],
+          "works": [
+            { "title": "De Re Publica", "download_url": "Da_Republica_Marcus_Tullius_Cicero.pdf" },
+            { "title": "De Legibus", "download_url": "Sobreasleis(DeLegibus).pdf" },
+            { "title": "De Officiis", "download_url": "cicero_dos_deveres.pdf" }
           ]
         }
       ]
@@ -212,40 +131,22 @@
           "name": "Maquiavel",
           "period": "1469–1527",
           "description": "Realismo político: o poder como é, não como deveria ser.",
-          "tags": [
-            "authority",
-            "state",
-            "rupture",
-            "individual",
-            "empirical",
-            "historical"
-          ],
+          "tags": ["authority", "state", "rupture", "individual", "empirical", "historical", "realist", "pessimistic"],
           "dimensions": {
-            "freedom_vs_authority": "Neutro — descreve o poder sem prescrever",
-            "state_vs_market": "Estado forte e unificado como fim em si mesmo",
-            "tradition_vs_rupture": "Ruptura: separa política da moral e da religião pela 1ª vez",
-            "individual_vs_collective": "Individual: o príncipe age por virtù própria",
-            "method": "Histórico-empírico: lições de Roma e observação direta"
+            "freedom_vs_authority": "Neutro descritivo: descreve como o poder se mantém sem prescrever liberdade ou tirania.",
+            "state_vs_market": "Estado forte e unificado como fim em si; a economia serve à estabilidade política.",
+            "tradition_vs_rupture": "Ruptura epistemológica: separa política da moral e da teologia pela primeira vez.",
+            "individual_vs_collective": "Individual: o príncipe age por virtù própria, não por mandato coletivo.",
+            "method": "Histórico-empírico: lições extraídas de Roma e de observação direta do poder florentino.",
+            "anthropology": "Pessimista: os homens são ingratos, inconstantes e movidos pelo interesse.",
+            "scope": "Contextual: os princípios são universais, mas a aplicação depende da fortuna e do tempo."
           },
-          "historical_context": "Itália fragmentada; invasões estrangeiras; colapso de Florença",
-          "influences": [
-            "Tucídides",
-            "Tito Lívio"
-          ],
-          "impact": [
-            "Hobbes",
-            "Realismo político",
-            "Teoria das elites (Mosca, Pareto)"
-          ],
+          "historical_context": "Itália fragmentada; invasões estrangeiras de França e Espanha; colapso da República de Florença.",
+          "influences": ["Tucídides", "Tito Lívio"],
+          "impact": ["Hobbes", "Realismo político", "Teoria das elites (Mosca, Pareto)"],
           "works": [
-            {
-              "title": "O Príncipe",
-              "download_url": "principe.pdf"
-            },
-            {
-              "title": "Discursos sobre a primeira década de Tito Lívio",
-              "download_url": "MAQUIAVEL_Discorsi.pdf"
-            }
+            { "title": "O Príncipe", "download_url": "principe.pdf" },
+            { "title": "Discursos sobre a primeira década de Tito Lívio", "download_url": "MAQUIAVEL_Discorsi.pdf" }
           ]
         },
         {
@@ -253,38 +154,22 @@
           "name": "Thomas Hobbes",
           "period": "1588–1679",
           "description": "Estado absoluto como antídoto ao caos natural.",
-          "tags": [
-            "authority",
-            "state",
-            "rupture",
-            "individual",
-            "rational"
-          ],
+          "tags": ["authority", "state", "rupture", "individual", "rational", "realist", "pessimistic"],
           "dimensions": {
-            "freedom_vs_authority": "Autoridade absoluta do soberano como único antídoto",
-            "state_vs_market": "Leviatã onipotente e indivisível",
-            "tradition_vs_rupture": "Ruptura: funda o Estado no contrato racional, não no divino",
-            "individual_vs_collective": "Individual paradoxal: parte do indivíduo mas o anula no soberano",
-            "method": "Racionalismo geométrico: deduz a política como se deduz geometria"
+            "freedom_vs_authority": "Autoridade absoluta do soberano como única alternativa à guerra civil.",
+            "state_vs_market": "Leviatã onipotente e indivisível; a economia subordinada à paz soberana.",
+            "tradition_vs_rupture": "Ruptura: abandona o direito divino e funda o Estado no contrato racional laico.",
+            "individual_vs_collective": "Individual paradoxal: parte dos direitos naturais individuais, mas os aliena totalmente ao soberano.",
+            "method": "Racionalismo geométrico: deduz a política como se deduz geometria, por definições e axiomas.",
+            "anthropology": "Pessimista: sem coerção, a vida é solitária, pobre, sórdida, brutal e curta.",
+            "scope": "Universalista: o contrato social é a solução racional para qualquer povo em qualquer tempo."
           },
-          "historical_context": "Guerra Civil inglesa; regicídio de Carlos I",
-          "influences": [
-            "Galileu (método)",
-            "Tucídides (realismo)"
-          ],
-          "impact": [
-            "Rousseau (contrato)",
-            "Realismo nas relações internacionais"
-          ],
+          "historical_context": "Guerra Civil inglesa; regicídio de Carlos I; instabilidade total no século XVII.",
+          "influences": ["Galileu (método)", "Tucídides (realismo)"],
+          "impact": ["Rousseau (contrato)", "Realismo nas relações internacionais"],
           "works": [
-            {
-              "title": "Leviatã",
-              "download_url": "thomas_hobbes_leviatan.pdf"
-            },
-            {
-              "title": "Do Cidadão",
-              "download_url": "thomas.hobbes.do_.cidadao.pdf"
-            }
+            { "title": "Leviatã", "download_url": "thomas_hobbes_leviatan.pdf" },
+            { "title": "Do Cidadão", "download_url": "thomas.hobbes.do_.cidadao.pdf" }
           ]
         },
         {
@@ -292,41 +177,22 @@
           "name": "John Locke",
           "period": "1632–1704",
           "description": "Pai do liberalismo: propriedade, consentimento e direito à revolução.",
-          "tags": [
-            "freedom",
-            "market",
-            "rupture",
-            "individual",
-            "empirical"
-          ],
+          "tags": ["freedom", "market", "rupture", "individual", "empirical", "optimistic"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade natural preexiste ao Estado; governos que a violam podem ser derrubados",
-            "state_vs_market": "Estado limitado que protege propriedade; mercado como extensão natural",
-            "tradition_vs_rupture": "Ruptura com o absolutismo e com a monarquia de direito divino",
-            "individual_vs_collective": "Individual: direitos naturais à vida, liberdade e propriedade",
-            "method": "Empírico: a mente como tábula rasa; conhecimento pela experiência"
+            "freedom_vs_authority": "Liberdade natural preexiste ao Estado; governos que a violam perdem legitimidade e podem ser derrubados.",
+            "state_vs_market": "Estado limitado que protege vida, liberdade e propriedade; mercado como extensão da liberdade natural.",
+            "tradition_vs_rupture": "Ruptura com o absolutismo e com a monarquia de direito divino de Filmer.",
+            "individual_vs_collective": "Individual: os direitos naturais à vida, liberdade e propriedade são pré-políticos.",
+            "method": "Empírico: a mente como tábula rasa; todo conhecimento deriva da experiência sensível.",
+            "anthropology": "Otimista: os seres humanos são naturalmente cooperativos e capazes de autogoverno racional.",
+            "scope": "Universalista: os direitos naturais valem para toda a humanidade em qualquer contexto."
           },
-          "historical_context": "Revolução Gloriosa inglesa de 1688; ascensão do parlamento",
-          "influences": [
-            "Hooker",
-            "Grotius",
-            "Empirismo baconiano"
-          ],
-          "impact": [
-            "Voltaire",
-            "Declaração de Independência dos EUA",
-            "Adam Smith",
-            "Hayek"
-          ],
+          "historical_context": "Revolução Gloriosa inglesa de 1688; ascensão do parlamento; exílio na Holanda.",
+          "influences": ["Hooker", "Grotius", "Empirismo baconiano"],
+          "impact": ["Voltaire", "Declaração de Independência dos EUA", "Adam Smith", "Hayek"],
           "works": [
-            {
-              "title": "Dois Tratados sobre o Governo",
-              "download_url": "John_Locke-Dois_Tratados_sobre_o_Governo-Martins_Fontes.pdf"
-            },
-            {
-              "title": "Ensaio sobre o Entendimento Humano",
-              "download_url": "locke-ensaio-acerca-do-entendimento-humano.pdf"
-            }
+            { "title": "Dois Tratados sobre o Governo", "download_url": "John_Locke-Dois_Tratados_sobre_o_Governo-Martins_Fontes.pdf" },
+            { "title": "Ensaio sobre o Entendimento Humano", "download_url": "locke-ensaio-acerca-do-entendimento-humano.pdf" }
           ]
         }
       ]
@@ -340,40 +206,22 @@
           "name": "Montesquieu",
           "period": "1689–1755",
           "description": "Separação dos poderes; governo moderado e adaptado ao contexto histórico.",
-          "tags": [
-            "freedom",
-            "state",
-            "tradition",
-            "individual",
-            "empirical",
-            "historical"
-          ],
+          "tags": ["freedom", "state", "tradition", "individual", "empirical", "historical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade pela separação e equilíbrio de poderes",
-            "state_vs_market": "Estado constitucional moderado; contra concentração de poder",
-            "tradition_vs_rupture": "Tradição: as leis devem respeitar o espírito de cada povo",
-            "individual_vs_collective": "Liberdade individual garantida pela estrutura institucional",
-            "method": "Histórico-comparativo: analisa leis de múltiplas civilizações"
+            "freedom_vs_authority": "Liberdade garantida pela separação e pelo equilíbrio institucional dos poderes.",
+            "state_vs_market": "Estado constitucional moderado; contra a concentração de poder em qualquer instância.",
+            "tradition_vs_rupture": "Tradição: as leis devem respeitar o espírito histórico e climático de cada povo.",
+            "individual_vs_collective": "Liberdade individual como resultado de estruturas institucionais bem equilibradas.",
+            "method": "Histórico-comparativo: análise empírica das leis de múltiplas civilizações ao longo do tempo.",
+            "anthropology": "Mista: a natureza humana é moldável pelo clima, costumes e estrutura política.",
+            "scope": "Contextual: os princípios são universais, mas a constituição adequada varia por povo e circunstância."
           },
-          "historical_context": "França absolutista; admiração pelo parlamentarismo inglês",
-          "influences": [
-            "Locke",
-            "Direito natural"
-          ],
-          "impact": [
-            "Constituição americana",
-            "Federalistas",
-            "Todo o constitucionalismo moderno"
-          ],
+          "historical_context": "França absolutista de Luís XIV e XV; admiração pelo parlamentarismo inglês pós-1688.",
+          "influences": ["Locke", "Direito natural"],
+          "impact": ["Constituição americana", "Os Federalistas", "Todo o constitucionalismo moderno"],
           "works": [
-            {
-              "title": "O Espírito das Leis",
-              "download_url": "Montesquieu-O-espirito-das-leis-completo.pdf"
-            },
-            {
-              "title": "Cartas Persas",
-              "download_url": ""
-            }
+            { "title": "O Espírito das Leis", "download_url": "Montesquieu-O-espirito-das-leis-completo.pdf" },
+            { "title": "Cartas Persas", "download_url": "" }
           ]
         },
         {
@@ -381,215 +229,116 @@
           "name": "Rousseau",
           "period": "1712–1778",
           "description": "Vontade geral do povo; a propriedade corrompeu a igualdade natural.",
-          "tags": [
-            "freedom",
-            "state",
-            "rupture",
-            "collective",
-            "rational",
-            "historical"
-          ],
+          "tags": ["freedom", "state", "rupture", "collective", "rational", "historical", "optimistic"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade real = obedecer à lei que você mesmo fez (vontade geral)",
-            "state_vs_market": "Estado como expressão da soberania popular coletiva",
-            "tradition_vs_rupture": "Ruptura total: a civilização e a propriedade corrompem o homem bom",
-            "individual_vs_collective": "Coletivo paradoxal: a liberdade autêntica é a vontade geral",
-            "method": "Racional-especulativo: estado de natureza como experimento mental"
+            "freedom_vs_authority": "Liberdade autêntica equivale a obedecer à lei que o próprio povo fez pela vontade geral.",
+            "state_vs_market": "Estado como expressão da soberania popular; a propriedade privada é origem da desigualdade.",
+            "tradition_vs_rupture": "Ruptura total: a civilização, a propriedade e as artes corrompem o homem naturalmente bom.",
+            "individual_vs_collective": "Coletivo paradoxal: a liberdade autêntica é a participação na vontade geral, não o arbítrio privado.",
+            "method": "Racional-especulativo: o estado de natureza como experimento mental normativo.",
+            "anthropology": "Otimista na origem: o homem nasce bom; é a sociedade que o corrompe.",
+            "scope": "Universalista nos princípios, mas atenção ao tamanho e à cultura da comunidade política."
           },
-          "historical_context": "França pré-revolucionária; crescente desigualdade no Ancien Régime",
-          "influences": [
-            "Locke",
-            "Platão"
-          ],
-          "impact": [
-            "Revolução Francesa",
-            "Marx",
-            "Socialismo",
-            "Republicanismo igualitário"
-          ],
+          "historical_context": "França pré-revolucionária; crescente desigualdade no Ancien Régime; ascensão do Iluminismo.",
+          "influences": ["Locke", "Platão"],
+          "impact": ["Revolução Francesa", "Marx", "Socialismo", "Republicanismo igualitário"],
           "works": [
-            {
-              "title": "O Contrato Social",
-              "download_url": ""
-            },
-            {
-              "title": "Discurso sobre a Desigualdade",
-              "download_url": ""
-            },
-            {
-              "title": "Emílio",
-              "download_url": ""
-            }
+            { "title": "O Contrato Social", "download_url": "" },
+            { "title": "Discurso sobre a Desigualdade", "download_url": "" },
+            { "title": "Emílio", "download_url": "" }
           ]
         },
         {
           "id": "adam_smith",
           "name": "Adam Smith",
           "period": "1723–1790",
-          "description": "Mercado livre e mão invisível — com crítica aos monopólios.",
-          "tags": [
-            "freedom",
-            "market",
-            "rupture",
-            "individual",
-            "empirical"
-          ],
+          "description": "Mercado livre e mão invisível — com crítica aos monopólios e à ganância dos comerciantes.",
+          "tags": ["freedom", "market", "rupture", "individual", "empirical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade econômica como condição da prosperidade geral",
-            "state_vs_market": "Mercado livre com Estado mínimo — Smith alertava contra abusos do capital",
-            "tradition_vs_rupture": "Ruptura com o mercantilismo",
-            "individual_vs_collective": "Individual: cada um buscando seu interesse gera bem coletivo involuntário",
-            "method": "Empírico-moral: combina observação econômica com filosofia moral"
+            "freedom_vs_authority": "Liberdade econômica como condição da prosperidade geral; o Estado deve evitar monopólios.",
+            "state_vs_market": "Mercado livre com Estado mínimo — mas Smith alertava contra abusos do capital organizado.",
+            "tradition_vs_rupture": "Ruptura com o mercantilismo e com o protecionismo das corporações de ofício.",
+            "individual_vs_collective": "Individual: cada um perseguindo seu interesse gera o bem coletivo como resultado não intencional.",
+            "method": "Empírico-moral: combina observação econômica com filosofia moral dos sentimentos.",
+            "anthropology": "Mista: o ser humano é movido pelo interesse próprio, mas também pela simpatia e pelo senso de justiça.",
+            "scope": "Universalista: a divisão do trabalho e o mercado livre beneficiam qualquer nação."
           },
-          "historical_context": "Revolução Industrial nascente; mercantilismo dominante na Inglaterra",
-          "influences": [
-            "Hume",
-            "Hutcheson",
-            "Fisiocratas franceses"
-          ],
-          "impact": [
-            "Ricardo",
-            "Mill",
-            "Hayek",
-            "Friedman",
-            "Libertarismo econômico"
-          ],
+          "historical_context": "Revolução Industrial nascente; mercantilismo dominante na Inglaterra; Iluminismo escocês.",
+          "influences": ["Hume", "Hutcheson", "Fisiocratas franceses"],
+          "impact": ["Ricardo", "Mill", "Hayek", "Friedman", "Libertarismo econômico"],
           "works": [
-            {
-              "title": "A Riqueza das Nações",
-              "download_url": ""
-            },
-            {
-              "title": "Teoria dos Sentimentos Morais",
-              "download_url": ""
-            }
+            { "title": "A Riqueza das Nações", "download_url": "" },
+            { "title": "Teoria dos Sentimentos Morais", "download_url": "" }
           ]
         },
         {
           "id": "bentham",
           "name": "Bentham",
           "period": "1748–1832",
-          "description": "Utilitarismo: a maior felicidade para o maior número.",
-          "tags": [
-            "freedom",
-            "state",
-            "rupture",
-            "collective",
-            "empirical"
-          ],
+          "description": "Utilitarismo: a maior felicidade para o maior número como único critério moral e legal.",
+          "tags": ["freedom", "state", "rupture", "collective", "empirical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade instrumental: válida quando maximiza a felicidade coletiva",
-            "state_vs_market": "Estado reformador quando aumenta o bem-estar geral",
-            "tradition_vs_rupture": "Ruptura: rejeita direitos naturais como absurdo em palafitas",
-            "individual_vs_collective": "Coletivo: a soma das felicidades individuais",
-            "method": "Empírico-quantitativo: cálculo felicífico"
+            "freedom_vs_authority": "Liberdade instrumental: é válida apenas quando maximiza a soma de prazer sobre dor.",
+            "state_vs_market": "Estado reformador ativo: a legislação deve ser redesenhada para maximizar o bem-estar agregado.",
+            "tradition_vs_rupture": "Ruptura radical: rejeita direitos naturais como 'absurdo sobre palafitas'; só conta o resultado.",
+            "individual_vs_collective": "Coletivo: a unidade de análise é a soma das felicidades individuais, não o indivíduo.",
+            "method": "Empírico-quantitativo: o cálculo felicífico pretende medir prazer e dor com precisão.",
+            "anthropology": "Mista: o ser humano é governado pelo prazer e pela dor, mas pode ser educado por incentivos.",
+            "scope": "Universalista: o princípio da utilidade se aplica a toda ação humana em qualquer sociedade."
           },
-          "historical_context": "Industrialização e reformas legais na Inglaterra vitoriana",
-          "influences": [
-            "Hume",
-            "Helvétius",
-            "Locke"
-          ],
-          "impact": [
-            "John Stuart Mill",
-            "Progressismo",
-            "Welfare state",
-            "Análise custo-benefício"
-          ],
+          "historical_context": "Industrialização e miséria operária; reformas legais e prisionais na Inglaterra vitoriana.",
+          "influences": ["Hume", "Helvétius", "Locke"],
+          "impact": ["John Stuart Mill", "Progressismo reformista", "Welfare state", "Análise custo-benefício"],
           "works": [
-            {
-              "title": "Introdução aos Princípios da Moral e da Legislação",
-              "download_url": ""
-            },
-            {
-              "title": "O Panóptico",
-              "download_url": ""
-            }
+            { "title": "Introdução aos Princípios da Moral e da Legislação", "download_url": "" },
+            { "title": "O Panóptico", "download_url": "" }
           ]
         },
         {
           "id": "thomas_paine",
           "name": "Thomas Paine",
           "period": "1737–1809",
-          "description": "Democracia radical e proposta pioneira de renda básica.",
-          "tags": [
-            "freedom",
-            "state",
-            "rupture",
-            "collective",
-            "rational"
-          ],
+          "description": "Democracia radical e proposta pioneira de renda básica universal.",
+          "tags": ["freedom", "state", "rupture", "collective", "rational"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade plena: direitos inalienáveis de todos os homens",
-            "state_vs_market": "Estado republicano com redistribuição — propôs dividendo de terra",
-            "tradition_vs_rupture": "Ruptura máxima: contra monarquia, aristocracia e colonialismo",
-            "individual_vs_collective": "Coletivo-igualitário: a terra pertence originalmente a todos",
-            "method": "Racional: direitos deduzidos da razão natural, não da tradição"
+            "freedom_vs_authority": "Liberdade plena como direito inalienável de todo ser humano, independente de nascimento.",
+            "state_vs_market": "Estado republicano redistributivo; propôs dividendo de terra como compensação pela privatização.",
+            "tradition_vs_rupture": "Ruptura máxima: contra monarquia, aristocracia hereditária e colonialismo.",
+            "individual_vs_collective": "Coletivo-igualitário: a terra pertence originalmente a todos; a propriedade é social.",
+            "method": "Racional dedutivo: os direitos são derivados da razão natural, não da tradição histórica.",
+            "anthropology": "Otimista: os seres humanos são naturalmente iguais e capazes de autogoverno.",
+            "scope": "Universalista: os direitos do homem valem para toda a humanidade, não apenas para ingleses ou americanos."
           },
-          "historical_context": "Revoluções americana e francesa; colonialismo britânico",
-          "influences": [
-            "Locke",
-            "Rousseau"
-          ],
-          "impact": [
-            "Socialismo",
-            "Renda básica universal (UBI)",
-            "Republicanismo radical"
-          ],
+          "historical_context": "Revoluções americana (1776) e francesa (1789); colonialismo britânico.",
+          "influences": ["Locke", "Rousseau"],
+          "impact": ["Socialismo", "Renda básica universal (UBI)", "Republicanismo radical"],
           "works": [
-            {
-              "title": "Senso Comum",
-              "download_url": ""
-            },
-            {
-              "title": "Os Direitos do Homem",
-              "download_url": ""
-            },
-            {
-              "title": "A Era da Razão",
-              "download_url": ""
-            }
+            { "title": "Senso Comum", "download_url": "" },
+            { "title": "Os Direitos do Homem", "download_url": "" },
+            { "title": "A Era da Razão", "download_url": "" }
           ]
         },
         {
           "id": "tocqueville",
           "name": "Alexis de Tocqueville",
-          "period": "1805-1859",
+          "period": "1805–1859",
           "description": "Democracia, igualdade e liberdade com forte atenção aos riscos do despotismo da maioria.",
-          "tags": [
-            "freedom",
-            "state",
-            "tradition",
-            "individual",
-            "empirical",
-            "historical"
-          ],
+          "tags": ["freedom", "state", "tradition", "individual", "empirical", "historical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade política protegida por instituições e costumes cívicos.",
-            "state_vs_market": "Estado moderado, atento à sociedade civil e às associações.",
-            "tradition_vs_rupture": "Tradição cívica e religiosa como base da vida democrática.",
-            "individual_vs_collective": "Equilíbrio entre autonomia individual e vida associativa.",
-            "method": "Histórico-comparativo, observação social e institucional."
+            "freedom_vs_authority": "Liberdade política protegida por instituições, associações civis e costumes locais.",
+            "state_vs_market": "Estado moderado e descentralizado; a centralização administrativa ameaça a liberdade.",
+            "tradition_vs_rupture": "Tradição cívica e religiosa como suporte indispensável da vida democrática.",
+            "individual_vs_collective": "Equilíbrio tenso: a democracia produz individualismo que corrói as bases do autogoverno.",
+            "method": "Histórico-comparativo e sociológico: observação direta da democracia americana.",
+            "anthropology": "Mista: os seres humanos buscam igualdade, mas precisam de liberdade; a tensão é irresolvível.",
+            "scope": "Contextual: os princípios democráticos são modernos e universais, mas sua forma depende do povo."
           },
-          "historical_context": "França e Estados Unidos do século XIX, observação da democracia moderna.",
-          "influences": [
-            "Montesquieu",
-            "Revolução Francesa"
-          ],
-          "impact": [
-            "Liberalismo político",
-            "Sociologia",
-            "Teoria democrática"
-          ],
+          "historical_context": "França entre Revolução e Restauração; viagem aos EUA em 1831; observação da democracia moderna.",
+          "influences": ["Montesquieu", "Revolução Francesa"],
+          "impact": ["Liberalismo político", "Sociologia", "Teoria democrática"],
           "works": [
-            {
-              "title": "A Democracia na América",
-              "download_url": ""
-            },
-            {
-              "title": "O Antigo Regime e a Revolução",
-              "download_url": ""
-            }
+            { "title": "A Democracia na América", "download_url": "" },
+            { "title": "O Antigo Regime e a Revolução", "download_url": "" }
           ]
         }
       ]
@@ -603,83 +352,45 @@
           "name": "Hegel",
           "period": "1770–1831",
           "description": "O Estado como realização da razão; dialética histórica como motor do progresso.",
-          "tags": [
-            "authority",
-            "state",
-            "tradition",
-            "collective",
-            "dialectic",
-            "historical"
-          ],
+          "tags": ["authority", "state", "tradition", "collective", "dialectic", "historical", "idealist"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade real = reconhecimento dentro do Estado ético racional",
-            "state_vs_market": "Estado como totalidade ética superior à sociedade civil",
-            "tradition_vs_rupture": "Tradição dialética: o presente sintetiza as contradições do passado",
-            "individual_vs_collective": "Coletivo: a consciência individual se realiza no espírito do povo (Volksgeist)",
-            "method": "Dialético: tese → antítese → síntese como lógica da história"
+            "freedom_vs_authority": "Liberdade real é o reconhecimento dentro do Estado ético racional — não a liberdade negativa abstrata.",
+            "state_vs_market": "Estado como totalidade ética superior à sociedade civil e ao mercado (Bürgerliche Gesellschaft).",
+            "tradition_vs_rupture": "Tradição dialética: o presente não rompe com o passado, mas o sintetiza e supera.",
+            "individual_vs_collective": "Coletivo: a consciência individual só se realiza plenamente no espírito do povo (Volksgeist).",
+            "method": "Dialético especulativo: tese → antítese → síntese como lógica imanente da história.",
+            "anthropology": "Mista: a liberdade humana é histórica e se desenvolve progressivamente na razão.",
+            "scope": "Universalista: o desenvolvimento do Espírito Absoluto abrange toda a humanidade."
           },
-          "historical_context": "Europa napoleônica; ascensão do Estado-nação prussiano",
-          "influences": [
-            "Kant",
-            "Rousseau",
-            "Revolução Francesa"
-          ],
-          "impact": [
-            "Marx (inverteu Hegel)",
-            "Conservadorismo prussiano",
-            "Existencialismo"
-          ],
+          "historical_context": "Europa napoleônica; ascensão do Estado-nação prussiano; Revolução Francesa como evento-chave.",
+          "influences": ["Kant", "Rousseau", "Revolução Francesa"],
+          "impact": ["Marx (inverteu Hegel)", "Conservadorismo prussiano", "Existencialismo"],
           "works": [
-            {
-              "title": "Filosofia do Direito",
-              "download_url": ""
-            },
-            {
-              "title": "Fenomenologia do Espírito",
-              "download_url": ""
-            },
-            {
-              "title": "Enciclopédia",
-              "download_url": ""
-            }
+            { "title": "Filosofia do Direito", "download_url": "" },
+            { "title": "Fenomenologia do Espírito", "download_url": "" },
+            { "title": "Enciclopédia", "download_url": "" }
           ]
         },
         {
           "id": "burke",
           "name": "Edmund Burke",
-          "period": "1773–1836",
-          "description": "Pai do conservadorismo: tradição, ordem orgânica e reformas graduais.",
-          "tags": [
-            "authority",
-            "state",
-            "tradition",
-            "collective",
-            "empirical",
-            "historical"
-          ],
+          "period": "1729–1797",
+          "description": "Pai do conservadorismo: tradição, ordem orgânica e reformas apenas graduais.",
+          "tags": ["authority", "state", "tradition", "collective", "empirical", "historical", "particularist"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade herdada, não abstrata — a das gerações anteriores",
-            "state_vs_market": "Estado como tutor da tradição",
-            "tradition_vs_rupture": "Anti-ruptura: a revolução destrói sabedoria acumulada em séculos",
-            "individual_vs_collective": "Coletivo-histórico: contrato entre mortos, vivos e os que nascerão",
-            "method": "Histórico-empírico: rejeita a razão abstrata; confia na experiência"
+            "freedom_vs_authority": "Liberdade como herança histórica concreta, não como princípio abstrato universal.",
+            "state_vs_market": "Estado como guardião da tradição; suspeita do laissez-faire radical tanto quanto da revolução.",
+            "tradition_vs_rupture": "Anti-ruptura absoluta: a revolução destrói em dias a sabedoria acumulada em séculos.",
+            "individual_vs_collective": "Coletivo-histórico: a sociedade é um contrato entre os mortos, os vivos e os que ainda nascerão.",
+            "method": "Histórico-empírico: rejeita a razão abstrata; confia na experiência sedimentada.",
+            "anthropology": "Pessimista: os seres humanos precisam de contenção moral, religiosa e institucional.",
+            "scope": "Particularista: cada nação tem sua constituição própria; não há modelo universal transplantável."
           },
-          "historical_context": "Revolução Francesa de 1789; Burke escrevia da Inglaterra parlamentar",
-          "influences": [
-            "Montesquieu",
-            "Common law inglês"
-          ],
-          "impact": [
-            "Conservadorismo anglo-saxão",
-            "Oakeshott",
-            "Scruton",
-            "T.S. Eliot"
-          ],
+          "historical_context": "Revolução Francesa de 1789; Burke escrevia da Inglaterra parlamentar; radicalismo de Paine.",
+          "influences": ["Montesquieu", "Common law inglês"],
+          "impact": ["Conservadorismo anglo-saxão", "Oakeshott", "Scruton", "T.S. Eliot"],
           "works": [
-            {
-              "title": "Reflexões sobre a Revolução na França",
-              "download_url": ""
-            }
+            { "title": "Reflexões sobre a Revolução na França", "download_url": "" }
           ]
         },
         {
@@ -687,307 +398,165 @@
           "name": "John Stuart Mill",
           "period": "1806–1873",
           "description": "Liberdade individual, princípio do dano e direitos das mulheres.",
-          "tags": [
-            "freedom",
-            "market",
-            "rupture",
-            "individual",
-            "empirical"
-          ],
+          "tags": ["freedom", "market", "rupture", "individual", "empirical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade máxima: só pode ser limitada para evitar dano a outros",
-            "state_vs_market": "Mercado livre com Estado que corrige falhas e garante educação",
-            "tradition_vs_rupture": "Ruptura com tradições opressoras, especialmente de gênero",
-            "individual_vs_collective": "Individual: a liberdade de experimentação é condição do progresso",
-            "method": "Empírico-utilitário, corrigindo Bentham"
+            "freedom_vs_authority": "Liberdade máxima: o único limite legítimo é evitar dano direto a terceiros.",
+            "state_vs_market": "Mercado livre com Estado que corrige falhas, garante educação e combate privilégios herdados.",
+            "tradition_vs_rupture": "Ruptura com tradições opressoras, especialmente as de gênero e as instituições que limitam o desenvolvimento.",
+            "individual_vs_collective": "Individual: a liberdade de experimentação é condição do progresso moral e intelectual.",
+            "method": "Empírico-utilitário refinado: herança de Bentham, mas corrigida pela qualidade dos prazeres.",
+            "anthropology": "Otimista: os seres humanos são capazes de crescimento moral e intelectual indefinido.",
+            "scope": "Universalista nos princípios, mas atento ao grau de desenvolvimento de cada sociedade."
           },
-          "historical_context": "Industrialização vitoriana; movimento sufragista nascente",
-          "influences": [
-            "Bentham",
-            "James Mill",
-            "Tocqueville"
-          ],
-          "impact": [
-            "Liberalismo progressista",
-            "Feminismo liberal",
-            "Rawls"
-          ],
+          "historical_context": "Industrialização vitoriana; movimento sufragista nascente; abolicionismo.",
+          "influences": ["Bentham", "James Mill", "Tocqueville"],
+          "impact": ["Liberalismo progressista", "Feminismo liberal", "Rawls"],
           "works": [
-            {
-              "title": "Sobre a Liberdade",
-              "download_url": ""
-            },
-            {
-              "title": "Utilitarismo",
-              "download_url": ""
-            },
-            {
-              "title": "A Sujeição das Mulheres",
-              "download_url": ""
-            }
+            { "title": "Sobre a Liberdade", "download_url": "" },
+            { "title": "Utilitarismo", "download_url": "" },
+            { "title": "A Sujeição das Mulheres", "download_url": "" }
           ]
         },
         {
           "id": "proudhon",
           "name": "Pierre-Joseph Proudhon",
-          "period": "1809-1865",
-          "description": "Mutualismo, federalismo e crítica pioneira da propriedade e do Estado.",
-          "tags": [
-            "rupture",
-            "collective",
-            "tradition",
-            "individual",
-            "historical"
-          ],
+          "period": "1809–1865",
+          "description": "Mutualismo, federalismo e crítica pioneira da propriedade e do Estado centralizado.",
+          "tags": ["freedom", "rupture", "collective", "individual", "historical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade baseada em associações livres, não em autoridade central.",
-            "state_vs_market": "Contra o Estado e contra o capitalismo concentrado.",
-            "tradition_vs_rupture": "Ruptura com propriedade absoluta e centralização política.",
-            "individual_vs_collective": "Coletivo federativo de pequenos produtores e associações.",
-            "method": "Crítico e social, com forte ênfase institucional."
+            "freedom_vs_authority": "Liberdade baseada em contratos mútuos voluntários, sem autoridade central imposta.",
+            "state_vs_market": "Contra o Estado centralizador e contra o capitalismo concentrado; pelo crédito mútuo.",
+            "tradition_vs_rupture": "Ruptura com a propriedade absoluta e com a centralização política jacobina.",
+            "individual_vs_collective": "Coletivo federativo de pequenos produtores, artesãos e associações autônomas.",
+            "method": "Crítico-dialético e sociológico: contradições imanentes das instituições econômicas.",
+            "anthropology": "Mista: o ser humano é capaz de justiça, mas as instituições atuais o corrompem.",
+            "scope": "Contextual: o federalismo deve respeitar as especificidades regionais e profissionais."
           },
-          "historical_context": "França do século XIX, debates socialistas e operários.",
-          "influences": [
-            "Saint-Simon",
-            "Revolução Francesa"
-          ],
-          "impact": [
-            "Anarquismo",
-            "Sindicalismo",
-            "Federalismo social"
-          ],
+          "historical_context": "França do século XIX; debates socialistas e operários; Revolução de 1848.",
+          "influences": ["Saint-Simon", "Revolução Francesa"],
+          "impact": ["Anarquismo", "Sindicalismo", "Federalismo social", "Bakunin"],
           "works": [
-            {
-              "title": "O que é a Propriedade?",
-              "download_url": ""
-            },
-            {
-              "title": "Sistema das Contradições Econômicas",
-              "download_url": ""
-            }
+            { "title": "O que é a Propriedade?", "download_url": "" },
+            { "title": "Sistema das Contradições Econômicas", "download_url": "" }
           ]
         },
         {
           "id": "marx",
           "name": "Karl Marx",
           "period": "1818–1883",
-          "description": "Materialismo histórico, luta de classes e superação do capitalismo.",
-          "tags": [
-            "rupture",
-            "state",
-            "collective",
-            "dialectic",
-            "historical"
-          ],
+          "description": "Materialismo histórico, luta de classes e superação revolucionária do capitalismo.",
+          "tags": ["rupture", "state", "collective", "dialectic", "historical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade real só é possível após abolir as classes — antes é ilusão burguesa",
-            "state_vs_market": "Estado = instrumento de dominação de classe; deve ser superado",
-            "tradition_vs_rupture": "Ruptura total com todas as instituições burguesas",
-            "individual_vs_collective": "Coletivo: a consciência é determinada pela posição na produção",
-            "method": "Dialético-materialista: inverte Hegel — matéria e relações de produção como base"
+            "freedom_vs_authority": "Liberdade real só é possível após a abolição das classes — antes disso é ideologia burguesa.",
+            "state_vs_market": "O Estado é instrumento de dominação de classe; o mercado explora pela mais-valia.",
+            "tradition_vs_rupture": "Ruptura total com todas as instituições burguesas: família, direito, religião, propriedade.",
+            "individual_vs_collective": "Coletivo: a consciência e a liberdade individuais são determinadas pela posição nas relações de produção.",
+            "method": "Dialético-materialista: inverte Hegel — as relações materiais de produção são a base; as ideias, a superestrutura.",
+            "anthropology": "Mista: o ser humano é essencialmente criativo e social, mas o capitalismo o aliena de sua própria natureza.",
+            "scope": "Universalista: o capitalismo e a luta de classes são fenômenos globais que exigem resposta internacional."
           },
-          "historical_context": "Industrialização brutal; miséria do proletariado europeu; revoluções de 1848",
-          "influences": [
-            "Hegel",
-            "Ricardo",
-            "Owen",
-            "Feuerbach"
-          ],
-          "impact": [
-            "Lenin",
-            "Gramsci",
-            "Trotsky",
-            "Escola de Frankfurt",
-            "Sartre"
-          ],
+          "historical_context": "Industrialização brutal; miséria do proletariado europeu; revoluções de 1848; I Internacional.",
+          "influences": ["Hegel", "Ricardo", "Owen", "Feuerbach"],
+          "impact": ["Lenin", "Gramsci", "Trotsky", "Escola de Frankfurt", "Sartre"],
           "works": [
-            {
-              "title": "O Capital",
-              "download_url": "o-capital-livro-1.pdf"
-            },
-            {
-              "title": "Manifesto Comunista",
-              "download_url": ""
-            },
-            {
-              "title": "Grundrisse",
-              "download_url": ""
-            },
-            {
-              "title": "A Ideologia Alemã",
-              "download_url": ""
-            }
+            { "title": "O Capital", "download_url": "o-capital-livro-1.pdf" },
+            { "title": "Manifesto Comunista", "download_url": "" },
+            { "title": "Grundrisse", "download_url": "" },
+            { "title": "A Ideologia Alemã", "download_url": "" }
           ]
         },
         {
           "id": "engels",
           "name": "Friedrich Engels",
           "period": "1820–1895",
-          "description": "Co-criador do marxismo; origem da família, Estado e propriedade.",
-          "tags": [
-            "rupture",
-            "state",
-            "collective",
-            "dialectic",
-            "historical",
-            "empirical"
-          ],
+          "description": "Co-criador do marxismo; analisou a origem da família, do Estado e da propriedade privada.",
+          "tags": ["rupture", "state", "collective", "dialectic", "historical", "empirical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade = fim da exploração de classe e da dominação masculina",
-            "state_vs_market": "Estado burguês deve ser destruído pela revolução proletária",
-            "tradition_vs_rupture": "Ruptura: origem da família e do Estado ligada à propriedade privada",
-            "individual_vs_collective": "Coletivo: a emancipação é necessariamente coletiva",
-            "method": "Histórico-empírico e dialético: combina pesquisa de campo com dialética"
+            "freedom_vs_authority": "Liberdade como fim da exploração de classe e da dominação masculina sobre as mulheres.",
+            "state_vs_market": "O Estado burguês é instrumento de opressão e deve ser destruído pela revolução proletária.",
+            "tradition_vs_rupture": "Ruptura: família monogâmica e Estado são criações históricas ligadas à propriedade privada.",
+            "individual_vs_collective": "Coletivo: a emancipação humana genuína é necessariamente coletiva, não individual.",
+            "method": "Histórico-empírico e dialético: combina pesquisa de campo com dialética materialista.",
+            "anthropology": "Mista: a natureza humana é moldada pelas condições materiais de cada época histórica.",
+            "scope": "Universalista: a análise do capitalismo e da opressão de classe vale para toda a humanidade."
           },
-          "historical_context": "Manchester industrial; miséria operária documentada em primeira mão",
-          "influences": [
-            "Marx",
-            "Morgan (antropologia)",
-            "Hegel"
-          ],
-          "impact": [
-            "Leninismo",
-            "Feminismo marxista",
-            "Socialismo científico"
-          ],
+          "historical_context": "Manchester industrial; miséria operária documentada em primeira mão; I Internacional.",
+          "influences": ["Marx", "Morgan (antropologia)", "Hegel"],
+          "impact": ["Leninismo", "Feminismo marxista", "Socialismo científico"],
           "works": [
-            {
-              "title": "A Origem da Família",
-              "download_url": ""
-            },
-            {
-              "title": "A Situação da Classe Trabalhadora na Inglaterra",
-              "download_url": ""
-            }
+            { "title": "A Origem da Família", "download_url": "" },
+            { "title": "A Situação da Classe Trabalhadora na Inglaterra", "download_url": "" }
           ]
         },
         {
           "id": "bakunin",
           "name": "Bakunin",
-          "period": "1821–1881",
-          "description": "Anarquismo: destruição imediata de todo Estado e hierarquia.",
-          "tags": [
-            "freedom",
-            "rupture",
-            "individual",
-            "collective",
-            "historical"
-          ],
+          "period": "1814–1876",
+          "description": "Anarquismo: destruição imediata de todo Estado, toda hierarquia e toda autoridade.",
+          "tags": ["freedom", "rupture", "individual", "collective", "historical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade absoluta e imediata — nenhuma autoridade é legítima",
-            "state_vs_market": "Contra o Estado E o capital — ambos são formas de dominação",
-            "tradition_vs_rupture": "Ruptura máxima e imediata: não há Estado transitório que não se perpetue",
-            "individual_vs_collective": "Liberdade individual só no coletivo livre",
-            "method": "Voluntarista: a vontade revolucionária pode superar o determinismo"
+            "freedom_vs_authority": "Liberdade absoluta e imediata: nenhuma autoridade — nem transitória — é legítima.",
+            "state_vs_market": "Contra o Estado E o capital: ambos são faces distintas da mesma dominação.",
+            "tradition_vs_rupture": "Ruptura máxima e imediata: não existe Estado transitório que não tenda a se perpetuar.",
+            "individual_vs_collective": "Síntese difícil: a liberdade individual só é real no coletivo voluntariamente organizado.",
+            "method": "Voluntarista: a vontade revolucionária pode romper os determinismos históricos.",
+            "anthropology": "Otimista: o ser humano é naturalmente sociável e livre; é o Estado que o degrada.",
+            "scope": "Universalista: a anarquia é a condição de emancipação de toda a humanidade."
           },
-          "historical_context": "Europa revolucionária; Primeira Internacional; conflito com Marx",
-          "influences": [
-            "Proudhon",
-            "Hegel jovem",
-            "Stirner"
-          ],
-          "impact": [
-            "Anarco-comunismo",
-            "Sindicalismo revolucionário",
-            "Movimentos autonomistas"
-          ],
+          "historical_context": "Europa revolucionária; I Internacional; conflito direto com Marx sobre a questão do Estado.",
+          "influences": ["Proudhon", "Hegel jovem", "Stirner"],
+          "impact": ["Anarco-comunismo", "Sindicalismo revolucionário", "Movimentos autonomistas"],
           "works": [
-            {
-              "title": "Deus e o Estado",
-              "download_url": ""
-            },
-            {
-              "title": "Estatismo e Anarquia",
-              "download_url": ""
-            }
+            { "title": "Deus e o Estado", "download_url": "" },
+            { "title": "Estatismo e Anarquia", "download_url": "" }
           ]
         },
         {
           "id": "nietzsche",
           "name": "Nietzsche",
           "period": "1844–1900",
-          "description": "Vontade de poder e crítica radical do igualitarismo e do niilismo.",
-          "tags": [
-            "freedom",
-            "rupture",
-            "individual",
-            "rational",
-            "historical"
-          ],
+          "description": "Vontade de poder, além-do-homem e crítica radical do igualitarismo e do niilismo.",
+          "tags": ["freedom", "rupture", "individual", "rational", "historical", "realist", "pessimistic"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade criadora do indivíduo excepcional contra o gregarismo da moral",
-            "state_vs_market": "Desinteresse pelo Estado — mediocridade institucionalizada",
-            "tradition_vs_rupture": "Ruptura total com toda a moral ocidental (transvaloração dos valores)",
-            "individual_vs_collective": "Individual radical: a massa é obstáculo ao espírito elevado",
-            "method": "Genealógico: rastreia a origem histórica e psicológica dos valores"
+            "freedom_vs_authority": "Liberdade criadora do indivíduo excepcional contra o gregarismo da moral do ressentimento.",
+            "state_vs_market": "Desinteresse pelo Estado: instituição medíocre que nivela para baixo e sufoca o espírito nobre.",
+            "tradition_vs_rupture": "Ruptura total com toda a moral ocidental: transvaloração de todos os valores.",
+            "individual_vs_collective": "Individual radical: a massa é obstáculo ao florescimento do espírito elevado.",
+            "method": "Genealógico: rastreia a origem histórica e psicológica dos valores para revelar sua base em poder.",
+            "anthropology": "Pessimista quanto à maioria: a maioria dos seres humanos é gregária; apenas raros se superam.",
+            "scope": "Contextual: o além-do-homem não é um tipo universal, mas uma possibilidade rara e singular."
           },
-          "historical_context": "Alemanha pós-unificação; ascensão do niilismo e do nacionalismo",
-          "influences": [
-            "Schopenhauer",
-            "Pré-socráticos",
-            "Wagner (depois rompeu)"
-          ],
-          "impact": [
-            "Existencialismo",
-            "Foucault (método genealógico)"
-          ],
+          "historical_context": "Alemanha pós-unificação bismarckiana; ascensão do niilismo e do nacionalismo de massa.",
+          "influences": ["Schopenhauer", "Pré-socráticos", "Wagner (depois rompeu)"],
+          "impact": ["Existencialismo", "Foucault (método genealógico)", "Direita e esquerda distorceram sua obra"],
           "works": [
-            {
-              "title": "Assim Falou Zaratustra",
-              "download_url": ""
-            },
-            {
-              "title": "Além do Bem e do Mal",
-              "download_url": ""
-            },
-            {
-              "title": "Genealogia da Moral",
-              "download_url": ""
-            }
+            { "title": "Assim Falou Zaratustra", "download_url": "" },
+            { "title": "Além do Bem e do Mal", "download_url": "" },
+            { "title": "Genealogia da Moral", "download_url": "" }
           ]
         },
         {
           "id": "kropotkin",
           "name": "Kropotkin",
           "period": "1842–1921",
-          "description": "Anarco-comunismo: apoio mútuo como lei natural superior à competição.",
-          "tags": [
-            "freedom",
-            "rupture",
-            "collective",
-            "empirical"
-          ],
+          "description": "Anarco-comunismo: apoio mútuo como lei natural superior à competição darwiniana.",
+          "tags": ["freedom", "rupture", "collective", "empirical", "optimistic"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade máxima através da cooperação voluntária sem Estado",
-            "state_vs_market": "Contra Estado e capital; comunas autônomas e federadas",
-            "tradition_vs_rupture": "Ruptura: a cooperação, não o domínio, é o motor evolutivo",
-            "individual_vs_collective": "Coletivo voluntário: a solidariedade não precisa de coerção",
-            "method": "Empírico-científico: usa biologia e etnografia para refutar o darwinismo social"
+            "freedom_vs_authority": "Liberdade máxima pela cooperação voluntária sem nenhuma forma de Estado ou hierarquia.",
+            "state_vs_market": "Contra Estado e capital: comunas autônomas e federadas como alternativa real.",
+            "tradition_vs_rupture": "Ruptura científica: a cooperação, não o domínio, é o verdadeiro motor da evolução.",
+            "individual_vs_collective": "Coletivo voluntário: a solidariedade espontânea não precisa de coerção para funcionar.",
+            "method": "Empírico-científico: usa biologia, etnografia e história para refutar o darwinismo social.",
+            "anthropology": "Otimista: a natureza humana inclina à cooperação; a competição é produto de instituições ruins.",
+            "scope": "Universalista: o apoio mútuo é uma lei natural que vale para toda a espécie humana."
           },
-          "historical_context": "Rússia czarista; darwinismo social dominante; movimento anarquista europeu",
-          "influences": [
-            "Bakunin",
-            "Darwin (releitura)",
-            "Proudhon"
-          ],
-          "impact": [
-            "Ecologia política",
-            "Anarco-comunismo",
-            "Movimentos de base"
-          ],
+          "historical_context": "Rússia czarista; darwinismo social dominante na Europa; movimento anarquista internacional.",
+          "influences": ["Bakunin", "Darwin (releitura crítica)", "Proudhon"],
+          "impact": ["Ecologia política", "Anarco-comunismo", "Movimentos de base"],
           "works": [
-            {
-              "title": "O Apoio Mútuo",
-              "download_url": ""
-            },
-            {
-              "title": "A Conquista do Pão",
-              "download_url": ""
-            },
-            {
-              "title": "Campos, Fábricas e Oficinas",
-              "download_url": ""
-            }
+            { "title": "O Apoio Mútuo", "download_url": "" },
+            { "title": "A Conquista do Pão", "download_url": "" },
+            { "title": "Campos, Fábricas e Oficinas", "download_url": "" }
           ]
         }
       ]
@@ -999,130 +568,71 @@
         {
           "id": "gramsci",
           "name": "Gramsci",
-          "period": "1863–1931",
+          "period": "1891–1937",
           "description": "Hegemonia cultural: a dominação se exerce mais pelo consenso que pela força.",
-          "tags": [
-            "rupture",
-            "state",
-            "collective",
-            "historical",
-            "dialectic"
-          ],
+          "tags": ["rupture", "state", "collective", "historical", "dialectic"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade exige disputa cultural antes da tomada do poder político",
-            "state_vs_market": "Estado ampliado inclui a sociedade civil como arena de hegemonia",
-            "tradition_vs_rupture": "Ruptura com o determinismo econômico do marxismo vulgar",
-            "individual_vs_collective": "Coletivo: intelectuais orgânicos devem organizar o bloco histórico",
-            "method": "Histórico-dialético com ênfase na superestrutura cultural"
+            "freedom_vs_authority": "Liberdade exige a disputa da hegemonia cultural antes e durante a tomada do poder político.",
+            "state_vs_market": "O Estado ampliado inclui a sociedade civil como arena decisiva de hegemonia e contrahegemonia.",
+            "tradition_vs_rupture": "Ruptura com o determinismo econômico do marxismo vulgar; a cultura e a política têm autonomia relativa.",
+            "individual_vs_collective": "Coletivo orgânico: os intelectuais orgânicos devem unificar e organizar o bloco histórico subalterno.",
+            "method": "Histórico-dialético com ênfase na superestrutura cultural, nos aparelhos de hegemonia.",
+            "anthropology": "Otimista: os subalternos são capazes de desenvolver consciência crítica e hegemonia própria.",
+            "scope": "Contextual: cada formação social tem sua configuração específica de hegemonia e contradição."
           },
-          "historical_context": "Itália fascista; Gramsci preso por Mussolini (1926–1935)",
-          "influences": [
-            "Marx",
-            "Croce",
-            "Maquiavel (releitura)"
-          ],
-          "impact": [
-            "Escola de Frankfurt",
-            "Laclau",
-            "Mouffe",
-            "Teoria pós-colonial",
-            "Esquerda cultural"
-          ],
+          "historical_context": "Itália fascista; Gramsci preso por Mussolini em 1926; crise do marxismo ortodoxo.",
+          "influences": ["Marx", "Croce", "Maquiavel (releitura)"],
+          "impact": ["Escola de Frankfurt", "Laclau", "Mouffe", "Teoria pós-colonial", "Esquerda cultural contemporânea"],
           "works": [
-            {
-              "title": "Cadernos do Cárcere",
-              "download_url": ""
-            },
-            {
-              "title": "Cartas do Cárcere",
-              "download_url": ""
-            }
+            { "title": "Cadernos do Cárcere", "download_url": "" },
+            { "title": "Cartas do Cárcere", "download_url": "" }
           ]
         },
         {
           "id": "keynes",
           "name": "Keynes",
-          "period": "1883–1950",
-          "description": "O Estado deve intervir na economia para evitar depressões e desemprego.",
-          "tags": [
-            "freedom",
-            "state",
-            "rupture",
-            "collective",
-            "empirical"
-          ],
+          "period": "1883–1946",
+          "description": "O Estado deve intervir na economia para evitar depressões e desemprego em massa.",
+          "tags": ["freedom", "state", "rupture", "collective", "empirical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade real requer estabilidade econômica — desemprego é a negação da liberdade",
-            "state_vs_market": "Estado gestor da demanda; mercado falha em crises e precisa de estímulo",
-            "tradition_vs_rupture": "Ruptura com o liberalismo econômico clássico",
-            "individual_vs_collective": "Coletivo pragmático: o bem-estar agregado como objetivo da política",
-            "method": "Empírico-macroeconômico: dados agregados, não axiomas dedutivos"
+            "freedom_vs_authority": "Liberdade real requer estabilidade econômica: o desemprego estrutural é a negação prática da liberdade.",
+            "state_vs_market": "Estado gestor ativo da demanda agregada: o mercado falha sistematicamente em crises.",
+            "tradition_vs_rupture": "Ruptura com o liberalismo econômico clássico e com o equilíbrio automático dos mercados.",
+            "individual_vs_collective": "Coletivo pragmático: o bem-estar agregado justifica a intervenção; 'no longo prazo estamos todos mortos'.",
+            "method": "Empírico-macroeconômico: análise de dados agregados e dinâmicas de expectativa.",
+            "anthropology": "Mista: os agentes econômicos são movidos por expectativas e 'espíritos animais', não só por cálculo racional.",
+            "scope": "Universalista nos princípios, mas aplicação depende da estrutura institucional de cada economia."
           },
-          "historical_context": "Grande Depressão de 1929; colapso do laissez-faire clássico",
-          "influences": [
-            "Marshall",
-            "Malthus (releitura)"
-          ],
-          "impact": [
-            "Social-democracia",
-            "Welfare state",
-            "Samuelson",
-            "Política fiscal moderna"
-          ],
+          "historical_context": "Grande Depressão de 1929; colapso do laissez-faire clássico; ascensão dos totalitarismos.",
+          "influences": ["Marshall", "Malthus (releitura)"],
+          "impact": ["Social-democracia", "Welfare state", "Samuelson", "Política fiscal moderna"],
           "works": [
-            {
-              "title": "Teoria Geral do Emprego, do Juro e da Moeda",
-              "download_url": ""
-            },
-            {
-              "title": "As Consequências Econômicas da Paz",
-              "download_url": ""
-            }
+            { "title": "Teoria Geral do Emprego, do Juro e da Moeda", "download_url": "" },
+            { "title": "As Consequências Econômicas da Paz", "download_url": "" }
           ]
         },
         {
           "id": "trotsky",
           "name": "Trotsky",
           "period": "1879–1940",
-          "description": "Revolução permanente e internacionalismo; crítico feroz do stalinismo.",
-          "tags": [
-            "rupture",
-            "state",
-            "collective",
-            "dialectic",
-            "historical"
-          ],
+          "description": "Revolução permanente e internacionalismo; crítico implacável do stalinismo.",
+          "tags": ["rupture", "state", "collective", "dialectic", "historical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade só na revolução internacional — socialismo num só país é traição",
-            "state_vs_market": "Estado operário transitório rumo à abolição de todas as classes",
-            "tradition_vs_rupture": "Ruptura com o nacionalismo, com o reformismo e com o stalinismo",
-            "individual_vs_collective": "Coletivo internacionalista: a classe trabalhadora mundial como sujeito",
-            "method": "Dialético-materialista com análise política e militar detalhada"
+            "freedom_vs_authority": "Liberdade proletária só é sustentável numa revolução permanente e internacional.",
+            "state_vs_market": "Estado operário transitório como instrumento rumo à abolição de todas as classes.",
+            "tradition_vs_rupture": "Ruptura tripla: com o nacionalismo, o reformismo social-democrata e o stalinismo burocrático.",
+            "individual_vs_collective": "Coletivo internacionalista: a classe trabalhadora mundial é o único sujeito revolucionário legítimo.",
+            "method": "Dialético-materialista aplicado à estratégia política e à análise militar concreta.",
+            "anthropology": "Mista: os seres humanos são moldados pelas condições materiais, mas a vontade política importa.",
+            "scope": "Universalista: o socialismo num só país é uma contradição em termos; a revolução é mundial ou fracassa."
           },
-          "historical_context": "Rússia revolucionária; derrota para Stalin; exílio e assassinato",
-          "influences": [
-            "Marx",
-            "Engels",
-            "Lenin"
-          ],
-          "impact": [
-            "Trotskismo",
-            "IV Internacional",
-            "Esquerda anti-stalinista"
-          ],
+          "historical_context": "Rússia revolucionária (1917); derrota para Stalin; exílio; assassinato no México (1940).",
+          "influences": ["Marx", "Engels", "Lenin"],
+          "impact": ["Trotskismo", "IV Internacional", "Esquerda anti-stalinista"],
           "works": [
-            {
-              "title": "A Revolução Traída",
-              "download_url": ""
-            },
-            {
-              "title": "Minha Vida",
-              "download_url": ""
-            },
-            {
-              "title": "História da Revolução Russa",
-              "download_url": ""
-            }
+            { "title": "A Revolução Traída", "download_url": "" },
+            { "title": "Minha Vida", "download_url": "" },
+            { "title": "História da Revolução Russa", "download_url": "" }
           ]
         }
       ]
@@ -1134,180 +644,96 @@
         {
           "id": "lenin",
           "name": "Vladimir Lenin",
-          "period": "1870-1924",
-          "description": "Vanguarda revolucionária, partido organizado e tomada do poder pelo proletariado.",
-          "tags": [
-            "rupture",
-            "state",
-            "collective",
-            "dialectic",
-            "historical"
-          ],
+          "period": "1870–1924",
+          "description": "Vanguarda revolucionária e partido organizado como instrumento da tomada do poder pelo proletariado.",
+          "tags": ["rupture", "state", "collective", "dialectic", "historical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade ligada à derrubada da dominação de classe.",
-            "state_vs_market": "Estado revolucionário como instrumento de transição ao socialismo.",
-            "tradition_vs_rupture": "Ruptura revolucionária com o Estado burguês e o reformismo.",
-            "individual_vs_collective": "Coletivo-prático, partido e classe como sujeito político.",
-            "method": "Dialético-pragmático, estratégia revolucionária e análise concreta."
+            "freedom_vs_authority": "Liberdade proletária exige a ditadura do proletariado como fase transitória necessária.",
+            "state_vs_market": "Estado revolucionário como instrumento de transição ao socialismo e depois ao comunismo.",
+            "tradition_vs_rupture": "Ruptura revolucionária com o Estado burguês, o reformismo e o oportunismo da II Internacional.",
+            "individual_vs_collective": "Coletivo-prático: o partido de vanguarda e a classe operária como sujeito político organizado.",
+            "method": "Dialético-pragmático: análise concreta da situação concreta; estratégia e tática maleáveis.",
+            "anthropology": "Mista: os trabalhadores precisam do partido de vanguarda para superar a consciência espontânea.",
+            "scope": "Universalista: o imperialismo é uma fase global do capitalismo; a revolução é internacional."
           },
-          "historical_context": "Rússia czarista, Revolução de 1917 e guerra civil.",
-          "influences": [
-            "Marx",
-            "Engels"
-          ],
-          "impact": [
-            "Leninismo",
-            "Partidos comunistas",
-            "Revoluções do século XX"
-          ],
+          "historical_context": "Rússia czarista; Revolução de Fevereiro e Outubro de 1917; guerra civil.",
+          "influences": ["Marx", "Engels"],
+          "impact": ["Leninismo", "Partidos comunistas do século XX", "Revoluções na Ásia, África e América Latina"],
           "works": [
-            {
-              "title": "O Que Fazer?",
-              "download_url": ""
-            },
-            {
-              "title": "O Estado e a Revolução",
-              "download_url": ""
-            },
-            {
-              "title": "Imperialismo, Fase Superior do Capitalismo",
-              "download_url": ""
-            }
+            { "title": "O Que Fazer?", "download_url": "" },
+            { "title": "O Estado e a Revolução", "download_url": "" },
+            { "title": "Imperialismo, Fase Superior do Capitalismo", "download_url": "" }
           ]
         },
         {
           "id": "mises",
           "name": "Ludwig von Mises",
-          "period": "1881-1973",
-          "description": "Economia de mercado, ação humana e crítica ao planejamento central.",
-          "tags": [
-            "freedom",
-            "market",
-            "tradition",
-            "individual",
-            "rational"
-          ],
+          "period": "1881–1973",
+          "description": "Praxeologia, economia de mercado e crítica demolidora ao planejamento central socialista.",
+          "tags": ["freedom", "market", "tradition", "individual", "rational"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade econômica como condição de coordenação social.",
-            "state_vs_market": "Mercado livre como mecanismo superior ao planejamento central.",
-            "tradition_vs_rupture": "Tradição liberal clássica contra o intervencionismo.",
-            "individual_vs_collective": "Individualismo metodológico e ação humana intencional.",
-            "method": "Praxeológico, dedutivo e racional."
+            "freedom_vs_authority": "Liberdade econômica como condição necessária de toda coordenação social racional.",
+            "state_vs_market": "O mercado livre é o único mecanismo de cálculo econômico racional; o socialismo é impossível.",
+            "tradition_vs_rupture": "Tradição liberal clássica contra o intervencionismo, o socialismo e o corporativismo.",
+            "individual_vs_collective": "Individualismo metodológico radical: toda ação social é composta de ações individuais com propósito.",
+            "method": "Praxeológico-dedutivo: a ciência econômica parte de axiomas sobre a ação humana intencional.",
+            "anthropology": "Mista: os seres humanos agem com propósito e calculam meios para fins; não são determinados.",
+            "scope": "Universalista: as leis da praxeologia e do mercado valem para toda ação humana em qualquer cultura."
           },
-          "historical_context": "Áustria, entre-guerras, ascensão do socialismo e do intervencionismo.",
-          "influences": [
-            "Carl Menger",
-            "Escola Austríaca"
-          ],
-          "impact": [
-            "Hayek",
-            "Chicago School",
-            "Libertarianismo"
-          ],
+          "historical_context": "Viena do entre-guerras; ascensão do socialismo e do intervencionismo estatal na Europa.",
+          "influences": ["Carl Menger", "Escola Austríaca", "Böhm-Bawerk"],
+          "impact": ["Hayek", "Escola de Chicago", "Libertarismo", "Mont Pelerin Society"],
           "works": [
-            {
-              "title": "Ação Humana",
-              "download_url": ""
-            },
-            {
-              "title": "O Socialismo",
-              "download_url": ""
-            },
-            {
-              "title": "Burocracia",
-              "download_url": ""
-            }
+            { "title": "Ação Humana", "download_url": "" },
+            { "title": "O Socialismo", "download_url": "" },
+            { "title": "Burocracia", "download_url": "" }
           ]
         },
         {
           "id": "hayek",
           "name": "Hayek",
           "period": "1899–1992",
-          "description": "Mercados livres e ordem espontânea; planejamento central leva ao totalitarismo.",
-          "tags": [
-            "freedom",
-            "market",
-            "tradition",
-            "individual",
-            "rational",
-            "empirical"
-          ],
+          "description": "Mercados livres e ordem espontânea; qualquer planejamento central conduz ao totalitarismo.",
+          "tags": ["freedom", "market", "tradition", "individual", "rational", "empirical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade negativa: ausência de coerção — qualquer outra é ilusória",
-            "state_vs_market": "Mercado como único mecanismo capaz de processar informação dispersa",
-            "tradition_vs_rupture": "Tradição das instituições espontâneas (common law, preços, costumes)",
-            "individual_vs_collective": "Individual: o conhecimento é irredutível ao coletivo",
-            "method": "Racionalismo crítico + teoria da informação descentralizada"
+            "freedom_vs_authority": "Liberdade negativa como ausência de coerção arbitrária: qualquer definição positiva é perigosa.",
+            "state_vs_market": "O mercado é o único mecanismo capaz de processar e utilizar o conhecimento disperso da sociedade.",
+            "tradition_vs_rupture": "Tradição das instituições espontâneas (common law, preços, costumes): sabedoria além da razão individual.",
+            "individual_vs_collective": "Individual: o conhecimento relevante é sempre tácito, local e irredutível a qualquer planificador.",
+            "method": "Racionalismo crítico combinado com teoria da informação e da ordem espontânea.",
+            "anthropology": "Mista: a razão humana é limitada; as instituições carregam sabedoria que supera qualquer indivíduo.",
+            "scope": "Universalista: o caminho da servidão ameaça qualquer sociedade que adote o planejamento central."
           },
-          "historical_context": "Guerra Fria; expansão do Estado de bem-estar; socialismo real",
-          "influences": [
-            "Mises",
-            "Böhm-Bawerk",
-            "Mach (epistemologia)"
-          ],
-          "impact": [
-            "Friedman",
-            "Thatcher",
-            "Reagan",
-            "Neoliberalismo",
-            "Libertarismo de direita"
-          ],
+          "historical_context": "Guerra Fria; expansão do Estado de bem-estar keynesiano; socialismo real soviético.",
+          "influences": ["Mises", "Böhm-Bawerk", "Mach (epistemologia)"],
+          "impact": ["Friedman", "Thatcher", "Reagan", "Neoliberalismo", "Mont Pelerin Society"],
           "works": [
-            {
-              "title": "O Caminho da Servidão",
-              "download_url": ""
-            },
-            {
-              "title": "A Constituição da Liberdade",
-              "download_url": ""
-            },
-            {
-              "title": "A Arrogância Fatal",
-              "download_url": ""
-            }
+            { "title": "O Caminho da Servidão", "download_url": "" },
+            { "title": "A Constituição da Liberdade", "download_url": "" },
+            { "title": "A Arrogância Fatal", "download_url": "" }
           ]
         },
         {
           "id": "popper",
           "name": "Popper",
           "period": "1902–1994",
-          "description": "Sociedade aberta vs. totalitarismo; falseabilidade como critério científico.",
-          "tags": [
-            "freedom",
-            "state",
-            "rupture",
-            "individual",
-            "rational",
-            "empirical"
-          ],
+          "description": "Sociedade aberta contra o totalitarismo; falseabilidade como critério da ciência.",
+          "tags": ["freedom", "state", "rupture", "individual", "rational", "empirical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade como condição da crítica e do progresso",
-            "state_vs_market": "Estado liberal com intervenção limitada para corrigir sofrimento evitável",
-            "tradition_vs_rupture": "Ruptura com o historicismo e com o utopismo",
-            "individual_vs_collective": "Individual: a engenharia social fragmentária respeita o indivíduo",
-            "method": "Falsificacionismo: teorias são científicas se podem ser refutadas"
+            "freedom_vs_authority": "Liberdade como condição indispensável da crítica racional e do progresso científico.",
+            "state_vs_market": "Estado liberal mínimo, com intervenção limitada para corrigir sofrimento evitável.",
+            "tradition_vs_rupture": "Ruptura com o historicismo, o essencialismo e o utopismo de qualquer orientação.",
+            "individual_vs_collective": "Individual: a engenharia social deve ser fragmentária e gradual, respeitando os indivíduos.",
+            "method": "Falsificacionismo: uma teoria só é científica se puder ser refutada por experiência.",
+            "anthropology": "Mista: os seres humanos erram, mas são capazes de aprender pela crítica e pela correção.",
+            "scope": "Universalista: a sociedade aberta e o método crítico são ideais válidos para toda a humanidade."
           },
-          "historical_context": "Ascensão do nazismo e stalinismo; Viena intelectual do entre-guerras",
-          "influences": [
-            "Einstein",
-            "Russell",
-            "Kant"
-          ],
-          "impact": [
-            "Liberalismo epistemológico",
-            "Soros",
-            "Teoria democrática",
-            "Filosofia da ciência"
-          ],
+          "historical_context": "Ascensão do nazismo e do stalinismo; Viena intelectual do entre-guerras; exílio na Nova Zelândia.",
+          "influences": ["Einstein", "Russell", "Kant"],
+          "impact": ["Liberalismo epistemológico", "Soros", "Teoria democrática", "Filosofia da ciência"],
           "works": [
-            {
-              "title": "A Lógica da Descoberta Científica",
-              "download_url": ""
-            },
-            {
-              "title": "A Sociedade Aberta e seus Inimigos",
-              "download_url": ""
-            }
+            { "title": "A Lógica da Descoberta Científica", "download_url": "" },
+            { "title": "A Sociedade Aberta e seus Inimigos", "download_url": "" }
           ]
         },
         {
@@ -1315,136 +741,71 @@
           "name": "Sartre",
           "period": "1905–1980",
           "description": "Existencialismo e engajamento marxista; a existência precede a essência.",
-          "tags": [
-            "freedom",
-            "rupture",
-            "individual",
-            "collective",
-            "dialectic"
-          ],
+          "tags": ["freedom", "rupture", "individual", "collective", "dialectic"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade radical e angustiante — somos condenados a ser livres",
-            "state_vs_market": "Estado socialista como projeto de autenticidade coletiva",
-            "tradition_vs_rupture": "Ruptura com toda essência predeterminada — religiosa, nacional, de classe",
-            "individual_vs_collective": "Tensão central: liberdade individual absoluta vs. compromisso coletivo",
-            "method": "Fenomenológico-dialético: analisa a consciência e a práxis histórica"
+            "freedom_vs_authority": "Liberdade radical e angustiante: somos condenados a ser livres e responsáveis por tudo que somos.",
+            "state_vs_market": "Estado socialista como projeto de autenticidade coletiva; rejeição do capitalismo alienante.",
+            "tradition_vs_rupture": "Ruptura com toda essência predeterminada: religiosa, nacional, de classe ou biológica.",
+            "individual_vs_collective": "Tensão central irresolúvel: liberdade individual absoluta vs. necessidade do engajamento coletivo.",
+            "method": "Fenomenológico-dialético: análise da consciência intencional e da práxis histórica.",
+            "anthropology": "Otimista quanto à liberdade: o ser humano está além de qualquer determinismo; é projeto puro.",
+            "scope": "Universalista: a condição humana de liberdade e responsabilidade é compartilhada por todos."
           },
-          "historical_context": "Ocupação nazista da França; descolonização; Guerra Fria cultural",
-          "influences": [
-            "Husserl",
-            "Heidegger",
-            "Marx (tardio)"
-          ],
-          "impact": [
-            "Existencialismo político",
-            "Beauvoir (feminismo)",
-            "Movimentos de libertação"
-          ],
+          "historical_context": "Ocupação nazista da França; descolonização africana e asiática; Guerra Fria cultural.",
+          "influences": ["Husserl", "Heidegger", "Marx (tardio)"],
+          "impact": ["Existencialismo político", "Beauvoir (feminismo)", "Movimentos de libertação nacional"],
           "works": [
-            {
-              "title": "O Ser e o Nada",
-              "download_url": ""
-            },
-            {
-              "title": "Crítica da Razão Dialética",
-              "download_url": ""
-            },
-            {
-              "title": "O Existencialismo é um Humanismo",
-              "download_url": ""
-            }
+            { "title": "O Ser e o Nada", "download_url": "" },
+            { "title": "Crítica da Razão Dialética", "download_url": "" },
+            { "title": "O Existencialismo é um Humanismo", "download_url": "" }
           ]
         },
         {
           "id": "arendt",
           "name": "Hannah Arendt",
           "period": "1906–1975",
-          "description": "Totalitarismo e o mal banal; a política como espaço de ação plural.",
-          "tags": [
-            "freedom",
-            "state",
-            "rupture",
-            "individual",
-            "historical",
-            "empirical"
-          ],
+          "description": "Totalitarismo e o mal banal; a política como espaço irredutível de ação plural.",
+          "tags": ["freedom", "state", "rupture", "individual", "historical", "empirical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade como ação política plural — não ausência de coerção mas presença",
-            "state_vs_market": "Estado republicano plural; desconfia tanto do mercado quanto do partido único",
-            "tradition_vs_rupture": "Ruptura com toda tradição que prepara o totalitarismo (Platão a Marx)",
-            "individual_vs_collective": "Individual-plural: a política requer a pluralidade de perspectivas",
-            "method": "Histórico-fenomenológico: análise das origens e estruturas do totalitarismo"
+            "freedom_vs_authority": "Liberdade não é ausência de coerção, mas presença ativa no espaço público plural.",
+            "state_vs_market": "República plural: desconfia tanto do mercado (que dissolve o político) quanto do partido único.",
+            "tradition_vs_rupture": "Ruptura: o totalitarismo rompe com toda tradição política anterior, incluindo as tirânicas.",
+            "individual_vs_collective": "Individual-plural: a política requer singularidade irredutível; a massificação é totalitarismo.",
+            "method": "Histórico-fenomenológico: análise das origens, estruturas e fenomenologia do totalitarismo.",
+            "anthropology": "Mista: os seres humanos são capazes de ação criadora, mas também de banalidade do mal.",
+            "scope": "Contextual: o totalitarismo é um fenômeno novo do século XX, não uma tirania repetida."
           },
-          "historical_context": "Holocaust, julgamento Eichmann, Guerra Fria, movimento pelos direitos civis",
-          "influences": [
-            "Heidegger",
-            "Jaspers",
-            "Tradição republicana"
-          ],
-          "impact": [
-            "Republicanismo",
-            "Teoria política feminista",
-            "Estudos do totalitarismo"
-          ],
+          "historical_context": "Holocaust; julgamento de Eichmann em Jerusalém (1961); Guerra Fria; direitos civis nos EUA.",
+          "influences": ["Heidegger", "Jaspers", "Tradição republicana"],
+          "impact": ["Republicanismo", "Teoria política feminista", "Estudos do totalitarismo"],
           "works": [
-            {
-              "title": "As Origens do Totalitarismo",
-              "download_url": ""
-            },
-            {
-              "title": "A Condição Humana",
-              "download_url": ""
-            },
-            {
-              "title": "Eichmann em Jerusalém",
-              "download_url": ""
-            }
+            { "title": "As Origens do Totalitarismo", "download_url": "" },
+            { "title": "A Condição Humana", "download_url": "" },
+            { "title": "Eichmann em Jerusalém", "download_url": "" }
           ]
         },
         {
           "id": "friedman",
           "name": "Milton Friedman",
-          "period": "1908–2004",
+          "period": "1912–2006",
           "description": "Monetarismo, capitalismo como liberdade e Estado mínimo.",
-          "tags": [
-            "freedom",
-            "market",
-            "tradition",
-            "individual",
-            "empirical"
-          ],
+          "tags": ["freedom", "market", "tradition", "individual", "empirical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade econômica e liberdade política são inseparáveis",
-            "state_vs_market": "Mercado livre + banco central independente; contra toda intervenção",
-            "tradition_vs_rupture": "Tradição liberal clássica contra o consenso keynesiano do pós-guerra",
-            "individual_vs_collective": "Individual: a liberdade de escolha como valor supremo",
-            "method": "Empírico-monetarista: análise histórica de dados monetários"
+            "freedom_vs_authority": "Liberdade econômica e liberdade política são inseparáveis: uma não sobrevive sem a outra.",
+            "state_vs_market": "Mercado livre + banco central com regra monetária; qualquer intervenção adicional é nociva.",
+            "tradition_vs_rupture": "Tradição do liberalismo clássico: retorno contra o consenso keynesiano do pós-guerra.",
+            "individual_vs_collective": "Individual: a liberdade de escolha — no consumo, no trabalho, na moeda — é o valor supremo.",
+            "method": "Empírico-monetarista: análise histórica de séries de dados monetários e de preços.",
+            "anthropology": "Mista: os agentes econômicos são racionais em média; os mercados corrigem os desvios individuais.",
+            "scope": "Universalista: o capitalismo de livre mercado é a melhor solução para qualquer economia."
           },
-          "historical_context": "Guerra Fria; New Deal; expansão do welfare state americano",
-          "influences": [
-            "Hayek",
-            "Knight",
-            "Escola de Chicago"
-          ],
-          "impact": [
-            "Neoliberalismo",
-            "Reagan",
-            "Thatcher",
-            "Escola de Chicago"
-          ],
+          "historical_context": "Guerra Fria; New Deal americano; expansão do welfare state; ascensão da Escola de Chicago.",
+          "influences": ["Hayek", "Knight", "Escola de Chicago"],
+          "impact": ["Neoliberalismo", "Reagan", "Thatcher", "Escola de Chicago", "FMI e Banco Mundial anos 80-90"],
           "works": [
-            {
-              "title": "Capitalismo e Liberdade",
-              "download_url": ""
-            },
-            {
-              "title": "Uma História Monetária dos EUA",
-              "download_url": ""
-            },
-            {
-              "title": "Livre para Escolher",
-              "download_url": ""
-            }
+            { "title": "Capitalismo e Liberdade", "download_url": "" },
+            { "title": "Uma História Monetária dos EUA", "download_url": "" },
+            { "title": "Livre para Escolher", "download_url": "" }
           ]
         },
         {
@@ -1452,313 +813,165 @@
           "name": "Rawls",
           "period": "1921–2002",
           "description": "Justiça como equidade: véu da ignorância e princípio da diferença.",
-          "tags": [
-            "freedom",
-            "state",
-            "rupture",
-            "individual",
-            "collective",
-            "rational"
-          ],
+          "tags": ["freedom", "state", "rupture", "individual", "collective", "rational", "idealist", "universalist"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdades básicas iguais como primeiro princípio intocável",
-            "state_vs_market": "Estado redistributivo: desigualdades só são justas se beneficiam os mais pobres",
-            "tradition_vs_rupture": "Ruptura com o utilitarismo: direitos individuais não podem ser sacrificados pela soma",
-            "individual_vs_collective": "Síntese: liberdades individuais + redistribuição coletiva",
-            "method": "Racional-construtivista: experimento mental do véu da ignorância"
+            "freedom_vs_authority": "Liberdades básicas iguais são o primeiro princípio, lexicalmente superior à igualdade econômica.",
+            "state_vs_market": "Estado redistributivo: desigualdades só são justas se beneficiam os membros menos favorecidos.",
+            "tradition_vs_rupture": "Ruptura com o utilitarismo: os direitos individuais não podem ser sacrificados pela soma agregada.",
+            "individual_vs_collective": "Síntese construtivista: liberdades individuais protegidas + redistribuição coletiva por equidade.",
+            "method": "Racional-construtivista: o véu da ignorância como dispositivo para derivar princípios justos.",
+            "anthropology": "Otimista: os seres humanos são razoáveis e capazes de cooperação social equitativa.",
+            "scope": "Universalista: os princípios de justiça são válidos para qualquer sociedade bem-ordenada."
           },
-          "historical_context": "EUA pós-guerra; movimento pelos direitos civis; debate liberalismo vs. utilitarismo",
-          "influences": [
-            "Kant",
-            "Mill",
-            "Contratualismo clássico"
-          ],
-          "impact": [
-            "Social-liberalismo",
-            "Democracia deliberativa",
-            "Habermas (diálogo crítico)"
-          ],
+          "historical_context": "EUA pós-guerra; movimento pelos direitos civis; debate liberal vs. utilitarismo; resposta a Nozick.",
+          "influences": ["Kant", "Mill", "Contratualismo clássico"],
+          "impact": ["Social-liberalismo", "Democracia deliberativa", "Habermas (diálogo crítico)"],
           "works": [
-            {
-              "title": "Uma Teoria da Justiça",
-              "download_url": ""
-            },
-            {
-              "title": "O Liberalismo Político",
-              "download_url": ""
-            },
-            {
-              "title": "O Direito dos Povos",
-              "download_url": ""
-            }
+            { "title": "Uma Teoria da Justiça", "download_url": "" },
+            { "title": "O Liberalismo Político", "download_url": "" },
+            { "title": "O Direito dos Povos", "download_url": "" }
           ]
         },
         {
           "id": "foucault",
           "name": "Foucault",
           "period": "1926–1984",
-          "description": "Poder e saber; genealogia das instituições disciplinares modernas.",
-          "tags": [
-            "freedom",
-            "rupture",
-            "individual",
-            "historical",
-            "dialectic"
-          ],
+          "description": "Poder e saber; genealogia das instituições disciplinares da modernidade.",
+          "tags": ["freedom", "rupture", "individual", "historical", "dialectic"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade = resistência a dispositivos de poder que constituem o sujeito",
-            "state_vs_market": "Critica tanto o Estado quanto as formas de poder difuso — clínicas, prisões, escolas",
-            "tradition_vs_rupture": "Ruptura genealógica: toda verdade é efeito de relações de poder",
-            "individual_vs_collective": "Individual-crítico: o sujeito é constituído pelo poder, mas pode se recusar",
-            "method": "Genealógico-arqueológico: rastreia a emergência histórica dos discursos"
+            "freedom_vs_authority": "Liberdade como resistência permanente aos dispositivos de poder que nos constituem como sujeitos.",
+            "state_vs_market": "Critica tanto o Estado quanto o poder difuso e capilar — clínicas, prisões, escolas, família.",
+            "tradition_vs_rupture": "Ruptura arqueológica: toda 'verdade' é efeito de relações de poder histórico e contingente.",
+            "individual_vs_collective": "Individual-crítico: o sujeito é constituído pelo poder, mas pode resistir e se reconstituir.",
+            "method": "Genealógico-arqueológico: rastreia a emergência histórica de discursos e práticas.",
+            "anthropology": "Pessimista quanto à naturalidade: não há sujeito pré-discursivo; somos efeitos do poder-saber.",
+            "scope": "Contextual: cada formação discursiva tem sua episteme; não há progresso universal."
           },
-          "historical_context": "França pós-guerra; maio de 1968; expansão das ciências humanas",
-          "influences": [
-            "Nietzsche (método)",
-            "Heidegger",
-            "Canguilhem"
-          ],
-          "impact": [
-            "Estudos de gênero e sexualidade",
-            "Teoria queer",
-            "Estudos pós-coloniais",
-            "Butler"
-          ],
+          "historical_context": "França pós-guerra; maio de 1968; expansão das ciências humanas; movimentos de minorias.",
+          "influences": ["Nietzsche (método)", "Heidegger", "Canguilhem"],
+          "impact": ["Estudos de gênero e sexualidade", "Teoria queer", "Estudos pós-coloniais", "Butler"],
           "works": [
-            {
-              "title": "Vigiar e Punir",
-              "download_url": ""
-            },
-            {
-              "title": "A História da Sexualidade",
-              "download_url": ""
-            },
-            {
-              "title": "As Palavras e as Coisas",
-              "download_url": ""
-            }
+            { "title": "Vigiar e Punir", "download_url": "" },
+            { "title": "A História da Sexualidade", "download_url": "" },
+            { "title": "As Palavras e as Coisas", "download_url": "" }
           ]
         },
         {
           "id": "habermas",
           "name": "Habermas",
-          "period": "1929–present",
-          "description": "Democracia deliberativa e racionalidade comunicativa como fundamento político.",
-          "tags": [
-            "freedom",
-            "state",
-            "rupture",
-            "collective",
-            "rational",
-            "dialectic"
-          ],
+          "period": "1929–presente",
+          "description": "Democracia deliberativa e racionalidade comunicativa como fundamento da legitimidade política.",
+          "tags": ["freedom", "state", "rupture", "collective", "rational", "dialectic", "universalist"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade comunicativa: falar sem coerção em espaço público racional",
-            "state_vs_market": "Estado democrático de direito como mediador do capitalismo",
-            "tradition_vs_rupture": "Ruptura com o pessimismo de Adorno/Horkheimer — a razão pode ser redimida",
-            "individual_vs_collective": "Coletivo-comunicativo: a legitimidade vem do discurso público livre",
-            "method": "Racional-comunicativo: teoria da ação comunicativa vs. estratégica"
+            "freedom_vs_authority": "Liberdade comunicativa: o discurso racional livre de coerção como base da legitimidade.",
+            "state_vs_market": "Estado democrático de direito como mediador necessário entre capitalismo e mundo da vida.",
+            "tradition_vs_rupture": "Ruptura com o pessimismo de Adorno e Horkheimer: o projeto iluminista é incompleto, não falido.",
+            "individual_vs_collective": "Coletivo-comunicativo: a legitimidade nasce do discurso público intersubjetivo, não da vontade individual.",
+            "method": "Racional-comunicativo: distingue ação comunicativa (orientada ao entendimento) de ação estratégica.",
+            "anthropology": "Otimista: os seres humanos são capazes de razão comunicativa e de aprendizado moral coletivo.",
+            "scope": "Universalista: a ética do discurso e os direitos humanos são válidos para toda a humanidade."
           },
-          "historical_context": "Alemanha pós-guerra; Escola de Frankfurt; crise da razão iluminista",
-          "influences": [
-            "Escola de Frankfurt",
-            "Mead",
-            "Rawls (diálogo crítico)"
-          ],
-          "impact": [
-            "Democracia deliberativa",
-            "Constitucionalismo cosmopolita",
-            "Teoria do direito"
-          ],
+          "historical_context": "Alemanha pós-guerra; Escola de Frankfurt; debate Popper-Adorno; crise da razão iluminista.",
+          "influences": ["Escola de Frankfurt", "Mead", "Rawls (diálogo crítico)"],
+          "impact": ["Democracia deliberativa", "Constitucionalismo cosmopolita", "Teoria do direito"],
           "works": [
-            {
-              "title": "Teoria da Ação Comunicativa",
-              "download_url": ""
-            },
-            {
-              "title": "Direito e Democracia",
-              "download_url": ""
-            }
+            { "title": "Teoria da Ação Comunicativa", "download_url": "" },
+            { "title": "Direito e Democracia", "download_url": "" }
           ]
         },
         {
           "id": "derrida",
           "name": "Derrida",
           "period": "1930–2004",
-          "description": "Desconstrução: todo texto contém contradições que subvertem sua unidade.",
-          "tags": [
-            "freedom",
-            "rupture",
-            "individual",
-            "rational",
-            "historical"
-          ],
+          "description": "Desconstrução: todo texto contém contradições que subvertem sua aparente unidade.",
+          "tags": ["freedom", "rupture", "individual", "rational", "historical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade = abertura ao outro, à différance irredutível",
-            "state_vs_market": "Desconstrói as categorias — propriedade, soberania — sem propor sistema",
-            "tradition_vs_rupture": "Ruptura com toda presença, origem e centro — logocentrismo ocidental",
-            "individual_vs_collective": "Individual-outro: a alteridade radical como fundamento ético",
-            "method": "Desconstrução: lê os textos contra si mesmos para revelar suas aporias"
+            "freedom_vs_authority": "Liberdade como abertura radical ao outro e à différance irredutível de todo sentido.",
+            "state_vs_market": "Desconstrói as categorias fundantes — propriedade, soberania, identidade — sem propor sistema.",
+            "tradition_vs_rupture": "Ruptura com a metafísica da presença e com o logocentrismo de toda a filosofia ocidental.",
+            "individual_vs_collective": "Individual-outro: a alteridade radical do outro é o fundamento de toda ética possível.",
+            "method": "Desconstrução: lê os textos contra si mesmos para revelar suas aporias e suplementos.",
+            "anthropology": "Mista: não há sujeito pleno nem ausente; o sujeito é efeito de diferença e iteração.",
+            "scope": "Contextual: a desconstrução não produz fundamentos universais, apenas abre cada texto ao outro."
           },
-          "historical_context": "França pós-estruturalista; pós-maio de 1968; crise das metanarrativas",
-          "influences": [
-            "Heidegger",
-            "Husserl",
-            "Nietzsche",
-            "Freud"
-          ],
-          "impact": [
-            "Teoria pós-colonial",
-            "Estudos literários críticos",
-            "Butler",
-            "Spivak"
-          ],
+          "historical_context": "França pós-estruturalista; pós-maio de 1968; crise das grandes narrativas.",
+          "influences": ["Heidegger", "Husserl", "Nietzsche", "Freud"],
+          "impact": ["Teoria pós-colonial", "Estudos literários críticos", "Butler", "Spivak"],
           "works": [
-            {
-              "title": "Gramatologia",
-              "download_url": ""
-            },
-            {
-              "title": "A Escritura e a Diferença",
-              "download_url": ""
-            },
-            {
-              "title": "Espectros de Marx",
-              "download_url": ""
-            }
+            { "title": "Gramatologia", "download_url": "" },
+            { "title": "A Escritura e a Diferença", "download_url": "" },
+            { "title": "Espectros de Marx", "download_url": "" }
           ]
         },
         {
           "id": "nozick",
           "name": "Nozick",
-          "period": "1934–2002",
-          "description": "Estado mínimo: redistribuição forçada viola direitos individuais.",
-          "tags": [
-            "freedom",
-            "market",
-            "tradition",
-            "individual",
-            "rational"
-          ],
+          "period": "1938–2002",
+          "description": "Estado mínimo: qualquer redistribuição forçada viola direitos individuais invioláveis.",
+          "tags": ["freedom", "market", "tradition", "individual", "rational"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade como inviolabilidade dos direitos — nenhum fim justifica violá-los",
-            "state_vs_market": "Estado ultra-mínimo: apenas proteção contra força e fraude",
-            "tradition_vs_rupture": "Tradição liberal lockeana contra o igualitarismo contemporâneo",
-            "individual_vs_collective": "Individual absoluto: os indivíduos não são recursos da sociedade",
-            "method": "Racional-analítico: argumentação filosófica formal"
+            "freedom_vs_authority": "Liberdade como inviolabilidade absoluta dos direitos: nenhum objetivo coletivo justifica violá-los.",
+            "state_vs_market": "Estado ultra-mínimo: apenas proteção contra força, roubo e fraude; qualquer mais é ilegítimo.",
+            "tradition_vs_rupture": "Tradição liberal lockeana contra o igualitarismo contemporâneo de Rawls e seus herdeiros.",
+            "individual_vs_collective": "Individual absoluto: as pessoas têm direitos e não podem ser sacrificadas como recursos da sociedade.",
+            "method": "Racional-analítico: argumentação filosófica formal a partir de direitos individuais pré-políticos.",
+            "anthropology": "Mista: os seres humanos são fins em si mesmos e não devem ser tratados como meios.",
+            "scope": "Universalista: os direitos individuais invioláveis valem para qualquer ser humano em qualquer contexto."
           },
-          "historical_context": "EUA dos anos 70; resposta direta a Rawls",
-          "influences": [
-            "Locke",
-            "Kant",
-            "Hayek"
-          ],
-          "impact": [
-            "Libertarismo de direita",
-            "Filosofia do Estado mínimo",
-            "Anarco-capitalismo"
-          ],
+          "historical_context": "EUA dos anos 70; resposta direta e polêmica a Rawls; ascensão do libertarismo.",
+          "influences": ["Locke", "Kant", "Hayek"],
+          "impact": ["Libertarismo de direita", "Filosofia do Estado mínimo", "Anarco-capitalismo"],
           "works": [
-            {
-              "title": "Anarquia, Estado e Utopia",
-              "download_url": ""
-            },
-            {
-              "title": "Examinadas as Vidas",
-              "download_url": ""
-            }
+            { "title": "Anarquia, Estado e Utopia", "download_url": "" },
+            { "title": "Examinadas as Vidas", "download_url": "" }
           ]
         },
         {
           "id": "scruton",
           "name": "Roger Scruton",
-          "period": "1935–2020",
-          "description": "Defesa filosófica do conservadorismo: tradição, beleza e sentido de lugar.",
-          "tags": [
-            "authority",
-            "state",
-            "tradition",
-            "collective",
-            "empirical",
-            "historical"
-          ],
+          "period": "1944–2020",
+          "description": "Defesa filosófica do conservadorismo: tradição, beleza e sentido de pertencimento.",
+          "tags": ["authority", "state", "tradition", "collective", "empirical", "historical", "particularist"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade ordenada: a lei e a tradição como condições da liberdade real",
-            "state_vs_market": "Mercado moderado dentro de uma ordem cultural que o transcende",
-            "tradition_vs_rupture": "Anti-ruptura: o conservadorismo não é ideologia mas memória institucionalizada",
-            "individual_vs_collective": "Coletivo-orgânico: a nação e a herança cultural como lar do indivíduo",
-            "method": "Histórico-fenomenológico: estética e arquitetura como acesso ao político"
+            "freedom_vs_authority": "Liberdade ordenada: a lei, a moral e a tradição são condições, não obstáculos, da verdadeira liberdade.",
+            "state_vs_market": "Mercado necessário, mas subordinado a uma ordem cultural e moral que o transcende.",
+            "tradition_vs_rupture": "Anti-ruptura radical: o conservadorismo não é ideologia, mas memória ativa do que funcionou.",
+            "individual_vs_collective": "Coletivo-orgânico: a nação, a família e a herança cultural são o lar constitutivo do indivíduo.",
+            "method": "Histórico-fenomenológico: a estética, a arquitetura e a arte como acesso privilegiado ao político.",
+            "anthropology": "Pessimista: os seres humanos são frágeis e precisam de estruturas morais e institucionais.",
+            "scope": "Particularista: cada nação tem sua tradição específica; não há conservadorismo universal."
           },
-          "historical_context": "Inglaterra pós-68; ascensão do relativismo cultural e do multiculturalismo",
-          "influences": [
-            "Burke",
-            "Wittgenstein",
-            "T.S. Eliot",
-            "Hegel"
-          ],
-          "impact": [
-            "Conservadorismo anglófono filosófico",
-            "Pensamento cristão-democrata europeu"
-          ],
+          "historical_context": "Inglaterra pós-68; ascensão do relativismo cultural e do multiculturalismo; era Thatcher.",
+          "influences": ["Burke", "Wittgenstein", "T.S. Eliot", "Hegel"],
+          "impact": ["Conservadorismo anglófono filosófico", "Pensamento cristão-democrata europeu"],
           "works": [
-            {
-              "title": "O Significado do Conservadorismo",
-              "download_url": ""
-            },
-            {
-              "title": "Filosofia Verde",
-              "download_url": ""
-            },
-            {
-              "title": "Beleza",
-              "download_url": ""
-            }
+            { "title": "O Significado do Conservadorismo", "download_url": "" },
+            { "title": "Filosofia Verde", "download_url": "" },
+            { "title": "Beleza", "download_url": "" }
           ]
         },
         {
           "id": "bauman",
           "name": "Bauman",
           "period": "1925–2017",
-          "description": "Modernidade líquida: identidades e vínculos cada vez mais fluidos.",
-          "tags": [
-            "rupture",
-            "state",
-            "collective",
-            "historical",
-            "empirical"
-          ],
+          "description": "Modernidade líquida: identidades, vínculos e certezas se tornam cada vez mais fluidos.",
+          "tags": ["rupture", "state", "collective", "historical", "empirical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade líquida: sedutora mas geradora de ansiedade e solidão",
-            "state_vs_market": "Capitalismo tardio dissolve comunidades e converte cidadãos em consumidores",
-            "tradition_vs_rupture": "Diagnóstico da ruptura: a modernidade nunca para de se dissolver",
-            "individual_vs_collective": "Coletivo em crise: a solidariedade é solapada pela individualização forçada",
-            "method": "Sociológico-histórico com forte dimensão ensaística e cultural"
+            "freedom_vs_authority": "Liberdade líquida: sedutora na superfície, geradora de ansiedade existencial e solidão na profundidade.",
+            "state_vs_market": "O capitalismo tardio dissolve comunidades, converte cidadãos em consumidores e o Estado em gerente.",
+            "tradition_vs_rupture": "Diagnóstico da ruptura permanente: a modernidade nunca para de dissolver o que ela mesma construiu.",
+            "individual_vs_collective": "Coletivo em crise: a solidariedade orgânica é solapada pela individualização forçada do mercado.",
+            "method": "Sociológico-histórico com dimensão ensaística e cultural: diagnósticos de época.",
+            "anthropology": "Mista: os seres humanos precisam de vínculos estáveis; a liquidez os priva disso.",
+            "scope": "Contextual: a modernidade líquida é uma condição histórica específica do capitalismo tardio global."
           },
-          "historical_context": "Globalização; colapso do bloco soviético; crise das identidades coletivas",
-          "influences": [
-            "Marx",
-            "Gramsci",
-            "Escola de Frankfurt",
-            "Simmel"
-          ],
-          "impact": [
-            "Sociologia crítica",
-            "Estudos sobre consumo",
-            "Debates sobre comunidade"
-          ],
+          "historical_context": "Globalização; colapso do bloco soviético; crise das identidades coletivas e do Estado-nação.",
+          "influences": ["Marx", "Gramsci", "Escola de Frankfurt", "Simmel"],
+          "impact": ["Sociologia crítica", "Estudos sobre consumo e identidade", "Debates sobre comunidade e pertencimento"],
           "works": [
-            {
-              "title": "Modernidade Líquida",
-              "download_url": ""
-            },
-            {
-              "title": "Medo Líquido",
-              "download_url": ""
-            },
-            {
-              "title": "Modernidade e Holocausto",
-              "download_url": ""
-            }
+            { "title": "Modernidade Líquida", "download_url": "" },
+            { "title": "Medo Líquido", "download_url": "" },
+            { "title": "Modernidade e Holocausto", "download_url": "" }
           ]
         }
       ]
@@ -1770,47 +983,25 @@
         {
           "id": "zizek",
           "name": "Žižek",
-          "period": "1949–present",
-          "description": "Marxismo lacaniano; critica o capitalismo liberal e a esquerda identitária.",
-          "tags": [
-            "rupture",
-            "state",
-            "collective",
-            "dialectic",
-            "historical"
-          ],
+          "period": "1949–presente",
+          "description": "Marxismo lacaniano; critica simultaneamente o capitalismo liberal e a esquerda identitária.",
+          "tags": ["rupture", "state", "collective", "dialectic", "historical"],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade real exige romper com a ideologia que a constitui como desejo",
-            "state_vs_market": "Capitalismo como Real lacaniano — aquilo que não para de não funcionar",
-            "tradition_vs_rupture": "Ruptura com o consenso liberal E com a esquerda identitária contemporânea",
-            "individual_vs_collective": "Coletivo-universal: a política de identidade fragmenta a classe trabalhadora",
-            "method": "Dialético com psicanálise lacaniana: lê cultura pop e política com Hegel"
+            "freedom_vs_authority": "Liberdade real exige romper com a própria ideologia que constitui nossos desejos e identidades.",
+            "state_vs_market": "O capitalismo é o Real lacaniano: aquilo que não para de não funcionar e por isso persiste.",
+            "tradition_vs_rupture": "Dupla ruptura: com o consenso liberal-democrático E com a esquerda identitária e politicamente correta.",
+            "individual_vs_collective": "Coletivo-universal: a política de identidade fragmenta a classe trabalhadora e serve ao capital.",
+            "method": "Dialético com psicanálise lacaniana: lê fenômenos da cultura pop e da política com Hegel e Lacan.",
+            "anthropology": "Pessimista quanto à ideologia: o sujeito é clivado; nunca sabe o que realmente quer.",
+            "scope": "Universalista provocador: propõe posições universais contra o relativismo cultural da esquerda identitária."
           },
-          "historical_context": "Pós-queda do muro; ascensão do politicamente correto; crise da esquerda",
-          "influences": [
-            "Marx",
-            "Lacan",
-            "Hegel",
-            "Althusser"
-          ],
-          "impact": [
-            "Esquerda intelectual pós-89",
-            "Teoria crítica",
-            "Populismo de esquerda (debate Laclau)"
-          ],
+          "historical_context": "Pós-queda do Muro de Berlim; ascensão do politicamente correto; crise orgânica da esquerda.",
+          "influences": ["Marx", "Lacan", "Hegel", "Althusser"],
+          "impact": ["Esquerda intelectual pós-89", "Teoria crítica", "Populismo de esquerda (debate Laclau-Mouffe)"],
           "works": [
-            {
-              "title": "O Sublime Objeto da Ideologia",
-              "download_url": ""
-            },
-            {
-              "title": "Bem-vindo ao Deserto do Real",
-              "download_url": ""
-            },
-            {
-              "title": "Em Defesa das Causas Perdidas",
-              "download_url": ""
-            }
+            { "title": "O Sublime Objeto da Ideologia", "download_url": "" },
+            { "title": "Bem-vindo ao Deserto do Real", "download_url": "" },
+            { "title": "Em Defesa das Causas Perdidas", "download_url": "" }
           ]
         }
       ]

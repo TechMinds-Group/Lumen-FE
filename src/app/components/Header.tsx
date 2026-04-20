@@ -1,4 +1,4 @@
-import { Search, X, Menu, Filter } from 'lucide-react';
+import { Search, X, Menu, Filter, BarChart3, BookCheck } from 'lucide-react';
 import { useState } from 'react';
 
 interface Axis {
@@ -16,6 +16,10 @@ interface HeaderProps {
   onClearFilters: () => void;
   onMenuClick: () => void;
   tagLabels: Record<string, string>;
+  showOnlyRead: boolean;
+  onToggleShowOnlyRead: () => void;
+  totalReadWorks: number;
+  onOpenProfile: () => void;
 }
 
 export function Header({
@@ -26,7 +30,11 @@ export function Header({
   onFilterChange,
   onClearFilters,
   onMenuClick,
-  tagLabels
+  tagLabels,
+  showOnlyRead,
+  onToggleShowOnlyRead,
+  totalReadWorks,
+  onOpenProfile
 }: HeaderProps) {
   const [showFilters, setShowFilters] = useState(false);
   const hasActiveFilters = Object.values(selectedFilters).some(v => v !== 'all');
@@ -62,6 +70,28 @@ export function Header({
               <span className="w-2 h-2 bg-[#e74c3c] rounded-full"></span>
             )}
           </button>
+
+          <button
+            onClick={onToggleShowOnlyRead}
+            className={`hidden lg:flex items-center gap-2 px-4 py-2 rounded-lg transition-colors whitespace-nowrap text-sm ${
+              showOnlyRead
+                ? 'bg-emerald-600 text-white hover:bg-emerald-700'
+                : 'bg-[#ecf0f1] text-[#2c3e50] hover:bg-[#dfe6e9]'
+            }`}
+          >
+            <BookCheck size={16} />
+            Apenas Lidas
+          </button>
+
+          {totalReadWorks > 0 && (
+            <button
+              onClick={onOpenProfile}
+              className="hidden lg:flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors whitespace-nowrap text-sm"
+            >
+              <BarChart3 size={16} />
+              Ver Perfil ({totalReadWorks})
+            </button>
+          )}
 
           {hasActiveFilters && (
             <button
@@ -105,6 +135,35 @@ export function Header({
                 );
               }
 
+              // Renderizar eixos binários (2 valores) como toggles
+              if (axis.values.length === 2) {
+                return (
+                  <div key={axis.id} className="w-full lg:w-auto">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-2 px-3 py-2 lg:py-1.5 bg-[#ecf0f1] rounded-lg">
+                      <span className="text-xs text-[#7f8c8d] font-medium lg:font-normal">
+                        {axis.label}:
+                      </span>
+                      <div className="flex flex-wrap gap-1.5 lg:gap-1">
+                        {axis.values.map((value) => (
+                          <button
+                            key={value}
+                            onClick={() => onFilterChange(axis.id, value)}
+                            className={`px-2.5 lg:px-2 py-1 lg:py-0.5 text-xs rounded transition-colors ${
+                              selectedFilters[axis.id] === value
+                                ? 'bg-[#2c3e50] text-white'
+                                : 'bg-white text-[#2c3e50] hover:bg-[#34495e]/10'
+                            }`}
+                          >
+                            {tagLabels[value] || value.charAt(0).toUpperCase() + value.slice(1)}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
+
+              // Renderizar eixos com 3+ valores (incluindo Estado vs Mercado com Comunidade)
               return (
                 <div key={axis.id} className="w-full lg:w-auto">
                   <div className="flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-2 px-3 py-2 lg:py-1.5 bg-[#ecf0f1] rounded-lg">

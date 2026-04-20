@@ -1,6 +1,6 @@
 {
   "title": "Pensadores políticos — mapa multidimensional",
-  "version": "1.0",
+  "version": "2.0",
   "axes": [
     {
       "id": "freedom_vs_authority",
@@ -10,7 +10,7 @@
     {
       "id": "state_vs_market",
       "label": "Estado vs. Mercado",
-      "values": ["state", "market"]
+      "values": ["state", "market", "community"]
     },
     {
       "id": "tradition_vs_rupture",
@@ -25,7 +25,17 @@
     {
       "id": "method",
       "label": "Método",
-      "values": ["rational", "empirical", "dialectic", "historical"]
+      "values": ["rational", "empirical", "dialectic", "historical", "idealist", "realist"]
+    },
+    {
+      "id": "anthropology",
+      "label": "Antropologia Filosófica",
+      "values": ["optimistic", "pessimistic"]
+    },
+    {
+      "id": "scope",
+      "label": "Escopo de Aplicação",
+      "values": ["universalist", "particularist"]
     }
   ],
   "tag_labels": {
@@ -33,6 +43,7 @@
     "authority": "Autoridade",
     "state": "Estado forte",
     "market": "Mercado livre",
+    "community": "Comunidade",
     "tradition": "Tradição",
     "rupture": "Ruptura",
     "individual": "Individual",
@@ -40,14 +51,22 @@
     "rational": "Racional",
     "empirical": "Empírico",
     "dialectic": "Dialético",
-    "historical": "Histórico"
+    "historical": "Histórico",
+    "idealist": "Idealista",
+    "realist": "Realista",
+    "optimistic": "Otimista",
+    "pessimistic": "Pessimista",
+    "universalist": "Universal",
+    "particularist": "Particular"
   },
   "dimension_labels": {
     "freedom_vs_authority": "Liberdade vs. Autoridade",
     "state_vs_market": "Estado vs. Mercado",
     "tradition_vs_rupture": "Tradição vs. Ruptura",
     "individual_vs_collective": "Individual vs. Coletivo",
-    "method": "Método"
+    "method": "Método",
+    "anthropology": "Antropologia Filosófica",
+    "scope": "Escopo de Aplicação"
   },
   "field_labels": {
     "historical_context": "Contexto Histórico",

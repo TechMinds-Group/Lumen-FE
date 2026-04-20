@@ -2,6 +2,8 @@ import { useState, useRef } from "react";
 import { Sidebar } from "./components/Sidebar";
 import { Header } from "./components/Header";
 import { ThinkerCard } from "./components/ThinkerCard";
+import { PoliticalProfile } from "./components/PoliticalProfile";
+import { useReadingProgress } from "./hooks/useReadingProgress";
 import thinkersData from "../../assets/thinkers.json";
 import metaData from "../../assets/meta.json";
 
@@ -12,6 +14,10 @@ export default function App() {
   >({});
   const [activeEra, setActiveEra] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [showOnlyRead, setShowOnlyRead] = useState(false);
+  const [profileOpen, setProfileOpen] = useState(false);
+
+  const { readWorks, toggleWork, isWorkRead, clearAll } = useReadingProgress();
 
   const eraRefs = useRef<Record<string, HTMLElement | null>>(
     {},
@@ -61,9 +67,15 @@ export default function App() {
         return thinker.tags.includes(value);
       });
 
-      return matchesSearch && matchesFilters;
+      const matchesReadFilter = !showOnlyRead ||
+        (thinker.works && thinker.works.some((w: any) => isWorkRead(thinker.id, w.title)));
+
+      return matchesSearch && matchesFilters && matchesReadFilter;
     });
   };
+
+  const allThinkers = thinkersData.eras.flatMap(era => era.thinkers);
+  const totalReadWorks = readWorks.length;
 
   return (
     <div className="h-screen flex bg-[#f5f4f0]">
@@ -85,6 +97,10 @@ export default function App() {
           onClearFilters={handleClearFilters}
           onMenuClick={() => setSidebarOpen(true)}
           tagLabels={metaData.tag_labels}
+          showOnlyRead={showOnlyRead}
+          onToggleShowOnlyRead={() => setShowOnlyRead(!showOnlyRead)}
+          totalReadWorks={totalReadWorks}
+          onOpenProfile={() => setProfileOpen(true)}
         />
 
         <main className="flex-1 overflow-y-auto">
@@ -105,9 +121,19 @@ export default function App() {
                   className="mb-8 lg:mb-12"
                 >
                   <div className="mb-4 lg:mb-6">
-                    <h2 className="text-xs uppercase tracking-wider text-[#7f8c8d] mb-1">
-                      {era.label}
-                    </h2>
+                    <div className="flex items-center justify-between mb-1">
+                      <h2 className="text-xs uppercase tracking-wider text-[#7f8c8d]">
+                        {era.label}
+                      </h2>
+                      <span className="text-xs text-emerald-600 font-medium">
+                        {era.thinkers.reduce((sum, t) => {
+                          const readInThisAuthor = t.works?.filter((w: any) =>
+                            isWorkRead(t.id, w.title)
+                          ).length || 0;
+                          return sum + readInThisAuthor;
+                        }, 0)}/{era.thinkers.reduce((sum, t) => sum + (t.works?.length || 0), 0)} obras lidas
+                      </span>
+                    </div>
                     <div className="h-px bg-[#e5e3df]"></div>
                   </div>
 
@@ -121,6 +147,8 @@ export default function App() {
                           metaData.dimension_labels
                         }
                         fieldLabels={metaData.field_labels}
+                        isWorkRead={isWorkRead}
+                        onToggleWork={toggleWork}
                       />
                     ))}
                   </div>
@@ -141,6 +169,15 @@ export default function App() {
             )}
           </div>
         </main>
+
+        <PoliticalProfile
+          thinkers={allThinkers}
+          readWorks={readWorks}
+          tagLabels={metaData.tag_labels}
+          onClear={clearAll}
+          isOpen={profileOpen}
+          onClose={() => setProfileOpen(false)}
+        />
       </div>
     </div>
   );

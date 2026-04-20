@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { ChevronRight, Download } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
+import { DimensionBadge } from './DimensionBadge';
+import { WorkCheckbox } from './WorkCheckbox';
 
 interface Work {
   title: string;
@@ -24,6 +26,8 @@ interface ThinkerCardProps {
   tagLabels: Record<string, string>;
   dimensionLabels: Record<string, string>;
   fieldLabels: Record<string, string>;
+  isWorkRead: (thinkerId: string, workTitle: string) => boolean;
+  onToggleWork: (thinkerId: string, workTitle: string) => void;
 }
 
 const TAG_COLORS: Record<string, string> = {
@@ -31,17 +35,24 @@ const TAG_COLORS: Record<string, string> = {
   authority: 'bg-red-50 text-red-700 border-red-200',
   state: 'bg-purple-50 text-purple-700 border-purple-200',
   market: 'bg-green-50 text-green-700 border-green-200',
-  tradition: 'bg-amber-50 text-amber-800 border-amber-200',
-  rupture: 'bg-orange-50 text-orange-700 border-orange-200',
+  community: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+  tradition: 'bg-sky-50 text-sky-800 border-sky-300',
+  rupture: 'bg-red-100 text-red-800 border-red-300',
   individual: 'bg-cyan-50 text-cyan-700 border-cyan-200',
   collective: 'bg-indigo-50 text-indigo-700 border-indigo-200',
-  rational: 'bg-pink-50 text-pink-700 border-pink-200',
-  empirical: 'bg-teal-50 text-teal-700 border-teal-200',
+  rational: 'bg-pink-50 text-pink-700 border-pink-300 font-medium',
+  empirical: 'bg-teal-50 text-teal-700 border-teal-300 font-medium',
   dialectic: 'bg-violet-50 text-violet-700 border-violet-200',
-  historical: 'bg-rose-50 text-rose-700 border-rose-200'
+  historical: 'bg-rose-50 text-rose-700 border-rose-200',
+  idealist: 'bg-purple-50 text-purple-800 border-purple-300 font-medium',
+  realist: 'bg-gray-100 text-gray-800 border-gray-400 font-medium',
+  optimistic: 'bg-yellow-50 text-yellow-800 border-yellow-300',
+  pessimistic: 'bg-slate-100 text-slate-800 border-slate-400',
+  universalist: 'bg-blue-100 text-blue-800 border-blue-300',
+  particularist: 'bg-orange-50 text-orange-800 border-orange-300'
 };
 
-export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels }: ThinkerCardProps) {
+export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, isWorkRead, onToggleWork }: ThinkerCardProps) {
   const [showDetails, setShowDetails] = useState(false);
 
   const influences = thinker.influences || [];
@@ -62,15 +73,28 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels }
           </h3>
         </div>
 
-        <div className="flex flex-wrap gap-1.5 mb-3">
-          {thinker.tags.map((tag) => (
-            <span
-              key={tag}
-              className={`px-2 py-0.5 rounded text-xs border ${TAG_COLORS[tag] || 'bg-gray-50 text-gray-700 border-gray-200'}`}
-            >
-              {tagLabels[tag] || tag}
-            </span>
-          ))}
+        <div className="space-y-2 mb-3">
+          <div className="flex flex-wrap gap-1.5">
+            {thinker.tags.map((tag) => (
+              <span
+                key={tag}
+                className={`px-2 py-0.5 rounded text-xs border ${TAG_COLORS[tag] || 'bg-gray-50 text-gray-700 border-gray-200'}`}
+              >
+                {tagLabels[tag] || tag}
+              </span>
+            ))}
+          </div>
+
+          {thinker.dimensions && (
+            <div className="flex flex-wrap gap-2">
+              {thinker.dimensions.anthropology && (
+                <DimensionBadge type="anthropology" value={thinker.dimensions.anthropology} />
+              )}
+              {thinker.dimensions.scope && (
+                <DimensionBadge type="scope" value={thinker.dimensions.scope} />
+              )}
+            </div>
+          )}
         </div>
 
         <p className="text-sm text-[#4a4a4a] leading-relaxed">
@@ -106,10 +130,10 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels }
             <div className="text-xs font-medium text-[#7f8c8d] mb-2">
               {fieldLabels.dimensions || 'Dimensões'}
             </div>
-            <div className="space-y-2">
+            <div className="grid sm:grid-cols-2 gap-x-4 gap-y-2">
               {Object.entries(thinker.dimensions).map(([key, value]) => (
                 <div key={key} className="text-xs">
-                  <span className="text-[#7f8c8d]">
+                  <span className="text-[#7f8c8d] font-medium">
                     {dimensionLabels[key] || key.replace(/_/g, ' ')}:
                   </span>{' '}
                   <span className="text-[#2c3e50]">{value}</span>
@@ -163,38 +187,23 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels }
 
           {works.length > 0 && (
             <div>
-              <div className="text-xs font-medium text-[#7f8c8d] mb-2">
-                {fieldLabels.works || 'Obras Principais'}
+              <div className="flex items-center justify-between mb-2">
+                <div className="text-xs font-medium text-[#7f8c8d]">
+                  {fieldLabels.works || 'Obras Principais'}
+                </div>
+                <div className="text-xs text-emerald-600 font-medium">
+                  {works.filter((w: Work) => isWorkRead(thinker.id, w.title)).length}/{works.length} lidas
+                </div>
               </div>
               <div className="space-y-1.5">
-                {works.map((work, idx) => {
-                  const hasValidUrl = work.download_url &&
-                    work.download_url.trim() !== '';
-
-                  return (
-                    <div key={idx} className="flex items-center justify-between gap-2 p-2 bg-[#faf9f7] rounded border border-[#e5e3df] hover:bg-[#f5f4f0] transition-colors">
-                      <span className="text-xs text-[#2c3e50] flex-1">{work.title}</span>
-                      {hasValidUrl ? (
-                        <a
-                          href={`https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/${work.download_url}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-1 px-2 py-1 bg-[#2c3e50] text-white rounded text-xs hover:bg-[#34495e] transition-colors"
-                          onClick={(e) => e.stopPropagation()}
-                        >
-                          <Download size={12} />
-                          <span className="hidden sm:inline">Baixar</span>
-                        </a>
-                      ) : (
-                        <span className="flex items-center gap-1 px-2 py-1 bg-amber-50 text-amber-700 rounded text-xs border border-amber-200">
-                          <span className="text-[10px]">⚠️</span>
-                          <span className="hidden sm:inline">Indisponível</span>
-                          <span className="sm:hidden">N/D</span>
-                        </span>
-                      )}
-                    </div>
-                  );
-                })}
+                {works.map((work, idx) => (
+                  <WorkCheckbox
+                    key={idx}
+                    work={work}
+                    isRead={isWorkRead(thinker.id, work.title)}
+                    onToggle={() => onToggleWork(thinker.id, work.title)}
+                  />
+                ))}
               </div>
             </div>
           )}
