@@ -11,10 +11,11 @@
           "description": "Ética relacional, ordem moral e governo exemplar.",
           "tags": [
             "authority",
+            "state",
             "tradition",
             "collective",
             "historical",
-            "rational",
+            "optimistic",
             "particularist"
           ],
           "dimensions": {
@@ -22,22 +23,14 @@
             "state_vs_market": "Estado como ordem ritual e educativa, não econômica.",
             "tradition_vs_rupture": "Tradição ritual e continuidade dinástica como fonte de estabilidade social.",
             "individual_vs_collective": "Coletivo relacional: o self é constituído por vínculos de obrigação mútua.",
-            "method": "Ético-prático e normativo: aprendizado por exemplos e transmissão oral.",
+            "method": "Histórico: aprendizado por exemplos passados e transmissão da herança dos antigos.",
             "anthropology": "Otimista: o ser humano é aperfeiçoável pela educação e pelo ritual.",
-            "scope": "Particularista: pensamento enraizado na cultura e história chinesa."
+            "scope": "Particularista: pensamento enraizado na cultura e história específica chinesa."
           },
           "historical_context": "China da primavera e outono; crise da ordem feudal dos Zhou.",
-          "influences": [],
-          "impact": [
-            "Neoconfucionismo",
-            "Ética asiática",
-            "Filosofia política chinesa"
-          ],
+          "impact": ["Neoconfucionismo", "Ética asiática", "Filosofia política chinesa"],
           "works": [
-            {
-              "title": "Analectos",
-              "download_url": "Os-Analectos-Confucio.pdf"
-            }
+            { "title": "Analectos", "download_url": "Os-Analectos-Confucio.pdf" }
           ]
         },
         {
@@ -49,31 +42,24 @@
             "authority",
             "state",
             "tradition",
-            "historical",
-            "rational",
-            "realist"
+            "collective",
+            "realist",
+            "pessimistic",
+            "particularist"
           ],
           "dimensions": {
             "freedom_vs_authority": "Autoridade estratégica e disciplina hierárquica como condição de eficácia.",
             "state_vs_market": "Estado forte e eficiente; a economia serve à capacidade militar.",
             "tradition_vs_rupture": "Tradição de prudência adaptativa: os princípios são estáveis, a tática é flexível.",
-            "individual_vs_collective": "Coletivo organizado e hierárquico; o comandante age pelo grupo.",
-            "method": "Estratégico-contextual: análise situacional antes de qualquer ação.",
+            "individual_vs_collective": "Coletivo organizado e hierárquico; o comandante age pelo bem do grupo.",
+            "method": "Realista: foco em interesses, poder e relações de força no terreno.",
             "anthropology": "Pessimista: o conflito é condição permanente; a natureza humana é competitiva.",
-            "scope": "Contextual: princípios universais aplicados conforme terreno, clima e adversário."
+            "scope": "Particularista: princípios aplicados conforme o terreno, clima e contexto do adversário."
           },
-          "historical_context": "China antiga; período dos Reinos Combatentes; guerras entre estados rivais.",
-          "influences": [],
-          "impact": [
-            "Teoria militar",
-            "Estratégia política",
-            "Management contemporâneo"
-          ],
+          "historical_context": "China antiga; período dos Reinos Combatentes.",
+          "impact": ["Teoria militar", "Estratégia política", "Management contemporâneo"],
           "works": [
-            {
-              "title": "A Arte da Guerra",
-              "download_url": "a-arte-da-guerra.pdf"
-            }
+            { "title": "A Arte da Guerra", "download_url": "a-arte-da-guerra.pdf" }
           ]
         },
         {
@@ -86,42 +72,24 @@
             "state",
             "tradition",
             "collective",
-            "rational",
             "idealist",
-            "mixed"
+            "mixed",
+            "universalist"
           ],
           "dimensions": {
             "freedom_vs_authority": "Autoridade filosófica sobre a liberdade popular; o sábio deve governar o ignorante.",
             "state_vs_market": "Estado planificado e hierárquico; a economia subordinada à virtude cívica.",
-            "tradition_vs_rupture": "Tradição das formas eternas e da ordem natural imutável.",
+            "tradition_vs_rupture": "Tradição: preservação da ordem natural e das formas eternas contra a decadência.",
             "individual_vs_collective": "Coletivo: o indivíduo existe para servir à cidade-estado segundo sua natureza.",
-            "method": "Racionalismo idealista: as ideias são mais reais que os fenômenos.",
-            "anthropology": "Mista: a alma tripartite permite tanto a virtude quanto a degradação.",
-            "scope": "Universalista: a cidade justa é um modelo válido para qualquer povo."
+            "method": "Idealista: primazia das ideias e da consciência sobre a realidade material.",
+            "anthropology": "Mista: a alma tripartite permite tanto a virtude racional quanto a degradação passional.",
+            "scope": "Universalista: a cidade justa é um modelo ideal válido para toda a humanidade."
           },
-          "historical_context": "Atenas pós-guerra do Peloponeso; crise da democracia direta; morte de Sócrates.",
-          "influences": [
-            "Sócrates",
-            "Pitágoras"
-          ],
-          "impact": [
-            "Agostinho",
-            "Neoplatonismo",
-            "Totalitarismos modernos (Popper o acusa)"
-          ],
+          "historical_context": "Atenas pós-guerra do Peloponeso; crise da democracia; morte de Sócrates.",
+          "impact": ["Agostinho", "Neoplatonismo", "Constitucionalismo idealista"],
           "works": [
-            {
-              "title": "A República",
-              "download_url": "Platao_A_Republica.pdf"
-            },
-            {
-              "title": "O Político",
-              "download_url": "Platao_O_Politico.pdf"
-            },
-            {
-              "title": "As Leis",
-              "download_url": "As_leis_Platao.pdf"
-            }
+            { "title": "A República", "download_url": "Platao_A_Republica.pdf" },
+            { "title": "As Leis", "download_url": "As_leis_Platao.pdf" }
           ]
         },
         {
@@ -135,39 +103,23 @@
             "tradition",
             "individual",
             "empirical",
-            "mixed"
+            "mixed",
+            "particularist"
           ],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade cívica moderada: nem tirania nem anarquia; a lei como soberana.",
-            "state_vs_market": "Estado moderado com propriedade privada; riqueza a serviço da vida boa.",
-            "tradition_vs_rupture": "Tradição: as instituições acumulam sabedoria prática irredutível à teoria.",
-            "individual_vs_collective": "Equilíbrio: o homem é animal político, mas possui telos próprio.",
-            "method": "Empírico-comparativo: observação de 158 constituições reais.",
-            "anthropology": "Mista: a natureza humana inclina ao bem, mas requer educação e hábito.",
-            "scope": "Contextual: as melhores leis dependem do povo, do território e das circunstâncias."
+            "freedom_vs_authority": "Liberdade cívica moderada: a lei é a senhora soberana que protege contra a tirania.",
+            "state_vs_market": "Estado moderado que garante a propriedade privada em função da 'vida boa'.",
+            "tradition_vs_rupture": "Tradição: as instituições acumulam sabedoria prática ao longo do tempo.",
+            "individual_vs_collective": "Individual: embora o homem seja social, a felicidade (eudaimonia) é uma realização do ser.",
+            "method": "Empírico: base na observação e comparação de constituições reais e dados concretos.",
+            "anthropology": "Mista: a natureza humana inclina ao bem, mas exige hábito e educação.",
+            "scope": "Particularista: as melhores leis dependem das circunstâncias geográficas e sociais de cada povo."
           },
-          "historical_context": "Atenas clássica; tutor de Alexandre o Grande; fundação do Liceu.",
-          "influences": [
-            "Platão"
-          ],
-          "impact": [
-            "Tomás de Aquino",
-            "Republicanismo",
-            "Constitucionalismo"
-          ],
+          "historical_context": "Atenas clássica; fundação do Liceu; transição para o período helenístico.",
+          "impact": ["Tomás de Aquino", "Republicanismo", "Ética das virtudes"],
           "works": [
-            {
-              "title": "Política",
-              "download_url": "aristoteles_a_politica.pdf"
-            },
-            {
-              "title": "Ética a Nicômaco",
-              "download_url": "Etica-a-Nicomaco.pdf"
-            },
-            {
-              "title": "Constituição de Atenas",
-              "download_url": "Constituicao-dos-Atenienses.pdf"
-            }
+            { "title": "Política", "download_url": "aristoteles_a_politica.pdf" },
+            { "title": "Ética a Nicômaco", "download_url": "Etica-a-Nicomaco.pdf" }
           ]
         },
         {
@@ -180,40 +132,24 @@
             "state",
             "tradition",
             "individual",
-            "rational"
+            "rational",
+            "optimistic",
+            "universalist"
           ],
           "dimensions": {
-            "freedom_vs_authority": "Liberdade sob a lei — libertas republicana como herança institucional.",
-            "state_vs_market": "Estado republicano misto; propriedade privada como fundamento da ordem civil.",
-            "tradition_vs_rupture": "Tradição: o mos maiorum como reservatório de sabedoria prática romana.",
-            "individual_vs_collective": "Individual: direitos naturais precedem o Estado, mas se realizam na República.",
-            "method": "Racional e retórico: o direito natural como razão universal acessível pela filosofia.",
-            "anthropology": "Otimista: o ser humano é naturalmente sociável e capaz de justiça.",
-            "scope": "Universalista: o direito natural é comum a toda humanidade."
+            "freedom_vs_authority": "Liberdade sob a lei: a 'libertas' republicana protegida por freios institucionais.",
+            "state_vs_market": "Estado republicano; defesa da propriedade privada como pilar da justiça civil.",
+            "tradition_vs_rupture": "Tradição: o 'mos maiorum' (costume dos antepassados) como base da estabilidade.",
+            "individual_vs_collective": "Individual: direitos naturais que pertencem ao homem antes mesmo do Estado.",
+            "method": "Racional: uso da razão universal para deduzir as leis da natureza humana.",
+            "anthropology": "Otimista: o ser humano é naturalmente inclinado à sociabilidade e à justiça.",
+            "scope": "Universalista: a lei natural é imutável e aplicável a todas as nações em todos os tempos."
           },
-          "historical_context": "República Romana em colapso; guerras civis de César e Pompeu.",
-          "influences": [
-            "Aristóteles",
-            "Estoicos gregos"
-          ],
-          "impact": [
-            "Locke",
-            "Constitucionalismo moderno",
-            "Direitos naturais"
-          ],
+          "historical_context": "Colapso da República Romana; ascensão do poder pessoal de Júlio César.",
+          "impact": ["Locke", "Revolução Americana", "Direito Natural moderno"],
           "works": [
-            {
-              "title": "De Re Publica",
-              "download_url": "Da_Republica_Marcus_Tullius_Cicero.pdf"
-            },
-            {
-              "title": "De Legibus",
-              "download_url": "Sobreasleis(DeLegibus).pdf"
-            },
-            {
-              "title": "De Officiis",
-              "download_url": "cicero_dos_deveres.pdf"
-            }
+            { "title": "De Re Publica", "download_url": "Da_Republica_Cicero.pdf" },
+            { "title": "De Officiis", "download_url": "cicero_dos_deveres.pdf" }
           ]
         }
       ]

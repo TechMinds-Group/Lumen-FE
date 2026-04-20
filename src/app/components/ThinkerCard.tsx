@@ -60,6 +60,10 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, 
   const works = thinker.works || [];
   const historicalContext = thinker.historical_context || '';
 
+  // Tags que correspondem às dimensões anthropology e scope — já exibidas como DimensionBadge
+  const DIMENSION_BADGE_TAGS = new Set(['optimistic', 'pessimistic', 'mixed', 'universalist', 'particularist']);
+  const visibleTags = thinker.tags.filter((tag) => !DIMENSION_BADGE_TAGS.has(tag));
+
   return (
     <div
       onClick={() => setShowDetails(!showDetails)}
@@ -75,7 +79,7 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, 
 
         <div className="space-y-2 mb-3">
           <div className="flex flex-wrap gap-1.5">
-            {thinker.tags.map((tag) => (
+            {visibleTags.map((tag) => (
               <span
                 key={tag}
                 className={`px-2 py-0.5 rounded text-xs border ${TAG_COLORS[tag] || 'bg-gray-50 text-gray-700 border-gray-200'}`}
@@ -131,14 +135,16 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, 
               {fieldLabels.dimensions || 'Dimensões'}
             </div>
             <div className="grid sm:grid-cols-2 gap-x-4 gap-y-2">
-              {Object.entries(thinker.dimensions).map(([key, value]) => (
-                <div key={key} className="text-xs">
-                  <span className="text-[#7f8c8d] font-medium">
-                    {dimensionLabels[key] || key.replace(/_/g, ' ')}:
-                  </span>{' '}
-                  <span className="text-[#2c3e50]">{value}</span>
-                </div>
-              ))}
+              {Object.entries(thinker.dimensions)
+                .filter(([key]) => key !== 'anthropology' && key !== 'scope')
+                .map(([key, value]) => (
+                  <div key={key} className="text-xs">
+                    <span className="text-[#7f8c8d] font-medium">
+                      {dimensionLabels[key] || key.replace(/_/g, ' ')}:
+                    </span>{' '}
+                    <span className="text-[#2c3e50]">{value}</span>
+                  </div>
+                ))}
             </div>
           </div>
 
