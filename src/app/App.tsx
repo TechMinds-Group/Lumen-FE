@@ -106,6 +106,21 @@ export default function App() {
           onOpenGlossary={() => setGlossaryOpen(true)}
         />
 
+        <div className="bg-white border-b border-[#e5e3df] px-4 lg:px-6 py-2">
+          <div className="max-w-7xl mx-auto">
+            <p className="text-xs text-[#7f8c8d]">
+              {thinkersData.eras.reduce(
+                (total, era) => total + filterThinkers(era.thinkers).length,
+                0
+              )}{" "}
+              {thinkersData.eras.reduce(
+                (total, era) => total + filterThinkers(era.thinkers).length,
+                0
+              ) === 1 ? "Pensador" : "Pensadores"}
+            </p>
+          </div>
+        </div>
+
         <main className="flex-1 overflow-y-auto">
           <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
             {thinkersData.eras.map((era) => {
