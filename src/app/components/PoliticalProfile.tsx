@@ -28,11 +28,11 @@ interface RadarDataPoint {
 }
 
 function CustomRadarChart({ data }: { data: RadarDataPoint[] }) {
-  const size = 260;
+  const size = 340;
   const cx = size / 2;
   const cy = size / 2;
-  const radius = 100;
-  const levels = 4;
+  const radius = 120;
+  const levels = 5;
   const n = data.length;
 
   const angleStep = (2 * Math.PI) / n;
@@ -70,14 +70,14 @@ function CustomRadarChart({ data }: { data: RadarDataPoint[] }) {
   }).join(' ');
 
   // Labels
-  const labelPadding = 22;
+  const labelPadding = 28;
   const labels = data.map((d, i) => {
     const p = getPoint(i, radius + labelPadding);
     let anchor: 'start' | 'end' | 'middle' = 'middle';
     const dx = p.x - cx;
     if (dx > 10) anchor = 'start';
     else if (dx < -10) anchor = 'end';
-    return { ...p, label: d.label, anchor, key: `label-${i}` };
+    return { ...p, label: d.label, anchor, key: `label-${i}`, value: d.value };
   });
 
   return (
@@ -130,19 +130,32 @@ function CustomRadarChart({ data }: { data: RadarDataPoint[] }) {
       })}
 
       {/* Labels */}
-      {labels.map(({ x, y, label, anchor, key }) => (
-        <text
-          key={key}
-          x={x}
-          y={y}
-          textAnchor={anchor}
-          dominantBaseline="middle"
-          fill="#7f8c8d"
-          fontSize={11}
-          fontFamily="Inter, sans-serif"
-        >
-          {label}
-        </text>
+      {labels.map(({ x, y, label, anchor, key, value }) => (
+        <g key={key}>
+          <text
+            x={x}
+            y={y - 6}
+            textAnchor={anchor}
+            dominantBaseline="middle"
+            fill="#2c3e50"
+            fontSize={11}
+            fontWeight={500}
+            fontFamily="Inter, sans-serif"
+          >
+            {label}
+          </text>
+          <text
+            x={x}
+            y={y + 6}
+            textAnchor={anchor}
+            dominantBaseline="middle"
+            fill="#95a5a6"
+            fontSize={9}
+            fontFamily="Inter, sans-serif"
+          >
+            {Math.round(value)}%
+          </text>
+        </g>
       ))}
     </svg>
   );
@@ -170,20 +183,30 @@ export function PoliticalProfile({
       });
     });
 
-    const axes = [
-      { key: 'freedom_vs_authority', positive: 'freedom', negative: 'authority', label: 'Liberdade vs Autoridade' },
-      { key: 'state_vs_market', positive: 'market', negative: 'state', label: 'Mercado vs Estado' },
-      { key: 'tradition_vs_rupture', positive: 'rupture', negative: 'tradition', label: 'Ruptura vs Tradição' },
-      { key: 'individual_vs_collective', positive: 'individual', negative: 'collective', label: 'Individual vs Coletivo' }
+    // Tags específicas a serem exibidas no radar (inclinações políticas principais)
+    const radarTags = [
+      'freedom',
+      'authority',
+      'state',
+      'market',
+      'community',
+      'individual',
+      'collective',
+      'tradition',
+      'rupture'
     ];
 
-    const radarData: RadarDataPoint[] = axes.map(axis => {
-      const positiveCount = tagCounts[axis.positive] || 0;
-      const negativeCount = tagCounts[axis.negative] || 0;
-      const total = positiveCount + negativeCount;
-      const score = total > 0 ? (positiveCount / total) * 100 : 50;
-      return { label: axis.label, value: score };
-    });
+    const maxCount = Math.max(...Object.values(tagCounts), 1);
+
+    const radarData: RadarDataPoint[] = radarTags
+      .map(tag => {
+        const count = tagCounts[tag] || 0;
+        const score = (count / maxCount) * 100;
+        return {
+          label: tagLabels[tag] || tag,
+          value: score
+        };
+      }); // Mostra todos os 9 eixos, mesmo com valor zero
 
     const dominantTags = Object.entries(tagCounts)
       .sort((a, b) => b[1] - a[1])
@@ -236,10 +259,13 @@ export function PoliticalProfile({
             <>
               <div>
                 <h3 className="text-sm font-medium text-[#7f8c8d] mb-4">
-                  Mapa de Inclinações
+                  Mapa de Inclinações Políticas
                 </h3>
+                <p className="text-xs text-[#95a5a6] mb-4">
+                  Distribuição percentual das tags políticas presentes nas obras que você leu
+                </p>
                 <div className="flex justify-center py-4">
-                  <div style={{ width: 300, height: 300 }}>
+                  <div style={{ width: 380, height: 380 }}>
                     <CustomRadarChart data={analysis.radarData} />
                   </div>
                 </div>
@@ -315,22 +341,32 @@ function getDiagnostic(tagCounts: Record<string, number>, tagLabels: Record<stri
 
   const diagnostics: string[] = [];
 
-  if (percentages.freedom > percentages.authority) {
+  if ((percentages.freedom || 0) > (percentages.authority || 0)) {
     diagnostics.push('tendência liberal e valorização da autonomia individual');
-  } else if (percentages.authority > percentages.freedom) {
+  } else if ((percentages.authority || 0) > (percentages.freedom || 0)) {
     diagnostics.push('inclinação para a ordem estabelecida e autoridade');
   }
 
-  if (percentages.state > percentages.market) {
+  if ((percentages.state || 0) > (percentages.market || 0)) {
     diagnostics.push('preferência por intervenção estatal');
-  } else if (percentages.market > percentages.state) {
+  } else if ((percentages.market || 0) > (percentages.state || 0)) {
     diagnostics.push('valorização do mercado livre');
   }
 
-  if (percentages.tradition > percentages.rupture) {
+  if ((percentages.community || 0) > 15) {
+    diagnostics.push('valorização de soluções comunitárias');
+  }
+
+  if ((percentages.tradition || 0) > (percentages.rupture || 0)) {
     diagnostics.push('respeito à tradição e mudança gradual');
-  } else if (percentages.rupture > percentages.tradition) {
+  } else if ((percentages.rupture || 0) > (percentages.tradition || 0)) {
     diagnostics.push('abertura à ruptura e transformação');
+  }
+
+  if ((percentages.individual || 0) > (percentages.collective || 0)) {
+    diagnostics.push('foco no indivíduo como unidade política');
+  } else if ((percentages.collective || 0) > (percentages.individual || 0)) {
+    diagnostics.push('ênfase no coletivo e bem comum');
   }
 
   if (diagnostics.length === 0) {
