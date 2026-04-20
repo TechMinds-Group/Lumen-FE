@@ -1,5 +1,4 @@
 import { useMemo } from 'react';
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer, Tooltip } from 'recharts';
 import { BookOpen, X } from 'lucide-react';
 
 interface Thinker {
@@ -21,6 +20,132 @@ interface PoliticalProfileProps {
   onClear: () => void;
   isOpen: boolean;
   onClose: () => void;
+}
+
+interface RadarDataPoint {
+  label: string;
+  value: number;
+}
+
+function CustomRadarChart({ data }: { data: RadarDataPoint[] }) {
+  const size = 260;
+  const cx = size / 2;
+  const cy = size / 2;
+  const radius = 100;
+  const levels = 4;
+  const n = data.length;
+
+  const angleStep = (2 * Math.PI) / n;
+  const startAngle = -Math.PI / 2;
+
+  const getPoint = (index: number, r: number) => {
+    const angle = startAngle + index * angleStep;
+    return {
+      x: cx + r * Math.cos(angle),
+      y: cy + r * Math.sin(angle),
+    };
+  };
+
+  // Grid polygons
+  const gridPolygons = Array.from({ length: levels }, (_, i) => {
+    const r = (radius / levels) * (i + 1);
+    const points = Array.from({ length: n }, (_, j) => {
+      const p = getPoint(j, r);
+      return `${p.x},${p.y}`;
+    }).join(' ');
+    return { points, key: `grid-level-${i}` };
+  });
+
+  // Axis lines
+  const axisLines = Array.from({ length: n }, (_, i) => {
+    const p = getPoint(i, radius);
+    return { x1: cx, y1: cy, x2: p.x, y2: p.y, key: `axis-line-${i}` };
+  });
+
+  // Data polygon
+  const dataPoints = data.map((d, i) => {
+    const r = (d.value / 100) * radius;
+    const p = getPoint(i, r);
+    return `${p.x},${p.y}`;
+  }).join(' ');
+
+  // Labels
+  const labelPadding = 22;
+  const labels = data.map((d, i) => {
+    const p = getPoint(i, radius + labelPadding);
+    let anchor: 'start' | 'end' | 'middle' = 'middle';
+    const dx = p.x - cx;
+    if (dx > 10) anchor = 'start';
+    else if (dx < -10) anchor = 'end';
+    return { ...p, label: d.label, anchor, key: `label-${i}` };
+  });
+
+  return (
+    <svg width="100%" viewBox={`0 0 ${size} ${size}`} style={{ overflow: 'visible' }}>
+      {/* Grid polygons */}
+      {gridPolygons.map(({ points, key }) => (
+        <polygon
+          key={key}
+          points={points}
+          fill="none"
+          stroke="#e5e3df"
+          strokeWidth={1}
+        />
+      ))}
+
+      {/* Axis lines */}
+      {axisLines.map(({ x1, y1, x2, y2, key }) => (
+        <line
+          key={key}
+          x1={x1} y1={y1} x2={x2} y2={y2}
+          stroke="#e5e3df"
+          strokeWidth={1}
+        />
+      ))}
+
+      {/* Data polygon */}
+      <polygon
+        points={dataPoints}
+        fill="#3498db"
+        fillOpacity={0.35}
+        stroke="#2c3e50"
+        strokeWidth={2}
+      />
+
+      {/* Data dots */}
+      {data.map((d, i) => {
+        const r = (d.value / 100) * radius;
+        const p = getPoint(i, r);
+        return (
+          <circle
+            key={`dot-${i}`}
+            cx={p.x}
+            cy={p.y}
+            r={4}
+            fill="#2c3e50"
+            stroke="#fff"
+            strokeWidth={1.5}
+          />
+        );
+      })}
+
+      {/* Labels */}
+      {labels.map(({ x, y, label, anchor, key }) => (
+        <text
+          key={key}
+          x={x}
+          y={y}
+          textAnchor={anchor}
+          dominantBaseline="middle"
+          fill="#7f8c8d"
+          fontSize={11}
+          fontFamily="Inter, sans-serif"
+        >
+          {label}
+        </text>
+      ))}
+    </svg>
+  );
 }
 
 export function PoliticalProfile({
@@ -52,19 +177,12 @@ export function PoliticalProfile({
       { key: 'individual_vs_collective', positive: 'individual', negative: 'collective', label: 'Individual vs Coletivo' }
     ];
 
-    const radarData = axes.map((axis, index) => {
+    const radarData: RadarDataPoint[] = axes.map(axis => {
       const positiveCount = tagCounts[axis.positive] || 0;
       const negativeCount = tagCounts[axis.negative] || 0;
       const total = positiveCount + negativeCount;
-
-      const score = total > 0 ? ((positiveCount / total) * 100) : 50;
-
-      return {
-        id: axis.key,
-        axis: axis.label,
-        value: score,
-        fullMark: 100
-      };
+      const score = total > 0 ? (positiveCount / total) * 100 : 50;
+      return { label: axis.label, value: score };
     });
 
     const dominantTags = Object.entries(tagCounts)
@@ -120,32 +238,11 @@ export function PoliticalProfile({
                 <h3 className="text-sm font-medium text-[#7f8c8d] mb-4">
                   Mapa de Inclinações
                 </h3>
-                <ResponsiveContainer width="100%" height={300}>
-                  <RadarChart data={analysis.radarData}>
-                    <PolarGrid stroke="#e5e3df" />
-                    <PolarAngleAxis
-                      dataKey="axis"
-                      tick={{ fill: '#7f8c8d', fontSize: 12 }}
-                    />
-                    <Tooltip
-                      contentStyle={{
-                        backgroundColor: '#fff',
-                        border: '1px solid #e5e3df',
-                        borderRadius: '8px',
-                        fontSize: '12px'
-                      }}
-                      formatter={(value: number) => `${value.toFixed(1)}%`}
-                    />
-                    <Radar
-                      name="Inclinação"
-                      dataKey="value"
-                      stroke="#2c3e50"
-                      fill="#3498db"
-                      fillOpacity={0.6}
-                      isAnimationActive={false}
-                    />
-                  </RadarChart>
-                </ResponsiveContainer>
+                <div className="flex justify-center py-4">
+                  <div style={{ width: 300, height: 300 }}>
+                    <CustomRadarChart data={analysis.radarData} />
+                  </div>
+                </div>
               </div>
 
               <div>
