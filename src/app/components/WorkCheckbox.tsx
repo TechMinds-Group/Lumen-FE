@@ -14,7 +14,7 @@ interface WorkCheckboxProps {
 export function WorkCheckbox({ work, isRead, onToggle }: WorkCheckboxProps) {
   const hasValidUrl = work.download_url && work.download_url.trim() !== '';
   const finalUrl = hasValidUrl
-    ? `https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/${work.download_url}`
+    ? `https://github.com/victor-souza-dev/RepoStaticFile/raw/refs/heads/main/politica/${work.download_url}`
     : '';
 
   return (
