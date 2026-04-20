@@ -36,15 +36,15 @@
           "works": [
             {
               "title": "A República",
-              "download_url": "https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/Platao_A_Republica.pdf"
+              "download_url": "Platao_A_Republica.pdf"
             },
             {
               "title": "O Político",
-              "download_url": "https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/Platao_O_Politico.pdf"
+              "download_url": "Platao_O_Politico.pdf"
             },
             {
               "title": "As Leis",
-              "download_url": "https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/As_leis_Platão.pdf"
+              "download_url": "As_leis_Platão.pdf"
             }
           ]
         },
@@ -79,15 +79,15 @@
           "works": [
             {
               "title": "Política",
-              "download_url": "https://www.gutenberg.org/ebooks/6762"
+              "download_url": "aristoteles_a_politica.pdf"
             },
             {
               "title": "Ética a Nicômaco",
-              "download_url": "https://www.gutenberg.org/ebooks/8438"
+              "download_url": "Ética-a-Nicômaco.pdf"
             },
             {
               "title": "Constituição de Atenas",
-              "download_url": ""
+              "download_url": "Constituicao-dos-Atenienses.pdf"
             }
           ]
         },
@@ -803,7 +803,7 @@
           "works": [
             {
               "title": "O Capital",
-              "download_url": "https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/o-capital-livro-1.pdf"
+              "download_url": "o-capital-livro-1.pdf"
             },
             {
               "title": "Manifesto Comunista",

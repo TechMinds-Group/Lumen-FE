@@ -169,7 +169,6 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels }
               <div className="space-y-1.5">
                 {works.map((work, idx) => {
                   const hasValidUrl = work.download_url &&
-                    work.download_url !== 'https://www.gutenberg.org' &&
                     work.download_url.trim() !== '';
 
                   return (
@@ -177,7 +176,7 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels }
                       <span className="text-xs text-[#2c3e50] flex-1">{work.title}</span>
                       {hasValidUrl ? (
                         <a
-                          href={work.download_url}
+                          href={`https://github.com/Do-nada-ao-tudo/RepoStaticFile/raw/refs/heads/main/politica/${work.download_url}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex items-center gap-1 px-2 py-1 bg-[#2c3e50] text-white rounded text-xs hover:bg-[#34495e] transition-colors"
