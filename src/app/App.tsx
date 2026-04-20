@@ -3,6 +3,7 @@ import { Sidebar } from "./components/Sidebar";
 import { Header } from "./components/Header";
 import { ThinkerCard } from "./components/ThinkerCard";
 import { PoliticalProfile } from "./components/PoliticalProfile";
+import { TagGlossary } from "./components/TagGlossary";
 import { useReadingProgress } from "./hooks/useReadingProgress";
 import thinkersData from "../../assets/thinkers.json";
 import metaData from "../../assets/meta.json";
@@ -16,6 +17,7 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [showOnlyRead, setShowOnlyRead] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
+  const [glossaryOpen, setGlossaryOpen] = useState(false);
 
   const { readWorks, toggleWork, isWorkRead, clearAll } = useReadingProgress();
 
@@ -101,6 +103,7 @@ export default function App() {
           onToggleShowOnlyRead={() => setShowOnlyRead(!showOnlyRead)}
           totalReadWorks={totalReadWorks}
           onOpenProfile={() => setProfileOpen(true)}
+          onOpenGlossary={() => setGlossaryOpen(true)}
         />
 
         <main className="flex-1 overflow-y-auto">
@@ -177,6 +180,13 @@ export default function App() {
           onClear={clearAll}
           isOpen={profileOpen}
           onClose={() => setProfileOpen(false)}
+        />
+
+        <TagGlossary
+          isOpen={glossaryOpen}
+          onClose={() => setGlossaryOpen(false)}
+          axes={metaData.axes}
+          tagLabels={metaData.tag_labels}
         />
       </div>
     </div>

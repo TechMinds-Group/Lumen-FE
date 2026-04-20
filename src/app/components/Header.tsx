@@ -1,4 +1,4 @@
-import { Search, X, Menu, Filter, BarChart3, BookCheck } from 'lucide-react';
+import { Search, X, Menu, Filter, BarChart3, BookCheck, HelpCircle } from 'lucide-react';
 import { useState } from 'react';
 
 interface Axis {
@@ -20,6 +20,7 @@ interface HeaderProps {
   onToggleShowOnlyRead: () => void;
   totalReadWorks: number;
   onOpenProfile: () => void;
+  onOpenGlossary: () => void;
 }
 
 export function Header({
@@ -34,7 +35,8 @@ export function Header({
   showOnlyRead,
   onToggleShowOnlyRead,
   totalReadWorks,
-  onOpenProfile
+  onOpenProfile,
+  onOpenGlossary
 }: HeaderProps) {
   const [showFilters, setShowFilters] = useState(false);
   const hasActiveFilters = Object.values(selectedFilters).some(v => v !== 'all');
@@ -69,6 +71,15 @@ export function Header({
             {hasActiveFilters && (
               <span className="w-2 h-2 bg-[#e74c3c] rounded-full"></span>
             )}
+          </button>
+
+          <button
+            onClick={onOpenGlossary}
+            className="flex items-center gap-2 px-3 lg:px-4 py-2 bg-[#ecf0f1] text-[#2c3e50] rounded-lg hover:bg-[#dfe6e9] transition-colors text-sm"
+            title="Entenda as dimensões e tags"
+          >
+            <HelpCircle size={16} />
+            <span className="hidden lg:inline">Glossário</span>
           </button>
 
           <button
