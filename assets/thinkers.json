@@ -44,7 +44,7 @@
             },
             {
               "title": "As Leis",
-              "download_url": "As_leis_Platão.pdf"
+              "download_url": "As_leis_Platao.pdf"
             }
           ]
         },
@@ -83,7 +83,7 @@
             },
             {
               "title": "Ética a Nicômaco",
-              "download_url": "Ética-a-Nicômaco.pdf"
+              "download_url": "Etica-a-Nicomaco.pdf"
             },
             {
               "title": "Constituição de Atenas",
@@ -123,7 +123,7 @@
           "works": [
             {
               "title": "De Re Publica",
-              "download_url": ""
+              "download_url": "Da_Republica_Marcus_Tullius_Cicero.pdf"
             },
             {
               "title": "De Legibus",
@@ -279,11 +279,11 @@
           "works": [
             {
               "title": "Leviatã",
-              "download_url": "https://www.gutenberg.org/ebooks/3207"
+              "download_url": "thomas_hobbes_leviatan.pdf"
             },
             {
               "title": "Do Cidadão",
-              "download_url": ""
+              "download_url": "thomas.hobbes.do_.cidadao.pdf"
             }
           ]
         },
@@ -321,11 +321,11 @@
           "works": [
             {
               "title": "Dois Tratados sobre o Governo",
-              "download_url": "https://www.gutenberg.org/ebooks/7370"
+              "download_url": "John_Locke-Dois_Tratados_sobre_o_Governo-Martins_Fontes.pdf"
             },
             {
               "title": "Ensaio sobre o Entendimento Humano",
-              "download_url": "https://www.gutenberg.org/ebooks/10615"
+              "download_url": "locke-ensaio-acerca-do-entendimento-humano.pdf"
             }
           ]
         }
@@ -368,7 +368,7 @@
           "works": [
             {
               "title": "O Espírito das Leis",
-              "download_url": ""
+              "download_url": "Montesquieu-O-espirito-das-leis-completo.pdf"
             },
             {
               "title": "Cartas Persas",
