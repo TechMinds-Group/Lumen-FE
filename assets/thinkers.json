@@ -874,6 +874,7 @@
           "description": "Materialismo histórico, luta de classes e superação revolucionária do capitalismo.",
           "tags": [
             "authority",
+            "state",
             "rupture",
             "collective",
             "dialectic",
@@ -1036,6 +1037,7 @@
           "description": "Co-criador do marxismo; analisou a origem da família, do Estado e da propriedade privada.",
           "tags": [
             "authority",
+            "state",
             "rupture",
             "collective",
             "historical",
@@ -1182,6 +1184,7 @@
           "description": "Vontade de poder, além-do-homem e crítica radical do igualitarismo e do niilismo.",
           "tags": [
             "freedom",
+            "community",
             "rupture",
             "individual",
             "historical",
@@ -1825,6 +1828,7 @@
           "description": "Poder e saber; genealogia das instituições disciplinares da modernidade.",
           "tags": [
             "freedom",
+            "community",
             "rupture",
             "individual",
             "historical",
@@ -1914,11 +1918,12 @@
         },
         {
           "id": "derrida",
-          "name": "Derrida",
+          "name": "Jacques Derrida",
           "period": "1930–2004",
           "description": "Desconstrução: todo texto contém contradições que subvertem sua aparente unidade.",
           "tags": [
             "freedom",
+            "community",
             "rupture",
             "collective",
             "historical",
@@ -2058,11 +2063,12 @@
         },
         {
           "id": "bauman",
-          "name": "Bauman",
+          "name": "Zygmunt Bauman",
           "period": "1925–2017",
           "description": "Modernidade líquida: identidades, vínculos e certezas se tornam cada vez mais fluidos.",
           "tags": [
             "freedom",
+            "state",
             "rupture",
             "collective",
             "historical",
