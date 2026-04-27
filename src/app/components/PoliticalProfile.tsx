@@ -1,5 +1,7 @@
 import { useMemo } from 'react';
 import { BookOpen, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import type { TFunction } from 'i18next';
 
 interface Thinker {
   id: string;
@@ -40,13 +42,9 @@ function CustomRadarChart({ data }: { data: RadarDataPoint[] }) {
 
   const getPoint = (index: number, r: number) => {
     const angle = startAngle + index * angleStep;
-    return {
-      x: cx + r * Math.cos(angle),
-      y: cy + r * Math.sin(angle),
-    };
+    return { x: cx + r * Math.cos(angle), y: cy + r * Math.sin(angle) };
   };
 
-  // Grid polygons
   const gridPolygons = Array.from({ length: levels }, (_, i) => {
     const r = (radius / levels) * (i + 1);
     const points = Array.from({ length: n }, (_, j) => {
@@ -56,20 +54,19 @@ function CustomRadarChart({ data }: { data: RadarDataPoint[] }) {
     return { points, key: `grid-level-${i}` };
   });
 
-  // Axis lines
   const axisLines = Array.from({ length: n }, (_, i) => {
     const p = getPoint(i, radius);
     return { x1: cx, y1: cy, x2: p.x, y2: p.y, key: `axis-line-${i}` };
   });
 
-  // Data polygon
-  const dataPoints = data.map((d, i) => {
-    const r = (d.value / 100) * radius;
-    const p = getPoint(i, r);
-    return `${p.x},${p.y}`;
-  }).join(' ');
+  const dataPoints = data
+    .map((d, i) => {
+      const r = (d.value / 100) * radius;
+      const p = getPoint(i, r);
+      return `${p.x},${p.y}`;
+    })
+    .join(' ');
 
-  // Labels
   const labelPadding = 28;
   const labels = data.map((d, i) => {
     const p = getPoint(i, radius + labelPadding);
@@ -82,28 +79,12 @@ function CustomRadarChart({ data }: { data: RadarDataPoint[] }) {
 
   return (
     <svg width="100%" viewBox={`0 0 ${size} ${size}`} style={{ overflow: 'visible' }}>
-      {/* Grid polygons */}
       {gridPolygons.map(({ points, key }) => (
-        <polygon
-          key={key}
-          points={points}
-          fill="none"
-          stroke="#e5e3df"
-          strokeWidth={1}
-        />
+        <polygon key={key} points={points} fill="none" stroke="#e5e3df" strokeWidth={1} />
       ))}
-
-      {/* Axis lines */}
       {axisLines.map(({ x1, y1, x2, y2, key }) => (
-        <line
-          key={key}
-          x1={x1} y1={y1} x2={x2} y2={y2}
-          stroke="#e5e3df"
-          strokeWidth={1}
-        />
+        <line key={key} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#e5e3df" strokeWidth={1} />
       ))}
-
-      {/* Data polygon */}
       <polygon
         points={dataPoints}
         fill="#3498db"
@@ -111,8 +92,6 @@ function CustomRadarChart({ data }: { data: RadarDataPoint[] }) {
         stroke="#2c3e50"
         strokeWidth={2}
       />
-
-      {/* Data dots */}
       {data.map((d, i) => {
         const r = (d.value / 100) * radius;
         const p = getPoint(i, r);
@@ -128,8 +107,6 @@ function CustomRadarChart({ data }: { data: RadarDataPoint[] }) {
           />
         );
       })}
-
-      {/* Labels */}
       {labels.map(({ x, y, label, anchor, key, value }) => (
         <g key={key}>
           <text
@@ -167,8 +144,10 @@ export function PoliticalProfile({
   tagLabels,
   onClear,
   isOpen,
-  onClose
+  onClose,
 }: PoliticalProfileProps) {
+  const { t } = useTranslation();
+
   const analysis = useMemo(() => {
     if (readWorks.length === 0) return null;
 
@@ -176,37 +155,23 @@ export function PoliticalProfile({
     const readThinkers = thinkers.filter(t => readThinkerIds.has(t.id));
 
     const tagCounts: Record<string, number> = {};
-
     readThinkers.forEach(thinker => {
       thinker.tags.forEach(tag => {
         tagCounts[tag] = (tagCounts[tag] || 0) + 1;
       });
     });
 
-    // Tags específicas a serem exibidas no radar (inclinações políticas principais)
     const radarTags = [
-      'freedom',
-      'authority',
-      'state',
-      'market',
-      'community',
-      'individual',
-      'collective',
-      'tradition',
-      'rupture'
+      'freedom', 'authority', 'state', 'market', 'community',
+      'individual', 'collective', 'tradition', 'rupture',
     ];
 
     const maxCount = Math.max(...Object.values(tagCounts), 1);
 
-    const radarData: RadarDataPoint[] = radarTags
-      .map(tag => {
-        const count = tagCounts[tag] || 0;
-        const score = (count / maxCount) * 100;
-        return {
-          label: tagLabels[tag] || tag,
-          value: score
-        };
-      }); // Mostra todos os 9 eixos, mesmo com valor zero
+    const radarData: RadarDataPoint[] = radarTags.map(tag => ({
+      label: tagLabels[tag] || tag,
+      value: ((tagCounts[tag] || 0) / maxCount) * 100,
+    }));
 
     const dominantTags = Object.entries(tagCounts)
       .sort((a, b) => b[1] - a[1])
@@ -218,9 +183,9 @@ export function PoliticalProfile({
       thinkerCount: readThinkers.length,
       radarData,
       dominantTags,
-      tagCounts
+      tagCounts,
     };
-  }, [thinkers, readWorks]);
+  }, [thinkers, readWorks, tagLabels]);
 
   if (!isOpen) return null;
 
@@ -230,10 +195,13 @@ export function PoliticalProfile({
         <div className="sticky top-0 bg-white border-b border-[#e5e3df] p-6 flex items-center justify-between">
           <div>
             <h2 className="font-['Playfair_Display'] text-2xl text-[#1a1a1a] mb-1">
-              Perfil de Inclinação Política
+              {t('profile.title')}
             </h2>
             <p className="text-sm text-[#7f8c8d]">
-              Baseado em {analysis?.readCount || 0} obras lidas de {analysis?.thinkerCount || 0} pensadores
+              {t('profile.based_on', {
+                works: analysis?.readCount || 0,
+                thinkers: analysis?.thinkerCount || 0,
+              })}
             </p>
           </div>
           <button
@@ -249,20 +217,18 @@ export function PoliticalProfile({
             <div className="text-center py-12">
               <BookOpen size={48} className="mx-auto text-[#95a5a6] mb-4" />
               <h3 className="text-lg font-medium text-[#2c3e50] mb-2">
-                Nenhuma obra marcada ainda
+                {t('profile.no_works_title')}
               </h3>
-              <p className="text-sm text-[#7f8c8d]">
-                Marque as obras que você já leu para visualizar seu perfil político
-              </p>
+              <p className="text-sm text-[#7f8c8d]">{t('profile.no_works_hint')}</p>
             </div>
           ) : (
             <>
               <div>
                 <h3 className="text-sm font-medium text-[#7f8c8d] mb-4">
-                  Mapa de Inclinações Políticas
+                  {t('profile.radar_title')}
                 </h3>
                 <p className="text-xs text-[#95a5a6] mb-4">
-                  Distribuição percentual das tags políticas presentes nas obras que você leu
+                  {t('profile.radar_description')}
                 </p>
                 <div className="flex justify-center py-4">
                   <div style={{ width: 380, height: 380 }}>
@@ -273,7 +239,7 @@ export function PoliticalProfile({
 
               <div>
                 <h3 className="text-sm font-medium text-[#7f8c8d] mb-3">
-                  Tags Dominantes em Suas Leituras
+                  {t('profile.dominant_tags')}
                 </h3>
                 <div className="space-y-2">
                   {analysis.dominantTags.map(({ tag, count }, index) => (
@@ -284,7 +250,8 @@ export function PoliticalProfile({
                             {tagLabels[tag] || tag}
                           </span>
                           <span className="text-xs text-[#7f8c8d]">
-                            {count} {count === 1 ? 'obra' : 'obras'}
+                            {count}{' '}
+                            {count === 1 ? t('profile.work_one') : t('profile.work_other')}
                           </span>
                         </div>
                         <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
@@ -301,10 +268,10 @@ export function PoliticalProfile({
 
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                 <h3 className="text-sm font-medium text-blue-900 mb-2">
-                  💡 Diagnóstico
+                  {t('profile.diagnostic_label')}
                 </h3>
                 <p className="text-sm text-blue-800 leading-relaxed">
-                  {getDiagnostic(analysis.tagCounts, tagLabels)}
+                  {getDiagnostic(analysis.tagCounts, t)}
                 </p>
               </div>
 
@@ -313,13 +280,13 @@ export function PoliticalProfile({
                   onClick={onClear}
                   className="flex-1 px-4 py-2 bg-red-50 text-red-700 rounded-lg border border-red-200 hover:bg-red-100 transition-colors text-sm font-medium"
                 >
-                  Limpar Todas as Leituras
+                  {t('profile.clear_all')}
                 </button>
                 <button
                   onClick={onClose}
                   className="flex-1 px-4 py-2 bg-[#2c3e50] text-white rounded-lg hover:bg-[#34495e] transition-colors text-sm font-medium"
                 >
-                  Continuar Lendo
+                  {t('profile.continue_reading')}
                 </button>
               </div>
             </>
@@ -330,48 +297,49 @@ export function PoliticalProfile({
   );
 }
 
-function getDiagnostic(tagCounts: Record<string, number>, tagLabels: Record<string, string>): string {
+function getDiagnostic(
+  tagCounts: Record<string, number>,
+  t: TFunction
+): string {
   const total = Object.values(tagCounts).reduce((sum, count) => sum + count, 0);
-  if (total === 0) return 'Comece marcando as obras que você já leu!';
+  if (total === 0) return t('diagnostic.start');
 
-  const percentages: Record<string, number> = {};
+  const pct: Record<string, number> = {};
   Object.entries(tagCounts).forEach(([tag, count]) => {
-    percentages[tag] = (count / total) * 100;
+    pct[tag] = (count / total) * 100;
   });
 
-  const diagnostics: string[] = [];
+  const parts: string[] = [];
 
-  if ((percentages.freedom || 0) > (percentages.authority || 0)) {
-    diagnostics.push('tendência liberal e valorização da autonomia individual');
-  } else if ((percentages.authority || 0) > (percentages.freedom || 0)) {
-    diagnostics.push('inclinação para a ordem estabelecida e autoridade');
+  if ((pct.freedom || 0) > (pct.authority || 0)) {
+    parts.push(t('diagnostic.tendency_freedom'));
+  } else if ((pct.authority || 0) > (pct.freedom || 0)) {
+    parts.push(t('diagnostic.tendency_authority'));
   }
 
-  if ((percentages.state || 0) > (percentages.market || 0)) {
-    diagnostics.push('preferência por intervenção estatal');
-  } else if ((percentages.market || 0) > (percentages.state || 0)) {
-    diagnostics.push('valorização do mercado livre');
+  if ((pct.state || 0) > (pct.market || 0)) {
+    parts.push(t('diagnostic.preference_state'));
+  } else if ((pct.market || 0) > (pct.state || 0)) {
+    parts.push(t('diagnostic.preference_market'));
   }
 
-  if ((percentages.community || 0) > 15) {
-    diagnostics.push('valorização de soluções comunitárias');
+  if ((pct.community || 0) > 15) {
+    parts.push(t('diagnostic.community_value'));
   }
 
-  if ((percentages.tradition || 0) > (percentages.rupture || 0)) {
-    diagnostics.push('respeito à tradição e mudança gradual');
-  } else if ((percentages.rupture || 0) > (percentages.tradition || 0)) {
-    diagnostics.push('abertura à ruptura e transformação');
+  if ((pct.tradition || 0) > (pct.rupture || 0)) {
+    parts.push(t('diagnostic.tradition_value'));
+  } else if ((pct.rupture || 0) > (pct.tradition || 0)) {
+    parts.push(t('diagnostic.rupture_value'));
   }
 
-  if ((percentages.individual || 0) > (percentages.collective || 0)) {
-    diagnostics.push('foco no indivíduo como unidade política');
-  } else if ((percentages.collective || 0) > (percentages.individual || 0)) {
-    diagnostics.push('ênfase no coletivo e bem comum');
+  if ((pct.individual || 0) > (pct.collective || 0)) {
+    parts.push(t('diagnostic.individual_focus'));
+  } else if ((pct.collective || 0) > (pct.individual || 0)) {
+    parts.push(t('diagnostic.collective_focus'));
   }
 
-  if (diagnostics.length === 0) {
-    return 'Suas leituras mostram um equilíbrio interessante entre diferentes perspectivas políticas.';
-  }
+  if (parts.length === 0) return t('diagnostic.balanced');
 
-  return `Sua biblioteca reflete ${diagnostics.join(', ')}.`;
+  return `${t('diagnostic.intro')} ${parts.join(', ')}.`;
 }

@@ -1,0 +1,144 @@
+{
+  "app": {
+    "title": "Pensadores Políticos",
+    "subtitle": "Mapa Multidimensional"
+  },
+  "header": {
+    "search_placeholder": "Buscar pensadores...",
+    "glossary": "Glosario",
+    "only_read": "Solo Leídos",
+    "view_profile": "Ver Perfil ({{count}})",
+    "clear": "Limpiar",
+    "clear_all_filters": "Limpiar todos los filtros",
+    "filter_all": "Todos"
+  },
+  "sidebar": {
+    "historical_eras": "Eras Históricas"
+  },
+  "eras": {
+    "antiquity": "Antigüedad",
+    "renaissance_modernity": "Renacimiento y Modernidad",
+    "enlightenment": "Ilustración",
+    "nineteenth_century": "Siglo XIX",
+    "turn_of_century": "Cambio de siglo XIX–XX",
+    "twentieth_century": "Siglo XX",
+    "contemporary": "Contemporáneo"
+  },
+  "thinker_card": {
+    "hide_details": "Ocultar detalles",
+    "show_details": "Ver dimensiones e influencias",
+    "hide": "Ocultar",
+    "show_more": "Ver más",
+    "read_count_of": "{{read}}/{{total}} leídas"
+  },
+  "work_checkbox": {
+    "download": "Descargar",
+    "unavailable": "No disponible",
+    "unavailable_short": "N/D"
+  },
+  "glossary": {
+    "title": "Glosario de Dimensiones y Etiquetas",
+    "description": "Este glosario explica cada dimensión analítica y sus respectivas etiquetas utilizadas en el mapeo de los pensadores políticos.",
+    "tip_label": "Consejo",
+    "tip": "Usa los filtros en la parte superior de la página para explorar pensadores por cualquier combinación de estas dimensiones."
+  },
+  "profile": {
+    "title": "Perfil de Inclinación Política",
+    "based_on": "Basado en {{works}} obras leídas de {{thinkers}} pensadores",
+    "no_works_title": "Ninguna obra marcada aún",
+    "no_works_hint": "Marca las obras que ya has leído para visualizar tu perfil político",
+    "radar_title": "Mapa de Inclinaciones Políticas",
+    "radar_description": "Distribución porcentual de las etiquetas políticas presentes en las obras que has leído",
+    "dominant_tags": "Etiquetas Dominantes en tus Lecturas",
+    "work_one": "obra",
+    "work_other": "obras",
+    "diagnostic_label": "💡 Diagnóstico",
+    "clear_all": "Limpiar Todas las Lecturas",
+    "continue_reading": "Continuar Leyendo"
+  },
+  "results": {
+    "count_one": "Pensador",
+    "count_other": "Pensadores",
+    "no_results": "Ningún pensador encontrado con los filtros seleccionados."
+  },
+  "era": {
+    "read_works": "{{read}}/{{total}} obras leídas"
+  },
+  "tags": {
+    "freedom": "Libertad",
+    "authority": "Autoridad",
+    "state": "Estado fuerte",
+    "market": "Mercado libre",
+    "community": "Comunidad",
+    "tradition": "Tradición",
+    "rupture": "Ruptura",
+    "individual": "Individual",
+    "collective": "Colectivo",
+    "rational": "Racional",
+    "empirical": "Empírico",
+    "dialectic": "Dialéctico",
+    "historical": "Histórico",
+    "idealist": "Idealista",
+    "realist": "Realista",
+    "optimistic": "Optimista",
+    "pessimistic": "Pesimista",
+    "mixed": "Mixta",
+    "universalist": "Universalista",
+    "particularist": "Particularista"
+  },
+  "axes": {
+    "freedom_vs_authority": "Libertad vs. Autoridad",
+    "state_vs_market": "Estado vs. Mercado",
+    "tradition_vs_rupture": "Tradición vs. Ruptura",
+    "individual_vs_collective": "Individual vs. Colectivo",
+    "method": "Método",
+    "anthropology": "Antropología Filosófica",
+    "scope": "Alcance de Aplicación"
+  },
+  "fields": {
+    "historical_context": "Contexto Histórico",
+    "influences": "Influencias",
+    "impact": "Impacto",
+    "works": "Obras Principales",
+    "dimensions": "Dimensiones"
+  },
+  "tag_descriptions": {
+    "freedom": "Énfasis en la autonomía individual y limitación del poder estatal.",
+    "authority": "Valorización del orden, jerarquía y legitimidad del poder central.",
+    "state": "Defensa de un papel activo y regulador del Estado en la economía y sociedad.",
+    "market": "Confianza en los mecanismos del mercado libre y la competencia económica.",
+    "community": "Foco en formas de organización comunitaria y solidaridad local.",
+    "tradition": "Preservación de valores, instituciones y prácticas establecidas.",
+    "rupture": "Defensa de cambios radicales y transformación de las estructuras vigentes.",
+    "individual": "Priorización de los derechos e intereses del individuo.",
+    "collective": "Énfasis en los intereses del grupo, clase o nación.",
+    "rational": "Uso de la razón deductiva y principios universales como método.",
+    "empirical": "Basado en la observación, experiencia y datos concretos.",
+    "dialectic": "Análisis mediante contradicciones y síntesis de opuestos.",
+    "historical": "Comprensión de los fenómenos por la evolución histórica.",
+    "idealist": "Primacía de las ideas, valores y conciencia en la transformación social.",
+    "realist": "Foco en intereses materiales, poder y relaciones de fuerza.",
+    "optimistic": "Visión positiva de la naturaleza humana y capacidad de progreso.",
+    "pessimistic": "Desconfianza respecto a la naturaleza humana y necesidad de control.",
+    "mixed": "Perspectiva equilibrada: reconoce potencialidades y límites humanos.",
+    "universalist": "Principios aplicables a toda la humanidad, independientemente del contexto.",
+    "particularist": "Valorización de contextos específicos, culturas y tradiciones locales."
+  },
+  "diagnostic": {
+    "tendency_freedom": "tendencia liberal y valorización de la autonomía individual",
+    "tendency_authority": "inclinación hacia el orden establecido y la autoridad",
+    "preference_state": "preferencia por la intervención estatal",
+    "preference_market": "valorización del mercado libre",
+    "community_value": "valorización de soluciones comunitarias",
+    "tradition_value": "respeto a la tradición y cambio gradual",
+    "rupture_value": "apertura a la ruptura y transformación",
+    "individual_focus": "foco en el individuo como unidad política",
+    "collective_focus": "énfasis en lo colectivo y el bien común",
+    "intro": "Tu biblioteca refleja",
+    "balanced": "Tus lecturas muestran un interesante equilibrio entre diferentes perspectivas políticas.",
+    "start": "¡Comienza marcando las obras que ya has leído!"
+  },
+  "language_selector": {
+    "label": "Idioma"
+  }
+}

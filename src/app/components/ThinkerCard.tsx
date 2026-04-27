@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { DimensionBadge } from './DimensionBadge';
 import { WorkCheckbox } from './WorkCheckbox';
 
@@ -31,38 +32,58 @@ interface ThinkerCardProps {
 }
 
 const TAG_COLORS: Record<string, string> = {
-  freedom: 'bg-blue-50 text-blue-700 border-blue-200',
-  authority: 'bg-red-50 text-red-700 border-red-200',
-  state: 'bg-purple-50 text-purple-700 border-purple-200',
-  market: 'bg-green-50 text-green-700 border-green-200',
-  community: 'bg-emerald-50 text-emerald-700 border-emerald-200',
-  tradition: 'bg-sky-50 text-sky-800 border-sky-300',
-  rupture: 'bg-red-100 text-red-800 border-red-300',
-  individual: 'bg-cyan-50 text-cyan-700 border-cyan-200',
-  collective: 'bg-indigo-50 text-indigo-700 border-indigo-200',
-  rational: 'bg-pink-50 text-pink-700 border-pink-300 font-medium',
-  empirical: 'bg-teal-50 text-teal-700 border-teal-300 font-medium',
-  dialectic: 'bg-violet-50 text-violet-700 border-violet-200',
-  historical: 'bg-rose-50 text-rose-700 border-rose-200',
-  idealist: 'bg-purple-50 text-purple-800 border-purple-300 font-medium',
-  realist: 'bg-gray-100 text-gray-800 border-gray-400 font-medium',
-  optimistic: 'bg-yellow-50 text-yellow-800 border-yellow-300',
-  pessimistic: 'bg-slate-100 text-slate-800 border-slate-400',
+  freedom:      'bg-blue-50 text-blue-700 border-blue-200',
+  authority:    'bg-red-50 text-red-700 border-red-200',
+  state:        'bg-purple-50 text-purple-700 border-purple-200',
+  market:       'bg-green-50 text-green-700 border-green-200',
+  community:    'bg-emerald-50 text-emerald-700 border-emerald-200',
+  tradition:    'bg-sky-50 text-sky-800 border-sky-300',
+  rupture:      'bg-red-100 text-red-800 border-red-300',
+  individual:   'bg-cyan-50 text-cyan-700 border-cyan-200',
+  collective:   'bg-indigo-50 text-indigo-700 border-indigo-200',
+  rational:     'bg-pink-50 text-pink-700 border-pink-300 font-medium',
+  empirical:    'bg-teal-50 text-teal-700 border-teal-300 font-medium',
+  dialectic:    'bg-violet-50 text-violet-700 border-violet-200',
+  historical:   'bg-rose-50 text-rose-700 border-rose-200',
+  idealist:     'bg-purple-50 text-purple-800 border-purple-300 font-medium',
+  realist:      'bg-gray-100 text-gray-800 border-gray-400 font-medium',
+  optimistic:   'bg-yellow-50 text-yellow-800 border-yellow-300',
+  pessimistic:  'bg-slate-100 text-slate-800 border-slate-400',
   universalist: 'bg-blue-100 text-blue-800 border-blue-300',
-  particularist: 'bg-orange-50 text-orange-800 border-orange-300'
+  particularist:'bg-orange-50 text-orange-800 border-orange-300',
 };
 
-export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, isWorkRead, onToggleWork }: ThinkerCardProps) {
+// Tags rendered as DimensionBadge — excluded from the inline tag list
+const DIMENSION_BADGE_TAGS = new Set([
+  'optimistic', 'pessimistic', 'mixed', 'universalist', 'particularist',
+]);
+
+const ANTHROPOLOGY_TAGS = new Set(['optimistic', 'pessimistic', 'mixed']);
+const SCOPE_TAGS        = new Set(['universalist', 'particularist']);
+
+export function ThinkerCard({
+  thinker,
+  tagLabels,
+  dimensionLabels,
+  fieldLabels,
+  isWorkRead,
+  onToggleWork,
+}: ThinkerCardProps) {
+  const { t } = useTranslation();
   const [showDetails, setShowDetails] = useState(false);
 
-  const influences = thinker.influences || [];
-  const impact = thinker.impact || [];
-  const works = thinker.works || [];
+  const influences      = thinker.influences || [];
+  const impact          = thinker.impact || [];
+  const works           = thinker.works || [];
   const historicalContext = thinker.historical_context || '';
 
-  // Tags que correspondem às dimensões anthropology e scope — já exibidas como DimensionBadge
-  const DIMENSION_BADGE_TAGS = new Set(['optimistic', 'pessimistic', 'mixed', 'universalist', 'particularist']);
-  const visibleTags = thinker.tags.filter((tag) => !DIMENSION_BADGE_TAGS.has(tag));
+  const visibleTags = thinker.tags.filter(tag => !DIMENSION_BADGE_TAGS.has(tag));
+
+  // Resolve badge tag keys from the thinker's tag array
+  const anthropologyTag = thinker.tags.find(tag => ANTHROPOLOGY_TAGS.has(tag));
+  const scopeTag        = thinker.tags.find(tag => SCOPE_TAGS.has(tag));
+
+  const readCount = works.filter(w => isWorkRead(thinker.id, w.title)).length;
 
   return (
     <div
@@ -79,26 +100,26 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, 
 
         <div className="space-y-2 mb-3">
           <div className="flex flex-wrap gap-1.5">
-            {visibleTags.map((tag) => (
+            {visibleTags.map(tag => (
               <span
                 key={tag}
-                className={`px-2 py-0.5 rounded text-xs border ${TAG_COLORS[tag] || 'bg-gray-50 text-gray-700 border-gray-200'}`}
+                className={`px-2 py-0.5 rounded text-xs border ${
+                  TAG_COLORS[tag] || 'bg-gray-50 text-gray-700 border-gray-200'
+                }`}
               >
                 {tagLabels[tag] || tag}
               </span>
             ))}
           </div>
 
-          {thinker.dimensions && (
-            <div className="flex flex-wrap gap-2">
-              {thinker.dimensions.anthropology && (
-                <DimensionBadge type="anthropology" value={thinker.dimensions.anthropology} />
-              )}
-              {thinker.dimensions.scope && (
-                <DimensionBadge type="scope" value={thinker.dimensions.scope} />
-              )}
-            </div>
-          )}
+          <div className="flex flex-wrap gap-2">
+            {anthropologyTag && (
+              <DimensionBadge type="anthropology" tagKey={anthropologyTag} />
+            )}
+            {scopeTag && (
+              <DimensionBadge type="scope" tagKey={scopeTag} />
+            )}
+          </div>
         </div>
 
         <p className="text-sm text-[#4a4a4a] leading-relaxed">
@@ -112,19 +133,22 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, 
           className={`transition-transform ${showDetails ? 'rotate-90' : ''}`}
         />
         <span className="hidden sm:inline">
-          {showDetails ? 'Ocultar detalhes' : 'Ver dimensões e influências'}
+          {showDetails ? t('thinker_card.hide_details') : t('thinker_card.show_details')}
         </span>
         <span className="sm:hidden">
-          {showDetails ? 'Ocultar' : 'Ver mais'}
+          {showDetails ? t('thinker_card.hide') : t('thinker_card.show_more')}
         </span>
       </div>
 
       {showDetails && (
-        <div className="mt-4 pt-4 border-t border-[#e5e3df] space-y-3" onClick={(e) => e.stopPropagation()}>
+        <div
+          className="mt-4 pt-4 border-t border-[#e5e3df] space-y-3"
+          onClick={e => e.stopPropagation()}
+        >
           {historicalContext && (
             <div>
               <div className="text-xs font-medium text-[#7f8c8d] mb-1">
-                {fieldLabels.historical_context || 'Contexto Histórico'}
+                {fieldLabels.historical_context || t('fields.historical_context')}
               </div>
               <div className="text-xs sm:text-sm text-[#2c3e50]">{historicalContext}</div>
             </div>
@@ -132,7 +156,7 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, 
 
           <div>
             <div className="text-xs font-medium text-[#7f8c8d] mb-2">
-              {fieldLabels.dimensions || 'Dimensões'}
+              {fieldLabels.dimensions || t('fields.dimensions')}
             </div>
             <div className="grid sm:grid-cols-2 gap-x-4 gap-y-2">
               {Object.entries(thinker.dimensions)
@@ -152,7 +176,7 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, 
             {influences.length > 0 && (
               <div>
                 <div className="text-xs font-medium text-[#7f8c8d] mb-1.5">
-                  {fieldLabels.influences || 'Influências'}
+                  {fieldLabels.influences || t('fields.influences')}
                 </div>
                 <div className="flex flex-wrap gap-1">
                   {influences.map((inf, idx) => (
@@ -170,7 +194,7 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, 
             {impact.length > 0 && (
               <div>
                 <div className="text-xs font-medium text-[#7f8c8d] mb-1.5">
-                  {fieldLabels.impact || 'Impacto'}
+                  {fieldLabels.impact || t('fields.impact')}
                 </div>
                 <div className="flex flex-wrap gap-1">
                   {impact.slice(0, 3).map((imp, idx) => (
@@ -195,10 +219,10 @@ export function ThinkerCard({ thinker, tagLabels, dimensionLabels, fieldLabels, 
             <div>
               <div className="flex items-center justify-between mb-2">
                 <div className="text-xs font-medium text-[#7f8c8d]">
-                  {fieldLabels.works || 'Obras Principais'}
+                  {fieldLabels.works || t('fields.works')}
                 </div>
                 <div className="text-xs text-emerald-600 font-medium">
-                  {works.filter((w: Work) => isWorkRead(thinker.id, w.title)).length}/{works.length} lidas
+                  {t('thinker_card.read_count_of', { read: readCount, total: works.length })}
                 </div>
               </div>
               <div className="space-y-1.5">

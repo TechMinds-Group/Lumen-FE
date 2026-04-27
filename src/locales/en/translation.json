@@ -1,0 +1,144 @@
+{
+  "app": {
+    "title": "Political Thinkers",
+    "subtitle": "Multidimensional Map"
+  },
+  "header": {
+    "search_placeholder": "Search thinkers...",
+    "glossary": "Glossary",
+    "only_read": "Only Read",
+    "view_profile": "View Profile ({{count}})",
+    "clear": "Clear",
+    "clear_all_filters": "Clear all filters",
+    "filter_all": "All"
+  },
+  "sidebar": {
+    "historical_eras": "Historical Eras"
+  },
+  "eras": {
+    "antiquity": "Antiquity",
+    "renaissance_modernity": "Renaissance & Modernity",
+    "enlightenment": "Enlightenment",
+    "nineteenth_century": "19th Century",
+    "turn_of_century": "Turn of the 19th–20th Century",
+    "twentieth_century": "20th Century",
+    "contemporary": "Contemporary"
+  },
+  "thinker_card": {
+    "hide_details": "Hide details",
+    "show_details": "View dimensions and influences",
+    "hide": "Hide",
+    "show_more": "Show more",
+    "read_count_of": "{{read}}/{{total}} read"
+  },
+  "work_checkbox": {
+    "download": "Download",
+    "unavailable": "Unavailable",
+    "unavailable_short": "N/A"
+  },
+  "glossary": {
+    "title": "Dimensions and Tags Glossary",
+    "description": "This glossary explains each analytical dimension and its respective tags used in mapping political thinkers.",
+    "tip_label": "Tip",
+    "tip": "Use the filters at the top of the page to explore thinkers by any combination of these dimensions."
+  },
+  "profile": {
+    "title": "Political Inclination Profile",
+    "based_on": "Based on {{works}} works read from {{thinkers}} thinkers",
+    "no_works_title": "No works marked yet",
+    "no_works_hint": "Mark the works you have already read to visualize your political profile",
+    "radar_title": "Political Inclination Map",
+    "radar_description": "Percentage distribution of political tags present in the works you have read",
+    "dominant_tags": "Dominant Tags in Your Reading",
+    "work_one": "work",
+    "work_other": "works",
+    "diagnostic_label": "💡 Diagnosis",
+    "clear_all": "Clear All Readings",
+    "continue_reading": "Continue Reading"
+  },
+  "results": {
+    "count_one": "Thinker",
+    "count_other": "Thinkers",
+    "no_results": "No thinker found with the selected filters."
+  },
+  "era": {
+    "read_works": "{{read}}/{{total}} works read"
+  },
+  "tags": {
+    "freedom": "Freedom",
+    "authority": "Authority",
+    "state": "Strong State",
+    "market": "Free Market",
+    "community": "Community",
+    "tradition": "Tradition",
+    "rupture": "Rupture",
+    "individual": "Individual",
+    "collective": "Collective",
+    "rational": "Rational",
+    "empirical": "Empirical",
+    "dialectic": "Dialectical",
+    "historical": "Historical",
+    "idealist": "Idealist",
+    "realist": "Realist",
+    "optimistic": "Optimistic",
+    "pessimistic": "Pessimistic",
+    "mixed": "Mixed",
+    "universalist": "Universalist",
+    "particularist": "Particularist"
+  },
+  "axes": {
+    "freedom_vs_authority": "Freedom vs. Authority",
+    "state_vs_market": "State vs. Market",
+    "tradition_vs_rupture": "Tradition vs. Rupture",
+    "individual_vs_collective": "Individual vs. Collective",
+    "method": "Method",
+    "anthropology": "Philosophical Anthropology",
+    "scope": "Scope of Application"
+  },
+  "fields": {
+    "historical_context": "Historical Context",
+    "influences": "Influences",
+    "impact": "Impact",
+    "works": "Main Works",
+    "dimensions": "Dimensions"
+  },
+  "tag_descriptions": {
+    "freedom": "Emphasis on individual autonomy and limitation of state power.",
+    "authority": "Valuing order, hierarchy, and legitimacy of central power.",
+    "state": "Defense of an active and regulatory role of the State in the economy and society.",
+    "market": "Trust in free market mechanisms and economic competition.",
+    "community": "Focus on forms of community organization and local solidarity.",
+    "tradition": "Preservation of established values, institutions, and practices.",
+    "rupture": "Defense of radical changes and transformation of existing structures.",
+    "individual": "Prioritization of the rights and interests of the individual.",
+    "collective": "Emphasis on the interests of the group, class, or nation.",
+    "rational": "Use of deductive reasoning and universal principles as method.",
+    "empirical": "Based on observation, experience, and concrete data.",
+    "dialectic": "Analysis through contradictions and synthesis of opposites.",
+    "historical": "Understanding phenomena through historical evolution.",
+    "idealist": "Primacy of ideas, values, and consciousness in social transformation.",
+    "realist": "Focus on material interests, power, and relations of force.",
+    "optimistic": "Positive view of human nature and capacity for progress.",
+    "pessimistic": "Distrust of human nature and need for control.",
+    "mixed": "Balanced perspective: recognizes human potentials and limits.",
+    "universalist": "Principles applicable to all humanity, regardless of context.",
+    "particularist": "Valuing specific contexts, cultures, and local traditions."
+  },
+  "diagnostic": {
+    "tendency_freedom": "liberal tendency and appreciation of individual autonomy",
+    "tendency_authority": "inclination toward established order and authority",
+    "preference_state": "preference for state intervention",
+    "preference_market": "appreciation of the free market",
+    "community_value": "appreciation of community-based solutions",
+    "tradition_value": "respect for tradition and gradual change",
+    "rupture_value": "openness to rupture and transformation",
+    "individual_focus": "focus on the individual as the political unit",
+    "collective_focus": "emphasis on the collective and common good",
+    "intro": "Your library reflects",
+    "balanced": "Your readings show an interesting balance between different political perspectives.",
+    "start": "Start by marking the works you have already read!"
+  },
+  "language_selector": {
+    "label": "Language"
+  }
+}

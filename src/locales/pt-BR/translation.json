@@ -1,0 +1,144 @@
+{
+  "app": {
+    "title": "Pensadores Políticos",
+    "subtitle": "Mapa Multidimensional"
+  },
+  "header": {
+    "search_placeholder": "Buscar pensadores...",
+    "glossary": "Glossário",
+    "only_read": "Apenas Lidas",
+    "view_profile": "Ver Perfil ({{count}})",
+    "clear": "Limpar",
+    "clear_all_filters": "Limpar todos os filtros",
+    "filter_all": "Todos"
+  },
+  "sidebar": {
+    "historical_eras": "Eras Históricas"
+  },
+  "eras": {
+    "antiquity": "Antiguidade",
+    "renaissance_modernity": "Renascimento e Modernidade",
+    "enlightenment": "Iluminismo",
+    "nineteenth_century": "Século XIX",
+    "turn_of_century": "Virada do século XIX–XX",
+    "twentieth_century": "Século XX",
+    "contemporary": "Contemporâneo"
+  },
+  "thinker_card": {
+    "hide_details": "Ocultar detalhes",
+    "show_details": "Ver dimensões e influências",
+    "hide": "Ocultar",
+    "show_more": "Ver mais",
+    "read_count_of": "{{read}}/{{total}} lidas"
+  },
+  "work_checkbox": {
+    "download": "Baixar",
+    "unavailable": "Indisponível",
+    "unavailable_short": "N/D"
+  },
+  "glossary": {
+    "title": "Glossário de Dimensões e Tags",
+    "description": "Este glossário explica cada dimensão analítica e suas respectivas tags utilizadas no mapeamento dos pensadores políticos.",
+    "tip_label": "Dica",
+    "tip": "Use os filtros no topo da página para explorar pensadores por qualquer combinação dessas dimensões."
+  },
+  "profile": {
+    "title": "Perfil de Inclinação Política",
+    "based_on": "Baseado em {{works}} obras lidas de {{thinkers}} pensadores",
+    "no_works_title": "Nenhuma obra marcada ainda",
+    "no_works_hint": "Marque as obras que você já leu para visualizar seu perfil político",
+    "radar_title": "Mapa de Inclinações Políticas",
+    "radar_description": "Distribuição percentual das tags políticas presentes nas obras que você leu",
+    "dominant_tags": "Tags Dominantes em Suas Leituras",
+    "work_one": "obra",
+    "work_other": "obras",
+    "diagnostic_label": "💡 Diagnóstico",
+    "clear_all": "Limpar Todas as Leituras",
+    "continue_reading": "Continuar Lendo"
+  },
+  "results": {
+    "count_one": "Pensador",
+    "count_other": "Pensadores",
+    "no_results": "Nenhum pensador encontrado com os filtros selecionados."
+  },
+  "era": {
+    "read_works": "{{read}}/{{total}} obras lidas"
+  },
+  "tags": {
+    "freedom": "Liberdade",
+    "authority": "Autoridade",
+    "state": "Estado forte",
+    "market": "Mercado livre",
+    "community": "Comunidade",
+    "tradition": "Tradição",
+    "rupture": "Ruptura",
+    "individual": "Individual",
+    "collective": "Coletivo",
+    "rational": "Racional",
+    "empirical": "Empírico",
+    "dialectic": "Dialético",
+    "historical": "Histórico",
+    "idealist": "Idealista",
+    "realist": "Realista",
+    "optimistic": "Otimista",
+    "pessimistic": "Pessimista",
+    "mixed": "Mista",
+    "universalist": "Universal",
+    "particularist": "Particular"
+  },
+  "axes": {
+    "freedom_vs_authority": "Liberdade vs. Autoridade",
+    "state_vs_market": "Estado vs. Mercado",
+    "tradition_vs_rupture": "Tradição vs. Ruptura",
+    "individual_vs_collective": "Individual vs. Coletivo",
+    "method": "Método",
+    "anthropology": "Antropologia Filosófica",
+    "scope": "Escopo de Aplicação"
+  },
+  "fields": {
+    "historical_context": "Contexto Histórico",
+    "influences": "Influências",
+    "impact": "Impacto",
+    "works": "Obras Principais",
+    "dimensions": "Dimensões"
+  },
+  "tag_descriptions": {
+    "freedom": "Ênfase na autonomia individual e limitação do poder estatal.",
+    "authority": "Valorização da ordem, hierarquia e legitimidade do poder central.",
+    "state": "Defesa de um papel ativo e regulador do Estado na economia e sociedade.",
+    "market": "Confiança nos mecanismos de livre mercado e competição econômica.",
+    "community": "Foco em formas de organização comunitária e solidariedade local.",
+    "tradition": "Preservação de valores, instituições e práticas estabelecidas.",
+    "rupture": "Defesa de mudanças radicais e transformação das estruturas vigentes.",
+    "individual": "Priorização dos direitos e interesses do indivíduo.",
+    "collective": "Ênfase nos interesses do grupo, classe ou nação.",
+    "rational": "Uso da razão dedutiva e de princípios universais como método.",
+    "empirical": "Base na observação, experiência e dados concretos.",
+    "dialectic": "Análise por meio de contradições e síntese de opostos.",
+    "historical": "Compreensão dos fenômenos pela evolução histórica.",
+    "idealist": "Primazia das ideias, valores e consciência na transformação social.",
+    "realist": "Foco em interesses materiais, poder e relações de força.",
+    "optimistic": "Visão positiva da natureza humana e capacidade de progresso.",
+    "pessimistic": "Desconfiança quanto à natureza humana e necessidade de controle.",
+    "mixed": "Perspectiva equilibrada: reconhece potencialidades e limites humanos.",
+    "universalist": "Princípios aplicáveis a toda humanidade, independente de contexto.",
+    "particularist": "Valorização de contextos específicos, culturas e tradições locais."
+  },
+  "diagnostic": {
+    "tendency_freedom": "tendência liberal e valorização da autonomia individual",
+    "tendency_authority": "inclinação para a ordem estabelecida e autoridade",
+    "preference_state": "preferência por intervenção estatal",
+    "preference_market": "valorização do mercado livre",
+    "community_value": "valorização de soluções comunitárias",
+    "tradition_value": "respeito à tradição e mudança gradual",
+    "rupture_value": "abertura à ruptura e transformação",
+    "individual_focus": "foco no indivíduo como unidade política",
+    "collective_focus": "ênfase no coletivo e bem comum",
+    "intro": "Sua biblioteca reflete",
+    "balanced": "Suas leituras mostram um equilíbrio interessante entre diferentes perspectivas políticas.",
+    "start": "Comece marcando as obras que você já leu!"
+  },
+  "language_selector": {
+    "label": "Idioma"
+  }
+}
