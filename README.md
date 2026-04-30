@@ -1,7 +1,7 @@
 
-  # Dashboard Política
+  # Lumen
 
-  This is a code bundle for Dashboard Política. The original project is available at https://www.figma.com/design/jA0mj1zKlrpZX30HECpk88/Dashboard-Pol%C3%ADtica.
+  This is a code bundle for Lumen. The original project is available at https://www.figma.com/design/jA0mj1zKlrpZX30HECpk88/Lumen.
 
   ## Running the code
 
