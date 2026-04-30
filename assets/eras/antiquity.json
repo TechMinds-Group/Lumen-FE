@@ -1,0 +1,200 @@
+{
+  "id": "antiquity",
+  "label": "Antiguidade",
+  "thinkers": [
+    {
+      "id": "confucio",
+      "name": "Confúcio",
+      "period": "551–479 a.C.",
+      "description": "Ética relacional, ordem moral e governo exemplar.",
+      "tags": ["authority", "state", "tradition", "collective", "historical", "optimistic", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Autoridade moral legítima baseada no exemplo e na virtude do governante.",
+        "state_vs_market": "Estado como ordem ritual e educativa, não econômica.",
+        "tradition_vs_rupture": "Tradição ritual e continuidade dinástica como fonte de estabilidade social.",
+        "individual_vs_collective": "Coletivo relacional: o self é constituído por vínculos de obrigação mútua.",
+        "method": "Histórico: aprendizado por exemplos passados e transmissão da herança dos antigos.",
+        "anthropology": "Otimista: o ser humano é aperfeiçoável pela educação e pelo ritual.",
+        "scope": "Particularista: pensamento enraizado na cultura e história específica chinesa."
+      },
+      "historical_context": "China da primavera e outono; crise da ordem feudal dos Zhou.",
+      "impact": ["Neoconfucionismo", "Ética asiática", "Filosofia política chinesa"],
+      "works": [
+        { "title": "Analectos", "download_url": "Os-Analectos-Confucio.pdf" }
+      ]
+    },
+    {
+      "id": "suntzu",
+      "name": "Sun Tzu",
+      "period": "c. século V a.C.",
+      "description": "Estratégia, guerra e prudência política.",
+      "tags": ["authority", "state", "tradition", "collective", "realist", "pessimistic", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Autoridade estratégica e disciplina hierárquica como condição de eficácia.",
+        "state_vs_market": "Estado forte e eficiente; a economia serve à capacidade militar.",
+        "tradition_vs_rupture": "Tradição de prudência adaptativa: os princípios são estáveis, a tática é flexível.",
+        "individual_vs_collective": "Coletivo organizado e hierárquico; o comandante age pelo bem do grupo.",
+        "method": "Realista: foco em interesses, poder e relações de força no terreno.",
+        "anthropology": "Pessimista: o conflito é condição permanente; a natureza humana é competitiva.",
+        "scope": "Particularista: princípios aplicados conforme o terreno, clima e contexto do adversário."
+      },
+      "historical_context": "China antiga; período dos Reinos Combatentes.",
+      "impact": ["Teoria militar", "Estratégia política", "Management contemporâneo"],
+      "works": [
+        { "title": "A Arte da Guerra", "download_url": "a-arte-da-guerra.pdf" }
+      ]
+    },
+    {
+      "id": "platao",
+      "name": "Platão",
+      "period": "427–347 a.C.",
+      "description": "Aristocracia dos filósofos-reis; desconfiança da democracia.",
+      "tags": ["authority", "state", "tradition", "collective", "idealist", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Autoridade filosófica sobre a liberdade popular; o sábio deve governar o ignorante.",
+        "state_vs_market": "Estado planificado e hierárquico; a economia subordinada à virtude cívica.",
+        "tradition_vs_rupture": "Tradição: preservação da ordem natural e das formas eternas contra a decadência.",
+        "individual_vs_collective": "Coletivo: o indivíduo existe para servir à cidade-estado segundo sua natureza.",
+        "method": "Idealista: primazia das ideias e da consciência sobre a realidade material.",
+        "anthropology": "Mista: a alma tripartite permite tanto a virtude racional quanto a degradação passional.",
+        "scope": "Universalista: a cidade justa é um modelo ideal válido para toda a humanidade."
+      },
+      "historical_context": "Atenas pós-guerra do Peloponeso; crise da democracia; morte de Sócrates.",
+      "impact": ["Agostinho", "Neoplatonismo", "Constitucionalismo idealista"],
+      "works": [
+        { "title": "A República", "download_url": "Platao_A_Republica.pdf" },
+        { "title": "As Leis", "download_url": "As_leis_Platao.pdf" }
+      ]
+    },
+    {
+      "id": "aristoteles",
+      "name": "Aristóteles",
+      "period": "384–322 a.C.",
+      "description": "Governo misto e moderado; virtude no meio-termo.",
+      "tags": ["freedom", "state", "tradition", "individual", "empirical", "mixed", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade cívica moderada: a lei é a senhora soberana que protege contra a tirania.",
+        "state_vs_market": "Estado moderado que garante a propriedade privada em função da 'vida boa'.",
+        "tradition_vs_rupture": "Tradição: as instituições acumulam sabedoria prática ao longo do tempo.",
+        "individual_vs_collective": "Individual: embora o homem seja social, a felicidade (eudaimonia) é uma realização do ser.",
+        "method": "Empírico: base na observação e comparação de constituições reais e dados concretos.",
+        "anthropology": "Mista: a natureza humana inclina ao bem, mas exige hábito e educação.",
+        "scope": "Particularista: as melhores leis dependem das circunstâncias geográficas e sociais de cada povo."
+      },
+      "historical_context": "Atenas clássica; fundação do Liceu; transição para o período helenístico.",
+      "impact": ["Tomás de Aquino", "Republicanismo", "Ética das virtudes"],
+      "works": [
+        { "title": "Política", "download_url": "aristoteles_a_politica.pdf" },
+        { "title": "Ética a Nicômaco", "download_url": "Etica-a-Nicomaco.pdf" }
+      ]
+    },
+    {
+      "id": "cicero",
+      "name": "Cícero",
+      "period": "106–43 a.C.",
+      "description": "República mista e direito natural como base da lei.",
+      "tags": ["freedom", "state", "tradition", "individual", "rational", "optimistic", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade sob a lei: a 'libertas' republicana protegida por freios institucionais.",
+        "state_vs_market": "Estado republicano; defesa da propriedade privada como pilar da justiça civil.",
+        "tradition_vs_rupture": "Tradição: o 'mos maiorum' (costume dos antepassados) como base da estabilidade.",
+        "individual_vs_collective": "Individual: direitos naturais que pertencem ao homem antes mesmo do Estado.",
+        "method": "Racional: uso da razão universal para deduzir as leis da natureza humana.",
+        "anthropology": "Otimista: o ser humano é naturalmente inclinado à sociabilidade e à justiça.",
+        "scope": "Universalista: a lei natural é imutável e aplicável a todas as nações em todos os tempos."
+      },
+      "historical_context": "Colapso da República Romana; ascensão do poder pessoal de Júlio César.",
+      "impact": ["Locke", "Revolução Americana", "Direito Natural moderno"],
+      "works": [
+        { "title": "De Re Publica", "download_url": "Da_Republica_Cicero.pdf" },
+        { "title": "De Officiis", "download_url": "cicero_dos_deveres.pdf" }
+      ]
+    },
+    {
+      "id": "santo_agostinho",
+      "name": "Aurélio Agostinho de Hipona",
+      "period": "354–430",
+      "description": "Bispo e teólogo latino que sintetizou o neoplatonismo com a teologia cristã, fundando uma filosofia política centrada na distinção entre a Cidade de Deus e a Cidade dos Homens, e estabelecendo as bases doutrinárias do pensamento político ocidental medieval.",
+      "tags": ["authority", "state", "tradition", "collective", "idealist", "pessimistic", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Agostinho subordina a liberdade humana à graça divina e à autoridade da Igreja, argumentando em 'A Cidade de Deus' que o livre-arbítrio corrompido pelo pecado original exige a disciplina das instituições eclesiásticas e do poder temporal para conter o mal.",
+        "state_vs_market": "O Estado é concebido como instrumento necessário de coerção e ordem num mundo decaído; Agostinho não tematiza o mercado, mas legitima o poder político como remédio providencial contra a anarquia moral resultante da queda adâmica.",
+        "tradition_vs_rupture": "Defende a continuidade da tradição apostólica e a autoridade da Igreja estabelecida, combatendo vigorosamente as heresias donatista e pelagiana como rupturas ilegítimas com a ortodoxia cristã.",
+        "individual_vs_collective": "A salvação, embora pessoal, insere-se na comunidade da Igreja como corpo místico; a Cidade de Deus é uma coletividade unida pelo amor a Deus (amor Dei), contraposta à coletividade da Cidade dos Homens unida pelo amor-próprio (amor sui).",
+        "method": "Adota um método idealistateológico de inspiração neoplatônica: parte da iluminação divina como condição de todo conhecimento verdadeiro, combinando exegese bíblica, introspecção confessional — manifesta nas 'Confissões' — e argumentação filosófica dedutiva a partir de princípios revelados.",
+        "anthropology": "Profundamente pessimista: o pecado original corrompeu radicalmente a vontade humana, tornando o homem incapaz de alcançar o bem por suas próprias forças; a concupiscência e o amor-próprio dominam a natureza decaída, que só pode ser redimida pela graça indevida de Deus.",
+        "scope": "Universalista: a história humana é interpretada como drama cósmico único, válido para toda a humanidade, dividida entre as duas cidades desde Caim e Abel até o Juízo Final, independentemente de culturas, povos ou épocas."
+      },
+      "historical_context": "Agostinho viveu o colapso do Império Romano do Ocidente — o saque de Roma pelos visigodos em 410 d.C. provocou sua obra magna 'A Cidade de Deus' como resposta à acusação pagã de que o cristianismo enfraquecera Roma. Enfrentou as controvérsias donatista, sobre a validade dos sacramentos ministrados por clérigos indignos, e pelagiana, sobre a suficiência da vontade humana para a salvação. Atuou num contexto de cristianização forçada do Império e de definição da ortodoxia católica pelos concílios ecuménicos. Foi contemporâneo da desintegração das estruturas administrativas romanas no norte da África.",
+      "influences": [
+        "Platão e o neoplatonismo de Plotino",
+        "Paulo de Tarso e as epístolas paulinas",
+        "Ambrósio de Milão",
+        "Cícero e o estoicismo romano",
+        "Maniqueísmo (como adversário superado)"
+      ],
+      "impact": [
+        "Tomás de Aquino e a escolástica medieval",
+        "Martinho Lutero e a Reforma Protestante — doutrina agostiniana da graça e predestinação",
+        "João Calvino e o calvinismo — radicalização da predestinação agostiniana",
+        "Doutrina política medieval da cristandade e da plenitudo potestatis papal",
+        "Jansenismo do século XVII — Pascal e a teologia da graça",
+        "Filosofia da história de Hegel — secularização do esquema das duas cidades",
+        "Reinhold Niebuhr e o realismo cristão do século XX",
+        "Debate acadêmico sobre a origem da teoria política ocidental — Hannah Arendt dedicou sua tese doutoral a Agostinho",
+        "Fundação do conceito de 'guerra justa' na tradição jurídico-política ocidental",
+        "Teologia da libertação — tensão crítica com o agostinismo político conservador"
+      ],
+      "works": [
+        { "title": "Confissões", "download_url": "" },
+        { "title": "A Cidade de Deus", "download_url": "" },
+        { "title": "A Trindade", "download_url": "" },
+        { "title": "Sobre o Livre-Arbítrio", "download_url": "" },
+        { "title": "Sobre a Graça e o Livre-Arbítrio", "download_url": "" }
+      ]
+    },
+    {
+      "id": "sao_tomas_de_aquino",
+      "name": "Tomás de Aquino",
+      "period": "1225–1274",
+      "description": "Teólogo e filósofo dominicano que sintetizou a metafísica aristotélica com a teologia cristã, elaborando uma filosofia política fundada na lei natural, na razão ordenada ao bem comum e na legitimidade do poder temporal subordinado à lei divina.",
+      "tags": ["authority", "state", "tradition", "collective", "rational", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Aquino legitima a autoridade política como decorrência da natureza social do homem — o ser humano é por natureza um animal político — e subordina o governante à lei natural e à lei divina, reservando o direito de resistência apenas à tirania manifesta que contradiz o bem comum.",
+        "state_vs_market": "Defende um papel ativo do Estado na promoção do bem comum e da virtude dos cidadãos, inspirado na 'Política' de Aristóteles; a comunidade política é fins em si mesma e deve ordenar as relações econômicas à justiça, condenando a usura e o lucro desmedido.",
+        "tradition_vs_rupture": "Profundamente conservador no sentido construtivo: preserva e sintetiza a tradição filosófica grega e a teológica cristã, recusando inovações que contradigam a revelação ou a razão natural; a mudança legítima ocorre apenas dentro dos limites da ordem natural e da autoridade eclesiástica.",
+        "individual_vs_collective": "O indivíduo se realiza plenamente apenas na comunidade política e na comunhão com Deus; o bem comum é hierarquicamente superior ao bem particular, embora a dignidade individual seja protegida pela lei natural que proíbe tratá-lo como mero meio.",
+        "method": "Adota o método escolástico racional-dedutivo: a quaestio disputata — exposição de objeções, resposta magistral e réplica às objeções — combinada com a síntese entre fé e razão, entre teologia revelada e filosofia natural aristotélica, buscando demonstrações necessárias a partir de primeiros princípios.",
+        "anthropology": "Visão equilibrada: o homem é composto de matéria e forma, corpo e alma racional, capaz de conhecer o bem e orientar-se a Deus por meio da razão natural; o pecado original enfraqueceu mas não destruiu a razão, que permanece capaz de apreender a lei natural sem o auxílio da revelação.",
+        "scope": "Universalista: a lei natural é inscrita por Deus na razão de todo ser humano, independentemente de cultura ou época, tornando os princípios éticos e políticos fundamentais acessíveis e vinculantes para toda a humanidade."
+      },
+      "historical_context": "Aquino viveu no auge da escolástica medieval e do florescimento das universidades europeias — estudou e ensinou em Nápoles, Paris e Colônia. A recepção das obras de Aristóteles, traduzidas do árabe por Averróis e Avicena, gerava tensão com a ortodoxia agostiniana dominante. O papado de Inocêncio III consolidara a teocracia medieval, enquanto os conflitos entre o Papado e o Sacro Império Romano Germânico exigiam fundamentação teórica do poder temporal. A Ordem Dominicana, fundada para combater heresias como o catarismo, forneceu o contexto institucional de sua produção intelectual.",
+      "influences": [
+        "Aristóteles — metafísica, ética e filosofia política",
+        "Agostinho de Hipona — teologia da graça e do pecado original",
+        "Averróis — comentários árabes a Aristóteles",
+        "Alberto Magno — mestre dominicano e introdutor do aristotelismo",
+        "Dionísio Pseudo-Areopagita — teologia negativa e hierarquia celeste"
+      ],
+      "impact": [
+        "Tomismo como filosofia oficial da Igreja Católica — reafirmado pela encíclica Aeterni Patris de Leão XIII em 1879",
+        "Neotomismo e neoscolástica dos séculos XIX e XX",
+        "Teoria da lei natural no direito internacional — Francisco de Vitória e a Escola de Salamanca",
+        "Doutrina dos direitos humanos de inspiração tomista — Jacques Maritain e a Declaração Universal de 1948",
+        "Filosofia política cristã-democrata europeia do século XX",
+        "Debate sobre a relação entre fé e razão — influência persistente na teologia católica contemporânea",
+        "John Finnis e a teoria contemporânea da lei natural no direito",
+        "Alasdair MacIntyre e o comunitarismo de inspiração aristotélico-tomista",
+        "Fundamentação filosófica do conceito de guerra justa na tradição jurídica ocidental",
+        "Crítica ao positivismo jurídico — influência sobre o debate Hart-Fuller no século XX"
+      ],
+      "works": [
+        { "title": "Suma Teológica", "download_url": "" },
+        { "title": "Suma Contra os Gentios", "download_url": "" },
+        { "title": "Sobre o Governo dos Príncipes", "download_url": "" },
+        { "title": "Comentário à Política de Aristóteles", "download_url": "" },
+        { "title": "Sobre o Ente e a Essência", "download_url": "" }
+      ]
+    }
+  ]
+}

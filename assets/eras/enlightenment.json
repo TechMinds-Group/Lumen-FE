@@ -1,0 +1,138 @@
+{
+  "id": "enlightenment",
+  "label": "Iluminismo",
+  "thinkers": [
+    {
+      "id": "montesquieu",
+      "name": "Montesquieu",
+      "period": "1689–1755",
+      "description": "Separação dos poderes; governo moderado e adaptado ao contexto histórico.",
+      "tags": ["freedom", "state", "tradition", "individual", "historical", "mixed", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade: garantida pela separação e pelo equilíbrio institucional dos poderes (checks and balances).",
+        "state_vs_market": "Estado: defesa de um governo constitucional moderado que impede a concentração de poder.",
+        "tradition_vs_rupture": "Tradição: as leis devem respeitar o 'espírito' e a continuidade histórica de cada povo.",
+        "individual_vs_collective": "Individual: a liberdade do sujeito é o fim último das estruturas institucionais.",
+        "method": "Histórico: análise comparativa das leis e costumes de diversas civilizações ao longo do tempo.",
+        "anthropology": "Mista: a natureza humana é moldável por fatores externos como clima, religião e leis.",
+        "scope": "Particularista: a constituição ideal não é única, mas varia conforme a circunstância de cada nação."
+      },
+      "historical_context": "França absolutista; admiração pelo parlamentarismo inglês pós-1688.",
+      "impact": ["Constituição americana", "Os Federalistas", "Constitucionalismo moderno"],
+      "works": [
+        { "title": "O Espírito das Leis", "download_url": "Montesquieu-O-espirito-das-leis-completo.pdf" },
+        { "title": "Cartas Persas", "download_url": "" }
+      ]
+    },
+    {
+      "id": "rousseau",
+      "name": "Rousseau",
+      "period": "1712–1778",
+      "description": "Vontade geral do povo; a propriedade corrompeu a igualdade natural.",
+      "tags": ["freedom", "state", "rupture", "collective", "rational", "optimistic", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade: entendida como autonomia (obedecer à lei que se prescreveu a si mesmo via vontade geral).",
+        "state_vs_market": "Estado: o soberano é o povo organizado; a propriedade privada é vista como fonte de desigualdade.",
+        "tradition_vs_rupture": "Ruptura: crítica radical à civilização e às instituições que corromperam a bondade natural.",
+        "individual_vs_collective": "Coletivo: a liberdade autêntica realiza-se na integração do cidadão ao corpo político.",
+        "method": "Racional: uso de experimentos mentais (Estado de Natureza) para deduzir princípios normativos.",
+        "anthropology": "Otimista: o homem nasce bom e livre; a corrupção é um produto social e histórico.",
+        "scope": "Universalista: os princípios do contrato social são deduzidos como verdades para todo o gênero humano."
+      },
+      "historical_context": "França pré-revolucionária; crise do Ancien Régime.",
+      "impact": ["Revolução Francesa", "Marxismo", "Republicanismo igualitário"],
+      "works": [
+        { "title": "O Contrato Social", "download_url": "" },
+        { "title": "Discurso sobre a Desigualdade", "download_url": "" }
+      ]
+    },
+    {
+      "id": "adam_smith",
+      "name": "Adam Smith",
+      "period": "1723–1790",
+      "description": "Mercado livre e mão invisível com base na simpatia moral.",
+      "tags": ["freedom", "market", "rupture", "individual", "empirical", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade: ênfase na liberdade natural de comércio e na limitação da interferência estatal.",
+        "state_vs_market": "Mercado: confiança na ordem espontânea e na competição como motor da prosperidade.",
+        "tradition_vs_rupture": "Ruptura: combate ao sistema mercantilista e aos privilégios das corporações de ofício.",
+        "individual_vs_collective": "Individual: o interesse privado, via mão invisível, promove o bem-estar coletivo de forma não intencional.",
+        "method": "Empírico: observação dos fenômenos econômicos aliada à filosofia moral dos sentimentos.",
+        "anthropology": "Mista: o homem busca o interesse próprio, mas é capaz de 'simpatia' (empatia) e senso de justiça.",
+        "scope": "Universalista: as leis da economia e da divisão do trabalho beneficiam qualquer nação que as adote."
+      },
+      "historical_context": "Revolução Industrial nascente; Iluminismo escocês.",
+      "impact": ["Liberalismo econômico", "David Ricardo", "Escola Austríaca"],
+      "works": [
+        { "title": "A Riqueza das Nações", "download_url": "" },
+        { "title": "Teoria dos Sentimentos Morais", "download_url": "" }
+      ]
+    },
+    {
+      "id": "thomas_paine",
+      "name": "Thomas Paine",
+      "period": "1737–1809",
+      "description": "Democracia radical; direitos do homem e justiça agrária.",
+      "tags": ["freedom", "state", "rupture", "collective", "rational", "optimistic", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade: direito natural inalienável que justifica a derrubada de governos tiranos.",
+        "state_vs_market": "Estado: deve ser republicano e redistributivo para compensar desigualdades de propriedade.",
+        "tradition_vs_rupture": "Ruptura: oposição total à monarquia hereditária e aos privilégios aristocráticos.",
+        "individual_vs_collective": "Coletivo: ênfase na soberania popular e na responsabilidade social da propriedade.",
+        "method": "Racional: princípios derivados da razão natural e aplicados contra o 'preconceito' histórico.",
+        "anthropology": "Otimista: crença na dignidade natural e na capacidade de autogoverno do povo.",
+        "scope": "Universalista: os direitos do homem são uma causa global, aplicável a toda a humanidade."
+      },
+      "historical_context": "Revoluções Americana e Francesa; luta contra o colonialismo.",
+      "impact": ["Renda Básica Universal", "Socialismo democrático", "Sufrágio universal"],
+      "works": [
+        { "title": "Senso Comum", "download_url": "" },
+        { "title": "Os Direitos do Homem", "download_url": "" }
+      ]
+    },
+    {
+      "id": "bentham",
+      "name": "Bentham",
+      "period": "1748–1832",
+      "description": "Utilitarismo: a maior felicidade para o maior número.",
+      "tags": ["freedom", "state", "rupture", "collective", "empirical", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade: valorizada instrumentalmente na medida em que produz utilidade (felicidade).",
+        "state_vs_market": "Estado: papel ativo na reforma das leis e instituições para maximizar o bem-estar social.",
+        "tradition_vs_rupture": "Ruptura: rejeição dos direitos naturais e da tradição em favor do cálculo racional de consequências.",
+        "individual_vs_collective": "Coletivo: o foco analítico é a soma das utilidades de todos os membros da comunidade.",
+        "method": "Empírico: cálculo felicífico baseado na medição observável de prazer e dor.",
+        "anthropology": "Mista: o ser humano é movido por impulsos sensoriais, mas é educável por incentivos legais.",
+        "scope": "Universalista: o princípio da utilidade é a base científica para a legislação de qualquer país."
+      },
+      "historical_context": "Necessidade de reformas legais e prisionais na Inglaterra industrial.",
+      "impact": ["John Stuart Mill", "Welfare State", "Análise econômica do Direito"],
+      "works": [
+        { "title": "Introdução aos Princípios da Moral e da Legislação", "download_url": "" },
+        { "title": "O Panóptico", "download_url": "" }
+      ]
+    },
+    {
+      "id": "tocqueville",
+      "name": "Alexis de Tocqueville",
+      "period": "1805–1859",
+      "description": "A inevitabilidade da democracia e os riscos do despotismo suave.",
+      "tags": ["freedom", "state", "tradition", "individual", "historical", "mixed", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade: deve ser protegida contra a 'tirania da maioria' através de associações civis.",
+        "state_vs_market": "Estado: defesa da descentralização administrativa e contra o agigantamento do poder central.",
+        "tradition_vs_rupture": "Tradição: os costumes (moeurs) e a religião são âncoras necessárias para a estabilidade democrática.",
+        "individual_vs_collective": "Individual: preocupação com o isolamento do indivíduo na massa democrática.",
+        "method": "Histórico: análise sociológica da evolução das sociedades em direção à igualdade de condições.",
+        "anthropology": "Mista: o ser humano ama a igualdade mas anseia pela liberdade; essa tensão define a modernidade.",
+        "scope": "Particularista: embora a democracia seja universal, seu sucesso depende dos costumes locais de cada povo."
+      },
+      "historical_context": "França pós-revolucionária; observação da democracia nos Estados Unidos.",
+      "impact": ["Sociologia política", "Pluralismo", "Teoria da sociedade civil"],
+      "works": [
+        { "title": "A Democracia na América", "download_url": "" },
+        { "title": "O Antigo Regime e a Revolução", "download_url": "" }
+      ]
+    }
+  ]
+}

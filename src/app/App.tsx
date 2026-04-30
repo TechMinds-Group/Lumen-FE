@@ -8,7 +8,7 @@ import { PoliticalProfile } from './components/PoliticalProfile';
 import { TagGlossary } from './components/TagGlossary';
 import { useReadingProgress } from './hooks/useReadingProgress';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
-import thinkersData from '../../assets/thinkers.json';
+import thinkersData from '../../assets/thinkers';
 import metaData from '../../assets/meta.json';
 
 function AppContent() {

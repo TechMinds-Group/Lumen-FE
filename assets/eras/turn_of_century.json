@@ -1,0 +1,76 @@
+{
+  "id": "turn_of_century",
+  "label": "Virada do século XIX–XX",
+  "thinkers": [
+    {
+      "id": "trotsky",
+      "name": "Trotsky",
+      "period": "1879–1940",
+      "description": "Revolução permanente e internacionalismo; crítico implacável do stalinismo.",
+      "tags": ["freedom", "rupture", "state", "collective", "dialectic", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade proletária só é sustentável numa revolução permanente e internacional.",
+        "state_vs_market": "Estado operário transitório como instrumento rumo à abolição de todas as classes.",
+        "tradition_vs_rupture": "Ruptura tripla: com o nacionalismo, o reformismo social-democrata e o stalinismo burocrático.",
+        "individual_vs_collective": "Coletivo internacionalista: a classe trabalhadora mundial é o único sujeito revolucionário legítimo.",
+        "method": "Dialético-materialista aplicado à estratégia política e à análise militar concreta.",
+        "anthropology": "Mista: os seres humanos são moldados pelas condições materiais, mas a vontade política importa.",
+        "scope": "Universalista: o socialismo num só país é uma contradição em termos; a revolução é mundial ou fracassa."
+      },
+      "historical_context": "Rússia revolucionária (1917); derrota para Stalin; exílio; assassinato no México (1940).",
+      "influences": ["Marx", "Engels", "Lenin"],
+      "impact": ["Trotskismo", "IV Internacional", "Esquerda anti-stalinista"],
+      "works": [
+        { "title": "A Revolução Traída", "download_url": "" },
+        { "title": "Minha Vida", "download_url": "" },
+        { "title": "História da Revolução Russa", "download_url": "" }
+      ]
+    },
+    {
+      "id": "keynes",
+      "name": "Keynes",
+      "period": "1883–1946",
+      "description": "O Estado deve intervir na economia para evitar depressões e desemprego em massa.",
+      "tags": ["freedom", "state", "rupture", "collective", "empirical", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade real requer estabilidade econômica: o desemprego estrutural é a negação prática da liberdade.",
+        "state_vs_market": "Estado gestor ativo da demanda agregada: o mercado falha sistematicamente em crises.",
+        "tradition_vs_rupture": "Ruptura com o liberalismo econômico clássico e com o equilíbrio automático dos mercados.",
+        "individual_vs_collective": "Coletivo pragmático: o bem-estar agregado justifica a intervenção; 'no longo prazo estamos todos mortos'.",
+        "method": "Empírico-macroeconômico: análise de dados agregados e dinâmicas de expectativa.",
+        "anthropology": "Mista: os agentes econômicos são movidos por expectativas e 'espíritos animais', não só por cálculo racional.",
+        "scope": "Universalista nos princípios, mas aplicação depende da estrutura institucional de cada economia."
+      },
+      "historical_context": "Grande Depressão de 1929; colapso do laissez-faire clássico; ascensão dos totalitarismos.",
+      "influences": ["Marshall", "Malthus (releitura)"],
+      "impact": ["Social-democracia", "Welfare state", "Samuelson", "Política fiscal moderna"],
+      "works": [
+        { "title": "Teoria Geral do Emprego, do Juro e da Moeda", "download_url": "" },
+        { "title": "As Consequências Econômicas da Paz", "download_url": "" }
+      ]
+    },
+    {
+      "id": "gramsci",
+      "name": "Gramsci",
+      "period": "1891–1937",
+      "description": "Hegemonia cultural: a dominação se exerce mais pelo consenso que pela força.",
+      "tags": ["freedom", "rupture", "state", "collective", "historical", "optimistic", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade exige a disputa da hegemonia cultural antes e durante a tomada do poder político.",
+        "state_vs_market": "O Estado ampliado inclui a sociedade civil como arena decisiva de hegemonia e contrahegemonia.",
+        "tradition_vs_rupture": "Ruptura com o determinismo econômico do marxismo vulgar; a cultura e a política têm autonomia relativa.",
+        "individual_vs_collective": "Coletivo orgânico: os intelectuais orgânicos devem unificar e organizar o bloco histórico subalterno.",
+        "method": "Histórico-dialético com ênfase na superestrutura cultural, nos aparelhos de hegemonia.",
+        "anthropology": "Otimista: os subalternos são capazes de desenvolver consciência crítica e hegemonia própria.",
+        "scope": "Contextual: cada formação social tem sua configuração específica de hegemonia e contradição."
+      },
+      "historical_context": "Itália fascista; Gramsci preso por Mussolini em 1926; crise do marxismo ortodoxo.",
+      "influences": ["Marx", "Croce", "Maquiavel (releitura)"],
+      "impact": ["Escola de Frankfurt", "Laclau", "Mouffe", "Teoria pós-colonial", "Esquerda cultural contemporânea"],
+      "works": [
+        { "title": "Cadernos do Cárcere", "download_url": "" },
+        { "title": "Cartas do Cárcere", "download_url": "" }
+      ]
+    }
+  ]
+}

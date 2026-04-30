@@ -1,0 +1,452 @@
+{
+  "id": "twentieth_century",
+  "label": "Século XX",
+  "thinkers": [
+    {
+      "id": "lenin",
+      "name": "Vladimir Lenin",
+      "period": "1870–1924",
+      "description": "Vanguarda revolucionária e partido organizado como instrumento da tomada do poder pelo proletariado.",
+      "tags": ["authority", "rupture", "state", "collective", "dialectic", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade proletária exige a ditadura do proletariado como fase transitória necessária.",
+        "state_vs_market": "Estado revolucionário como instrumento de transição ao socialismo e depois ao comunismo.",
+        "tradition_vs_rupture": "Ruptura revolucionária com o Estado burguês, o reformismo e o oportunismo da II Internacional.",
+        "individual_vs_collective": "Coletivo-prático: o partido de vanguarda e a classe operária como sujeito político organizado.",
+        "method": "Dialético-pragmático: análise concreta da situação concreta; estratégia e tática maleáveis.",
+        "anthropology": "Mista: os trabalhadores precisam do partido de vanguarda para superar a consciência espontânea.",
+        "scope": "Universalista: o imperialismo é uma fase global do capitalismo; a revolução é internacional."
+      },
+      "historical_context": "Rússia czarista; Revolução de Fevereiro e Outubro de 1917; guerra civil.",
+      "influences": ["Marx", "Engels"],
+      "impact": ["Leninismo", "Partidos comunistas do século XX", "Revoluções na Ásia, África e América Latina"],
+      "works": [
+        { "title": "O Que Fazer?", "download_url": "" },
+        { "title": "O Estado e a Revolução", "download_url": "" },
+        { "title": "Imperialismo, Fase Superior do Capitalismo", "download_url": "" }
+      ]
+    },
+    {
+      "id": "mises",
+      "name": "Ludwig von Mises",
+      "period": "1881–1973",
+      "description": "Praxeologia, economia de mercado e crítica demolidora ao planejamento central socialista.",
+      "tags": ["freedom", "market", "tradition", "individual", "rational", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade econômica como condição necessária de toda coordenação social racional.",
+        "state_vs_market": "O mercado livre é o único mecanismo de cálculo econômico racional; o socialismo é impossível.",
+        "tradition_vs_rupture": "Tradição liberal clássica contra o intervencionismo, o socialismo e o corporativismo.",
+        "individual_vs_collective": "Individualismo metodológico radical: toda ação social é composta de ações individuais com propósito.",
+        "method": "Praxeológico-dedutivo: a ciência econômica parte de axiomas sobre a ação humana intencional.",
+        "anthropology": "Mista: os seres humanos agem com propósito e calculam meios para fins; não são determinados.",
+        "scope": "Universalista: as leis da praxeologia e do mercado valem para toda ação humana em qualquer cultura."
+      },
+      "historical_context": "Viena do entre-guerras; ascensão do socialismo e do intervencionismo estatal na Europa.",
+      "influences": ["Carl Menger", "Escola Austríaca", "Böhm-Bawerk"],
+      "impact": ["Hayek", "Escola de Chicago", "Libertarismo", "Mont Pelerin Society"],
+      "works": [
+        { "title": "Ação Humana", "download_url": "" },
+        { "title": "O Socialismo", "download_url": "" },
+        { "title": "Burocracia", "download_url": "" }
+      ]
+    },
+    {
+      "id": "martin_heidegger",
+      "name": "Martin Heidegger",
+      "period": "1889–1976",
+      "description": "Filósofo alemão que reformulou radicalmente a questão do ser — a ontologia fundamental — por meio da analítica existencial do Dasein, da crítica à metafísica ocidental como esquecimento do ser e da meditação sobre a técnica moderna como destino epocal, tornando-se a referência central e mais controversa da filosofia continental do século XX.",
+      "tags": ["freedom", "community", "tradition", "individual", "historical", "mixed", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "A liberdade em Heidegger não é autonomia liberal mas abertura ontológica: o Dasein existe como ser-no-mundo lançado, podendo apropriar-se autenticamente de sua existência fática ou perder-se na impessoalidade do 'a gente' (das Man); a autoridade legítima não é institucional mas emerge do chamado da consciência que convoca o Dasein à resolução antecipadora diante da morte.",
+        "state_vs_market": "Heidegger é profundamente crítico tanto do Estado burocrático moderno quanto da economia de mercado tecnificada, interpretando ambos como manifestações do mesmo niilismo metafísico que reduz o ente a recurso disponível (Bestand); sua alternativa aponta para formas de habitar e de comunidade enraizadas no solo e na tradição, não para instituições políticas formais.",
+        "tradition_vs_rupture": "Relação paradoxal: propõe uma Destruktion da tradição metafísica ocidental — não destruição mas desconstrução que recupera possibilidades soterradas — e uma volta aos pré-socráticos como origem esquecida; critica a modernidade técnica como ruptura catastrófica com o ser, mas sua própria filosofia é ruptura radical com a escolástica e o neokantismo dominantes.",
+        "individual_vs_collective": "O Dasein é estruturalmente ser-com (Mitsein), mas a autenticidade exige resistência à dissolução no coletivo anônimo do das Man; o povo (Volk) e o destino histórico coletivo ganham peso crescente nos escritos dos anos 1930, gerando a controvérsia sobre sua adesão ao nazismo e seus 'Cadernos Negros'.",
+        "method": "Adota método fenomenológico-hermenêutico de inspiração husserliana radicalmente transformado: a hermenêutica da facticidade busca desvelar as estruturas ontológicas do Dasein pela interpretação da existência concreta; nos escritos tardios, o método torna-se meditativo e poético — o pensamento como escuta do ser através da linguagem e da obra de arte.",
+        "anthropology": "Visão equilibrada e radicalmente anti-essencialista: o homem não tem natureza fixa mas é o ente para quem o ser é uma questão — o Dasein é poder-ser, existência projetada para possibilidades; nem otimismo iluminista nem pessimismo teológico, mas finitude radical como condição constitutiva da abertura ao ser.",
+        "scope": "Particularista: a questão do ser é formulada a partir da tradição greco-germânica, que Heidegger privilegia explicitamente como sede privilegiada do pensamento ocidental; sua crítica à técnica e ao americanismo revela desconfiança das pretensões universalistas da modernidade iluminista, embora o diagnóstico do niilismo técnico tenha alcance planetário."
+      },
+      "historical_context": "Heidegger formou-se no ambiente do neokantismo alemão e da crise da filosofia acadêmica após a Primeira Guerra Mundial. 'Ser e Tempo' (1927) surgiu no contexto da República de Weimar e do colapso das certezas burguesas. Sua adesão ao Partido Nacional-Socialista em 1933 e seu reitorado em Freiburg permanecem o epicentro de um debate irresolvido sobre a relação entre sua filosofia e o nazismo, intensificado pela publicação dos 'Cadernos Negros' (2014), que revelam antissemitismo filosófico. No pós-guerra, seu silêncio sobre o Holocausto e sua continuidade filosófica sobre a técnica e o niilismo marcaram definitivamente sua recepção.",
+      "influences": [
+        "Edmund Husserl — fenomenologia e intencionalidade da consciência",
+        "Søren Kierkegaard — existência, angústia e autenticidade individual",
+        "Friedrich Nietzsche — niilismo, vontade de poder e morte de Deus",
+        "Aristóteles — ontologia, phronesis e a questão do ser",
+        "Wilhelm Dilthey — hermenêutica e ciências do espírito"
+      ],
+      "impact": [
+        "Jean-Paul Sartre e o existencialismo francês — recepção e transformação da analítica existencial",
+        "Hans-Georg Gadamer e a hermenêutica filosófica contemporânea",
+        "Jacques Derrida e a desconstrução — radicalização da Destruktion heideggeriana",
+        "Hannah Arendt — teoria política da ação como resposta e distanciamento crítico",
+        "Michel Foucault — arqueologia e genealogia como variações do pensamento histórico-ontológico",
+        "Debate sobre o nazismo e a filosofia — caso Heidegger como questão ética permanente",
+        "Teologia existencial de Rudolf Bultmann e Paul Tillich",
+        "Filosofia da tecnologia contemporânea — Albert Borgmann e Don Ihde",
+        "Estudos sobre linguagem e poesia — influência sobre a crítica literária continental",
+        "Pensamento ambiental e ecológico — crítica da Gestell como dominação da natureza",
+        "Richard Rorty e o neopragmatismo — leitura pós-metafísica de Heidegger"
+      ],
+      "works": [
+        { "title": "Ser e Tempo", "download_url": "" },
+        { "title": "A Questão da Técnica", "download_url": "" },
+        { "title": "Introdução à Metafísica", "download_url": "" },
+        { "title": "Caminhos de Floresta", "download_url": "" },
+        { "title": "Contribuições à Filosofia (Do Acontecimento Apropriador)", "download_url": "" }
+      ]
+    },
+    {
+      "id": "hayek",
+      "name": "Hayek",
+      "period": "1899–1992",
+      "description": "Mercados livres e ordem espontânea; qualquer planejamento central conduz ao totalitarismo.",
+      "tags": ["freedom", "market", "tradition", "individual", "empirical", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade negativa como ausência de coerção arbitrária: qualquer definição positiva é perigosa.",
+        "state_vs_market": "O mercado é o único mecanismo capaz de processar e utilizar o conhecimento disperso da sociedade.",
+        "tradition_vs_rupture": "Tradição das instituições espontâneas (common law, preços, costumes): sabedoria além da razão individual.",
+        "individual_vs_collective": "Individual: o conhecimento relevante é sempre tácito, local e irredutível a qualquer planificador.",
+        "method": "Racionalismo crítico combinado com teoria da informação e da ordem espontânea.",
+        "anthropology": "Mista: a razão humana é limitada; as instituições carregam sabedoria que supera qualquer indivíduo.",
+        "scope": "Universalista: o caminho da servidão ameaça qualquer sociedade que adote o planejamento central."
+      },
+      "historical_context": "Guerra Fria; expansão do Estado de bem-estar keynesiano; socialismo real soviético.",
+      "influences": ["Mises", "Böhm-Bawerk", "Mach (epistemologia)"],
+      "impact": ["Friedman", "Thatcher", "Reagan", "Neoliberalismo", "Mont Pelerin Society"],
+      "works": [
+        { "title": "O Caminho da Servidão", "download_url": "" },
+        { "title": "A Constituição da Liberdade", "download_url": "" },
+        { "title": "A Arrogância Fatal", "download_url": "" }
+      ]
+    },
+    {
+      "id": "popper",
+      "name": "Popper",
+      "period": "1902–1994",
+      "description": "Sociedade aberta contra o totalitarismo; falseabilidade como critério da ciência.",
+      "tags": ["freedom", "state", "rupture", "individual", "empirical", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade como condição indispensável da crítica racional e do progresso científico.",
+        "state_vs_market": "Estado liberal mínimo, com intervenção limitada para corrigir sofrimento evitável.",
+        "tradition_vs_rupture": "Ruptura com o historicismo, o essencialismo e o utopismo de qualquer orientação.",
+        "individual_vs_collective": "Individual: a engenharia social deve ser fragmentária e gradual, respeitando os indivíduos.",
+        "method": "Falsificacionismo: uma teoria só é científica se puder ser refutada por experiência.",
+        "anthropology": "Mista: os seres humanos erram, mas são capazes de aprender pela crítica e pela correção.",
+        "scope": "Universalista: a sociedade aberta e o método crítico são ideais válidos para toda a humanidade."
+      },
+      "historical_context": "Ascensão do nazismo e do stalinismo; Viena intelectual do entre-guerras; exílio na Nova Zelândia.",
+      "influences": ["Einstein", "Russell", "Kant"],
+      "impact": ["Liberalismo epistemológico", "Soros", "Teoria democrática", "Filosofia da ciência"],
+      "works": [
+        { "title": "A Lógica da Descoberta Científica", "download_url": "" },
+        { "title": "A Sociedade Aberta e seus Inimigos", "download_url": "" }
+      ]
+    },
+    {
+      "id": "sartre",
+      "name": "Sartre",
+      "period": "1905–1980",
+      "description": "Existencialismo e engajamento marxista; a existência precede a essência.",
+      "tags": ["freedom", "state", "rupture", "individual", "dialectic", "optimistic", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade radical e angustiante: somos condenados a ser livres e responsáveis por tudo que somos.",
+        "state_vs_market": "Estado socialista como projeto de autenticidade coletiva; rejeição do capitalismo alienante.",
+        "tradition_vs_rupture": "Ruptura com toda essência predeterminada: religiosa, nacional, de classe ou biológica.",
+        "individual_vs_collective": "Tensão central irresolúvel: liberdade individual absoluta vs. necessidade do engajamento coletivo.",
+        "method": "Fenomenológico-dialético: análise da consciência intencional e da práxis histórica.",
+        "anthropology": "Otimista quanto à liberdade: o ser humano está além de qualquer determinismo; é projeto puro.",
+        "scope": "Universalista: a condição humana de liberdade e responsabilidade é compartilhada por todos."
+      },
+      "historical_context": "Ocupação nazista da França; descolonização africana e asiática; Guerra Fria cultural.",
+      "influences": ["Husserl", "Heidegger", "Marx (tardio)"],
+      "impact": ["Existencialismo político", "Beauvoir (feminismo)", "Movimentos de libertação nacional"],
+      "works": [
+        { "title": "O Ser e o Nada", "download_url": "" },
+        { "title": "Crítica da Razão Dialética", "download_url": "" },
+        { "title": "O Existencialismo é um Humanismo", "download_url": "" }
+      ]
+    },
+    {
+      "id": "arendt",
+      "name": "Hannah Arendt",
+      "period": "1906–1975",
+      "description": "Totalitarismo e o mal banal; a política como espaço irredutível de ação plural.",
+      "tags": ["freedom", "state", "rupture", "individual", "historical", "mixed", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade não é ausência de coerção, mas presença ativa no espaço público plural.",
+        "state_vs_market": "República plural: desconfia tanto do mercado (que dissolve o político) quanto do partido único.",
+        "tradition_vs_rupture": "Ruptura: o totalitarismo rompe com toda tradição política anterior, incluindo as tirânicas.",
+        "individual_vs_collective": "Individual-plural: a política requer singularidade irredutível; a massificação é totalitarismo.",
+        "method": "Histórico-fenomenológico: análise das origens, estruturas e fenomenologia do totalitarismo.",
+        "anthropology": "Mista: os seres humanos são capazes de ação criadora, mas também de banalidade do mal.",
+        "scope": "Contextual: o totalitarismo é um fenômeno novo do século XX, não uma tirania repetida."
+      },
+      "historical_context": "Holocaust; julgamento de Eichmann em Jerusalém (1961); Guerra Fria; direitos civis nos EUA.",
+      "influences": ["Heidegger", "Jaspers", "Tradição republicana"],
+      "impact": ["Republicanismo", "Teoria política feminista", "Estudos do totalitarismo"],
+      "works": [
+        { "title": "As Origens do Totalitarismo", "download_url": "" },
+        { "title": "A Condição Humana", "download_url": "" },
+        { "title": "Eichmann em Jerusalém", "download_url": "" }
+      ]
+    },
+    {
+      "id": "friedman",
+      "name": "Milton Friedman",
+      "period": "1912–2006",
+      "description": "Monetarismo, capitalismo como liberdade e Estado mínimo.",
+      "tags": ["freedom", "market", "tradition", "individual", "empirical", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade econômica e liberdade política são inseparáveis: uma não sobrevive sem a outra.",
+        "state_vs_market": "Mercado livre + banco central com regra monetária; qualquer intervenção adicional é nociva.",
+        "tradition_vs_rupture": "Tradição do liberalismo clássico: retorno contra o consenso keynesiano do pós-guerra.",
+        "individual_vs_collective": "Individual: a liberdade de escolha — no consumo, no trabalho, na moeda — é o valor supremo.",
+        "method": "Empírico-monetarista: análise histórica de séries de dados monetários e de preços.",
+        "anthropology": "Mista: os agentes econômicos são racionais em média; os mercados corrigem os desvios individuais.",
+        "scope": "Universalista: o capitalismo de livre mercado é a melhor solução para qualquer economia."
+      },
+      "historical_context": "Guerra Fria; New Deal americano; expansão do welfare state; ascensão da Escola de Chicago.",
+      "influences": ["Hayek", "Knight", "Escola de Chicago"],
+      "impact": ["Neoliberalismo", "Reagan", "Thatcher", "Escola de Chicago", "FMI e Banco Mundial anos 80-90"],
+      "works": [
+        { "title": "Capitalismo e Liberdade", "download_url": "" },
+        { "title": "Uma História Monetária dos EUA", "download_url": "" },
+        { "title": "Livre para Escolher", "download_url": "" }
+      ]
+    },
+    {
+      "id": "albert_camus",
+      "name": "Albert Camus",
+      "period": "1913–1960",
+      "description": "Escritor e filósofo franco-argelino que elaborou uma filosofia do absurdo como condição existencial irredutível e, recusando tanto o niilismo quanto os totalitarismos revolucionários, afirmou a revolta como postura ética fundada na solidariedade humana e na recusa de toda justificação do assassinato em nome da história.",
+      "tags": ["freedom", "community", "rupture", "individual", "empirical", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Camus defende a liberdade individual como valor absoluto e irrenunciável, recusando toda autoridade — estatal, partidária ou religiosa — que exija a submissão do indivíduo a uma verdade histórica ou transcendente; em 'O Homem Revoltado' critica tanto o terror jacobino quanto o stalinismo como traições à revolta original que sempre começa pela afirmação da dignidade individual.",
+        "state_vs_market": "Desconfiante de toda forma de poder concentrado, Camus não elabora uma teoria econômica sistemática, mas aproxima-se de um sindicalismo libertário mediterrâneo que valoriza formas de solidariedade comunitária horizontal — o trabalho, a amizade, a vizinhança — em detrimento tanto do Estado planificador quanto do capitalismo desumanizante.",
+        "tradition_vs_rupture": "Representa ruptura com o existencialismo sartreano e com o marxismo teleológico dominantes na intelectualidade francesa do pós-guerra; ao mesmo tempo, recusa a ruptura revolucionária total que sacrifica o presente em nome de um futuro redentor, propondo uma revolta que preserva a vida concreta como limite intransponível.",
+        "individual_vs_collective": "O ponto de partida é radicalmente individual — o confronto solitário do homem com o silêncio irracional do mundo em 'O Mito de Sísifo' — mas a revolta autêntica descobre necessariamente a solidariedade: 'revolto-me, logo somos', transformando a experiência individual do absurdo em fundamento de uma ética comunitária sem transcendência.",
+        "method": "Adota método ensaístico-literário de natureza empírica e fenomenológica: parte de experiências concretas e vividas — a praga, o exílio, a pobreza colonial argelina — para extrair intuições filosóficas sem recorrer a sistemas dedutivos fechados; recusa a abstração especulativa que sacrifica o homem concreto à coerência do sistema.",
+        "anthropology": "Visão equilibrada e lúcida: o homem não é nem naturalmente bom nem radicalmente corrompido, mas um ser finito capaz de grandeza e de crime, confrontado com um mundo que não responde às suas exigências de clareza e justiça; essa tensão irresolvível — o absurdo — é a condição humana permanente que exige lucidez sem resignação.",
+        "scope": "Universalista na ética — a dignidade humana e a recusa do assassinato são valores que transcendem culturas e fronteiras — mas profundamente enraizado na experiência mediterrânea concreta: o sol, o mar, a pobreza de Argel e a herança greco-latina funcionam como contrapeso sensível às abstrações ideológicas do Norte europeu."
+      },
+      "historical_context": "Camus cresceu na Argélia colonial em família pied-noir de extrema pobreza, experiência que moldou sua sensibilidade à injustiça concreta e sua desconfiança de abstrações ideológicas. Participou da Resistência francesa durante a ocupação nazista, dirigindo o jornal clandestino 'Combat'. O pós-guerra foi marcado pela hegemonia intelectual do existencialismo sartreano e do Partido Comunista Francês, com quem Camus rompeu publicamente. A polêmica com Sartre em 1952, após 'O Homem Revoltado', isolou-o da esquerda ortodoxa. A Guerra da Argélia (1954–1962) colocou-o numa posição trágica entre a justiça para os argelinos e a lealdade à comunidade francesa de sua infância.",
+      "influences": [
+        "Friedrich Nietzsche — niilismo, morte de Deus e afirmação trágica da vida",
+        "Fiódor Dostoiévski — o homem revoltado e a questão do assassinato justificado pela ideia",
+        "Søren Kierkegaard — o salto da fé como evasão do absurdo que Camus recusa",
+        "Simone Weil — atenção ao sofrimento concreto e crítica ao poder",
+        "Tradição greco-latina mediterrânea — medida, limite e recusa do desmesurado"
+      ],
+      "impact": [
+        "Filosofia do absurdo como corrente reconhecida do pensamento existencial do século XX",
+        "Crítica aos totalitarismos de esquerda e de direita como postura intelectual independente",
+        "Literatura engajada sem subordinação partidária — influência sobre escritores latino-americanos e africanos",
+        "Debate sobre terrorismo e violência política — 'O Homem Revoltado' como referência persistente",
+        "Pensamento político libertário e sindicalismo de inspiração mediterrânea",
+        "Bioética e medicina — 'A Peste' como metáfora canônica da solidariedade diante do sofrimento coletivo",
+        "Movimento dos direitos civis norte-americano — leitura de Camus por Martin Luther King Jr.",
+        "Filosofia pós-colonial — tensão produtiva entre sua posição colonial e sua ética universalista",
+        "Romance filosófico como gênero — influência sobre Milan Kundera e J.M. Coetzee",
+        "Debate contemporâneo sobre humanismo secular e ética sem fundamento transcendente"
+      ],
+      "works": [
+        { "title": "O Mito de Sísifo", "download_url": "" },
+        { "title": "O Homem Revoltado", "download_url": "" },
+        { "title": "A Peste", "download_url": "" },
+        { "title": "O Estrangeiro", "download_url": "" },
+        { "title": "Cartas a um Amigo Alemão", "download_url": "" }
+      ]
+    },
+    {
+      "id": "rawls",
+      "name": "Rawls",
+      "period": "1921–2002",
+      "description": "Justiça como equidade: véu da ignorância e princípio da diferença.",
+      "tags": ["freedom", "state", "rupture", "individual", "rational", "optimistic", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdades básicas iguais são o primeiro princípio, lexicalmente superior à igualdade econômica.",
+        "state_vs_market": "Estado redistributivo: desigualdades só são justas se beneficiam os membros menos favorecidos.",
+        "tradition_vs_rupture": "Ruptura com o utilitarismo: os direitos individuais não podem ser sacrificados pela soma agregada.",
+        "individual_vs_collective": "Síntese construtivista: liberdades individuais protegidas + redistribuição coletiva por equidade.",
+        "method": "Racional-construtivista: o véu da ignorância como dispositivo para derivar princípios justos.",
+        "anthropology": "Otimista: os seres humanos são razoáveis e capazes de cooperação social equitativa.",
+        "scope": "Universalista: os princípios de justiça são válidos para qualquer sociedade bem-ordenada."
+      },
+      "historical_context": "EUA pós-guerra; movimento pelos direitos civis; debate liberal vs. utilitarismo; resposta a Nozick.",
+      "influences": ["Kant", "Mill", "Contratualismo clássico"],
+      "impact": ["Social-liberalismo", "Democracia deliberativa", "Habermas (diálogo crítico)"],
+      "works": [
+        { "title": "Uma Teoria da Justiça", "download_url": "" },
+        { "title": "O Liberalismo Político", "download_url": "" },
+        { "title": "O Direito dos Povos", "download_url": "" }
+      ]
+    },
+    {
+      "id": "bauman",
+      "name": "Zygmunt Bauman",
+      "period": "1925–2017",
+      "description": "Modernidade líquida: identidades, vínculos e certezas se tornam cada vez mais fluidos.",
+      "tags": ["freedom", "state", "rupture", "collective", "historical", "mixed", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade líquida: sedutora na superfície, geradora de ansiedade existencial e solidão na profundidade.",
+        "state_vs_market": "O capitalismo tardio dissolve comunidades, converte cidadãos em consumidores e o Estado em gerente.",
+        "tradition_vs_rupture": "Diagnóstico da ruptura permanente: a modernidade nunca para de dissolver o que ela mesma construiu.",
+        "individual_vs_collective": "Coletivo em crise: a solidariedade orgânica é solapada pela individualização forçada do mercado.",
+        "method": "Sociológico-histórico com dimensão ensaística e cultural: diagnósticos de época.",
+        "anthropology": "Mista: os seres humanos precisam de vínculos estáveis; a liquidez os priva disso.",
+        "scope": "Contextual: a modernidade líquida é uma condição histórica específica do capitalismo tardio global."
+      },
+      "historical_context": "Globalização; colapso do bloco soviético; crise das identidades coletivas e do Estado-nação.",
+      "influences": ["Marx", "Gramsci", "Escola de Frankfurt", "Simmel"],
+      "impact": ["Sociologia crítica", "Estudos sobre consumo e identidade", "Debates sobre comunidade e pertencimento"],
+      "works": [
+        { "title": "Modernidade Líquida", "download_url": "" },
+        { "title": "Medo Líquido", "download_url": "" },
+        { "title": "Modernidade e Holocausto", "download_url": "" }
+      ]
+    },
+    {
+      "id": "foucault",
+      "name": "Foucault",
+      "period": "1926–1984",
+      "description": "Poder e saber; genealogia das instituições disciplinares da modernidade.",
+      "tags": ["freedom", "community", "rupture", "individual", "historical", "pessimistic", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade como resistência permanente aos dispositivos de poder que nos constituem como sujeitos.",
+        "state_vs_market": "Critica tanto o Estado quanto o poder difuso e capilar — clínicas, prisões, escolas, família.",
+        "tradition_vs_rupture": "Ruptura arqueológica: toda 'verdade' é efeito de relações de poder histórico e contingente.",
+        "individual_vs_collective": "Individual-crítico: o sujeito é constituído pelo poder, mas pode resistir e se reconstituir.",
+        "method": "Genealógico-arqueológico: rastreia a emergência histórica de discursos e práticas.",
+        "anthropology": "Pessimista quanto à naturalidade: não há sujeito pré-discursivo; somos efeitos do poder-saber.",
+        "scope": "Contextual: cada formação discursiva tem sua episteme; não há progresso universal."
+      },
+      "historical_context": "França pós-guerra; maio de 1968; expansão das ciências humanas; movimentos de minorias.",
+      "influences": ["Nietzsche (método)", "Heidegger", "Canguilhem"],
+      "impact": ["Estudos de gênero e sexualidade", "Teoria queer", "Estudos pós-coloniais", "Butler"],
+      "works": [
+        { "title": "Vigiar e Punir", "download_url": "" },
+        { "title": "A História da Sexualidade", "download_url": "" },
+        { "title": "As Palavras e as Coisas", "download_url": "" }
+      ]
+    },
+    {
+      "id": "murray_rothbard",
+      "name": "Murray N. Rothbard",
+      "period": "1926–1995",
+      "description": "Teórico do anarcocapitalismo, defensor radical do livre mercado e crítico da legitimidade do Estado.",
+      "tags": ["freedom", "market", "rupture", "individual", "rational", "optimistic", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade: defesa absoluta da autonomia individual e rejeição de qualquer coerção estatal, baseada no princípio de não-agressão.",
+        "state_vs_market": "Mercado livre: todas as funções do Estado devem ser substituídas por arranjos voluntários de mercado.",
+        "tradition_vs_rupture": "Ruptura: propõe a abolição completa do Estado, rompendo com praticamente todas as instituições políticas existentes.",
+        "individual_vs_collective": "Individual: a sociedade é composta por indivíduos soberanos com direitos naturais invioláveis.",
+        "method": "Racional: utiliza dedução lógica a partir de axiomas (praxeologia e direitos naturais) como base da teoria política e econômica.",
+        "anthropology": "Otimista: acredita que indivíduos podem cooperar pacificamente sem coerção estatal por meio de contratos voluntários.",
+        "scope": "Universal: princípios como autopropriedade e não-agressão são válidos para toda a humanidade."
+      },
+      "historical_context": "Estados Unidos do século XX, durante a Guerra Fria e a ascensão do Estado administrativo, em oposição ao keynesianismo e ao intervencionismo estatal.",
+      "influences": ["Ludwig von Mises", "Aristóteles", "Tomás de Aquino", "John Locke", "Frédéric Bastiat", "Escola Austríaca de Economia"],
+      "impact": ["Anarcocapitalismo", "Libertarianismo moderno", "Instituto Mises", "Hans-Hermann Hoppe", "Walter Block"],
+      "works": [
+        { "title": "Homem, Economia e Estado", "download_url": "" },
+        { "title": "O manifesto libertário", "download_url": "" },
+        { "title": "A Ética da Liberdade", "download_url": "" },
+        { "title": "Por uma Nova Liberdade", "download_url": "" },
+        { "title": "A Grande Depressão Americana", "download_url": "" }
+      ]
+    },
+    {
+      "id": "habermas",
+      "name": "Habermas",
+      "period": "1929–presente",
+      "description": "Democracia deliberativa e racionalidade comunicativa como fundamento da legitimidade política.",
+      "tags": ["freedom", "state", "rupture", "collective", "rational", "optimistic", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade comunicativa: o discurso racional livre de coerção como base da legitimidade.",
+        "state_vs_market": "Estado de direito democrático que protege tanto os direitos liberais quanto os direitos participativos.",
+        "tradition_vs_rupture": "Ruptura com o pessimismo de Adorno e Horkheimer: o projeto iluminista é incompleto, não falido.",
+        "individual_vs_collective": "Coletivo-comunicativo: a legitimidade nasce do discurso público intersubjetivo, não da vontade individual.",
+        "method": "Racional-comunicativo: distingue ação comunicativa (orientada ao entendimento) de ação estratégica.",
+        "anthropology": "Otimista: os seres humanos são capazes de razão comunicativa e de aprendizado moral coletivo.",
+        "scope": "Universalista: a ética do discurso e os direitos humanos são válidos para toda a humanidade."
+      },
+      "historical_context": "Alemanha pós-guerra; Escola de Frankfurt; debate Popper-Adorno; crise da razão iluminista.",
+      "influences": ["Escola de Frankfurt", "Mead", "Rawls (diálogo crítico)"],
+      "impact": ["Democracia deliberativa", "Constitucionalismo cosmopolita", "Teoria do direito"],
+      "works": [
+        { "title": "Teoria da Ação Comunicativa", "download_url": "" },
+        { "title": "Direito e Democracia", "download_url": "" }
+      ]
+    },
+    {
+      "id": "derrida",
+      "name": "Jacques Derrida",
+      "period": "1930–2004",
+      "description": "Desconstrução: todo texto contém contradições que subvertem sua aparente unidade.",
+      "tags": ["freedom", "community", "rupture", "collective", "historical", "pessimistic", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade como abertura radical ao outro e à différance irredutível de todo sentido.",
+        "state_vs_market": "Desconstrói as categorias fundantes — propriedade, soberania, identidade — sem propor sistema.",
+        "tradition_vs_rupture": "Ruptura com a metafísica da presença e com o logocentrismo de toda a filosofia ocidental.",
+        "individual_vs_collective": "Individual-outro: a alteridade radical do outro é o fundamento de toda ética possível.",
+        "method": "Desconstrução: lê os textos contra si mesmos para revelar suas aporias e suplementos.",
+        "anthropology": "Mista: não há sujeito pleno nem ausente; o sujeito é efeito de diferença e iteração.",
+        "scope": "Contextual: a desconstrução não produz fundamentos universais, apenas abre cada texto ao outro."
+      },
+      "historical_context": "França pós-estruturalista; pós-maio de 1968; crise das grandes narrativas.",
+      "influences": ["Heidegger", "Husserl", "Nietzsche", "Freud"],
+      "impact": ["Teoria pós-colonial", "Estudos literários críticos", "Butler", "Spivak"],
+      "works": [
+        { "title": "Gramatologia", "download_url": "" },
+        { "title": "A Escritura e a Diferença", "download_url": "" },
+        { "title": "Espectros de Marx", "download_url": "" }
+      ]
+    },
+    {
+      "id": "nozick",
+      "name": "Nozick",
+      "period": "1938–2002",
+      "description": "Estado mínimo: qualquer redistribuição forçada viola direitos individuais invioláveis.",
+      "tags": ["freedom", "market", "tradition", "individual", "rational", "mixed", "universalist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade como inviolabilidade absoluta dos direitos: nenhum objetivo coletivo justifica violá-los.",
+        "state_vs_market": "Estado ultra-mínimo: apenas proteção contra força, roubo e fraude; qualquer mais é ilegítimo.",
+        "tradition_vs_rupture": "Tradição liberal lockeana contra o igualitarismo contemporâneo de Rawls e seus herdeiros.",
+        "individual_vs_collective": "Individual absoluto: as pessoas têm direitos e não podem ser sacrificadas como recursos da sociedade.",
+        "method": "Racional-analítico: argumentação filosófica formal a partir de direitos individuais pré-políticos.",
+        "anthropology": "Mista: os seres humanos são fins em si mesmos e não devem ser tratados como meios.",
+        "scope": "Universalista: os direitos individuais invioláveis valem para qualquer ser humano em qualquer contexto."
+      },
+      "historical_context": "EUA dos anos 70; resposta direta e polêmica a Rawls; ascensão do libertarismo.",
+      "influences": ["Locke", "Kant", "Hayek"],
+      "impact": ["Libertarismo de direita", "Filosofia do Estado mínimo", "Anarco-capitalismo"],
+      "works": [
+        { "title": "Anarquia, Estado e Utopia", "download_url": "" },
+        { "title": "Examinadas as Vidas", "download_url": "" }
+      ]
+    },
+    {
+      "id": "scruton",
+      "name": "Roger Scruton",
+      "period": "1944–2020",
+      "description": "Defesa filosófica do conservadorismo: tradição, beleza e sentido de pertencimento.",
+      "tags": ["authority", "market", "tradition", "collective", "historical", "pessimistic", "particularist"],
+      "dimensions": {
+        "freedom_vs_authority": "Liberdade ordenada: a lei, a moral e a tradição são condições, não obstáculos, da verdadeira liberdade.",
+        "state_vs_market": "Mercado necessário, mas subordinado a uma ordem cultural e moral que o transcende.",
+        "tradition_vs_rupture": "Anti-ruptura radical: o conservadorismo não é ideologia, mas memória ativa do que funcionou.",
+        "individual_vs_collective": "Coletivo-orgânico: a nação, a família e a herança cultural são o lar constitutivo do indivíduo.",
+        "method": "Histórico-fenomenológico: a estética, a arquitetura e a arte como acesso privilegiado ao político.",
+        "anthropology": "Pessimista: os seres humanos são frágeis e precisam de estruturas morais e institucionais.",
+        "scope": "Particularista: cada nação tem sua tradição específica; não há conservadorismo universal."
+      },
+      "historical_context": "Inglaterra pós-68; ascensão do relativismo cultural e do multiculturalismo; era Thatcher.",
+      "influences": ["Burke", "Wittgenstein", "T.S. Eliot", "Hegel"],
+      "impact": ["Conservadorismo anglófono filosófico", "Pensamento cristão-democrata europeu"],
+      "works": [
+        { "title": "O Significado do Conservadorismo", "download_url": "" },
+        { "title": "Filosofia Verde", "download_url": "" },
+        { "title": "Beleza", "download_url": "" }
+      ]
+    }
+  ]
+}
