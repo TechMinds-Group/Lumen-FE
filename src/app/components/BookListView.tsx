@@ -27,16 +27,18 @@ interface BookListViewProps {
   isWorkRead: (thinkerId: string, workTitle: string) => boolean;
   onToggleWork: (thinkerId: string, workTitle: string) => void;
   filterThinkers: (thinkers: Thinker[]) => Thinker[];
+  activeEra?: string;
 }
 
 const BASE_URL =
   'https://github.com/victor-souza-dev/RepoStaticFile/raw/refs/heads/main/politica/';
 
-export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers }: BookListViewProps) {
+export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, activeEra }: BookListViewProps) {
   const { t } = useTranslation();
   const [exportOpen, setExportOpen] = useState(false);
   const [exporting, setExporting] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const eraSectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -47,6 +49,12 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers }:
     document.addEventListener('mousedown', handler);
     return () => document.removeEventListener('mousedown', handler);
   }, []);
+
+  useEffect(() => {
+    if (activeEra && eraSectionRefs.current[activeEra]) {
+      eraSectionRefs.current[activeEra]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [activeEra]);
 
   const allBooks = eras.flatMap(era => {
     const filteredThinkers = filterThinkers(era.thinkers as Thinker[]);
@@ -199,7 +207,7 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers }:
       {groupedByEra.map(({ era, books }) => {
         const eraReadCount = books.filter(b => b.isRead).length;
         return (
-          <section key={era.id}>
+          <section key={era.id} ref={el => (eraSectionRefs.current[era.id] = el)}>
             {/* Era header */}
             <div className="mb-3">
               <div className="flex items-center justify-between mb-1">

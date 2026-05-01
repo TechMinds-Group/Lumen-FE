@@ -166,6 +166,7 @@ function AppContent() {
                 isWorkRead={isWorkRead}
                 onToggleWork={toggleWork}
                 filterThinkers={filterThinkers}
+                activeEra={activeEra}
               />
             ) : (
             <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
