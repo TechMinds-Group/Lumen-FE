@@ -103,8 +103,8 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
   if (totalBooks === 0) {
     return (
       <div className="text-center py-16">
-        <BookOpen className="mx-auto mb-3 text-[#b5b0a8] dark:text-[#4a5568]" size={32} />
-        <p className="text-sm text-[#7f8c8d] dark:text-[#64748b]">{t('results.no_results')}</p>
+        <BookOpen className="mx-auto mb-3 text-[#C0B8A8] dark:text-[#3A4E62]" size={32} />
+        <p className="text-sm text-[#6A6355] dark:text-[#687280]">{t('results.no_results')}</p>
       </div>
     );
   }
@@ -131,21 +131,21 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
     <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8 space-y-8">
 
       {/* Summary + Export bar */}
-      <div className="flex items-center gap-3 px-4 py-3 bg-white dark:bg-[#161b27] border border-[#e5e3df] dark:border-[#2d3748] rounded-lg">
-        <BookOpen size={16} className="text-[#7f8c8d] dark:text-[#64748b] shrink-0" />
-        <span className="text-sm text-[#4a4a4a] dark:text-[#94a3b8]">
+      <div className="flex items-center gap-3 px-4 py-3 bg-white dark:bg-[#0F1E35] border border-[#DDD7C8] dark:border-[#1C2E44] rounded-lg">
+        <BookOpen size={16} className="text-[#6A6355] dark:text-[#687280] shrink-0" />
+        <span className="text-sm text-[#2A2420] dark:text-[#A8B8C8]">
           <span className="font-medium text-emerald-600 dark:text-emerald-400">{readBooks}</span>
-          <span className="text-[#7f8c8d] dark:text-[#64748b]"> / {totalBooks} obras lidas</span>
+          <span className="text-[#6A6355] dark:text-[#687280]"> / {totalBooks} obras lidas</span>
         </span>
 
         {/* Progress bar */}
-        <div className="flex-1 h-1.5 bg-[#e5e3df] dark:bg-[#2d3748] rounded-full overflow-hidden">
+        <div className="flex-1 h-1.5 bg-[#DDD7C8] dark:bg-[#1C2E44] rounded-full overflow-hidden">
           <div
             className="h-full bg-emerald-500 dark:bg-emerald-600 rounded-full transition-all duration-500"
             style={{ width: totalBooks > 0 ? `${(readBooks / totalBooks) * 100}%` : '0%' }}
           />
         </div>
-        <span className="text-xs text-[#7f8c8d] dark:text-[#64748b] shrink-0">
+        <span className="text-xs text-[#6A6355] dark:text-[#687280] shrink-0">
           {totalBooks > 0 ? Math.round((readBooks / totalBooks) * 100) : 0}%
         </span>
 
@@ -154,7 +154,7 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
           <button
             onClick={() => setExportOpen(v => !v)}
             disabled={exporting}
-            className="flex items-center gap-1.5 px-3 py-1.5 bg-[#2c3e50] dark:bg-[#2d3748] text-white rounded-lg text-xs hover:bg-[#34495e] dark:hover:bg-[#374151] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-[#0F1E35] dark:bg-[#1C2E44] text-white rounded-lg text-xs hover:bg-[#1A2E4A] dark:hover:bg-[#243650] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
           >
             <FileSpreadsheet size={13} />
             <span className="hidden sm:inline">
@@ -167,9 +167,9 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
           </button>
 
           {exportOpen && (
-            <div className="absolute right-0 top-full mt-1.5 z-50 w-60 bg-white dark:bg-[#1e2537] border border-[#e5e3df] dark:border-[#2d3748] rounded-xl shadow-xl overflow-hidden">
-              <div className="px-3 py-2 border-b border-[#f0eeeb] dark:border-[#2d3748]">
-                <p className="text-[11px] uppercase tracking-wider text-[#7f8c8d] dark:text-[#64748b] font-medium">
+            <div className="absolute right-0 top-full mt-1.5 z-50 w-60 bg-white dark:bg-[#131E30] border border-[#DDD7C8] dark:border-[#1C2E44] rounded-xl shadow-xl overflow-hidden">
+              <div className="px-3 py-2 border-b border-[#EAE5D6] dark:border-[#1C2E44]">
+                <p className="text-[11px] uppercase tracking-wider text-[#6A6355] dark:text-[#687280] font-medium">
                   Exportar planilha (.xlsx)
                 </p>
               </div>
@@ -177,24 +177,24 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
                 <button
                   key={opt.scope}
                   onClick={() => handleExport(opt.scope)}
-                  className="w-full flex items-center justify-between gap-3 px-4 py-2.5 text-left hover:bg-[#f5f4f0] dark:hover:bg-[#2d3748] transition-colors group"
+                  className="w-full flex items-center justify-between gap-3 px-4 py-2.5 text-left hover:bg-[#F2EEE2] dark:hover:bg-[#1C2E44] transition-colors group"
                 >
                   <div className="flex items-center gap-2.5">
                     <FileSpreadsheet
                       size={14}
                       className="text-emerald-600 dark:text-emerald-400 shrink-0"
                     />
-                    <span className="text-sm text-[#1a1a1a] dark:text-[#e2e8f0]">
+                    <span className="text-sm text-[#0D1B2A] dark:text-[#EDE8D8]">
                       {opt.label}
                     </span>
                   </div>
-                  <span className="text-[11px] text-[#7f8c8d] dark:text-[#64748b] shrink-0 bg-[#f0eeeb] dark:bg-[#2d3748] px-1.5 py-0.5 rounded">
+                  <span className="text-[11px] text-[#6A6355] dark:text-[#687280] shrink-0 bg-[#EDE8DA] dark:bg-[#1C2E44] px-1.5 py-0.5 rounded">
                     {opt.desc}
                   </span>
                 </button>
               ))}
-              <div className="px-4 py-2 border-t border-[#f0eeeb] dark:border-[#2d3748] bg-[#faf9f7] dark:bg-[#161b27]">
-                <p className="text-[10px] text-[#95a5a6] dark:text-[#475569]">
+              <div className="px-4 py-2 border-t border-[#EAE5D6] dark:border-[#1C2E44] bg-[#F7F3EA] dark:bg-[#0F1E35]">
+                <p className="text-[10px] text-[#8A8275] dark:text-[#4A5E72]">
                   Inclui abas: Obras · Por Pensador · Progresso por Era
                 </p>
               </div>
@@ -211,26 +211,26 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
             {/* Era header */}
             <div className="mb-3">
               <div className="flex items-center justify-between mb-1">
-                <h2 className="text-xs uppercase tracking-wider text-[#7f8c8d] dark:text-[#64748b]">
+                <h2 className="text-xs uppercase tracking-wider text-[#6A6355] dark:text-[#687280]">
                   {t(`eras.${era.id}`)}
                 </h2>
                 <span className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">
                   {t('era.read_works', { read: eraReadCount, total: books.length })}
                 </span>
               </div>
-              <div className="h-px bg-[#e5e3df] dark:bg-[#2d3748]" />
+              <div className="h-px bg-[#DDD7C8] dark:bg-[#1C2E44]" />
             </div>
 
             {/* Books table */}
-            <div className="bg-white dark:bg-[#161b27] border border-[#e5e3df] dark:border-[#2d3748] rounded-lg overflow-hidden">
+            <div className="bg-white dark:bg-[#0F1E35] border border-[#DDD7C8] dark:border-[#1C2E44] rounded-lg overflow-hidden">
               {books.map(({ thinker, work, isRead, hasUrl }, idx) => (
                 <div
                   key={`${thinker.id}-${work.title}`}
                   className={`flex items-center gap-3 px-4 py-3 transition-colors group
-                    ${idx !== 0 ? 'border-t border-[#f0eeeb] dark:border-[#232b3a]' : ''}
+                    ${idx !== 0 ? 'border-t border-[#EAE5D6] dark:border-[#1C2840]' : ''}
                     ${isRead
                       ? 'bg-emerald-50/60 dark:bg-emerald-900/10'
-                      : 'hover:bg-[#faf9f7] dark:hover:bg-[#1a2035]'
+                      : 'hover:bg-[#F7F3EA] dark:hover:bg-[#14203A]'
                     }`}
                 >
                   {/* Checkbox */}
@@ -239,7 +239,7 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
                     className={`shrink-0 w-4 h-4 rounded border-2 flex items-center justify-center transition-all
                       ${isRead
                         ? 'bg-emerald-600 border-emerald-600'
-                        : 'border-[#c5bfb8] dark:border-[#4a5568] group-hover:border-emerald-400'
+                        : 'border-[#C8C0B0] dark:border-[#3A4E62] group-hover:border-emerald-400'
                       }`}
                   >
                     {isRead && <Check size={10} className="text-white" strokeWidth={3} />}
@@ -251,12 +251,12 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
                       className={`text-sm truncate transition-colors
                         ${isRead
                           ? 'text-emerald-900 dark:text-emerald-300 font-medium'
-                          : 'text-[#1a1a1a] dark:text-[#e2e8f0]'
+                          : 'text-[#0D1B2A] dark:text-[#EDE8D8]'
                         }`}
                     >
                       {work.title}
                     </p>
-                    <p className="text-xs text-[#7f8c8d] dark:text-[#64748b] truncate mt-0.5">
+                    <p className="text-xs text-[#6A6355] dark:text-[#687280] truncate mt-0.5">
                       {thinker.name}
                       <span className="mx-1 opacity-50">·</span>
                       <span className="opacity-70">{thinker.period}</span>
@@ -270,7 +270,7 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
                       target="_blank"
                       rel="noopener noreferrer"
                       title={t('work_checkbox.download')}
-                      className="shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 bg-[#2c3e50] dark:bg-[#2d3748] text-white rounded text-xs hover:bg-[#34495e] dark:hover:bg-[#374151] transition-colors"
+                      className="shrink-0 flex items-center gap-1.5 px-2.5 py-1.5 bg-[#0F1E35] dark:bg-[#1C2E44] text-white rounded text-xs hover:bg-[#1A2E4A] dark:hover:bg-[#243650] transition-colors"
                       onClick={e => e.stopPropagation()}
                     >
                       <Download size={12} />

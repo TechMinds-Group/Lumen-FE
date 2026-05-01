@@ -25,7 +25,7 @@ export function WorkCheckbox({ work, isRead, onToggle }: WorkCheckboxProps) {
       className={`flex items-center justify-between gap-2 p-2 rounded border transition-all ${
         isRead
           ? 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-300 dark:border-emerald-700 shadow-sm'
-          : 'bg-[#faf9f7] dark:bg-[#1a2035] border-[#e5e3df] dark:border-[#2d3748] hover:bg-[#f5f4f0] dark:hover:bg-[#1e2537]'
+          : 'bg-[#F7F3EA] dark:bg-[#131E30] border-[#DDD7C8] dark:border-[#1C2E44] hover:bg-[#F2EEE2] dark:hover:bg-[#0E1828]'
       }`}
     >
       <label className="flex items-center gap-2 flex-1 cursor-pointer group">
@@ -37,7 +37,7 @@ export function WorkCheckbox({ work, isRead, onToggle }: WorkCheckboxProps) {
           className={`flex-shrink-0 w-4 h-4 rounded border-2 flex items-center justify-center transition-all ${
             isRead
               ? 'bg-emerald-600 border-emerald-600'
-              : 'border-gray-300 dark:border-[#4a5568] group-hover:border-emerald-400'
+              : 'border-[#C8C0B0] dark:border-[#3A4E62] group-hover:border-emerald-400'
           }`}
         >
           {isRead && <Check size={12} className="text-white" strokeWidth={3} />}
@@ -46,7 +46,7 @@ export function WorkCheckbox({ work, isRead, onToggle }: WorkCheckboxProps) {
           className={`text-xs flex-1 transition-all ${
             isRead
               ? 'text-emerald-900 dark:text-emerald-300 font-medium'
-              : 'text-[#2c3e50] dark:text-[#94a3b8]'
+              : 'text-[#0F1E35] dark:text-[#A8B8C8]'
           }`}
         >
           {work.title}
@@ -58,7 +58,7 @@ export function WorkCheckbox({ work, isRead, onToggle }: WorkCheckboxProps) {
           href={finalUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1 px-2 py-1 bg-[#2c3e50] dark:bg-[#2d3748] text-white rounded text-xs hover:bg-[#34495e] dark:hover:bg-[#374151] transition-colors"
+          className="flex items-center gap-1 px-2 py-1 bg-[#0F1E35] dark:bg-[#1C2E44] text-white rounded text-xs hover:bg-[#1A2E4A] dark:hover:bg-[#243650] transition-colors"
           onClick={e => e.stopPropagation()}
         >
           <Download size={12} />

@@ -87,12 +87,12 @@ export function ThinkerCard({
   return (
     <div
       onClick={() => setShowDetails(!showDetails)}
-      className="bg-white dark:bg-[#161b27] border border-[#e5e3df] dark:border-[#2d3748] rounded p-4 lg:p-5 hover:shadow-md dark:hover:shadow-black/30 transition-all cursor-pointer group"
+      className="bg-white dark:bg-[#0F1E35] border border-[#DDD7C8] dark:border-[#1C2E44] rounded p-4 lg:p-5 hover:shadow-md dark:hover:shadow-black/40 transition-all cursor-pointer group"
     >
       <div className="mb-3">
         <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-2 mb-2">
-          <span className="text-xs text-[#7f8c8d] dark:text-[#64748b]">{thinker.period}</span>
-          <h3 className="font-['Playfair_Display'] text-lg sm:text-xl text-[#1a1a1a] dark:text-[#e2e8f0]">
+          <span className="text-xs text-[#6A6355] dark:text-[#687280]">{thinker.period}</span>
+          <h3 className="font-['Playfair_Display'] text-lg sm:text-xl text-[#0D1B2A] dark:text-[#EDE8D8]">
             {thinker.name}
           </h3>
         </div>
@@ -121,12 +121,12 @@ export function ThinkerCard({
           </div>
         </div>
 
-        <p className="text-sm text-[#4a4a4a] dark:text-[#94a3b8] leading-relaxed">
+        <p className="text-sm text-[#2A2420] dark:text-[#A8B8C8] leading-relaxed">
           {thinker.description}
         </p>
       </div>
 
-      <div className="flex items-center gap-1 text-xs text-[#2c3e50] dark:text-[#64748b] group-hover:text-[#34495e] dark:group-hover:text-[#94a3b8] transition-colors">
+      <div className="flex items-center gap-1 text-xs text-[#0F1E35] dark:text-[#687280] group-hover:text-[#1A2E4A] dark:group-hover:text-[#A8B8C8] transition-colors">
         <ChevronRight
           size={14}
           className={`transition-transform ${showDetails ? 'rotate-90' : ''}`}
@@ -141,20 +141,20 @@ export function ThinkerCard({
 
       {showDetails && (
         <div
-          className="mt-4 pt-4 border-t border-[#e5e3df] dark:border-[#2d3748] space-y-3"
+          className="mt-4 pt-4 border-t border-[#DDD7C8] dark:border-[#1C2E44] space-y-3"
           onClick={e => e.stopPropagation()}
         >
           {historicalContext && (
             <div>
-              <div className="text-xs font-medium text-[#7f8c8d] dark:text-[#64748b] mb-1">
+              <div className="text-xs font-medium text-[#6A6355] dark:text-[#687280] mb-1">
                 {fieldLabels.historical_context || t('fields.historical_context')}
               </div>
-              <div className="text-xs sm:text-sm text-[#2c3e50] dark:text-[#94a3b8]">{historicalContext}</div>
+              <div className="text-xs sm:text-sm text-[#0F1E35] dark:text-[#A8B8C8]">{historicalContext}</div>
             </div>
           )}
 
           <div>
-            <div className="text-xs font-medium text-[#7f8c8d] dark:text-[#64748b] mb-2">
+            <div className="text-xs font-medium text-[#6A6355] dark:text-[#687280] mb-2">
               {fieldLabels.dimensions || t('fields.dimensions')}
             </div>
             <div className="grid sm:grid-cols-2 gap-x-4 gap-y-2">
@@ -162,10 +162,10 @@ export function ThinkerCard({
                 .filter(([key]) => key !== 'anthropology' && key !== 'scope')
                 .map(([key, value]) => (
                   <div key={key} className="text-xs">
-                    <span className="text-[#7f8c8d] dark:text-[#64748b] font-medium">
+                    <span className="text-[#6A6355] dark:text-[#687280] font-medium">
                       {dimensionLabels[key] || key.replace(/_/g, ' ')}:
                     </span>{' '}
-                    <span className="text-[#2c3e50] dark:text-[#94a3b8]">{value}</span>
+                    <span className="text-[#0F1E35] dark:text-[#A8B8C8]">{value}</span>
                   </div>
                 ))}
             </div>
@@ -174,14 +174,14 @@ export function ThinkerCard({
           <div className="grid sm:grid-cols-2 gap-3">
             {influences.length > 0 && (
               <div>
-                <div className="text-xs font-medium text-[#7f8c8d] dark:text-[#64748b] mb-1.5">
+                <div className="text-xs font-medium text-[#6A6355] dark:text-[#687280] mb-1.5">
                   {fieldLabels.influences || t('fields.influences')}
                 </div>
                 <div className="flex flex-wrap gap-1">
                   {influences.map((inf, idx) => (
                     <span
                       key={idx}
-                      className="px-1.5 py-0.5 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded text-xs text-blue-700 dark:text-blue-300"
+                      className="px-1.5 py-0.5 bg-[#0F1E35]/8 dark:bg-[#C9A84C]/12 border border-[#0F1E35]/20 dark:border-[#C9A84C]/30 rounded text-xs text-[#0F1E35] dark:text-[#D8B85A]"
                     >
                       {inf}
                     </span>
@@ -192,20 +192,20 @@ export function ThinkerCard({
 
             {impact.length > 0 && (
               <div>
-                <div className="text-xs font-medium text-[#7f8c8d] dark:text-[#64748b] mb-1.5">
+                <div className="text-xs font-medium text-[#6A6355] dark:text-[#687280] mb-1.5">
                   {fieldLabels.impact || t('fields.impact')}
                 </div>
                 <div className="flex flex-wrap gap-1">
                   {impact.slice(0, 3).map((imp, idx) => (
                     <span
                       key={idx}
-                      className="px-1.5 py-0.5 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded text-xs text-green-700 dark:text-green-300"
+                      className="px-1.5 py-0.5 bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded text-xs text-emerald-700 dark:text-emerald-300"
                     >
                       {imp}
                     </span>
                   ))}
                   {impact.length > 3 && (
-                    <span className="px-1.5 py-0.5 text-xs text-[#7f8c8d] dark:text-[#64748b]">
+                    <span className="px-1.5 py-0.5 text-xs text-[#6A6355] dark:text-[#687280]">
                       +{impact.length - 3}
                     </span>
                   )}
@@ -217,7 +217,7 @@ export function ThinkerCard({
           {works.length > 0 && (
             <div>
               <div className="flex items-center justify-between mb-2">
-                <div className="text-xs font-medium text-[#7f8c8d] dark:text-[#64748b]">
+                <div className="text-xs font-medium text-[#6A6355] dark:text-[#687280]">
                   {fieldLabels.works || t('fields.works')}
                 </div>
                 <div className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">

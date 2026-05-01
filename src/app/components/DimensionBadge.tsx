@@ -20,8 +20,8 @@ export function DimensionBadge({ type, tagKey }: DimensionBadgeProps) {
           isOptimistic
             ? 'bg-yellow-50 text-yellow-800 border-yellow-300 dark:bg-yellow-900/30 dark:text-yellow-300 dark:border-yellow-700'
             : isPessimistic
-            ? 'bg-slate-100 text-slate-800 border-slate-400 dark:bg-slate-700/50 dark:text-slate-200 dark:border-slate-500'
-            : 'bg-gray-50 text-gray-700 border-gray-300 dark:bg-gray-700/30 dark:text-gray-300 dark:border-gray-500'
+            ? 'bg-slate-100 text-slate-700 border-slate-300 dark:bg-slate-700/50 dark:text-slate-300 dark:border-slate-500'
+            : 'bg-[#F2EEE2] text-[#6A6355] border-[#DDD7C8] dark:bg-[#131E30] dark:text-[#A8B8C8] dark:border-[#1C2E44]'
         }`}
       >
         <User size={12} />
@@ -37,7 +37,7 @@ export function DimensionBadge({ type, tagKey }: DimensionBadgeProps) {
       <div
         className={`inline-flex items-center gap-1.5 px-2 py-1 rounded text-xs border ${
           isUniversal
-            ? 'bg-blue-100 text-blue-800 border-blue-300 dark:bg-blue-900/30 dark:text-blue-300 dark:border-blue-700'
+            ? 'bg-[#8A9BB8]/15 text-[#1A2E4A] border-[#8A9BB8]/40 dark:bg-[#8A9BB8]/20 dark:text-[#A8B8C8] dark:border-[#8A9BB8]/40'
             : 'bg-orange-50 text-orange-800 border-orange-300 dark:bg-orange-900/30 dark:text-orange-300 dark:border-orange-700'
         }`}
       >

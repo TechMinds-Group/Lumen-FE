@@ -78,12 +78,12 @@ function CustomRadarChart({ data, isDark }: { data: RadarDataPoint[]; isDark: bo
     return { ...p, label: d.label, anchor, key: `label-${i}`, value: d.value };
   });
 
-  const gridColor  = isDark ? '#2d3748' : '#e5e3df';
-  const polyStroke = isDark ? '#4a6fa5' : '#2c3e50';
-  const dotFill    = isDark ? '#60a5fa' : '#2c3e50';
-  const dotStroke  = isDark ? '#161b27' : '#fff';
-  const labelColor = isDark ? '#e2e8f0' : '#2c3e50';
-  const valueColor = isDark ? '#64748b' : '#95a5a6';
+  const gridColor  = isDark ? '#1C2E44' : '#DDD7C8';
+  const polyStroke = isDark ? '#C9A84C' : '#0F1E35';
+  const dotFill    = isDark ? '#D8B85A' : '#C9A84C';
+  const dotStroke  = isDark ? '#0F1E35' : '#fff';
+  const labelColor = isDark ? '#EDE8D8' : '#0D1B2A';
+  const valueColor = isDark ? '#687280' : '#6A6355';
 
   return (
     <svg width="100%" viewBox={`0 0 ${size} ${size}`} style={{ overflow: 'visible' }}>
@@ -95,8 +95,8 @@ function CustomRadarChart({ data, isDark }: { data: RadarDataPoint[]; isDark: bo
       ))}
       <polygon
         points={dataPoints}
-        fill="#3498db"
-        fillOpacity={isDark ? 0.25 : 0.35}
+        fill="#C9A84C"
+        fillOpacity={isDark ? 0.20 : 0.12}
         stroke={polyStroke}
         strokeWidth={2}
       />
@@ -200,13 +200,13 @@ export function PoliticalProfile({
 
   return (
     <div className="fixed inset-0 bg-black/50 dark:bg-black/70 z-50 flex items-center justify-center p-4">
-      <div className="bg-white dark:bg-[#161b27] rounded-lg shadow-2xl dark:shadow-black/50 max-w-4xl w-full max-h-[90vh] overflow-y-auto transition-colors duration-300">
-        <div className="sticky top-0 bg-white dark:bg-[#161b27] border-b border-[#e5e3df] dark:border-[#2d3748] p-6 flex items-center justify-between transition-colors duration-300">
+      <div className="bg-white dark:bg-[#0F1E35] rounded-lg shadow-2xl dark:shadow-black/50 max-w-4xl w-full max-h-[90vh] overflow-y-auto transition-colors duration-300">
+        <div className="sticky top-0 bg-white dark:bg-[#0F1E35] border-b border-[#DDD7C8] dark:border-[#1C2E44] p-6 flex items-center justify-between transition-colors duration-300">
           <div>
-            <h2 className="font-['Playfair_Display'] text-2xl text-[#1a1a1a] dark:text-[#e2e8f0] mb-1">
+            <h2 className="font-['Playfair_Display'] text-2xl text-[#0D1B2A] dark:text-[#EDE8D8] mb-1">
               {t('profile.title')}
             </h2>
-            <p className="text-sm text-[#7f8c8d] dark:text-[#64748b]">
+            <p className="text-sm text-[#6A6355] dark:text-[#687280]">
               {t('profile.based_on', {
                 works: analysis?.readCount || 0,
                 thinkers: analysis?.thinkerCount || 0,
@@ -215,28 +215,28 @@ export function PoliticalProfile({
           </div>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 dark:hover:bg-[#2d3748] rounded-lg transition-colors"
+            className="p-2 hover:bg-[#ECE7DA] dark:hover:bg-[#1C2E44] rounded-lg transition-colors"
           >
-            <X size={24} className="text-[#7f8c8d] dark:text-[#64748b]" />
+            <X size={24} className="text-[#6A6355] dark:text-[#687280]" />
           </button>
         </div>
 
         <div className="p-6 space-y-6">
           {!analysis || analysis.readCount === 0 ? (
             <div className="text-center py-12">
-              <BookOpen size={48} className="mx-auto text-[#95a5a6] dark:text-[#475569] mb-4" />
-              <h3 className="text-lg font-medium text-[#2c3e50] dark:text-[#e2e8f0] mb-2">
+              <BookOpen size={48} className="mx-auto text-[#8A8275] dark:text-[#4A5E72] mb-4" />
+              <h3 className="text-lg font-medium text-[#0F1E35] dark:text-[#EDE8D8] mb-2">
                 {t('profile.no_works_title')}
               </h3>
-              <p className="text-sm text-[#7f8c8d] dark:text-[#64748b]">{t('profile.no_works_hint')}</p>
+              <p className="text-sm text-[#6A6355] dark:text-[#687280]">{t('profile.no_works_hint')}</p>
             </div>
           ) : (
             <>
               <div>
-                <h3 className="text-sm font-medium text-[#7f8c8d] dark:text-[#64748b] mb-4">
+                <h3 className="text-sm font-medium text-[#6A6355] dark:text-[#687280] mb-4">
                   {t('profile.radar_title')}
                 </h3>
-                <p className="text-xs text-[#95a5a6] dark:text-[#475569] mb-4">
+                <p className="text-xs text-[#8A8275] dark:text-[#4A5E72] mb-4">
                   {t('profile.radar_description')}
                 </p>
                 <div className="flex justify-center py-4">
@@ -247,7 +247,7 @@ export function PoliticalProfile({
               </div>
 
               <div>
-                <h3 className="text-sm font-medium text-[#7f8c8d] dark:text-[#64748b] mb-3">
+                <h3 className="text-sm font-medium text-[#6A6355] dark:text-[#687280] mb-3">
                   {t('profile.dominant_tags')}
                 </h3>
                 <div className="space-y-2">
@@ -255,17 +255,17 @@ export function PoliticalProfile({
                     <div key={`tag-${tag}-${index}`} className="flex items-center gap-3">
                       <div className="flex-1">
                         <div className="flex items-center justify-between mb-1">
-                          <span className="text-xs font-medium text-[#2c3e50] dark:text-[#e2e8f0]">
+                          <span className="text-xs font-medium text-[#0F1E35] dark:text-[#EDE8D8]">
                             {tagLabels[tag] || tag}
                           </span>
-                          <span className="text-xs text-[#7f8c8d] dark:text-[#64748b]">
+                          <span className="text-xs text-[#6A6355] dark:text-[#687280]">
                             {count}{' '}
                             {count === 1 ? t('profile.work_one') : t('profile.work_other')}
                           </span>
                         </div>
-                        <div className="h-2 bg-gray-100 dark:bg-[#2d3748] rounded-full overflow-hidden">
+                        <div className="h-2 bg-[#ECE7DA] dark:bg-[#1C2E44] rounded-full overflow-hidden">
                           <div
-                            className="h-full bg-[#3498db] dark:bg-[#4a6fa5] rounded-full transition-all"
+                            className="h-full bg-[#C9A84C] dark:bg-[#C9A84C] rounded-full transition-all"
                             style={{ width: `${(count / analysis.thinkerCount) * 100}%` }}
                           />
                         </div>
@@ -275,11 +275,11 @@ export function PoliticalProfile({
                 </div>
               </div>
 
-              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-                <h3 className="text-sm font-medium text-blue-900 dark:text-blue-300 mb-2">
+              <div className="bg-[#0F1E35]/6 dark:bg-[#C9A84C]/10 border border-[#0F1E35]/15 dark:border-[#C9A84C]/25 rounded-lg p-4">
+                <h3 className="text-sm font-medium text-[#0F1E35] dark:text-[#D8B85A] mb-2">
                   {t('profile.diagnostic_label')}
                 </h3>
-                <p className="text-sm text-blue-800 dark:text-blue-200 leading-relaxed">
+                <p className="text-sm text-[#1A2E4A] dark:text-[#C9A84C] leading-relaxed">
                   {getDiagnostic(analysis.tagCounts, t)}
                 </p>
               </div>
@@ -293,7 +293,7 @@ export function PoliticalProfile({
                 </button>
                 <button
                   onClick={onClose}
-                  className="flex-1 px-4 py-2 bg-[#2c3e50] dark:bg-[#4a6fa5] text-white rounded-lg hover:bg-[#34495e] dark:hover:bg-[#3d5a8a] transition-colors text-sm font-medium"
+                  className="flex-1 px-4 py-2 bg-[#0F1E35] dark:bg-[#C9A84C] text-white dark:text-[#0F1E35] rounded-lg hover:bg-[#1A2E4A] dark:hover:bg-[#D8B85A] transition-colors text-sm font-medium"
                 >
                   {t('profile.continue_reading')}
                 </button>

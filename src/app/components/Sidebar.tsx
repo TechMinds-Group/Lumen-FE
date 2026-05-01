@@ -52,7 +52,7 @@ export function Sidebar({ eras, activeEra, onEraClick, isOpen, onClose }: Sideba
 
       <aside
         className={`fixed lg:static inset-y-0 left-0 w-64 flex flex-col z-50 transform transition-transform duration-300 lg:transform-none
-          bg-[#2c3e50] dark:bg-[#0d1117]
+          bg-[#0F1E35] dark:bg-[#060D18]
           ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}
       >
         {/* Scrollable content area */}
@@ -62,18 +62,18 @@ export function Sidebar({ eras, activeEra, onEraClick, isOpen, onClose }: Sideba
               <h1 className="font-['Playfair_Display'] text-2xl mb-2 text-white">
                 {t('app.title')}
               </h1>
-              <p className="text-sm text-[#bdc3c7] dark:text-[#64748b]">{t('app.subtitle')}</p>
+              <p className="text-sm text-[#8A9BB8] dark:text-[#687280]">{t('app.subtitle')}</p>
             </div>
             <button
               onClick={onClose}
-              className="lg:hidden text-[#bdc3c7] hover:text-white transition-colors"
+              className="lg:hidden text-[#8A9BB8] hover:text-white transition-colors"
             >
               <X size={24} />
             </button>
           </div>
 
           <nav>
-            <div className="text-xs uppercase tracking-wide text-[#95a5a6] dark:text-[#475569] mb-3">
+            <div className="text-xs uppercase tracking-wide text-[#8A9BB8] dark:text-[#4A5E72] mb-3">
               {t('sidebar.historical_eras')}
             </div>
             <ul className="space-y-1">
@@ -83,8 +83,8 @@ export function Sidebar({ eras, activeEra, onEraClick, isOpen, onClose }: Sideba
                     onClick={() => handleEraClick(era.id)}
                     className={`w-full text-left px-3 py-2 rounded transition-colors text-sm ${
                       activeEra === era.id
-                        ? 'bg-[#34495e] dark:bg-[#1e3a5f] text-white'
-                        : 'text-[#ecf0f1] dark:text-[#94a3b8] hover:bg-[#34495e]/50 dark:hover:bg-[#1e2d40]/70'
+                        ? 'bg-[#C9A84C]/20 text-[#D8B85A] border-l-2 border-[#C9A84C]'
+                        : 'text-[#CBD8E8] dark:text-[#A8B8C8] hover:bg-[#1A2E4A] dark:hover:bg-[#1C2E44]/70'
                     }`}
                   >
                     {t(`eras.${era.id}`)}
@@ -96,43 +96,43 @@ export function Sidebar({ eras, activeEra, onEraClick, isOpen, onClose }: Sideba
         </div>
 
         {/* Footer — pinned to bottom */}
-        <div className="p-4 border-t border-[#34495e] dark:border-[#1e2d40] space-y-3">
+        <div className="p-4 border-t border-[#1C2E44] dark:border-[#0F1E35] space-y-3">
 
           {/* Dark mode toggle */}
           <button
             onClick={toggle}
             className="w-full flex items-center gap-2.5 px-3 py-2 rounded
-              bg-[#34495e] dark:bg-[#1e2d40]
-              border border-[#4a6278] dark:border-[#2d4060]
-              hover:border-[#95a5a6] dark:hover:border-[#475569]
+              bg-[#1A2E4A] dark:bg-[#131E30]
+              border border-[#2A3E58] dark:border-[#1C2E44]
+              hover:border-[#8A9BB8] dark:hover:border-[#687280]
               text-white text-sm transition-colors"
           >
             {isDark ? (
-              <Sun size={15} className="text-yellow-300 shrink-0" />
+              <Sun size={15} className="text-[#D8B85A] shrink-0" />
             ) : (
-              <Moon size={15} className="text-[#95a5a6] shrink-0" />
+              <Moon size={15} className="text-[#8A9BB8] shrink-0" />
             )}
-            <span className="flex-1 text-left text-[#ecf0f1] dark:text-[#94a3b8]">
+            <span className="flex-1 text-left text-[#CBD8E8] dark:text-[#A8B8C8]">
               {isDark ? t('theme.light') : t('theme.dark')}
             </span>
             {/* Mini pill indicator */}
-            <span className={`w-7 h-4 rounded-full relative transition-colors ${isDark ? 'bg-yellow-400' : 'bg-[#4a6278]'}`}>
+            <span className={`w-7 h-4 rounded-full relative transition-colors ${isDark ? 'bg-[#C9A84C]' : 'bg-[#2A3E58]'}`}>
               <span className={`absolute top-0.5 w-3 h-3 rounded-full bg-white shadow transition-all ${isDark ? 'left-3.5' : 'left-0.5'}`} />
             </span>
           </button>
 
           {/* Language selector */}
           <div>
-            <p className="text-xs uppercase tracking-wide text-[#95a5a6] dark:text-[#475569] mb-2">
+            <p className="text-xs uppercase tracking-wide text-[#8A9BB8] dark:text-[#4A5E72] mb-2">
               {t('language_selector.label')}
             </p>
             <div ref={langRef} className="relative">
               <button
                 onClick={() => setLangOpen(prev => !prev)}
                 className="w-full flex items-center gap-2.5 px-3 py-2 rounded
-                  bg-[#34495e] dark:bg-[#1e2d40]
-                  border border-[#4a6278] dark:border-[#2d4060]
-                  hover:border-[#95a5a6] dark:hover:border-[#475569]
+                  bg-[#1A2E4A] dark:bg-[#131E30]
+                  border border-[#2A3E58] dark:border-[#1C2E44]
+                  hover:border-[#8A9BB8] dark:hover:border-[#687280]
                   text-white text-sm transition-colors"
               >
                 <img
@@ -143,12 +143,12 @@ export function Sidebar({ eras, activeEra, onEraClick, isOpen, onClose }: Sideba
                 <span className="flex-1 text-left">{currentLang.label}</span>
                 <ChevronDown
                   size={14}
-                  className={`text-[#95a5a6] transition-transform duration-200 ${langOpen ? 'rotate-180' : ''}`}
+                  className={`text-[#8A9BB8] transition-transform duration-200 ${langOpen ? 'rotate-180' : ''}`}
                 />
               </button>
 
               {langOpen && (
-                <ul className="absolute bottom-full mb-1 left-0 w-full bg-[#2c3e50] dark:bg-[#0d1117] border border-[#4a6278] dark:border-[#2d4060] rounded overflow-hidden shadow-lg z-10">
+                <ul className="absolute bottom-full mb-1 left-0 w-full bg-[#0F1E35] dark:bg-[#060D18] border border-[#2A3E58] dark:border-[#1C2E44] rounded overflow-hidden shadow-lg z-10">
                   {SUPPORTED_LANGUAGES.map(lang => (
                     <li key={lang.code}>
                       <button
@@ -158,8 +158,8 @@ export function Sidebar({ eras, activeEra, onEraClick, isOpen, onClose }: Sideba
                         }}
                         className={`w-full flex items-center gap-2.5 px-3 py-2 text-sm transition-colors ${
                           i18n.language === lang.code
-                            ? 'bg-[#34495e] dark:bg-[#1e2d40] text-white'
-                            : 'text-[#bdc3c7] hover:bg-[#34495e]/60 dark:hover:bg-[#1e2d40]/70 hover:text-white'
+                            ? 'bg-[#1A2E4A] dark:bg-[#1C2E44] text-white'
+                            : 'text-[#A8B8C8] hover:bg-[#1A2E4A]/60 dark:hover:bg-[#1C2E44]/70 hover:text-white'
                         }`}
                       >
                         <img

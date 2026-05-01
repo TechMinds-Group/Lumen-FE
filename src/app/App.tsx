@@ -94,7 +94,7 @@ function AppContent() {
 
   return (
     <div className={`${isDark ? 'dark' : ''} h-screen flex`}>
-      <div className="h-screen flex w-full bg-[#f5f4f0] dark:bg-[#0f1117] transition-colors duration-300">
+      <div className="h-screen flex w-full bg-[#F2EEE2] dark:bg-[#090F1C] transition-colors duration-300">
         <Sidebar
           eras={thinkersData.eras}
           activeEra={activeEra}
@@ -121,23 +121,23 @@ function AppContent() {
           />
 
           {/* Results counter + view toggle */}
-          <div className="bg-white dark:bg-[#161b27] border-b border-[#e5e3df] dark:border-[#2d3748] px-4 lg:px-6 py-2 transition-colors duration-300">
+          <div className="bg-white dark:bg-[#0F1E35] border-b border-[#DDD7C8] dark:border-[#1C2E44] px-4 lg:px-6 py-2 transition-colors duration-300">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
-              <p className="text-xs text-[#7f8c8d] dark:text-[#64748b]">
+              <p className="text-xs text-[#6A6355] dark:text-[#687280]">
                 {totalVisible}{' '}
                 {totalVisible === 1
                   ? t('results.count_one')
                   : t('results.count_other')}
               </p>
               {/* View toggle */}
-              <div className="flex items-center gap-1 bg-[#ecf0f1] dark:bg-[#1e2537] rounded-lg p-0.5">
+              <div className="flex items-center gap-1 bg-[#ECE7DA] dark:bg-[#131E30] rounded-lg p-0.5">
                 <button
                   onClick={() => setViewMode('thinkers')}
                   title="Visualização por pensadores"
                   className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded text-xs transition-colors ${
                     viewMode === 'thinkers'
-                      ? 'bg-white dark:bg-[#2d3748] text-[#2c3e50] dark:text-[#e2e8f0] shadow-sm'
-                      : 'text-[#7f8c8d] dark:text-[#64748b] hover:text-[#2c3e50] dark:hover:text-[#94a3b8]'
+                      ? 'bg-white dark:bg-[#1C2E44] text-[#0F1E35] dark:text-[#EDE8D8] shadow-sm'
+                      : 'text-[#6A6355] dark:text-[#687280] hover:text-[#0F1E35] dark:hover:text-[#A8B8C8]'
                   }`}
                 >
                   <LayoutGrid size={14} />
@@ -148,8 +148,8 @@ function AppContent() {
                   title="Visualização por obras"
                   className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded text-xs transition-colors ${
                     viewMode === 'books'
-                      ? 'bg-white dark:bg-[#2d3748] text-[#2c3e50] dark:text-[#e2e8f0] shadow-sm'
-                      : 'text-[#7f8c8d] dark:text-[#64748b] hover:text-[#2c3e50] dark:hover:text-[#94a3b8]'
+                      ? 'bg-white dark:bg-[#1C2E44] text-[#0F1E35] dark:text-[#EDE8D8] shadow-sm'
+                      : 'text-[#6A6355] dark:text-[#687280] hover:text-[#0F1E35] dark:hover:text-[#A8B8C8]'
                   }`}
                 >
                   <LayoutList size={14} />
@@ -193,14 +193,14 @@ function AppContent() {
                   >
                     <div className="mb-4 lg:mb-6">
                       <div className="flex items-center justify-between mb-1">
-                        <h2 className="text-xs uppercase tracking-wider text-[#7f8c8d] dark:text-[#64748b]">
+                        <h2 className="text-xs uppercase tracking-wider text-[#6A6355] dark:text-[#687280]">
                           {t(`eras.${era.id}`)}
                         </h2>
                         <span className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">
                           {t('era.read_works', { read: eraReadCount, total: eraTotalWorks })}
                         </span>
                       </div>
-                      <div className="h-px bg-[#e5e3df] dark:bg-[#2d3748]" />
+                      <div className="h-px bg-[#DDD7C8] dark:bg-[#1C2E44]" />
                     </div>
 
                     <div className="space-y-3 lg:space-y-4">
@@ -224,7 +224,7 @@ function AppContent() {
                 era => filterThinkers(era.thinkers).length === 0
               ) && (
                 <div className="text-center py-12 lg:py-16">
-                  <p className="text-sm lg:text-lg text-[#7f8c8d] dark:text-[#64748b]">
+                  <p className="text-sm lg:text-lg text-[#6A6355] dark:text-[#687280]">
                     {t('results.no_results')}
                   </p>
                 </div>
