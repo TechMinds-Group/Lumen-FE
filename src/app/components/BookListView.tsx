@@ -1,5 +1,7 @@
-import { Download, Check, BookOpen, AlertTriangle } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
+import { Download, Check, BookOpen, AlertTriangle, FileSpreadsheet, ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { exportWorksToExcel, type ExportOptions } from '../utils/exportWorks';
 
 interface Work {
   title: string;
@@ -11,6 +13,7 @@ interface Thinker {
   name: string;
   period: string;
   works?: Work[];
+  tags?: string[];
 }
 
 interface Era {
@@ -20,7 +23,7 @@ interface Era {
 }
 
 interface BookListViewProps {
-  eras: Era[];
+  eras: readonly Era[];
   isWorkRead: (thinkerId: string, workTitle: string) => boolean;
   onToggleWork: (thinkerId: string, workTitle: string) => void;
   filterThinkers: (thinkers: Thinker[]) => Thinker[];
@@ -31,9 +34,22 @@ const BASE_URL =
 
 export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers }: BookListViewProps) {
   const { t } = useTranslation();
+  const [exportOpen, setExportOpen] = useState(false);
+  const [exporting, setExporting] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setExportOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
 
   const allBooks = eras.flatMap(era => {
-    const filteredThinkers = filterThinkers(era.thinkers);
+    const filteredThinkers = filterThinkers(era.thinkers as Thinker[]);
     return filteredThinkers.flatMap(thinker =>
       (thinker.works || []).map(work => ({
         era,
@@ -48,10 +64,9 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers }:
   const totalBooks = allBooks.length;
   const readBooks = allBooks.filter(b => b.isRead).length;
 
-  // Group by era for rendering
   const groupedByEra = eras
     .map(era => {
-      const filteredThinkers = filterThinkers(era.thinkers);
+      const filteredThinkers = filterThinkers(era.thinkers as Thinker[]);
       const books = filteredThinkers.flatMap(thinker =>
         (thinker.works || []).map(work => ({
           thinker,
@@ -64,6 +79,19 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers }:
     })
     .filter(group => group.books.length > 0);
 
+  const eraLabels = Object.fromEntries(
+    eras.map(era => [era.id, t(`eras.${era.id}`)])
+  );
+
+  const handleExport = (scope: ExportOptions['scope']) => {
+    setExporting(true);
+    setExportOpen(false);
+    setTimeout(() => {
+      exportWorksToExcel(eras, isWorkRead, eraLabels, { scope });
+      setExporting(false);
+    }, 50);
+  };
+
   if (totalBooks === 0) {
     return (
       <div className="text-center py-16">
@@ -73,15 +101,35 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers }:
     );
   }
 
+  const exportOptions: { scope: ExportOptions['scope']; label: string; desc: string }[] = [
+    {
+      scope: 'all',
+      label: 'Exportar todas as obras',
+      desc: `${totalBooks} obras`,
+    },
+    {
+      scope: 'read',
+      label: 'Exportar apenas lidas',
+      desc: `${readBooks} obras`,
+    },
+    {
+      scope: 'unread',
+      label: 'Exportar apenas pendentes',
+      desc: `${totalBooks - readBooks} obras`,
+    },
+  ];
+
   return (
     <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8 space-y-8">
-      {/* Summary bar */}
+
+      {/* Summary + Export bar */}
       <div className="flex items-center gap-3 px-4 py-3 bg-white dark:bg-[#161b27] border border-[#e5e3df] dark:border-[#2d3748] rounded-lg">
         <BookOpen size={16} className="text-[#7f8c8d] dark:text-[#64748b] shrink-0" />
         <span className="text-sm text-[#4a4a4a] dark:text-[#94a3b8]">
           <span className="font-medium text-emerald-600 dark:text-emerald-400">{readBooks}</span>
           <span className="text-[#7f8c8d] dark:text-[#64748b]"> / {totalBooks} obras lidas</span>
         </span>
+
         {/* Progress bar */}
         <div className="flex-1 h-1.5 bg-[#e5e3df] dark:bg-[#2d3748] rounded-full overflow-hidden">
           <div
@@ -92,8 +140,62 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers }:
         <span className="text-xs text-[#7f8c8d] dark:text-[#64748b] shrink-0">
           {totalBooks > 0 ? Math.round((readBooks / totalBooks) * 100) : 0}%
         </span>
+
+        {/* Export button */}
+        <div className="relative shrink-0" ref={dropdownRef}>
+          <button
+            onClick={() => setExportOpen(v => !v)}
+            disabled={exporting}
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-[#2c3e50] dark:bg-[#2d3748] text-white rounded-lg text-xs hover:bg-[#34495e] dark:hover:bg-[#374151] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+          >
+            <FileSpreadsheet size={13} />
+            <span className="hidden sm:inline">
+              {exporting ? 'Exportando…' : 'Exportar'}
+            </span>
+            <ChevronDown
+              size={12}
+              className={`transition-transform duration-200 ${exportOpen ? 'rotate-180' : ''}`}
+            />
+          </button>
+
+          {exportOpen && (
+            <div className="absolute right-0 top-full mt-1.5 z-50 w-60 bg-white dark:bg-[#1e2537] border border-[#e5e3df] dark:border-[#2d3748] rounded-xl shadow-xl overflow-hidden">
+              <div className="px-3 py-2 border-b border-[#f0eeeb] dark:border-[#2d3748]">
+                <p className="text-[11px] uppercase tracking-wider text-[#7f8c8d] dark:text-[#64748b] font-medium">
+                  Exportar planilha (.xlsx)
+                </p>
+              </div>
+              {exportOptions.map(opt => (
+                <button
+                  key={opt.scope}
+                  onClick={() => handleExport(opt.scope)}
+                  className="w-full flex items-center justify-between gap-3 px-4 py-2.5 text-left hover:bg-[#f5f4f0] dark:hover:bg-[#2d3748] transition-colors group"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <FileSpreadsheet
+                      size={14}
+                      className="text-emerald-600 dark:text-emerald-400 shrink-0"
+                    />
+                    <span className="text-sm text-[#1a1a1a] dark:text-[#e2e8f0]">
+                      {opt.label}
+                    </span>
+                  </div>
+                  <span className="text-[11px] text-[#7f8c8d] dark:text-[#64748b] shrink-0 bg-[#f0eeeb] dark:bg-[#2d3748] px-1.5 py-0.5 rounded">
+                    {opt.desc}
+                  </span>
+                </button>
+              ))}
+              <div className="px-4 py-2 border-t border-[#f0eeeb] dark:border-[#2d3748] bg-[#faf9f7] dark:bg-[#161b27]">
+                <p className="text-[10px] text-[#95a5a6] dark:text-[#475569]">
+                  Inclui abas: Obras · Por Pensador · Progresso por Era
+                </p>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
 
+      {/* Grouped book list */}
       {groupedByEra.map(({ era, books }) => {
         const eraReadCount = books.filter(b => b.isRead).length;
         return (
