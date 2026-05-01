@@ -20,7 +20,7 @@
       "historical_context": "China da primavera e outono; crise da ordem feudal dos Zhou.",
       "impact": ["Neoconfucionismo", "Ética asiática", "Filosofia política chinesa"],
       "works": [
-        { "title": "Analectos", "download_url": "Os-Analectos-Confucio.pdf" }
+        { "title": "Analectos", "download_url": "" }
       ]
     },
     {
@@ -41,7 +41,7 @@
       "historical_context": "China antiga; período dos Reinos Combatentes.",
       "impact": ["Teoria militar", "Estratégia política", "Management contemporâneo"],
       "works": [
-        { "title": "A Arte da Guerra", "download_url": "a-arte-da-guerra.pdf" }
+        { "title": "A Arte da Guerra", "download_url": "" }
       ]
     },
     {
@@ -62,8 +62,8 @@
       "historical_context": "Atenas pós-guerra do Peloponeso; crise da democracia; morte de Sócrates.",
       "impact": ["Agostinho", "Neoplatonismo", "Constitucionalismo idealista"],
       "works": [
-        { "title": "A República", "download_url": "Platao_A_Republica.pdf" },
-        { "title": "As Leis", "download_url": "As_leis_Platao.pdf" }
+        { "title": "A República", "download_url": "" },
+        { "title": "As Leis", "download_url": "" }
       ]
     },
     {
@@ -84,8 +84,8 @@
       "historical_context": "Atenas clássica; fundação do Liceu; transição para o período helenístico.",
       "impact": ["Tomás de Aquino", "Republicanismo", "Ética das virtudes"],
       "works": [
-        { "title": "Política", "download_url": "aristoteles_a_politica.pdf" },
-        { "title": "Ética a Nicômaco", "download_url": "Etica-a-Nicomaco.pdf" }
+        { "title": "Política", "download_url": "" },
+        { "title": "Ética a Nicômaco", "download_url": "" }
       ]
     },
     {
@@ -106,8 +106,8 @@
       "historical_context": "Colapso da República Romana; ascensão do poder pessoal de Júlio César.",
       "impact": ["Locke", "Revolução Americana", "Direito Natural moderno"],
       "works": [
-        { "title": "De Re Publica", "download_url": "Da_Republica_Cicero.pdf" },
-        { "title": "De Officiis", "download_url": "cicero_dos_deveres.pdf" }
+        { "title": "De Re Publica", "download_url": "" },
+        { "title": "De Officiis", "download_url": "" }
       ]
     },
     {

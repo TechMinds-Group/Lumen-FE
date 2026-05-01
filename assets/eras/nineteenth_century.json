@@ -67,9 +67,9 @@
       "influences": ["Adam Smith", "Jean-Baptiste Say", "Liberalismo clássico"],
       "impact": ["Escola Austríaca de Economia", "Liberalismo econômico moderno", "Pensamento libertário", "Políticas de livre comércio"],
       "works": [
-        { "title": "A Lei", "download_url": "frederic_bastiat_a_lei.pdf" },
-        { "title": "O que se vê e o que não se vê", "download_url": "bastiat_o_que_se_ve.pdf" },
-        { "title": "Sofismas Econômicos", "download_url": "bastiat_sofismas_economicos.pdf" }
+        { "title": "A Lei", "download_url": "" },
+        { "title": "O que se vê e o que não se vê", "download_url": "" },
+        { "title": "Sofismas Econômicos", "download_url": "" }
       ]
     },
     {

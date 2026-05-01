@@ -63,7 +63,7 @@
       "impact": ["Hobbes", "Realismo político", "Teoria das elites"],
       "works": [
         { "title": "O Príncipe", "download_url": "principe.pdf" },
-        { "title": "Discursos sobre a primeira década de Tito Lívio", "download_url": "MAQUIAVEL_Discorsi.pdf" }
+        { "title": "Discursos sobre a primeira década de Tito Lívio", "download_url": "" }
       ]
     },
     {
@@ -84,8 +84,8 @@
       "historical_context": "Guerra Civil inglesa; regicídio de Carlos I; instabilidade política do século XVII.",
       "impact": ["Rousseau", "Realismo nas relações internacionais"],
       "works": [
-        { "title": "Leviatã", "download_url": "thomas_hobbes_leviatan.pdf" },
-        { "title": "Do Cidadão", "download_url": "thomas.hobbes.do_.cidadao.pdf" }
+        { "title": "Leviatã", "download_url": "" },
+        { "title": "Do Cidadão", "download_url": "" }
       ]
     },
     {
@@ -106,8 +106,8 @@
       "historical_context": "Revolução Gloriosa de 1688; ascensão do parlamentarismo na Inglaterra.",
       "impact": ["Independência dos EUA", "Adam Smith", "Liberalismo clássico"],
       "works": [
-        { "title": "Dois Tratados sobre o Governo", "download_url": "John_Locke_Dois_Tratados.pdf" },
-        { "title": "Ensaio sobre o Entendimento Humano", "download_url": "locke_ensaio_entendimento.pdf" }
+        { "title": "Dois Tratados sobre o Governo", "download_url": "" },
+        { "title": "Ensaio sobre o Entendimento Humano", "download_url": "" }
       ]
     }
   ]
