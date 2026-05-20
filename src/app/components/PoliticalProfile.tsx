@@ -30,6 +30,106 @@ interface RadarDataPoint {
   value: number;
 }
 
+// Political axes with segmented bar colors — full class names for Tailwind scanning
+const POLITICAL_AXES = [
+  {
+    key: 'freedom_vs_authority',
+    tags: [
+      { key: 'freedom',   barClass: 'bg-blue-400 dark:bg-blue-500',    dotClass: 'bg-blue-400 dark:bg-blue-500',    textClass: 'text-blue-700 dark:text-blue-300'    },
+      { key: 'authority', barClass: 'bg-red-400 dark:bg-red-500',      dotClass: 'bg-red-400 dark:bg-red-500',      textClass: 'text-red-700 dark:text-red-300'      },
+    ],
+  },
+  {
+    key: 'state_vs_market',
+    tags: [
+      { key: 'state',     barClass: 'bg-purple-400 dark:bg-purple-500', dotClass: 'bg-purple-400 dark:bg-purple-500', textClass: 'text-purple-700 dark:text-purple-300' },
+      { key: 'market',    barClass: 'bg-green-400 dark:bg-green-500',   dotClass: 'bg-green-400 dark:bg-green-500',   textClass: 'text-green-700 dark:text-green-300'   },
+      { key: 'community', barClass: 'bg-emerald-400 dark:bg-emerald-500', dotClass: 'bg-emerald-400 dark:bg-emerald-500', textClass: 'text-emerald-700 dark:text-emerald-300' },
+    ],
+  },
+  {
+    key: 'tradition_vs_rupture',
+    tags: [
+      { key: 'tradition', barClass: 'bg-sky-400 dark:bg-sky-500',      dotClass: 'bg-sky-400 dark:bg-sky-500',      textClass: 'text-sky-800 dark:text-sky-300'      },
+      { key: 'rupture',   barClass: 'bg-red-500 dark:bg-red-600',      dotClass: 'bg-red-500 dark:bg-red-600',      textClass: 'text-red-800 dark:text-red-300'      },
+    ],
+  },
+  {
+    key: 'individual_vs_collective',
+    tags: [
+      { key: 'individual', barClass: 'bg-cyan-400 dark:bg-cyan-500',   dotClass: 'bg-cyan-400 dark:bg-cyan-500',    textClass: 'text-cyan-700 dark:text-cyan-300'    },
+      { key: 'collective', barClass: 'bg-indigo-400 dark:bg-indigo-500', dotClass: 'bg-indigo-400 dark:bg-indigo-500', textClass: 'text-indigo-700 dark:text-indigo-300' },
+    ],
+  },
+] as const;
+
+// Static color config for methodological axis bars — full class names for Tailwind scanning
+const METHOD_AXES = [
+  {
+    key: 'epistemology',
+    tags: [
+      {
+        key: 'rationalist',
+        barClass: 'bg-pink-400 dark:bg-pink-500',
+        dotClass: 'bg-pink-400 dark:bg-pink-500',
+        textClass: 'text-pink-700 dark:text-pink-300',
+      },
+      {
+        key: 'empiricist',
+        barClass: 'bg-teal-400 dark:bg-teal-500',
+        dotClass: 'bg-teal-400 dark:bg-teal-500',
+        textClass: 'text-teal-700 dark:text-teal-300',
+      },
+    ],
+  },
+  {
+    key: 'ontology',
+    tags: [
+      {
+        key: 'idealist',
+        barClass: 'bg-purple-400 dark:bg-purple-500',
+        dotClass: 'bg-purple-400 dark:bg-purple-500',
+        textClass: 'text-purple-700 dark:text-purple-300',
+      },
+      {
+        key: 'materialist',
+        barClass: 'bg-amber-400 dark:bg-amber-500',
+        dotClass: 'bg-amber-400 dark:bg-amber-500',
+        textClass: 'text-amber-700 dark:text-amber-300',
+      },
+      {
+        key: 'interactionist',
+        barClass: 'bg-slate-300 dark:bg-slate-500',
+        dotClass: 'bg-slate-300 dark:bg-slate-500',
+        textClass: 'text-slate-600 dark:text-slate-300',
+      },
+    ],
+  },
+  {
+    key: 'historicity',
+    tags: [
+      {
+        key: 'ahistorical',
+        barClass: 'bg-stone-300 dark:bg-stone-500',
+        dotClass: 'bg-stone-300 dark:bg-stone-500',
+        textClass: 'text-stone-600 dark:text-stone-300',
+      },
+      {
+        key: 'historicist',
+        barClass: 'bg-rose-400 dark:bg-rose-500',
+        dotClass: 'bg-rose-400 dark:bg-rose-500',
+        textClass: 'text-rose-700 dark:text-rose-300',
+      },
+      {
+        key: 'dialectical',
+        barClass: 'bg-violet-400 dark:bg-violet-500',
+        dotClass: 'bg-violet-400 dark:bg-violet-500',
+        textClass: 'text-violet-700 dark:text-violet-300',
+      },
+    ],
+  },
+] as const;
+
 function CustomRadarChart({ data, isDark }: { data: RadarDataPoint[]; isDark: boolean }) {
   const size = 340;
   const cx = size / 2;
@@ -189,16 +289,10 @@ export function PoliticalProfile({
       value: ((tagCounts[tag] || 0) / maxCount) * 100,
     }));
 
-    const dominantTags = Object.entries(tagCounts)
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, 5)
-      .map(([tag, count]) => ({ tag, count }));
-
     return {
       readCount: readWorks.length,
       thinkerCount: readThinkers.length,
       radarData,
-      dominantTags,
       tagCounts,
     };
   }, [thinkers, readWorks, tagLabels]);
@@ -239,8 +333,9 @@ export function PoliticalProfile({
             </div>
           ) : (
             <>
+              {/* Political inclination radar */}
               <div>
-                <h3 className="text-sm font-medium text-[#6A6355] dark:text-[#687280] mb-4">
+                <h3 className="text-sm font-medium text-[#6A6355] dark:text-[#687280] mb-1">
                   {t('profile.radar_title')}
                 </h3>
                 <p className="text-xs text-[#8A8275] dark:text-[#4A5E72] mb-4">
@@ -253,35 +348,132 @@ export function PoliticalProfile({
                 </div>
               </div>
 
-              <div>
-                <h3 className="text-sm font-medium text-[#6A6355] dark:text-[#687280] mb-3">
-                  {t('profile.dominant_tags')}
+              {/* Methodological profile — 3 new axes */}
+              <div className="border-t border-[#DDD7C8] dark:border-[#1C2E44] pt-6">
+                <h3 className="text-sm font-medium text-[#6A6355] dark:text-[#687280] mb-1">
+                  {t('profile.methodological_title')}
                 </h3>
-                <div className="space-y-2">
-                  {analysis.dominantTags.map(({ tag, count }, index) => (
-                    <div key={`tag-${tag}-${index}`} className="flex items-center gap-3">
-                      <div className="flex-1">
-                        <div className="flex items-center justify-between mb-1">
-                          <span className="text-xs font-medium text-[#0F1E35] dark:text-[#EDE8D8]">
-                            {tagLabels[tag] || tag}
-                          </span>
-                          <span className="text-xs text-[#6A6355] dark:text-[#687280]">
-                            {count}{' '}
-                            {count === 1 ? t('profile.work_one') : t('profile.work_other')}
-                          </span>
+                <p className="text-xs text-[#8A8275] dark:text-[#4A5E72] mb-5">
+                  {t('profile.methodological_description')}
+                </p>
+                <div className="space-y-5">
+                  {METHOD_AXES.map(axis => {
+                    const axisTotal = axis.tags.reduce(
+                      (sum, tag) => sum + (analysis.tagCounts[tag.key] || 0),
+                      0,
+                    );
+                    return (
+                      <div key={axis.key}>
+                        <div className="text-xs font-medium text-[#0F1E35] dark:text-[#EDE8D8] mb-2">
+                          {t(`axes.${axis.key}`)}
                         </div>
-                        <div className="h-2 bg-[#ECE7DA] dark:bg-[#1C2E44] rounded-full overflow-hidden">
-                          <div
-                            className="h-full bg-[#C9A84C] dark:bg-[#C9A84C] rounded-full transition-all"
-                            style={{ width: `${(count / analysis.thinkerCount) * 100}%` }}
-                          />
+                        {/* Segmented bar */}
+                        <div className="flex h-2.5 rounded-full overflow-hidden gap-px bg-[#ECE7DA] dark:bg-[#1C2E44]">
+                          {axisTotal === 0 ? (
+                            <div className="h-full w-full bg-[#DDD7C8] dark:bg-[#1C2E44] rounded-full" />
+                          ) : (
+                            axis.tags.map(tag => {
+                              const count = analysis.tagCounts[tag.key] || 0;
+                              const width = (count / axisTotal) * 100;
+                              if (width === 0) return null;
+                              return (
+                                <div
+                                  key={tag.key}
+                                  className={`h-full transition-all ${tag.barClass}`}
+                                  style={{ width: `${width}%` }}
+                                />
+                              );
+                            })
+                          )}
+                        </div>
+                        {/* Legend */}
+                        <div className="flex flex-wrap gap-x-4 gap-y-1.5 mt-2.5">
+                          {axis.tags.map(tag => {
+                            const count = analysis.tagCounts[tag.key] || 0;
+                            const pct = axisTotal > 0 ? Math.round((count / axisTotal) * 100) : 0;
+                            return (
+                              <div key={tag.key} className="flex items-center gap-1.5 text-xs">
+                                <div className={`w-2 h-2 rounded-full flex-shrink-0 ${tag.dotClass}`} />
+                                <span className="text-[#6A6355] dark:text-[#687280]">
+                                  {tagLabels[tag.key] || tag.key}
+                                </span>
+                                <span className={`font-medium tabular-nums ${tag.textClass}`}>
+                                  {count}
+                                  <span className="font-normal text-[#8A8275] dark:text-[#4A5E72] ml-1.5">
+                                    ({pct}%)
+                                  </span>
+                                </span>
+                              </div>
+                            );
+                          })}
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
 
+              {/* Political axes — segmented bars, same pattern as methodological profile */}
+              <div className="border-t border-[#DDD7C8] dark:border-[#1C2E44] pt-6">
+                <h3 className="text-sm font-medium text-[#6A6355] dark:text-[#687280] mb-5">
+                  {t('profile.dominant_tags')}
+                </h3>
+                <div className="space-y-5">
+                  {POLITICAL_AXES.map(axis => {
+                    const axisTotal = axis.tags.reduce(
+                      (sum, tag) => sum + (analysis.tagCounts[tag.key] || 0),
+                      0,
+                    );
+                    return (
+                      <div key={axis.key}>
+                        <div className="text-xs font-medium text-[#0F1E35] dark:text-[#EDE8D8] mb-2">
+                          {t(`axes.${axis.key}`)}
+                        </div>
+                        <div className="flex h-2.5 rounded-full overflow-hidden gap-px bg-[#ECE7DA] dark:bg-[#1C2E44]">
+                          {axisTotal === 0 ? (
+                            <div className="h-full w-full bg-[#DDD7C8] dark:bg-[#1C2E44] rounded-full" />
+                          ) : (
+                            axis.tags.map(tag => {
+                              const count = analysis.tagCounts[tag.key] || 0;
+                              const width = (count / axisTotal) * 100;
+                              if (width === 0) return null;
+                              return (
+                                <div
+                                  key={tag.key}
+                                  className={`h-full transition-all ${tag.barClass}`}
+                                  style={{ width: `${width}%` }}
+                                />
+                              );
+                            })
+                          )}
+                        </div>
+                        <div className="flex flex-wrap gap-x-4 gap-y-1.5 mt-2.5">
+                          {axis.tags.map(tag => {
+                            const count = analysis.tagCounts[tag.key] || 0;
+                            const pct = axisTotal > 0 ? Math.round((count / axisTotal) * 100) : 0;
+                            return (
+                              <div key={tag.key} className="flex items-center gap-1.5 text-xs">
+                                <div className={`w-2 h-2 rounded-full flex-shrink-0 ${tag.dotClass}`} />
+                                <span className="text-[#6A6355] dark:text-[#687280]">
+                                  {tagLabels[tag.key] || tag.key}
+                                </span>
+                                <span className={`font-medium tabular-nums ${tag.textClass}`}>
+                                  {count}
+                                  <span className="font-normal text-[#8A8275] dark:text-[#4A5E72] ml-1.5">
+                                    ({pct}%)
+                                  </span>
+                                </span>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Diagnostic */}
               <div className="bg-[#0F1E35]/6 dark:bg-[#C9A84C]/10 border border-[#0F1E35]/15 dark:border-[#C9A84C]/25 rounded-lg p-4">
                 <h3 className="text-sm font-medium text-[#0F1E35] dark:text-[#D8B85A] mb-2">
                   {t('profile.diagnostic_label')}
@@ -327,6 +519,7 @@ function getDiagnostic(
 
   const parts: string[] = [];
 
+  // Political axes
   if ((pct.freedom || 0) > (pct.authority || 0)) {
     parts.push(t('diagnostic.tendency_freedom'));
   } else if ((pct.authority || 0) > (pct.freedom || 0)) {
@@ -353,6 +546,47 @@ function getDiagnostic(
     parts.push(t('diagnostic.individual_focus'));
   } else if ((pct.collective || 0) > (pct.individual || 0)) {
     parts.push(t('diagnostic.collective_focus'));
+  }
+
+  // Epistemology axis
+  const rationalistN  = tagCounts.rationalist  || 0;
+  const empiricistN   = tagCounts.empiricist   || 0;
+  if (rationalistN + empiricistN > 0) {
+    if (rationalistN > empiricistN) {
+      parts.push(t('diagnostic.epistemology_rationalist'));
+    } else if (empiricistN > rationalistN) {
+      parts.push(t('diagnostic.epistemology_empiricist'));
+    }
+  }
+
+  // Ontology axis
+  const idealistN    = tagCounts.idealist    || 0;
+  const materialistN = tagCounts.materialist || 0;
+  const interactionistN = tagCounts.interactionist || 0;
+  const ontologyTotal = idealistN + materialistN + interactionistN;
+  if (ontologyTotal > 0) {
+    if (idealistN >= materialistN && idealistN >= interactionistN && idealistN > 0) {
+      parts.push(t('diagnostic.ontology_idealist'));
+    } else if (materialistN >= idealistN && materialistN >= interactionistN && materialistN > 0) {
+      parts.push(t('diagnostic.ontology_materialist'));
+    } else if (interactionistN > 0) {
+      parts.push(t('diagnostic.ontology_interactionist'));
+    }
+  }
+
+  // Historicity axis
+  const ahistoricalN  = tagCounts.ahistorical  || 0;
+  const historicistN  = tagCounts.historicist  || 0;
+  const dialecticalN  = tagCounts.dialectical  || 0;
+  const historicityTotal = ahistoricalN + historicistN + dialecticalN;
+  if (historicityTotal > 0) {
+    if (dialecticalN >= historicistN && dialecticalN >= ahistoricalN && dialecticalN > 0) {
+      parts.push(t('diagnostic.historicity_dialectical'));
+    } else if (historicistN >= dialecticalN && historicistN >= ahistoricalN && historicistN > 0) {
+      parts.push(t('diagnostic.historicity_historicist'));
+    } else if (ahistoricalN > 0) {
+      parts.push(t('diagnostic.historicity_ahistorical'));
+    }
   }
 
   if (parts.length === 0) return t('diagnostic.balanced');

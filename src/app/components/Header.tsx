@@ -40,6 +40,7 @@ export function Header({
   onOpenGlossary,
 }: HeaderProps) {
   const { t } = useTranslation();
+
   const [showFilters, setShowFilters] = useState(false);
   const hasActiveFilters = Object.values(selectedFilters).some(v => v !== 'all');
 

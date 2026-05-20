@@ -9,13 +9,13 @@
       "description": "Filósofo e teólogo franciscano inglês que, ao formular o nominalismo radical e o princípio da parcimônia ontológica, dissolveu os fundamentos metafísicos do tomismo, separou razão e fé, e lançou as bases filosóficas do individualismo político moderno e do voluntarismo teológico.",
       "tags": ["freedom", "community", "rupture", "individual", "empirical", "pessimistic", "universalist"],
       "dimensions": {
-        "freedom_vs_authority": "Ockham limita radicalmente a autoridade do Papa em matérias temporais e mesmo teológicas, argumentando em 'Diálogo' e no 'Brevilóquio' que o poder pontifical não é absoluto mas está sujeito à lei evangélica e ao direito natural; defende a autonomia do poder imperial e a liberdade da comunidade dos fiéis frente à plenitudo potestatis papal.",
-        "state_vs_market": "Rejeita a concentração de poder tanto eclesiástico quanto secular, favorecendo formas de organização comunitária — especialmente o ideal franciscano de pobreza apostólica — que escapam à dicotomia entre Estado hierárquico e relações de mercado; a propriedade privada é instituição de direito positivo, não natural.",
-        "tradition_vs_rupture": "Representa ruptura decisiva com a síntese escolástica tomista: nega os universais como entidades reais, dissolve a teologia natural racional e separa irreconciliavelmente fé e razão, abrindo caminho para a via moderna em oposição à via antiqua dominicana e franciscana conservadora.",
-        "individual_vs_collective": "O nominalismo de Ockham fundamenta ontologicamente o individualismo: apenas indivíduos singulares existem realmente; os universais são meros nomes (flatus vocis), o que implica que direitos e obrigações políticas pertencem primariamente a indivíduos concretos, não a entidades coletivas abstratas.",
+        "freedom_vs_authority": "Liberdade: Ockham limita radicalmente a autoridade do Papa em matérias temporais e mesmo teológicas, argumentando em 'Diálogo' e no 'Brevilóquio' que o poder pontifical não é absoluto mas está sujeito à lei evangélica e ao direito natural; defende a autonomia do poder imperial e a liberdade da comunidade dos fiéis frente à plenitudo potestatis papal.",
+        "state_vs_market": "Comunidade: rejeita a concentração de poder tanto eclesiástico quanto secular, favorecendo formas de organização comunitária — especialmente o ideal franciscano de pobreza apostólica — que escapam à dicotomia entre Estado hierárquico e relações de mercado; a propriedade privada é instituição de direito positivo, não natural.",
+        "tradition_vs_rupture": "Ruptura: representa ruptura decisiva com a síntese escolástica tomista — nega os universais como entidades reais, dissolve a teologia natural racional e separa irreconciliavelmente fé e razão, abrindo caminho para a via moderna em oposição à via antiqua dominicana e franciscana conservadora.",
+        "individual_vs_collective": "Individual: o nominalismo de Ockham fundamenta ontologicamente o individualismo — apenas indivíduos singulares existem realmente; os universais são meros nomes (flatus vocis), o que implica que direitos e obrigações políticas pertencem primariamente a indivíduos concretos, não a entidades coletivas abstratas.",
         "method": "Adota método empirista e nominalista: o princípio da navalha — entia non sunt multiplicanda praeter necessitatem — exige eliminar entidades explicativas desnecessárias; o conhecimento começa pela intuição sensível de singulares concretos, recusando a abstração metafísica como via de acesso à realidade.",
-        "anthropology": "Pessimista quanto à capacidade da razão humana de alcançar verdades teológicas: Deus é vontade absoluta e omnipotência radical, cujos decretos são insondáveis pela razão natural; o homem conhece apenas o singular empírico e depende inteiramente da revelação e da graça para o conhecimento salvífico.",
-        "scope": "Universalista nos princípios lógicos e epistemológicos — a navalha e o nominalismo aplicam-se a todo conhecimento humano — mas particularista nas consequências políticas, reconhecendo a legitimidade de diferentes formas de governo adaptadas às circunstâncias históricas concretas."
+        "anthropology": "Pessimista: quanto à capacidade da razão humana de alcançar verdades teológicas — Deus é vontade absoluta e omnipotência radical, cujos decretos são insondáveis pela razão natural; o homem conhece apenas o singular empírico e depende inteiramente da revelação e da graça para o conhecimento salvífico.",
+        "scope": "Universalista: nos princípios lógicos e epistemológicos — a navalha e o nominalismo aplicam-se a todo conhecimento humano — mas particularista nas consequências políticas, reconhecendo a legitimidade de diferentes formas de governo adaptadas às circunstâncias históricas concretas."
       },
       "historical_context": "Ockham viveu na crise do papado medieval: a controvérsia sobre a pobreza franciscana opôs a Ordem ao Papa João XXII, levando Ockham a fugir de Avignon em 1328 e abrigar-se sob proteção de Luís IV da Baviera, adversário do papado. O período foi marcado pelo enfraquecimento da autoridade papal após o cativeiro de Avignon, pelo crescimento do conciliarismo e pela Peste Negra que devastaria a Europa pouco após sua morte. Intelectualmente, a recepção crítica do aristotelismo gerava tensão com a condenação de 1277 em Paris, que proibira teses aristotélicas incompatíveis com a onipotência divina.",
       "influences": [
@@ -52,7 +52,7 @@
       "tags": ["authority", "state", "rupture", "individual", "realist", "pessimistic", "particularist"],
       "dimensions": {
         "freedom_vs_authority": "Autoridade: ênfase na manutenção da ordem e estabilidade do Estado acima da autonomia individual.",
-        "state_vs_market": "Estado forte e unificado como fim em si; a economia serve à estabilidade política.",
+        "state_vs_market": "Estado forte: unificado como fim em si; a economia serve à estabilidade política.",
         "tradition_vs_rupture": "Ruptura epistemológica: separa política da moral e da teologia pela primeira vez.",
         "individual_vs_collective": "Individual: o príncipe age por virtù própria e os súditos são movidos por interesses privados.",
         "method": "Realista: foco em interesses materiais, poder e relações de força como motores da política.",
@@ -73,8 +73,8 @@
       "description": "Estado absoluto como antídoto ao caos natural.",
       "tags": ["authority", "state", "rupture", "individual", "rational", "pessimistic", "universalist"],
       "dimensions": {
-        "freedom_vs_authority": "Autoridade absoluta do soberano como única alternativa à guerra civil e ao caos.",
-        "state_vs_market": "Estado (Leviatã) onipotente; o soberano detém o controle final sobre a propriedade e a ordem social.",
+        "freedom_vs_authority": "Autoridade: absoluta do soberano como única alternativa à guerra civil e ao caos.",
+        "state_vs_market": "Estado forte: (Leviatã) onipotente; o soberano detém o controle final sobre a propriedade e a ordem social.",
         "tradition_vs_rupture": "Ruptura: abandona o direito divino e funda o Estado em um contrato social racional e laico.",
         "individual_vs_collective": "Individual: parte do direito natural do indivíduo à vida, embora o aliene ao soberano.",
         "method": "Racional: dedução da política através de princípios lógicos e universais (racionalismo geométrico).",
@@ -97,7 +97,7 @@
       "dimensions": {
         "freedom_vs_authority": "Liberdade: o governo deve ser limitado e baseado no consentimento dos governados.",
         "state_vs_market": "Mercado livre: defesa da propriedade privada e do Estado como seu garantidor mínimo.",
-        "tradition_vs_rupture": "Ruptura com o absolutismo e com teorias de submissão patriarcal ao monarca.",
+        "tradition_vs_rupture": "Ruptura: com o absolutismo e com teorias de submissão patriarcal ao monarca.",
         "individual_vs_collective": "Individual: priorização dos direitos naturais individuais que precedem a formação do Estado.",
         "method": "Empírico: o conhecimento político e social deve ser construído a partir da experiência e observação.",
         "anthropology": "Otimista: visão positiva da capacidade humana de autogoverno e cooperação racional.",

@@ -1,5 +1,6 @@
 import { X, HelpCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { TAG_COLORS, TAG_COLOR_FALLBACK } from '../utils/tagColors';
 
 interface Axis {
   id: string;
@@ -56,12 +57,8 @@ export function TagGlossary({ isOpen, onClose, axes, tagLabels }: TagGlossaryPro
                     <div key={value} className="flex gap-3">
                       <div className="flex-shrink-0">
                         <span
-                          className={`inline-block px-3 py-1 rounded text-xs font-medium ${
-                            value === 'rupture'
-                              ? 'bg-[#c0392b]/10 text-[#c0392b] dark:bg-[#c0392b]/20 dark:text-red-400'
-                              : value === 'tradition'
-                              ? 'bg-[#C9A84C]/15 text-[#8B6E2A] dark:bg-[#C9A84C]/20 dark:text-[#D8B85A]'
-                              : 'bg-[#0F1E35]/10 text-[#0F1E35] dark:bg-white/10 dark:text-[#A8B8C8]'
+                          className={`inline-block px-3 py-1 rounded border text-xs font-medium ${
+                            TAG_COLORS[value] || TAG_COLOR_FALLBACK
                           }`}
                         >
                           {tagLabels[value] || value}
@@ -69,9 +66,7 @@ export function TagGlossary({ isOpen, onClose, axes, tagLabels }: TagGlossaryPro
                       </div>
                       <div className="flex-1">
                         <p className="text-sm text-[#1A2E4A] dark:text-[#A8B8C8]">
-                          {t(`tag_descriptions.${value}`, {
-                            defaultValue: t('glossary.description'),
-                          })}
+                          {t(`tag_descriptions.${value}`, { defaultValue: t('glossary.description') })}
                         </p>
                       </div>
                     </div>

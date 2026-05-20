@@ -56,6 +56,10 @@ function AppContent() {
   };
 
   const handleEraClick = (eraId: string) => {
+    if (activeEra === eraId) {
+      setActiveEra('');
+      return;
+    }
     setActiveEra(eraId);
     eraRefs.current[eraId]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };

@@ -1,6 +1,6 @@
 {
   "title": "Lumen — mapa multidimensional",
-  "version": "2.0",
+  "version": "3.1",
   "axes": [
     {
       "id": "freedom_vs_authority",
@@ -23,14 +23,24 @@
       "values": ["individual", "collective"]
     },
     {
-      "id": "method",
-      "label": "Método",
-      "values": ["rational", "empirical", "dialectic", "historical", "idealist", "realist"]
+      "id": "epistemology",
+      "label": "Fonte do Conhecimento",
+      "values": ["rationalist", "empiricist"]
+    },
+    {
+      "id": "ontology",
+      "label": "Motor da Realidade Política",
+      "values": ["idealist", "materialist", "interactionist"]
+    },
+    {
+      "id": "historicity",
+      "label": "Relação com a História",
+      "values": ["ahistorical", "historicist", "dialectical"]
     },
     {
       "id": "anthropology",
       "label": "Antropologia Filosófica",
-      "values": ["optimistic", "pessimistic", "mixed"]
+      "values": ["optimistic", "pessimistic", "ambivalent"]
     },
     {
       "id": "scope",
@@ -48,15 +58,17 @@
     "rupture": "Ruptura",
     "individual": "Individual",
     "collective": "Coletivo",
-    "rational": "Racional",
-    "empirical": "Empírico",
-    "dialectic": "Dialético",
-    "historical": "Histórico",
+    "rationalist": "Racionalista",
+    "empiricist": "Empirista",
     "idealist": "Idealista",
-    "realist": "Realista",
+    "materialist": "Materialista",
+    "interactionist": "Interacionista",
+    "ahistorical": "A-histórico",
+    "historicist": "Historicista",
+    "dialectical": "Dialético",
     "optimistic": "Otimista",
     "pessimistic": "Pessimista",
-    "mixed": "Mista",
+    "ambivalent": "Ambivalente",
     "universalist": "Universal",
     "particularist": "Particular"
   },
@@ -65,7 +77,9 @@
     "state_vs_market": "Estado vs. Mercado",
     "tradition_vs_rupture": "Tradição vs. Ruptura",
     "individual_vs_collective": "Individual vs. Coletivo",
-    "method": "Método",
+    "epistemology": "Fonte do Conhecimento",
+    "ontology": "Motor da Realidade Política",
+    "historicity": "Relação com a História",
     "anthropology": "Antropologia Filosófica",
     "scope": "Escopo de Aplicação"
   },
