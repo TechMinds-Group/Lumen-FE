@@ -34,7 +34,10 @@
   "work_checkbox": {
     "download": "Download",
     "unavailable": "Unavailable",
-    "unavailable_short": "N/A"
+    "unavailable_short": "N/A",
+    "mark_read": "Mark as read",
+    "mark_unread": "Unmark as read",
+    "read_badge": "Read"
   },
   "glossary": {
     "title": "Dimensions and Tags Glossary",

@@ -34,7 +34,10 @@
   "work_checkbox": {
     "download": "Baixar",
     "unavailable": "Indisponível",
-    "unavailable_short": "N/D"
+    "unavailable_short": "N/D",
+    "mark_read": "Marcar como lida",
+    "mark_unread": "Desmarcar como lida",
+    "read_badge": "Lida"
   },
   "glossary": {
     "title": "Glossário de Dimensões e Tags",
