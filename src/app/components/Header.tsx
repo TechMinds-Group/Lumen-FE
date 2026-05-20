@@ -83,6 +83,20 @@ export function Header({
             {hasActiveFilters && <span className="w-2 h-2 bg-[#c0392b] rounded-full" />}
           </button>
 
+          {/* View Profile (mobile) */}
+          {totalReadWorks > 0 && (
+            <button
+              onClick={onOpenProfile}
+              className="lg:hidden flex items-center justify-center px-3 py-2 bg-[#C9A84C] text-[#0F1E35] rounded-lg hover:bg-[#B8962E] transition-colors relative"
+              title={t('header.view_profile', { count: totalReadWorks })}
+            >
+              <BarChart3 size={18} />
+              <span className="absolute -top-1.5 -right-1.5 min-w-[18px] h-[18px] px-1 bg-[#0F1E35] text-[#C9A84C] text-[10px] font-medium rounded-full flex items-center justify-center leading-none">
+                {totalReadWorks}
+              </span>
+            </button>
+          )}
+
           {/* Glossary */}
           <button
             onClick={onOpenGlossary}
