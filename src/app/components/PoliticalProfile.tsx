@@ -85,8 +85,15 @@ function CustomRadarChart({ data, isDark }: { data: RadarDataPoint[]; isDark: bo
   const labelColor = isDark ? '#EDE8D8' : '#0D1B2A';
   const valueColor = isDark ? '#687280' : '#6A6355';
 
+  const padX = 64;
+  const padY = 28;
+
   return (
-    <svg width="100%" viewBox={`0 0 ${size} ${size}`} style={{ overflow: 'visible' }}>
+    <svg
+      width="100%"
+      viewBox={`-${padX} -${padY} ${size + padX * 2} ${size + padY * 2}`}
+      style={{ overflow: 'visible' }}
+    >
       {gridPolygons.map(({ points, key }) => (
         <polygon key={key} points={points} fill="none" stroke={gridColor} strokeWidth={1} />
       ))}
@@ -240,7 +247,7 @@ export function PoliticalProfile({
                   {t('profile.radar_description')}
                 </p>
                 <div className="flex justify-center py-4">
-                  <div style={{ width: 380, height: 380 }}>
+                  <div style={{ width: '100%', maxWidth: 420 }}>
                     <CustomRadarChart data={analysis.radarData} isDark={isDark} />
                   </div>
                 </div>
