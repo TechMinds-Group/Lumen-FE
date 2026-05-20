@@ -33,6 +33,15 @@ export function Sidebar({ eras, activeEra, onEraClick, isOpen, onClose }: Sideba
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [isOpen]);
+
   const handleEraClick = (eraId: string) => {
     onEraClick(eraId);
     onClose();
@@ -51,7 +60,7 @@ export function Sidebar({ eras, activeEra, onEraClick, isOpen, onClose }: Sideba
       )}
 
       <aside
-        className={`fixed lg:static inset-y-0 left-0 w-64 flex flex-col z-50 transform transition-transform duration-300 lg:transform-none
+        className={`fixed lg:static top-0 left-0 h-dvh lg:h-auto w-64 flex flex-col z-50 transform transition-transform duration-300 lg:transform-none
           bg-[#0F1E35] dark:bg-[#060D18]
           ${isOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}`}
       >

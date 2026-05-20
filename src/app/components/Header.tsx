@@ -58,7 +58,7 @@ export function Header({
           {/* Search */}
           <div className="relative flex-1">
             <Search
-              className="absolute left-3 top-1/2 -translate-y-1/2 text-[#8A8275] dark:text-[#4A5E72]"
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-[#8A8275] dark:text-[#7A90A8]"
               size={18}
             />
             <input
@@ -66,10 +66,10 @@ export function Header({
               placeholder={t('header.search_placeholder')}
               value={searchQuery}
               onChange={e => onSearchChange(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 text-sm border border-[#DDD7C8] dark:border-[#1C2E44] rounded-lg
-                bg-white dark:bg-[#131E30] text-[#0F1E35] dark:text-[#EDE8D8]
-                placeholder:text-[#8A8275] dark:placeholder:text-[#4A5E72]
-                focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30 dark:focus:ring-[#C9A84C]/40
+              className="w-full pl-10 pr-4 py-2 text-sm border border-[#2A3F58] dark:border-[#2A3F58] rounded-lg
+                bg-white dark:bg-[#1C2E44] text-[#0F1E35] dark:text-[#F2EEE2]
+                placeholder:text-[#8A8275] dark:placeholder:text-[#7A90A8]
+                focus:outline-none focus:ring-2 focus:ring-[#C9A84C]/30 dark:focus:ring-[#C9A84C]/50
                 transition-colors duration-300"
             />
           </div>
