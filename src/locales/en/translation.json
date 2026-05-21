@@ -163,5 +163,20 @@
   "theme": {
     "dark": "Dark Mode",
     "light": "Light Mode"
+  },
+  "recommendations": {
+    "button_title": "Expand readings",
+    "button_subtitle_one": "{{count}} gap in your profile",
+    "button_subtitle_other": "{{count}} gaps in your profile",
+    "title": "Expand readings",
+    "subtitle_one": "Based on {{works}} works read · {{gaps}} unbalanced axis",
+    "subtitle_other": "Based on {{works}} works read · {{gaps}} unbalanced axes",
+    "insufficient_data": "Mark at least 5 works as read to receive personalized recommendations.",
+    "gaps_detected": "Gaps detected in your profile",
+    "suggested_readings": "Recommended readings",
+    "high_compatibility": "High compatibility",
+    "medium_compatibility": "Medium compatibility",
+    "justification": "This work complements your profile by addressing: {{tags}}",
+    "no_recommendations": "No recommendations available at the moment."
   }
 }

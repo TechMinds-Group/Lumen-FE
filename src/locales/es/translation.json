@@ -163,5 +163,20 @@
   "theme": {
     "dark": "Modo Oscuro",
     "light": "Modo Claro"
+  },
+  "recommendations": {
+    "button_title": "Ampliar lecturas",
+    "button_subtitle_one": "{{count}} gap en tu perfil",
+    "button_subtitle_other": "{{count}} gaps en tu perfil",
+    "title": "Ampliar lecturas",
+    "subtitle_one": "Basado en {{works}} obras leídas · {{gaps}} eje desequilibrado",
+    "subtitle_other": "Basado en {{works}} obras leídas · {{gaps}} ejes desequilibrados",
+    "insufficient_data": "Marca al menos 5 obras como leídas para recibir recomendaciones personalizadas.",
+    "gaps_detected": "Gaps detectados en tu perfil",
+    "suggested_readings": "Lecturas recomendadas",
+    "high_compatibility": "Alta compatibilidad",
+    "medium_compatibility": "Compatibilidad media",
+    "justification": "Esta obra complementa tu perfil al abordar: {{tags}}",
+    "no_recommendations": "No hay recomendaciones disponibles en este momento."
   }
 }

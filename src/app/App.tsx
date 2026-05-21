@@ -8,8 +8,11 @@ import { ThinkerCard } from './components/ThinkerCard';
 import { BookListView } from './components/BookListView';
 import { PoliticalProfile } from './components/PoliticalProfile';
 import { TagGlossary } from './components/TagGlossary';
+import { RecommendationsModal } from './components/RecommendationsModal';
 import { useReadingProgress } from './hooks/useReadingProgress';
+import { useRecommendations } from './hooks/useRecommendations';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
+import { normalizeText } from './utils/normalizeText';
 import thinkersData from '../../assets/thinkers';
 import metaData from '../../assets/meta.json';
 
@@ -24,9 +27,11 @@ function AppContent() {
   const [showOnlyRead, setShowOnlyRead] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const [glossaryOpen, setGlossaryOpen] = useState(false);
+  const [recommendationsOpen, setRecommendationsOpen] = useState(false);
   const [viewMode, setViewMode] = useState<'thinkers' | 'books'>('thinkers');
 
   const { readWorks, toggleWork, isWorkRead, clearAll } = useReadingProgress();
+  const { gaps } = useRecommendations(thinkersData.eras, readWorks);
   const eraRefs = useRef<Record<string, HTMLElement | null>>({});
 
   const translatedTagLabels: Record<string, string> = Object.fromEntries(
@@ -66,13 +71,19 @@ function AppContent() {
 
   const filterThinkers = (thinkers: any[]) => {
     return thinkers.filter(thinker => {
+      const normalizedQuery = normalizeText(searchQuery);
+
       const matchesSearch =
         searchQuery === '' ||
-        thinker.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        thinker.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        normalizeText(thinker.name).includes(normalizedQuery) ||
+        normalizeText(thinker.description).includes(normalizedQuery) ||
         thinker.tags.some((tag: string) =>
-          tag.toLowerCase().includes(searchQuery.toLowerCase())
-        );
+          normalizeText(tag).includes(normalizedQuery)
+        ) ||
+        (thinker.works &&
+          thinker.works.some((work: any) =>
+            normalizeText(work.title).includes(normalizedQuery)
+          ));
 
       const matchesFilters = Object.entries(selectedFilters).every(([, value]) => {
         if (value === 'all' || !value) return true;
@@ -105,6 +116,9 @@ function AppContent() {
           onEraClick={handleEraClick}
           isOpen={sidebarOpen}
           onClose={() => setSidebarOpen(false)}
+          readWorksCount={readWorks.length}
+          gapsCount={gaps.length}
+          onOpenRecommendations={() => setRecommendationsOpen(true)}
         />
 
         <div className="flex-1 flex flex-col overflow-hidden w-full lg:w-auto">
@@ -171,6 +185,7 @@ function AppContent() {
                 onToggleWork={toggleWork}
                 filterThinkers={filterThinkers}
                 activeEra={activeEra}
+                searchQuery={searchQuery}
               />
             ) : (
             <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
@@ -251,6 +266,15 @@ function AppContent() {
             onClose={() => setGlossaryOpen(false)}
             axes={translatedAxes}
             tagLabels={translatedTagLabels}
+          />
+
+          <RecommendationsModal
+            isOpen={recommendationsOpen}
+            onClose={() => setRecommendationsOpen(false)}
+            eras={thinkersData.eras}
+            readWorks={readWorks}
+            tagLabels={translatedTagLabels}
+            axisLabels={translatedDimensionLabels}
           />
         </div>
       </div>

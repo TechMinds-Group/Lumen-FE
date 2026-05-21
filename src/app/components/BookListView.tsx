@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Download, Check, BookOpen, AlertTriangle, FileSpreadsheet, ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { exportWorksToExcel, type ExportOptions } from '../utils/exportWorks';
+import { normalizeText } from '../utils/normalizeText';
 
 interface Work {
   title: string;
@@ -28,12 +29,13 @@ interface BookListViewProps {
   onToggleWork: (thinkerId: string, workTitle: string) => void;
   filterThinkers: (thinkers: Thinker[]) => Thinker[];
   activeEra?: string;
+  searchQuery?: string;
 }
 
 const BASE_URL =
   'https://github.com/victor-souza-dev/RepoStaticFile/raw/refs/heads/main/politica/';
 
-export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, activeEra }: BookListViewProps) {
+export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, activeEra, searchQuery = '' }: BookListViewProps) {
   const { t } = useTranslation();
   const [exportOpen, setExportOpen] = useState(false);
   const [exporting, setExporting] = useState(false);
@@ -58,14 +60,22 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
 
   const allBooks = eras.flatMap(era => {
     const filteredThinkers = filterThinkers(era.thinkers as Thinker[]);
+    const normalizedQuery = normalizeText(searchQuery);
+
     return filteredThinkers.flatMap(thinker =>
-      (thinker.works || []).map(work => ({
-        era,
-        thinker,
-        work,
-        isRead: isWorkRead(thinker.id, work.title),
-        hasUrl: !!(work.download_url && work.download_url.trim() !== ''),
-      }))
+      (thinker.works || [])
+        .filter(work => {
+          // Filtro adicional por título da obra quando há busca
+          if (searchQuery === '') return true;
+          return normalizeText(work.title).includes(normalizedQuery);
+        })
+        .map(work => ({
+          era,
+          thinker,
+          work,
+          isRead: isWorkRead(thinker.id, work.title),
+          hasUrl: !!(work.download_url && work.download_url.trim() !== ''),
+        }))
     );
   });
 
@@ -75,13 +85,21 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
   const groupedByEra = eras
     .map(era => {
       const filteredThinkers = filterThinkers(era.thinkers as Thinker[]);
+      const normalizedQuery = normalizeText(searchQuery);
+
       const books = filteredThinkers.flatMap(thinker =>
-        (thinker.works || []).map(work => ({
-          thinker,
-          work,
-          isRead: isWorkRead(thinker.id, work.title),
-          hasUrl: !!(work.download_url && work.download_url.trim() !== ''),
-        }))
+        (thinker.works || [])
+          .filter(work => {
+            // Filtro adicional por título da obra quando há busca
+            if (searchQuery === '') return true;
+            return normalizeText(work.title).includes(normalizedQuery);
+          })
+          .map(work => ({
+            thinker,
+            work,
+            isRead: isWorkRead(thinker.id, work.title),
+            hasUrl: !!(work.download_url && work.download_url.trim() !== ''),
+          }))
       );
       return { era, books };
     })
