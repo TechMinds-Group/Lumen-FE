@@ -103,7 +103,7 @@ export function Sidebar({
           {/* Logo */}
           <div className="flex justify-center mb-6">
             <img
-              src="/assets/images/techminds_lumen.png"
+              src="/techminds_lumen.png"
               alt="Lumen - TechMinds"
               className="h-16 w-auto object-contain"
             />
