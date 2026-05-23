@@ -17,6 +17,9 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
+  // Explicit base so all asset URLs are root-relative on Vercel
+  base: '/',
+
   plugins: [
     figmaAssetResolver(),
     // The React and Tailwind plugins are both required for Make, even if
@@ -24,6 +27,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+
   resolve: {
     alias: {
       // Alias @ to the src directory
@@ -33,4 +37,21 @@ export default defineConfig({
 
   // File types to support raw imports. Never add .css, .tsx, or .ts files to this.
   assetsInclude: ['**/*.svg', '**/*.csv'],
+
+  build: {
+    // No source maps in production — keeps bundle size small and avoids leaking source
+    sourcemap: false,
+
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Core React runtime — changes rarely, benefits most from long-term cache
+          vendor: ['react', 'react-dom'],
+          // i18n logic and locale data — separated so thinker data updates
+          // don't bust the translation cache
+          i18n: ['i18next', 'react-i18next'],
+        },
+      },
+    },
+  },
 })

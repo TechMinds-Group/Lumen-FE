@@ -2,6 +2,7 @@ import './i18n';
 import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { HelmetProvider } from 'react-helmet-async';
+import { Analytics } from '@vercel/analytics/react';
 import { LayoutList, LayoutGrid } from 'lucide-react';
 import { Sidebar } from './components/Sidebar';
 import { Header } from './components/Header';
@@ -301,6 +302,12 @@ export default function App() {
       <ThemeProvider>
         <AppContent />
       </ThemeProvider>
+      {/*
+        Vercel Analytics — tracks Core Web Vitals and page views from real users.
+        Data flows to Vercel's privacy-preserving dashboard (no cookies, GDPR-safe).
+        Coexists with GA4: both run independently with no shared state or conflicts.
+      */}
+      <Analytics />
     </HelmetProvider>
   );
 }

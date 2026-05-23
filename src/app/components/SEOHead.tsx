@@ -83,6 +83,13 @@ export function SEOHead({ title, description, lang, path = '/' }: SEOHeadProps) 
       ))}
       <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/`} />
 
+      {/* Favicon & Web App Manifest */}
+      <link rel="icon"             type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon"             type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="apple-touch-icon" sizes="180x180"               href="/apple-touch-icon.png" />
+      <link rel="manifest"                                        href="/site.webmanifest" />
+      <meta name="msapplication-TileColor" content="#0F1E35" />
+
       {/* Open Graph */}
       <meta property="og:type"        content="website" />
       <meta property="og:url"         content={canonical} />

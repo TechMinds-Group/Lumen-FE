@@ -1,15 +1,9 @@
-# =====================================================
+# =============================================================
 # robots.txt — Lumen: Mapa Multidimensional do Pensamento Político
-# Update SITE_URL with your production domain before deploying.
-# =====================================================
+# Domain: https://lumen.techminds.net.br
+# =============================================================
 
 User-agent: *
 Allow: /
 
-# Block noisy crawler paths that don't exist in this SPA
-Disallow: /api/
-Disallow: /_next/
-Disallow: /static/chunks/
-
-# Sitemap
 Sitemap: https://lumen.techminds.net.br/sitemap.xml
