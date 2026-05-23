@@ -3,14 +3,14 @@
 
   "rewrites": [
     {
-      "source": "/((?!_vercel|_next|api|.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|otf|eot|xml|txt|webmanifest|map)).*)",
+      "source": "/:path*",
       "destination": "/index.html"
     }
   ],
 
   "headers": [
     {
-      "source": "/assets/(.*)",
+      "source": "/assets/:path*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(js|css|woff|woff2|ttf|otf|eot))",
+      "source": "/:path*.(js|css|woff|woff2|ttf|otf|eot)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(png|jpg|jpeg|gif|svg|ico|webp))",
+      "source": "/:path*.(png|jpg|jpeg|gif|svg|ico|webp)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(xml|txt|webmanifest))",
+      "source": "/:path*.(xml|txt|webmanifest)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "source": "/((?!assets|.*\\.(js|css|woff|woff2|png|jpg|jpeg|gif|svg|ico|webp|xml|txt|webmanifest)).*)",
+      "source": "/index.html",
       "headers": [
         {
           "key": "Cache-Control",
