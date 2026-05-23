@@ -105,12 +105,25 @@ function buildBotShell(url: URL): string {
 
 // ─── Middleware ────────────────────────────────────────────────────────────────
 
+// Extensions that should never be intercepted by the middleware
+const STATIC_EXT_RE = /\.(?:js|css|png|jpg|jpeg|gif|svg|ico|woff2?|ttf|otf|eot|webp|xml|txt|webmanifest|map|json)$/i;
+
 export default function middleware(request: Request): Response {
+  const url = new URL(request.url);
+  const { pathname } = url;
+
+  // Pass through static assets, Vercel internals and API routes without processing
+  if (
+    STATIC_EXT_RE.test(pathname) ||
+    pathname.startsWith('/_vercel') ||
+    pathname.startsWith('/api')
+  ) {
+    return next();
+  }
+
   const ua = request.headers.get('user-agent') ?? '';
 
   if (isBot(ua)) {
-    const url = new URL(request.url);
-
     return new Response(buildBotShell(url), {
       status: 200,
       headers: {
@@ -128,14 +141,7 @@ export default function middleware(request: Request): Response {
 
 // ─── Matcher ──────────────────────────────────────────────────────────────────
 
-/**
- * Skip the middleware for:
- * - Vercel internals  (_vercel/*)
- * - Static files with known extensions (.js, .css, images, fonts, xml, txt …)
- * - API routes        (api/*)
- */
+// Run on every path — static asset / API filtering is done inside the handler above.
 export const config = {
-  matcher: [
-    '/((?!_vercel|api|.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|otf|eot|webp|xml|txt|webmanifest|map|json)).*)',
-  ],
+  matcher: '/:path*',
 };
