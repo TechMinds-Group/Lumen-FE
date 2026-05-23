@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 
-const SITE_URL = 'https://lumen-politico.app'; // Replace with your production domain
+const SITE_URL = 'https://lumen.techminds.net.br';
 const OG_IMAGE = `${SITE_URL}/og-image.png`;   // 1200×630 px recommended
 
 type Lang = 'pt-BR' | 'en' | 'es';
