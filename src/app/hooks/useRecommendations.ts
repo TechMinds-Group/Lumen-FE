@@ -81,9 +81,6 @@ export function useRecommendations(
       }
     });
 
-    console.log('[Recommendations] Total tags lidas:', readTags.length);
-    console.log('[Recommendations] Tags únicas:', [...new Set(readTags)]);
-
     // Analisar cada eixo
     const detectedGaps: Gap[] = [];
 
@@ -99,15 +96,6 @@ export function useRecommendations(
       const isTernary = poles.length === 3;
       const threshold = isTernary ? TERNARY_THRESHOLD : BINARY_THRESHOLD;
 
-      console.log(`[Recommendations] Eixo ${axisId} (${poles.length} polos, limiar: ${(threshold * 100).toFixed(0)}%):`, {
-        poles: poleCounts.map(p => `${p.tag}: ${p.count}`),
-        total: totalInAxis,
-        percentages: poleCounts.map(p => ({
-          tag: p.tag,
-          percentage: totalInAxis > 0 ? ((p.count / totalInAxis) * 100).toFixed(1) + '%' : '0%'
-        }))
-      });
-
       if (totalInAxis === 0) return; // Eixo sem leituras
 
       // Avaliar cada polo individualmente para detectar desequilíbrios
@@ -115,8 +103,6 @@ export function useRecommendations(
         const percentage = pole.count / totalInAxis;
 
         if (percentage > threshold) {
-          console.log(`[Recommendations] Gap detectado! ${axisId} - ${pole.tag}: ${(percentage * 100).toFixed(1)}% (limiar: ${(threshold * 100).toFixed(0)}%)`);
-
           // Encontrar TODAS as tags sub-representadas (não apenas a de menor contagem)
           const otherPoles = poleCounts.filter(p => p.tag !== pole.tag);
           const minCount = Math.min(...otherPoles.map(p => p.count));
@@ -125,8 +111,6 @@ export function useRecommendations(
           const underrepresentedTags = otherPoles
             .filter(p => p.count === minCount)
             .map(p => p.tag);
-
-          console.log(`[Recommendations] Tags sub-representadas em ${axisId}:`, underrepresentedTags);
 
           // Só adicionar gap se ainda não existe gap detectado para este eixo
           // (evita duplicação quando múltiplos polos estão acima do threshold)
@@ -139,36 +123,23 @@ export function useRecommendations(
               underrepresentedTags,
               underrepresentedPercentage: (minCount / totalInAxis) * 100,
             });
-          } else {
-            console.log(`[Recommendations] Gap ignorado (já existe para ${axisId})`);
           }
         }
       });
     });
 
     // Ordenar por severidade (maior desequilíbrio primeiro)
-    const sortedGaps = detectedGaps.sort(
+    return detectedGaps.sort(
       (a, b) => b.dominantPercentage - a.dominantPercentage
     );
-
-    console.log('[Recommendations] Total de gaps detectados:', sortedGaps.length);
-    console.log('[Recommendations] Gaps:', sortedGaps.map(g =>
-      `${g.axis}: ${g.dominantTag} (${g.dominantPercentage.toFixed(1)}%) > ${g.underrepresentedTags.join(', ')} (${g.underrepresentedPercentage.toFixed(1)}%)`
-    ));
-
-    return sortedGaps;
   }, [readWorks, allThinkers]);
 
   // Gerar recomendações baseadas nos gaps
   const recommendations = useMemo((): Recommendation[] => {
-    if (gaps.length === 0) {
-      console.log('[Recommendations] Nenhum gap detectado, sem recomendações');
-      return [];
-    }
+    if (gaps.length === 0) return [];
 
     // Coletar TODAS as tags sub-representadas de todos os gaps (pode haver múltiplas por gap)
     const underrepresentedTags = gaps.flatMap(g => g.underrepresentedTags);
-    console.log('[Recommendations] Tags sub-representadas:', underrepresentedTags);
 
     const readThinkerIds = new Set(readWorks.map(rw => rw.thinkerId));
     const readWorkKeys = new Set(
@@ -204,7 +175,7 @@ export function useRecommendations(
     });
 
     // Ordenar: priorizar score alto, depois pensadores novos (nunca lidos)
-    const sorted = scoredWorks
+    return scoredWorks
       .sort((a, b) => {
         // 1º critério: score de complementaridade (maior = melhor)
         if (b.score !== a.score) return b.score - a.score;
@@ -218,13 +189,6 @@ export function useRecommendations(
         return a.thinker.name.localeCompare(b.thinker.name);
       })
       .slice(0, 5);
-
-    console.log('[Recommendations] Total de obras com score > 0:', scoredWorks.length);
-    console.log('[Recommendations] Top 5 recomendações:', sorted.map(r =>
-      `${r.thinker.name} - ${r.work.title} (score: ${r.score}, novo: ${r.isNewThinker}, tags: ${r.matchingTags.join(', ')})`
-    ));
-
-    return sorted;
   }, [gaps, allThinkers, readWorks]);
 
   return {

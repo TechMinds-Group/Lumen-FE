@@ -143,39 +143,25 @@ export function Sidebar({
         {/* Footer — pinned to bottom */}
         <div className="p-4 border-t border-[#1C2E44] dark:border-[#0F1E35] space-y-3">
           {/* Recomendações - só aparece com 5+ obras lidas */}
-          {readWorksCount >= 5 && gapsCount > 0 && (
+          {(readWorksCount >= 5 && gapsCount > 0) && (
             <>
               <button
                 onClick={() => {
                   onOpenRecommendations();
                   onClose();
                 }}
-                className="w-full px-3 py-2.5 rounded-lg
-                  bg-[#eab740]/12 dark:bg-[#eab740]/12
-                  border border-[#eab740]/35 dark:border-[#eab740]/35
-                  hover:bg-[#eab740]/18 dark:hover:bg-[#eab740]/18
-                  transition-colors
-                  text-left cursor-pointer"
+                className="w-full px-3 py-2.5 rounded-lg bg-[#eab740]/12 dark:bg-[#eab740]/12 border border-[#eab740]/35 dark:border-[#eab740]/35 hover:bg-[#eab740]/18 dark:hover:bg-[#eab740]/18 transition-colors text-left cursor-pointer"
               >
                 <div className="flex items-start gap-2.5">
-                  <Sparkles
-                    size={15}
-                    className="text-[#e8b840] shrink-0 mt-0.5"
-                  />
+                  <Sparkles size={15} className="text-[#e8b840] shrink-0 mt-0.5" />
                   <div className="flex-1 min-w-0">
                     <p className="text-xs font-medium text-[#e8b840] dark:text-[#e8b840] mb-0.5">
                       {t("recommendations.button_title")}
                     </p>
                     <p className="text-[10px] text-[#a0896b] dark:text-[#a0896b]">
                       {gapsCount === 1
-                        ? t(
-                            "recommendations.button_subtitle_one",
-                            { count: gapsCount },
-                          )
-                        : t(
-                            "recommendations.button_subtitle_other",
-                            { count: gapsCount },
-                          )}
+                        ? t("recommendations.button_subtitle_one", { count: gapsCount })
+                        : t("recommendations.button_subtitle_other", { count: gapsCount })}
                     </p>
                   </div>
                 </div>

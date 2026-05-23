@@ -1,1 +1,30 @@
+/*
+  Font loading strategy:
+  1. `display=swap` in the Google Fonts URL ensures text renders immediately
+     with a fallback font while the custom font downloads (avoids invisible text / FOIT).
+  2. The preconnect links in index.html warm up the Google Fonts connection
+     so the font file download starts as early as possible.
+  3. The size-adjust and ascent-override below create a metric-compatible fallback
+     that minimises Cumulative Layout Shift (CLS) when the webfont swaps in.
+*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Metric-adjusted system fallback for Playfair Display — reduces CLS */
+@font-face {
+  font-family: 'Playfair Display Fallback';
+  src: local('Georgia'), local('Times New Roman');
+  size-adjust: 105%;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
+}
+
+/* Metric-adjusted system fallback for Inter — reduces CLS */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial'), local('Helvetica Neue'), local('sans-serif');
+  size-adjust: 100%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}

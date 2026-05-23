@@ -1,6 +1,7 @@
 import './i18n';
 import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { HelmetProvider } from 'react-helmet-async';
 import { LayoutList, LayoutGrid } from 'lucide-react';
 import { Sidebar } from './components/Sidebar';
 import { Header } from './components/Header';
@@ -9,16 +10,22 @@ import { BookListView } from './components/BookListView';
 import { PoliticalProfile } from './components/PoliticalProfile';
 import { TagGlossary } from './components/TagGlossary';
 import { RecommendationsModal } from './components/RecommendationsModal';
+import { SEOHead } from './components/SEOHead';
+import { LazyRender } from './components/LazyRender';
 import { useReadingProgress } from './hooks/useReadingProgress';
 import { useRecommendations } from './hooks/useRecommendations';
+import { useWebVitals } from './hooks/useWebVitals';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import { normalizeText } from './utils/normalizeText';
 import thinkersData from '../../assets/thinkers';
 import metaData from '../../assets/meta.json';
 
 function AppContent() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { isDark } = useTheme();
+
+  // Report Core Web Vitals. Replace the no-op with your analytics handler in production.
+  useWebVitals(import.meta.env.DEV ? console.log : () => {});
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedFilters, setSelectedFilters] = useState<Record<string, string>>({});
@@ -107,7 +114,11 @@ function AppContent() {
     0
   );
 
+  const langPath = i18n.language === 'pt-BR' ? '/' : `/${i18n.language}/`;
+
   return (
+    <>
+      <SEOHead lang={i18n.language as 'pt-BR' | 'en' | 'es'} path={langPath} />
     <div className={`${isDark ? 'dark' : ''} h-screen flex`}>
       <div className="h-screen flex w-full bg-[#F2EEE2] dark:bg-[#090F1C] transition-colors duration-300">
         <Sidebar
@@ -224,15 +235,16 @@ function AppContent() {
 
                     <div className="space-y-3 lg:space-y-4">
                       {filteredThinkers.map(thinker => (
-                        <ThinkerCard
-                          key={thinker.id}
-                          thinker={thinker}
-                          tagLabels={translatedTagLabels}
-                          dimensionLabels={translatedDimensionLabels}
-                          fieldLabels={translatedFieldLabels}
-                          isWorkRead={isWorkRead}
-                          onToggleWork={toggleWork}
-                        />
+                        <LazyRender key={thinker.id}>
+                          <ThinkerCard
+                            thinker={thinker}
+                            tagLabels={translatedTagLabels}
+                            dimensionLabels={translatedDimensionLabels}
+                            fieldLabels={translatedFieldLabels}
+                            isWorkRead={isWorkRead}
+                            onToggleWork={toggleWork}
+                          />
+                        </LazyRender>
                       ))}
                     </div>
                   </section>
@@ -279,13 +291,16 @@ function AppContent() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
 export default function App() {
   return (
-    <ThemeProvider>
-      <AppContent />
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider>
+        <AppContent />
+      </ThemeProvider>
+    </HelmetProvider>
   );
 }
