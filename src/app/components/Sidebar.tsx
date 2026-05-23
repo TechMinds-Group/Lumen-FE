@@ -101,11 +101,11 @@ export function Sidebar({
         {/* Scrollable content area */}
         <div className="flex-1 overflow-y-auto p-6">
           {/* Logo */}
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center">
             <img
               src="/techminds_lumen.png"
               alt="Lumen - TechMinds"
-              className="h-24 w-auto object-contain"
+              className="h-34 w-auto object-contain"
             />
           </div>
 
