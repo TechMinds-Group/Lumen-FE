@@ -105,7 +105,7 @@ export function Sidebar({
             <img
               src="/techminds_lumen.png"
               alt="Lumen - TechMinds"
-              className="h-16 w-auto object-contain"
+              className="h-24 w-auto object-contain"
             />
           </div>
 
