@@ -13,6 +13,7 @@ import {
   type LangCode,
 } from "../i18n";
 import { useTheme } from "../contexts/ThemeContext";
+import { trackEvent } from "../analytics";
 
 interface Era {
   id: string;
@@ -190,7 +191,7 @@ export function Sidebar({
 
           {/* Dark mode toggle */}
           <button
-            onClick={toggle}
+            onClick={() => { trackEvent({ name: 'theme_changed', theme: isDark ? 'light' : 'dark' }); toggle(); }}
             className="w-full flex items-center gap-2.5 px-3 py-2 rounded
               bg-[#1A2E4A] dark:bg-[#131E30]
               border border-[#2A3E58] dark:border-[#1C2E44]
@@ -255,6 +256,7 @@ export function Sidebar({
                     <li key={lang.code}>
                       <button
                         onClick={() => {
+                          trackEvent({ name: 'language_changed', from: i18n.language, to: lang.code });
                           changeLanguage(lang.code as LangCode);
                           setLangOpen(false);
                         }}

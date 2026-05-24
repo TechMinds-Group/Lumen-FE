@@ -1,9 +1,10 @@
 import './i18n';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { HelmetProvider } from 'react-helmet-async';
 import { Analytics } from '@vercel/analytics/react';
 import { LayoutList, LayoutGrid } from 'lucide-react';
+import { trackEvent } from './analytics';
 import { Sidebar } from './components/Sidebar';
 import { Header } from './components/Header';
 import { ThinkerCard } from './components/ThinkerCard';
@@ -42,6 +43,17 @@ function AppContent() {
   const { gaps } = useRecommendations(thinkersData.eras, readWorks);
   const eraRefs = useRef<Record<string, HTMLElement | null>>({});
 
+  // Debounced search tracking — fires 1.5 s after the user stops typing
+  useEffect(() => {
+    if (!searchQuery) return;
+    const timer = setTimeout(() => {
+      trackEvent({ name: 'search_performed', query: searchQuery, results_count: totalVisible });
+    }, 1500);
+    return () => clearTimeout(timer);
+  // totalVisible intentionally included so the result count is accurate when the event fires
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchQuery]);
+
   const translatedTagLabels: Record<string, string> = Object.fromEntries(
     Object.keys(metaData.tag_labels).map(key => [key, t(`tags.${key}`)])
   );
@@ -57,24 +69,41 @@ function AppContent() {
   }));
 
   const handleFilterChange = (axisId: string, value: string) => {
-    setSelectedFilters(prev => ({
-      ...prev,
-      [axisId]: prev[axisId] === value ? 'all' : value,
-    }));
+    setSelectedFilters(prev => {
+      const newValue = prev[axisId] === value ? 'all' : value;
+      if (newValue !== 'all') {
+        trackEvent({ name: 'filter_applied', axis: axisId, value: newValue });
+      }
+      return { ...prev, [axisId]: newValue };
+    });
   };
 
   const handleClearFilters = () => {
     setSelectedFilters({});
     setSearchQuery('');
+    trackEvent({ name: 'filter_cleared' });
   };
 
   const handleEraClick = (eraId: string) => {
     if (activeEra === eraId) {
       setActiveEra('');
+      trackEvent({ name: 'era_navigated', era_id: eraId, deselected: true });
       return;
     }
     setActiveEra(eraId);
     eraRefs.current[eraId]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    trackEvent({ name: 'era_navigated', era_id: eraId, deselected: false });
+  };
+
+  const handleToggleWork = (thinkerId: string, workTitle: string) => {
+    const wasRead = isWorkRead(thinkerId, workTitle);
+    toggleWork(thinkerId, workTitle);
+    trackEvent({ name: 'work_toggled', thinker_id: thinkerId, action: wasRead ? 'unread' : 'read' });
+  };
+
+  const handleClearAll = () => {
+    clearAll();
+    trackEvent({ name: 'reading_progress_cleared' });
   };
 
   const filterThinkers = (thinkers: any[]) => {
@@ -127,10 +156,10 @@ function AppContent() {
           activeEra={activeEra}
           onEraClick={handleEraClick}
           isOpen={sidebarOpen}
-          onClose={() => setSidebarOpen(false)}
+          onClose={() => { setSidebarOpen(false); trackEvent({ name: 'sidebar_closed' }); }}
           readWorksCount={readWorks.length}
           gapsCount={gaps.length}
-          onOpenRecommendations={() => setRecommendationsOpen(true)}
+          onOpenRecommendations={() => { setRecommendationsOpen(true); trackEvent({ name: 'modal_opened', modal: 'recommendations' }); }}
         />
 
         <div className="flex-1 flex flex-col overflow-hidden w-full lg:w-auto">
@@ -141,13 +170,13 @@ function AppContent() {
             selectedFilters={selectedFilters}
             onFilterChange={handleFilterChange}
             onClearFilters={handleClearFilters}
-            onMenuClick={() => setSidebarOpen(true)}
+            onMenuClick={() => { setSidebarOpen(true); trackEvent({ name: 'sidebar_opened' }); }}
             tagLabels={translatedTagLabels}
             showOnlyRead={showOnlyRead}
-            onToggleShowOnlyRead={() => setShowOnlyRead(!showOnlyRead)}
+            onToggleShowOnlyRead={() => { const next = !showOnlyRead; setShowOnlyRead(next); trackEvent({ name: 'show_only_read_toggled', enabled: next }); }}
             totalReadWorks={totalReadWorks}
-            onOpenProfile={() => setProfileOpen(true)}
-            onOpenGlossary={() => setGlossaryOpen(true)}
+            onOpenProfile={() => { setProfileOpen(true); trackEvent({ name: 'modal_opened', modal: 'profile' }); }}
+            onOpenGlossary={() => { setGlossaryOpen(true); trackEvent({ name: 'modal_opened', modal: 'glossary' }); }}
           />
 
           {/* Results counter + view toggle */}
@@ -162,7 +191,7 @@ function AppContent() {
               {/* View toggle */}
               <div className="flex items-center gap-1 bg-[#ECE7DA] dark:bg-[#131E30] rounded-lg p-0.5">
                 <button
-                  onClick={() => setViewMode('thinkers')}
+                  onClick={() => { setViewMode('thinkers'); trackEvent({ name: 'view_mode_changed', mode: 'thinkers' }); }}
                   title="Visualização por pensadores"
                   className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded text-xs transition-colors ${
                     viewMode === 'thinkers'
@@ -174,7 +203,7 @@ function AppContent() {
                   <span className="hidden sm:inline">Pensadores</span>
                 </button>
                 <button
-                  onClick={() => setViewMode('books')}
+                  onClick={() => { setViewMode('books'); trackEvent({ name: 'view_mode_changed', mode: 'books' }); }}
                   title="Visualização por obras"
                   className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded text-xs transition-colors ${
                     viewMode === 'books'
@@ -194,7 +223,7 @@ function AppContent() {
               <BookListView
                 eras={thinkersData.eras}
                 isWorkRead={isWorkRead}
-                onToggleWork={toggleWork}
+                onToggleWork={handleToggleWork}
                 filterThinkers={filterThinkers}
                 activeEra={activeEra}
                 searchQuery={searchQuery}
@@ -243,7 +272,7 @@ function AppContent() {
                             dimensionLabels={translatedDimensionLabels}
                             fieldLabels={translatedFieldLabels}
                             isWorkRead={isWorkRead}
-                            onToggleWork={toggleWork}
+                            onToggleWork={handleToggleWork}
                           />
                         </LazyRender>
                       ))}
@@ -269,7 +298,7 @@ function AppContent() {
             thinkers={allThinkers}
             readWorks={readWorks}
             tagLabels={translatedTagLabels}
-            onClear={clearAll}
+            onClear={handleClearAll}
             isOpen={profileOpen}
             onClose={() => setProfileOpen(false)}
           />

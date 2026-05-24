@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Download, Check, BookOpen, AlertTriangle, FileSpreadsheet, ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { exportWorksToExcel, type ExportOptions } from '../utils/exportWorks';
+import { trackEvent } from '../analytics';
 import { normalizeText } from '../utils/normalizeText';
 
 interface Work {
@@ -110,6 +111,7 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
   );
 
   const handleExport = (scope: ExportOptions['scope']) => {
+    trackEvent({ name: 'export_initiated', scope });
     setExporting(true);
     setExportOpen(false);
     setTimeout(() => {
