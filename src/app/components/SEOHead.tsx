@@ -62,11 +62,6 @@ export function SEOHead({ title, description, lang, path = '/' }: SEOHeadProps) 
       {/* HTML lang attribute */}
       <html lang={activeLang} />
 
-      {/* AdSense account verification */}
-      {import.meta.env.VITE_ADSENSE_CLIENT && (
-        <meta name="google-adsense-account" content={import.meta.env.VITE_ADSENSE_CLIENT} />
-      )}
-
       {/* Primary */}
       <title>{resolvedTitle}</title>
       <meta name="title"       content={resolvedTitle} />
