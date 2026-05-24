@@ -5,6 +5,9 @@ import { HelmetProvider } from 'react-helmet-async';
 import { Analytics } from '@vercel/analytics/react';
 import { LayoutList, LayoutGrid } from 'lucide-react';
 import { trackEvent } from './analytics';
+import { ConsentBanner } from './components/ConsentBanner';
+import { AdBlockNotice } from './components/AdBlockNotice';
+import { GoogleAdUnit } from './components/ads/GoogleAdUnit';
 import { Sidebar } from './components/Sidebar';
 import { Header } from './components/Header';
 import { ThinkerCard } from './components/ThinkerCard';
@@ -179,6 +182,18 @@ function AppContent() {
             onOpenGlossary={() => { setGlossaryOpen(true); trackEvent({ name: 'modal_opened', modal: 'glossary' }); }}
           />
 
+          {/* Ad blocker polite notice */}
+          <AdBlockNotice />
+
+          {/* Placement C — auto/responsive, mobile only, below header */}
+          <div className="lg:hidden">
+            <GoogleAdUnit
+              adSlot={import.meta.env.VITE_ADSENSE_SLOT_MOBILE_HEADER ?? 'XXXXXXXXXX'}
+              adFormat="auto"
+              className="max-h-[90px] overflow-hidden"
+            />
+          </div>
+
           {/* Results counter + view toggle */}
           <div className="bg-white dark:bg-[#0F1E35] border-b border-[#DDD7C8] dark:border-[#1C2E44] px-4 lg:px-6 py-2 transition-colors duration-300">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -230,56 +245,76 @@ function AppContent() {
               />
             ) : (
             <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
-              {thinkersData.eras.map(era => {
-                const filteredThinkers = filterThinkers(era.thinkers);
-                if (filteredThinkers.length === 0) return null;
+              {(() => {
+                // Placement B counter — tracks position across all eras for the
+                // inline horizontal ad inserted every 8 cards (desktop only)
+                let cardIndex = 0;
+                return thinkersData.eras.map(era => {
+                  const filteredThinkers = filterThinkers(era.thinkers);
+                  if (filteredThinkers.length === 0) return null;
 
-                const eraReadCount = era.thinkers.reduce((sum, t) => {
-                  return (
-                    sum +
-                    (t.works?.filter((w: any) => isWorkRead(t.id, w.title)).length || 0)
+                  const eraReadCount = era.thinkers.reduce((sum, t) => {
+                    return (
+                      sum +
+                      (t.works?.filter((w: any) => isWorkRead(t.id, w.title)).length || 0)
+                    );
+                  }, 0);
+                  const eraTotalWorks = era.thinkers.reduce(
+                    (sum, t) => sum + (t.works?.length || 0),
+                    0
                   );
-                }, 0);
-                const eraTotalWorks = era.thinkers.reduce(
-                  (sum, t) => sum + (t.works?.length || 0),
-                  0
-                );
 
-                return (
-                  <section
-                    key={era.id}
-                    ref={el => { eraRefs.current[era.id] = el; }}
-                    className="mb-8 lg:mb-12"
-                  >
-                    <div className="mb-4 lg:mb-6">
-                      <div className="flex items-center justify-between mb-1">
-                        <h2 className="text-xs uppercase tracking-wider text-[#6A6355] dark:text-[#687280]">
-                          {t(`eras.${era.id}`)}
-                        </h2>
-                        <span className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">
-                          {t('era.read_works', { read: eraReadCount, total: eraTotalWorks })}
-                        </span>
+                  return (
+                    <section
+                      key={era.id}
+                      ref={el => { eraRefs.current[era.id] = el; }}
+                      className="mb-8 lg:mb-12"
+                    >
+                      <div className="mb-4 lg:mb-6">
+                        <div className="flex items-center justify-between mb-1">
+                          <h2 className="text-xs uppercase tracking-wider text-[#6A6355] dark:text-[#687280]">
+                            {t(`eras.${era.id}`)}
+                          </h2>
+                          <span className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+                            {t('era.read_works', { read: eraReadCount, total: eraTotalWorks })}
+                          </span>
+                        </div>
+                        <div className="h-px bg-[#DDD7C8] dark:bg-[#1C2E44]" />
                       </div>
-                      <div className="h-px bg-[#DDD7C8] dark:bg-[#1C2E44]" />
-                    </div>
 
-                    <div className="space-y-3 lg:space-y-4">
-                      {filteredThinkers.map(thinker => (
-                        <LazyRender key={thinker.id}>
-                          <ThinkerCard
-                            thinker={thinker}
-                            tagLabels={translatedTagLabels}
-                            dimensionLabels={translatedDimensionLabels}
-                            fieldLabels={translatedFieldLabels}
-                            isWorkRead={isWorkRead}
-                            onToggleWork={handleToggleWork}
-                          />
-                        </LazyRender>
-                      ))}
-                    </div>
-                  </section>
-                );
-              })}
+                      <div className="space-y-3 lg:space-y-4">
+                        {filteredThinkers.map(thinker => {
+                          const idx = cardIndex++;
+                          return (
+                            <LazyRender key={thinker.id}>
+                              <>
+                                {/* Placement B — horizontal ad every 8 cards, desktop only */}
+                                {idx > 0 && idx % 8 === 0 && (
+                                  <div className="hidden lg:block w-full py-2">
+                                    <GoogleAdUnit
+                                      adSlot={import.meta.env.VITE_ADSENSE_SLOT_INLINE ?? 'XXXXXXXXXX'}
+                                      adFormat="horizontal"
+                                      className="w-full"
+                                    />
+                                  </div>
+                                )}
+                                <ThinkerCard
+                                  thinker={thinker}
+                                  tagLabels={translatedTagLabels}
+                                  dimensionLabels={translatedDimensionLabels}
+                                  fieldLabels={translatedFieldLabels}
+                                  isWorkRead={isWorkRead}
+                                  onToggleWork={handleToggleWork}
+                                />
+                              </>
+                            </LazyRender>
+                          );
+                        })}
+                      </div>
+                    </section>
+                  );
+                });
+              })()}
 
               {thinkersData.eras.every(
                 era => filterThinkers(era.thinkers).length === 0
@@ -337,6 +372,7 @@ export default function App() {
         Coexists with GA4: both run independently with no shared state or conflicts.
       */}
       <Analytics />
+      <ConsentBanner />
     </HelmetProvider>
   );
 }

@@ -157,6 +157,14 @@
     "balanced": "Tus lecturas muestran un interesante equilibrio entre diferentes perspectivas políticas.",
     "start": "¡Comienza marcando las obras que ya has leído!"
   },
+  "consent": {
+    "message": "Usamos cookies y anuncios para mantener Lumen gratuito e independiente. Al continuar, aceptas el uso de cookies.",
+    "accept": "Aceptar",
+    "refuse": "Rechazar"
+  },
+  "adblock": {
+    "notice": "Los anuncios mantienen Lumen gratuito. Considera desactivar tu bloqueador en este sitio."
+  },
   "language_selector": {
     "label": "Idioma"
   },

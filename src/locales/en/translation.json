@@ -157,6 +157,14 @@
     "balanced": "Your readings show an interesting balance between different political perspectives.",
     "start": "Start by marking the works you have already read!"
   },
+  "consent": {
+    "message": "We use cookies and ads to keep Lumen free and independent. By continuing, you agree to the use of cookies.",
+    "accept": "Accept",
+    "refuse": "Decline"
+  },
+  "adblock": {
+    "notice": "Ads keep Lumen free. Consider disabling your ad blocker on this site."
+  },
   "language_selector": {
     "label": "Language"
   },

@@ -148,6 +148,7 @@ export function Sidebar({
               ))}
             </ul>
           </nav>
+
         </div>
 
         {/* Footer — pinned to bottom */}
