@@ -48,9 +48,30 @@ export function ConsentBanner() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 border-t-2 border-[#C9A84C] bg-[#0F1E35] px-4 py-4 flex flex-col sm:flex-row items-center gap-3 shadow-lg">
-      <p className="text-sm text-[#F2EEE2] font-['Inter'] flex-1 text-center sm:text-left">
-        {t('consent.message')}
-      </p>
+      <div className="flex-1 text-center sm:text-left">
+        <p className="text-sm text-[#F2EEE2] font-['Inter']">
+          {t('consent.message')}
+        </p>
+        <p className="mt-1 text-xs text-[#4A5E72]">
+          <a
+            href="https://portal.techminds.net.br/privacy/lumen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#8A9BB8] transition-colors underline"
+          >
+            {t('consent.privacy')}
+          </a>
+          {' · '}
+          <a
+            href="https://portal.techminds.net.br/terms-of-use/lumen"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#8A9BB8] transition-colors underline"
+          >
+            {t('consent.terms')}
+          </a>
+        </p>
+      </div>
       <div className="flex gap-2 shrink-0">
         <button
           onClick={refuse}

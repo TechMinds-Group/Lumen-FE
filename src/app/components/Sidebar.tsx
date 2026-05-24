@@ -280,6 +280,25 @@ export function Sidebar({
               )}
             </div>
           </div>
+          {/* Legal links */}
+          <div className="flex justify-center gap-4 pt-1">
+            <a
+              href="https://portal.techminds.net.br/privacy/lumen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[10px] text-[#4A5E72] hover:text-[#8A9BB8] transition-colors"
+            >
+              {t('footer.privacy')}
+            </a>
+            <a
+              href="https://portal.techminds.net.br/terms-of-use/lumen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[10px] text-[#4A5E72] hover:text-[#8A9BB8] transition-colors"
+            >
+              {t('footer.terms')}
+            </a>
+          </div>
         </div>
       </aside>
     </>

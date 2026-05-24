@@ -160,7 +160,13 @@
   "consent": {
     "message": "Usamos cookies y anuncios para mantener Lumen gratuito e independiente. Al continuar, aceptas el uso de cookies.",
     "accept": "Aceptar",
-    "refuse": "Rechazar"
+    "refuse": "Rechazar",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso"
+  },
+  "footer": {
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso"
   },
   "adblock": {
     "notice": "Los anuncios mantienen Lumen gratuito. Considera desactivar tu bloqueador en este sitio."

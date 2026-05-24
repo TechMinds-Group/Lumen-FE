@@ -160,7 +160,13 @@
   "consent": {
     "message": "We use cookies and ads to keep Lumen free and independent. By continuing, you agree to the use of cookies.",
     "accept": "Accept",
-    "refuse": "Decline"
+    "refuse": "Decline",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
   },
   "adblock": {
     "notice": "Ads keep Lumen free. Consider disabling your ad blocker on this site."
