@@ -1,7 +1,7 @@
 import { track } from '@vercel/analytics';
 
 export type AnalyticsEvent =
-  | { name: 'search_performed'; query: string; results_count: number }
+  | { name: 'search_performed'; term_length: number; results_count: number }
   | { name: 'filter_applied'; axis: string; value: string }
   | { name: 'filter_cleared' }
   | { name: 'era_navigated'; era_id: string; deselected: boolean }

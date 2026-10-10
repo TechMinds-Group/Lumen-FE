@@ -50,7 +50,7 @@ function AppContent() {
   useEffect(() => {
     if (!searchQuery) return;
     const timer = setTimeout(() => {
-      trackEvent({ name: 'search_performed', query: searchQuery, results_count: totalVisible });
+      trackEvent({ name: 'search_performed', term_length: searchQuery.length, results_count: totalVisible });
     }, 1500);
     return () => clearTimeout(timer);
   // totalVisible intentionally included so the result count is accurate when the event fires
