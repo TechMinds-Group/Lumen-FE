@@ -1,7 +1,7 @@
 import * as XLSX from 'xlsx';
+import { DOWNLOAD_BASE_URL } from './downloadUrl';
 
-const BASE_URL =
-  'https://github.com/victor-souza-dev/RepoStaticFile/raw/refs/heads/main/politica/';
+const BASE_URL = DOWNLOAD_BASE_URL;
 
 interface Work {
   title: string;

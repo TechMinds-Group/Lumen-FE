@@ -59,12 +59,12 @@ else
 ```
 
 #### Gráfico Radar
-- Biblioteca: `recharts`
+- Biblioteca: SVG puro (`CustomRadarChart` em `PoliticalProfile.tsx`) — sem biblioteca de gráficos
 - Configuração:
-  - `PolarGrid` com stroke cinza claro
-  - `PolarAngleAxis` com labels pequenas
-  - `Radar` com fill azul 60% opacidade
-  - Tooltip customizado
+  - Grade poligonal de 5 níveis com stroke cinza claro
+  - Linhas de eixo do centro à borda
+  - Polígono de dados com fill dourado (`#C9A84C`) e opacidade baixa
+  - Labels dos eixos com percentual (sem tooltip)
 
 ## Modificações em Componentes Existentes
 

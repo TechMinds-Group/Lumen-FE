@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { exportWorksToExcel, type ExportOptions } from '../utils/exportWorks';
 import { trackEvent } from '../analytics';
 import { normalizeText } from '../utils/normalizeText';
+import { DOWNLOAD_BASE_URL } from '../utils/downloadUrl';
 
 interface Work {
   title: string;
@@ -33,8 +34,7 @@ interface BookListViewProps {
   searchQuery?: string;
 }
 
-const BASE_URL =
-  'https://github.com/victor-souza-dev/RepoStaticFile/raw/refs/heads/main/politica/';
+const BASE_URL = DOWNLOAD_BASE_URL;
 
 export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, activeEra, searchQuery = '' }: BookListViewProps) {
   const { t } = useTranslation();

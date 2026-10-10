@@ -1,5 +1,6 @@
 import { Download, Check, AlertTriangle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { DOWNLOAD_BASE_URL } from '../utils/downloadUrl';
 
 interface Work {
   title: string;
@@ -17,7 +18,7 @@ export function WorkCheckbox({ work, isRead, onToggle }: WorkCheckboxProps) {
 
   const hasValidUrl = work.download_url && work.download_url.trim() !== '';
   const finalUrl = hasValidUrl
-    ? `https://github.com/victor-souza-dev/RepoStaticFile/raw/refs/heads/main/politica/${work.download_url}`
+    ? `${DOWNLOAD_BASE_URL}${work.download_url}`
     : '';
 
   return (
