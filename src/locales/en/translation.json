@@ -178,6 +178,17 @@
     "dark": "Dark Mode",
     "light": "Light Mode"
   },
+  "affiliate": {
+    "buy_this_work": "Buy this work",
+    "also_available": "Also available for purchase at:",
+    "amazon_novo": "Amazon (new)",
+    "amazon_ebook": "Amazon (e-book)",
+    "amazon_kindle": "Amazon (Kindle)",
+    "amazon_usado": "Amazon (used)",
+    "estante_virtual_novo": "Estante Virtual (new)",
+    "estante_virtual_ebook": "Estante Virtual (e-book)",
+    "estante_virtual_usado": "Estante Virtual (used)"
+  },
   "recommendations": {
     "button_title": "Expand readings",
     "button_subtitle_one": "{{count}} gap in your profile",

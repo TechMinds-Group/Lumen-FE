@@ -1,10 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
-import { Download, Check, BookOpen, AlertTriangle, FileSpreadsheet, ChevronDown } from 'lucide-react';
+import { Download, Check, BookOpen, AlertTriangle, ExternalLink, FileSpreadsheet, ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { exportWorksToExcel, type ExportOptions } from '../utils/exportWorks';
 import { trackEvent } from '../analytics';
 import { normalizeText } from '../utils/normalizeText';
 import { DOWNLOAD_BASE_URL } from '../utils/downloadUrl';
+import { getAffiliateLinks, type AffiliateLink } from '../utils/affiliateLinks';
 
 interface Work {
   title: string;
@@ -40,6 +41,7 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
   const { t } = useTranslation();
   const [exportOpen, setExportOpen] = useState(false);
   const [exporting, setExporting] = useState(false);
+  const [affiliateLinks, setAffiliateLinks] = useState<Record<string, AffiliateLink[]>>({});
   const dropdownRef = useRef<HTMLDivElement>(null);
   const eraSectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
@@ -58,6 +60,24 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
       eraSectionRefs.current[activeEra]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }, [activeEra]);
+
+  // Carrega links de afiliados para obras sem download (RN-028)
+  useEffect(() => {
+    const allBooks = eras.flatMap(era =>
+      (filterThinkers(era.thinkers as Thinker[]) ?? era.thinkers).flatMap(thinker =>
+        (thinker.works || [])
+          .filter(work => !work.download_url?.trim())
+          .map(work => ({ thinkerId: thinker.id, workTitle: work.title }))
+      )
+    );
+    allBooks.forEach(({ thinkerId, workTitle }) => {
+      getAffiliateLinks(thinkerId, workTitle).then(links => {
+        if (links.length > 0) {
+          setAffiliateLinks(prev => ({ ...prev, [`${thinkerId}::${workTitle}`]: links }));
+        }
+      });
+    });
+  }, [eras, filterThinkers]);
 
   const allBooks = eras.flatMap(era => {
     const filteredThinkers = filterThinkers(era.thinkers as Thinker[]);
@@ -109,6 +129,55 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
   const eraLabels = Object.fromEntries(
     eras.map(era => [era.id, t(`eras.${era.id}`)])
   );
+
+  // Mapeia provider+kind → i18n key (mesmo mapeamento do AffiliateSection)
+  const AFFILIATE_I18N_MAP: Record<string, string> = {
+    'Amazon::novo': 'affiliate.amazon_novo',
+    'Amazon::ebook': 'affiliate.amazon_ebook',
+    'Amazon::usado': 'affiliate.amazon_usado',
+    'Estante Virtual::novo': 'affiliate.estante_virtual_novo',
+    'Estante Virtual::ebook': 'affiliate.estante_virtual_ebook',
+    'Estante Virtual::usado': 'affiliate.estante_virtual_usado',
+  };
+
+  // Renderiza badge de "indisponível" ou links de afiliados (RN-028)
+  const renderUnavailableOrAffiliate = (
+    links: AffiliateLink[] | undefined,
+    _t: (key: string, opts?: Record<string, unknown>) => string,
+  ) => {
+    if (links && links.length > 0) {
+      return (
+        <div className="shrink-0 flex flex-col gap-0.5" onClick={e => e.stopPropagation()}>
+          {links.map((link, li) => {
+            const i18nKey = AFFILIATE_I18N_MAP[`${link.provider}::${link.kind}`];
+            const label = i18nKey ? _t(i18nKey) : `${link.provider} (${link.kind})`;
+            return (
+              <a
+                key={li}
+                href={link.url}
+                target="_blank"
+                rel="noopener sponsored"
+                className="flex items-center gap-1 px-2 py-0.5 bg-[#C9A84C]/15 dark:bg-[#C9A84C]/20 border border-[#C9A84C]/40 dark:border-[#C9A84C]/60 rounded text-[10px] text-[#0F1E35] dark:text-[#D8B85A] hover:bg-[#C9A84C]/25 dark:hover:bg-[#C9A84C]/30 transition-colors"
+              >
+                <span className="truncate max-w-28">{label}</span>
+                <ExternalLink size={9} />
+              </a>
+            );
+          })}
+        </div>
+      );
+    }
+    return (
+      <span
+        title={_t('work_checkbox.unavailable')}
+        className="shrink-0 flex items-center gap-1 px-2 py-1.5 bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400 rounded text-xs border border-amber-200 dark:border-amber-800"
+        onClick={e => e.stopPropagation()}
+      >
+        <AlertTriangle size={11} />
+        <span className="hidden sm:inline text-[11px]">{_t('work_checkbox.unavailable')}</span>
+      </span>
+    );
+  };
 
   const handleExport = (scope: ExportOptions['scope']) => {
     trackEvent({ name: 'export_initiated', scope });
@@ -318,16 +387,7 @@ export function BookListView({ eras, isWorkRead, onToggleWork, filterThinkers, a
                       <Download size={12} />
                       <span className="hidden sm:inline">{t('work_checkbox.download')}</span>
                     </a>
-                  ) : (
-                    <span
-                      title={t('work_checkbox.unavailable')}
-                      className="shrink-0 flex items-center gap-1 px-2 py-1.5 bg-amber-50 dark:bg-amber-900/20 text-amber-600 dark:text-amber-400 rounded text-xs border border-amber-200 dark:border-amber-800"
-                      onClick={e => e.stopPropagation()}
-                    >
-                      <AlertTriangle size={11} />
-                      <span className="hidden sm:inline text-[11px]">{t('work_checkbox.unavailable')}</span>
-                    </span>
-                  )}
+                  ) : renderUnavailableOrAffiliate(affiliateLinks[`${thinker.id}::${work.title}`], t)}
                 </div>
               ))}
             </div>
