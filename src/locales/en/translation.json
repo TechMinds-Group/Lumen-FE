@@ -1,207 +1,249 @@
-{
-  "app": {
-    "title": "Lumen",
-    "subtitle": "Multidimensional Map"
-  },
-  "header": {
-    "search_placeholder": "Search thinkers...",
-    "glossary": "Glossary",
-    "only_read": "Only Read",
-    "view_profile": "View Profile ({{count}})",
-    "clear": "Clear",
-    "clear_all_filters": "Clear all filters",
-    "filter_all": "All"
-  },
-  "sidebar": {
-    "historical_eras": "Historical Eras"
-  },
-  "eras": {
-    "antiquity": "Antiquity",
-    "renaissance_modernity": "Renaissance & Modernity",
-    "enlightenment": "Enlightenment",
-    "nineteenth_century": "19th Century",
-    "turn_of_century": "Turn of the 19th–20th Century",
-    "twentieth_century": "20th Century",
-    "contemporary": "Contemporary"
-  },
-  "thinker_card": {
-    "hide_details": "Hide details",
-    "show_details": "View dimensions and influences",
-    "hide": "Hide",
-    "show_more": "Show more",
-    "read_count_of": "{{read}}/{{total}} read"
-  },
-  "work_checkbox": {
-    "download": "Download",
-    "unavailable": "Unavailable",
-    "unavailable_short": "N/A",
-    "mark_read": "Mark as read",
-    "mark_unread": "Unmark as read",
-    "read_badge": "Read"
-  },
-  "glossary": {
-    "title": "Dimensions and Tags Glossary",
-    "description": "This glossary explains each analytical dimension and its respective tags used in mapping political thinkers.",
-    "tip_label": "Tip",
-    "tip": "Use the filters at the top of the page to explore thinkers by any combination of these dimensions."
-  },
-  "profile": {
-    "title": "Political Inclination Profile",
-    "based_on": "Based on {{works}} works read from {{thinkers}} thinkers",
-    "no_works_title": "No works marked yet",
-    "no_works_hint": "Mark the works you have already read to visualize your political profile",
-    "radar_title": "Political Inclination Map",
-    "radar_description": "Percentage distribution of political tags present in the works you have read",
-    "dominant_tags": "Dominant Tags in Your Reading",
-    "work_one": "work",
-    "work_other": "works",
-    "diagnostic_label": "💡 Diagnosis",
-    "clear_all": "Clear All Readings",
-    "continue_reading": "Continue Reading",
-    "methodological_title": "Methodological Profile",
-    "methodological_description": "How the thinkers you have read ground, explain, and situate politics historically"
-  },
-  "results": {
-    "count_one": "Thinker",
-    "count_other": "Thinkers",
-    "no_results": "No thinker found with the selected filters."
-  },
-  "era": {
-    "read_works": "{{read}}/{{total}} works read"
-  },
-  "tags": {
-    "freedom": "Freedom",
-    "authority": "Authority",
-    "state": "Strong State",
-    "market": "Free Market",
-    "community": "Community",
-    "tradition": "Tradition",
-    "rupture": "Rupture",
-    "individual": "Individual",
-    "collective": "Collective",
-    "rationalist": "Rationalist",
-    "empiricist": "Empiricist",
-    "idealist": "Idealist",
-    "materialist": "Materialist",
-    "interactionist": "Interactionist",
-    "ahistorical": "Ahistorical",
-    "historicist": "Historicist",
-    "dialectical": "Dialectical",
-    "optimistic": "Optimistic",
-    "pessimistic": "Pessimistic",
-    "ambivalent": "Ambivalent",
-    "universalist": "Universalist",
-    "particularist": "Particularist"
-  },
-  "axes": {
-    "freedom_vs_authority": "Freedom vs. Authority",
-    "state_vs_market": "State vs. Market",
-    "tradition_vs_rupture": "Tradition vs. Rupture",
-    "individual_vs_collective": "Individual vs. Collective",
-    "epistemology": "Source of Knowledge",
-    "ontology": "Driver of Political Reality",
-    "historicity": "Relation to History",
-    "anthropology": "Philosophical Anthropology",
-    "scope": "Scope of Application"
-  },
-  "fields": {
-    "historical_context": "Historical Context",
-    "influences": "Influences",
-    "impact": "Impact",
-    "works": "Main Works",
-    "dimensions": "Dimensions"
-  },
-  "tag_descriptions": {
-    "freedom": "Emphasis on individual autonomy and limitation of state power.",
-    "authority": "Valuing order, hierarchy, and legitimacy of central power.",
-    "state": "Defense of an active and regulatory role of the State in the economy and society.",
-    "market": "Trust in free market mechanisms and economic competition.",
-    "community": "Focus on forms of community organization and local solidarity.",
-    "tradition": "Preservation of established values, institutions, and practices.",
-    "rupture": "Defense of radical changes and transformation of existing structures.",
-    "individual": "Prioritization of the rights and interests of the individual.",
-    "collective": "Emphasis on the interests of the group, class, or nation.",
-    "rationalist": "Grounding in deductive reasoning and universal a priori principles, independently of experience.",
-    "empiricist": "Grounding in observation, concrete experience, and real-world data as the basis of political knowledge.",
-    "idealist": "Primacy of ideas, values, consciousness, and norms as the driving forces of political reality.",
-    "materialist": "Primacy of material interests, power relations, and concrete structures as the driving forces of political reality.",
-    "interactionist": "Simultaneous recognition of ideal and material forces as drivers of political reality, whose interaction is the very explanatory object — without subordinating one pole to the other. (E.g.: Tocqueville, Weber, Aristotle, Arendt)",
-    "ahistorical": "Pursuit of timeless, universal political principles valid independently of historical context.",
-    "historicist": "Understanding political phenomena through their historical evolution and determination, without positing a universal law of motion.",
-    "dialectical": "History moves through necessary internal contradictions that produce syntheses — transformation is immanent to the very structure of reality.",
-    "optimistic": "Positive view of human nature and capacity for progress.",
-    "pessimistic": "Distrust of human nature and need for control.",
-    "ambivalent": "Balanced perspective on human nature: simultaneously recognizes the potentials and the inherent limits of human beings, without resolving the tension toward either pole. (E.g.: Aristotle, Tocqueville, Arendt)",
-    "universalist": "Principles applicable to all humanity, regardless of context.",
-    "particularist": "Valuing specific contexts, cultures, and local traditions."
-  },
-  "diagnostic": {
-    "tendency_freedom": "liberal tendency and appreciation of individual autonomy",
-    "tendency_authority": "inclination toward established order and authority",
-    "preference_state": "preference for state intervention",
-    "preference_market": "appreciation of the free market",
-    "community_value": "appreciation of community-based solutions",
-    "tradition_value": "respect for tradition and gradual change",
-    "rupture_value": "openness to rupture and transformation",
-    "individual_focus": "focus on the individual as the political unit",
-    "collective_focus": "emphasis on the collective and common good",
-    "epistemology_rationalist": "rationalist orientation grounded in deductive reasoning and universal a priori principles",
-    "epistemology_empiricist": "empiricist orientation anchored in observation and concrete experience",
-    "ontology_idealist": "primacy of ideas and values as the explanatory driver of politics",
-    "ontology_materialist": "emphasis on material forces, concrete interests, and power relations",
-    "ontology_interactionist": "interactionist perspective — ideal and material forces as simultaneous drivers",
-    "historicity_ahistorical": "pursuit of timeless and universal principles independent of historical context",
-    "historicity_historicist": "historicist reading of political phenomena",
-    "historicity_dialectical": "dialectical vision of historical transformation through contradictions and syntheses",
-    "intro": "Your library reflects",
-    "balanced": "Your readings show an interesting balance between different political perspectives.",
-    "start": "Start by marking the works you have already read!"
-  },
-  "consent": {
-    "message": "We use cookies and ads to keep Lumen free and independent. By continuing, you agree to the use of cookies.",
-    "accept": "Accept",
-    "refuse": "Decline",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Use"
-  },
-  "footer": {
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Use"
-  },
-  "adblock": {
-    "notice": "Ads keep Lumen free. Consider disabling your ad blocker on this site."
-  },
-  "language_selector": {
-    "label": "Language"
-  },
-  "theme": {
-    "dark": "Dark Mode",
-    "light": "Light Mode"
-  },
-  "affiliate": {
-    "buy_this_work": "Buy this work",
-    "also_available": "Also available for purchase at:",
-    "amazon_novo": "Amazon (new)",
-    "amazon_ebook": "Amazon (e-book)",
-    "amazon_kindle": "Amazon (Kindle)",
-    "amazon_usado": "Amazon (used)",
-    "estante_virtual_novo": "Estante Virtual (new)",
-    "estante_virtual_ebook": "Estante Virtual (e-book)",
-    "estante_virtual_usado": "Estante Virtual (used)"
-  },
-  "recommendations": {
-    "button_title": "Expand readings",
-    "button_subtitle_one": "{{count}} gap in your profile",
-    "button_subtitle_other": "{{count}} gaps in your profile",
-    "title": "Expand readings",
-    "subtitle_one": "Based on {{works}} works read · {{gaps}} unbalanced axis",
-    "subtitle_other": "Based on {{works}} works read · {{gaps}} unbalanced axes",
-    "insufficient_data": "Mark at least 5 works as read to receive personalized recommendations.",
-    "gaps_detected": "Gaps detected in your profile",
-    "suggested_readings": "Recommended readings",
-    "high_compatibility": "High compatibility",
-    "medium_compatibility": "Medium compatibility",
-    "justification": "This work complements your profile by addressing: {{tags}}",
-    "no_recommendations": "No recommendations available at the moment."
-  }
+﻿{
+    "app":  {
+                "title":  "Lumen",
+                "subtitle":  "Multidimensional Map"
+            },
+    "header":  {
+                   "search_placeholder":  "Search thinkers...",
+                   "glossary":  "Glossary",
+                   "only_read":  "Only Read",
+                   "view_profile":  "View Profile ({{count}})",
+                   "clear":  "Clear",
+                   "clear_all_filters":  "Clear all filters",
+                   "filter_all":  "All"
+               },
+    "sidebar":  {
+                    "historical_eras":  "Historical Eras"
+                },
+    "eras":  {
+                 "antiquity":  "Antiquity",
+                 "renaissance_modernity":  "Renaissance \u0026 Modernity",
+                 "enlightenment":  "Enlightenment",
+                 "nineteenth_century":  "19th Century",
+                 "turn_of_century":  "Turn of the 19thâ€“20th Century",
+                 "twentieth_century":  "20th Century",
+                 "contemporary":  "Contemporary"
+             },
+    "thinker_card":  {
+                         "hide_details":  "Hide details",
+                         "show_details":  "View dimensions and influences",
+                         "hide":  "Hide",
+                         "show_more":  "Show more",
+                         "read_count_of":  "{{read}}/{{total}} read"
+                     },
+    "work_checkbox":  {
+                          "download":  "Download",
+                          "unavailable":  "Unavailable",
+                          "unavailable_short":  "N/A",
+                          "mark_read":  "Mark as read",
+                          "mark_unread":  "Unmark as read",
+                          "read_badge":  "Read"
+                      },
+    "glossary":  {
+                     "title":  "Dimensions and Tags Glossary",
+                     "description":  "This glossary explains each analytical dimension and its respective tags used in mapping political thinkers.",
+                     "tip_label":  "Tip",
+                     "tip":  "Use the filters at the top of the page to explore thinkers by any combination of these dimensions."
+                 },
+    "profile":  {
+                    "title":  "Political Inclination Profile",
+                    "based_on":  "Based on {{works}} works read from {{thinkers}} thinkers",
+                    "no_works_title":  "No works marked yet",
+                    "no_works_hint":  "Mark the works you have already read to visualize your political profile",
+                    "radar_title":  "Political Inclination Map",
+                    "radar_description":  "Percentage distribution of political tags present in the works you have read",
+                    "dominant_tags":  "Dominant Tags in Your Reading",
+                    "work_one":  "work",
+                    "work_other":  "works",
+                    "diagnostic_label":  "ðŸ’¡ Diagnosis",
+                    "clear_all":  "Clear All Readings",
+                    "continue_reading":  "Continue Reading",
+                    "methodological_title":  "Methodological Profile",
+                    "methodological_description":  "How the thinkers you have read ground, explain, and situate politics historically"
+                },
+    "results":  {
+                    "count_one":  "Thinker",
+                    "count_other":  "Thinkers",
+                    "no_results":  "No thinker found with the selected filters."
+                },
+    "era":  {
+                "read_works":  "{{read}}/{{total}} works read"
+            },
+    "tags":  {
+                 "freedom":  "Freedom",
+                 "authority":  "Authority",
+                 "state":  "Strong State",
+                 "market":  "Free Market",
+                 "community":  "Community",
+                 "tradition":  "Tradition",
+                 "rupture":  "Rupture",
+                 "individual":  "Individual",
+                 "collective":  "Collective",
+                 "rationalist":  "Rationalist",
+                 "empiricist":  "Empiricist",
+                 "idealist":  "Idealist",
+                 "materialist":  "Materialist",
+                 "interactionist":  "Interactionist",
+                 "ahistorical":  "Ahistorical",
+                 "historicist":  "Historicist",
+                 "dialectical":  "Dialectical",
+                 "optimistic":  "Optimistic",
+                 "pessimistic":  "Pessimistic",
+                 "ambivalent":  "Ambivalent",
+                 "universalist":  "Universalist",
+                 "particularist":  "Particularist"
+             },
+    "axes":  {
+                 "freedom_vs_authority":  "Freedom vs. Authority",
+                 "state_vs_market":  "State vs. Market",
+                 "tradition_vs_rupture":  "Tradition vs. Rupture",
+                 "individual_vs_collective":  "Individual vs. Collective",
+                 "epistemology":  "Source of Knowledge",
+                 "ontology":  "Driver of Political Reality",
+                 "historicity":  "Relation to History",
+                 "anthropology":  "Philosophical Anthropology",
+                 "scope":  "Scope of Application"
+             },
+    "fields":  {
+                   "historical_context":  "Historical Context",
+                   "influences":  "Influences",
+                   "impact":  "Impact",
+                   "works":  "Main Works",
+                   "dimensions":  "Dimensions"
+               },
+    "tag_descriptions":  {
+                             "freedom":  "Emphasis on individual autonomy and limitation of state power.",
+                             "authority":  "Valuing order, hierarchy, and legitimacy of central power.",
+                             "state":  "Defense of an active and regulatory role of the State in the economy and society.",
+                             "market":  "Trust in free market mechanisms and economic competition.",
+                             "community":  "Focus on forms of community organization and local solidarity.",
+                             "tradition":  "Preservation of established values, institutions, and practices.",
+                             "rupture":  "Defense of radical changes and transformation of existing structures.",
+                             "individual":  "Prioritization of the rights and interests of the individual.",
+                             "collective":  "Emphasis on the interests of the group, class, or nation.",
+                             "rationalist":  "Grounding in deductive reasoning and universal a priori principles, independently of experience.",
+                             "empiricist":  "Grounding in observation, concrete experience, and real-world data as the basis of political knowledge.",
+                             "idealist":  "Primacy of ideas, values, consciousness, and norms as the driving forces of political reality.",
+                             "materialist":  "Primacy of material interests, power relations, and concrete structures as the driving forces of political reality.",
+                             "interactionist":  "Simultaneous recognition of ideal and material forces as drivers of political reality, whose interaction is the very explanatory object â€” without subordinating one pole to the other. (E.g.: Tocqueville, Weber, Aristotle, Arendt)",
+                             "ahistorical":  "Pursuit of timeless, universal political principles valid independently of historical context.",
+                             "historicist":  "Understanding political phenomena through their historical evolution and determination, without positing a universal law of motion.",
+                             "dialectical":  "History moves through necessary internal contradictions that produce syntheses â€” transformation is immanent to the very structure of reality.",
+                             "optimistic":  "Positive view of human nature and capacity for progress.",
+                             "pessimistic":  "Distrust of human nature and need for control.",
+                             "ambivalent":  "Balanced perspective on human nature: simultaneously recognizes the potentials and the inherent limits of human beings, without resolving the tension toward either pole. (E.g.: Aristotle, Tocqueville, Arendt)",
+                             "universalist":  "Principles applicable to all humanity, regardless of context.",
+                             "particularist":  "Valuing specific contexts, cultures, and local traditions."
+                         },
+    "diagnostic":  {
+                       "tendency_freedom":  "liberal tendency and appreciation of individual autonomy",
+                       "tendency_authority":  "inclination toward established order and authority",
+                       "preference_state":  "preference for state intervention",
+                       "preference_market":  "appreciation of the free market",
+                       "community_value":  "appreciation of community-based solutions",
+                       "tradition_value":  "respect for tradition and gradual change",
+                       "rupture_value":  "openness to rupture and transformation",
+                       "individual_focus":  "focus on the individual as the political unit",
+                       "collective_focus":  "emphasis on the collective and common good",
+                       "epistemology_rationalist":  "rationalist orientation grounded in deductive reasoning and universal a priori principles",
+                       "epistemology_empiricist":  "empiricist orientation anchored in observation and concrete experience",
+                       "ontology_idealist":  "primacy of ideas and values as the explanatory driver of politics",
+                       "ontology_materialist":  "emphasis on material forces, concrete interests, and power relations",
+                       "ontology_interactionist":  "interactionist perspective â€” ideal and material forces as simultaneous drivers",
+                       "historicity_ahistorical":  "pursuit of timeless and universal principles independent of historical context",
+                       "historicity_historicist":  "historicist reading of political phenomena",
+                       "historicity_dialectical":  "dialectical vision of historical transformation through contradictions and syntheses",
+                       "intro":  "Your library reflects",
+                       "balanced":  "Your readings show an interesting balance between different political perspectives.",
+                       "start":  "Start by marking the works you have already read!"
+                   },
+    "consent":  {
+                    "message":  "We use cookies and ads to keep Lumen free and independent. By continuing, you agree to the use of cookies.",
+                    "accept":  "Accept",
+                    "refuse":  "Decline",
+                    "privacy":  "Privacy Policy",
+                    "terms":  "Terms of Use"
+                },
+    "footer":  {
+                   "privacy":  "Privacy Policy",
+                   "terms":  "Terms of Use"
+               },
+    "adblock":  {
+                    "notice":  "Ads keep Lumen free. Consider disabling your ad blocker on this site."
+                },
+    "language_selector":  {
+                              "label":  "Language"
+                          },
+    "theme":  {
+                  "dark":  "Dark Mode",
+                  "light":  "Light Mode"
+              },
+    "affiliate":  {
+                      "buy_this_work":  "Buy this work",
+                      "also_available":  "Also available for purchase at:",
+                      "amazon_novo":  "Amazon (new)",
+                      "amazon_ebook":  "Amazon (e-book)",
+                      "amazon_kindle":  "Amazon (Kindle)",
+                      "amazon_usado":  "Amazon (used)",
+                      "estante_virtual_novo":  "Estante Virtual (new)",
+                      "estante_virtual_ebook":  "Estante Virtual (e-book)",
+                      "estante_virtual_usado":  "Estante Virtual (used)"
+                  },
+    "recommendations":  {
+                            "button_title":  "Expand readings",
+                            "button_subtitle_one":  "{{count}} gap in your profile",
+                            "button_subtitle_other":  "{{count}} gaps in your profile",
+                            "title":  "Expand readings",
+                            "subtitle_one":  "Based on {{works}} works read Â· {{gaps}} unbalanced axis",
+                            "subtitle_other":  "Based on {{works}} works read Â· {{gaps}} unbalanced axes",
+                            "insufficient_data":  "Mark at least 5 works as read to receive personalized recommendations.",
+                            "gaps_detected":  "Gaps detected in your profile",
+                            "suggested_readings":  "Recommended readings",
+                            "high_compatibility":  "High compatibility",
+                            "medium_compatibility":  "Medium compatibility",
+                            "justification":  "This work complements your profile by addressing: {{tags}}",
+                            "no_recommendations":  "No recommendations available at the moment."
+                        },
+    "auth":  {
+                 "title":  {
+                               "login":  "Sign in",
+                               "register":  "Create account",
+                               "forgot":  "Recover password",
+                               "reset":  "Reset password"
+                           },
+                 "email":  "Email",
+                 "name":  "Name (optional)",
+                 "password":  "Password",
+                 "resetToken":  "Recovery token",
+                 "loading":  "Please wait...",
+                 "logout":  "Sign out",
+                 "close":  "Close",
+                 "forgotSent":  "If the account exists, we sent the instructions by email.",
+                 "resetSuccess":  "Password reset successfully. Sign in with the new password.",
+                 "link":  {
+                              "login":  "Already have an account? Sign in",
+                              "register":  "Create account",
+                              "forgot":  "Forgot your password?"
+                          },
+                 "submit":  {
+                                "login":  "Sign in",
+                                "register":  "Create account",
+                                "forgot":  "Send instructions",
+                                "reset":  "Reset password"
+                            },
+                 "accountMenu":  "Account",
+                 "errors":  {
+                                "rateLimited":  "Too many attempts — please try again soon.",
+                                "unexpected":  "Something went wrong. Please try again.",
+                                "ERR-100":  "Please enter your email.",
+                                "ERR-101":  "Please enter a valid email.",
+                                "ERR-102":  "Please enter your password.",
+                                "ERR-103":  "Password must be at least 8 characters.",
+                                "ERR-104":  "Recovery token is invalid or expired.",
+                                "ERR-110":  "Invalid credentials.",
+                                "ERR-111":  "Invalid Google token.",
+                                "ERR-120":  "Email already registered.",
+                                "ERR-121":  "Email already exists with a password — use password sign-in."
+                            }
+             }
 }
