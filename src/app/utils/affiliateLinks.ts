@@ -7,7 +7,7 @@ export interface AffiliateLink {
   kind: 'novo' | 'ebook' | 'usado';
 }
 
-const FALLBACK_API_BASE_URL = 'http://localhost:3000';
+const FALLBACK_API_BASE_URL = 'http://localhost:5000';
 
 const API_BASE_URL: string =
   (import.meta.env.VITE_API_BASE_URL as string | undefined)?.trim() ||
