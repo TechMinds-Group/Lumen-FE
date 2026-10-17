@@ -1,207 +1,249 @@
-{
-  "app": {
-    "title": "Lumen",
-    "subtitle": "Mapa Multidimensional"
-  },
-  "header": {
-    "search_placeholder": "Buscar pensadores...",
-    "glossary": "Glosario",
-    "only_read": "Solo Leídos",
-    "view_profile": "Ver Perfil ({{count}})",
-    "clear": "Limpiar",
-    "clear_all_filters": "Limpiar todos los filtros",
-    "filter_all": "Todos"
-  },
-  "sidebar": {
-    "historical_eras": "Eras Históricas"
-  },
-  "eras": {
-    "antiquity": "Antigüedad",
-    "renaissance_modernity": "Renacimiento y Modernidad",
-    "enlightenment": "Ilustración",
-    "nineteenth_century": "Siglo XIX",
-    "turn_of_century": "Cambio de siglo XIX–XX",
-    "twentieth_century": "Siglo XX",
-    "contemporary": "Contemporáneo"
-  },
-  "thinker_card": {
-    "hide_details": "Ocultar detalles",
-    "show_details": "Ver dimensiones e influencias",
-    "hide": "Ocultar",
-    "show_more": "Ver más",
-    "read_count_of": "{{read}}/{{total}} leídas"
-  },
-  "work_checkbox": {
-    "download": "Descargar",
-    "unavailable": "No disponible",
-    "unavailable_short": "N/D",
-    "mark_read": "Marcar como leída",
-    "mark_unread": "Desmarcar como leída",
-    "read_badge": "Leída"
-  },
-  "glossary": {
-    "title": "Glosario de Dimensiones y Etiquetas",
-    "description": "Este glosario explica cada dimensión analítica y sus respectivas etiquetas utilizadas en el mapeo de los pensadores políticos.",
-    "tip_label": "Consejo",
-    "tip": "Usa los filtros en la parte superior de la página para explorar pensadores por cualquier combinación de estas dimensiones."
-  },
-  "profile": {
-    "title": "Perfil de Inclinación Política",
-    "based_on": "Basado en {{works}} obras leídas de {{thinkers}} pensadores",
-    "no_works_title": "Ninguna obra marcada aún",
-    "no_works_hint": "Marca las obras que ya has leído para visualizar tu perfil político",
-    "radar_title": "Mapa de Inclinaciones Políticas",
-    "radar_description": "Distribución porcentual de las etiquetas políticas presentes en las obras que has leído",
-    "dominant_tags": "Etiquetas Dominantes en tus Lecturas",
-    "work_one": "obra",
-    "work_other": "obras",
-    "diagnostic_label": "💡 Diagnóstico",
-    "clear_all": "Limpiar Todas las Lecturas",
-    "continue_reading": "Continuar Leyendo",
-    "methodological_title": "Perfil Metodológico",
-    "methodological_description": "Cómo los pensadores leídos fundamentan, explican y sitúan históricamente la política"
-  },
-  "results": {
-    "count_one": "Pensador",
-    "count_other": "Pensadores",
-    "no_results": "Ningún pensador encontrado con los filtros seleccionados."
-  },
-  "era": {
-    "read_works": "{{read}}/{{total}} obras leídas"
-  },
-  "tags": {
-    "freedom": "Libertad",
-    "authority": "Autoridad",
-    "state": "Estado fuerte",
-    "market": "Mercado libre",
-    "community": "Comunidad",
-    "tradition": "Tradición",
-    "rupture": "Ruptura",
-    "individual": "Individual",
-    "collective": "Colectivo",
-    "rationalist": "Racionalista",
-    "empiricist": "Empirista",
-    "idealist": "Idealista",
-    "materialist": "Materialista",
-    "interactionist": "Interaccionista",
-    "ahistorical": "A-histórico",
-    "historicist": "Historicista",
-    "dialectical": "Dialéctico",
-    "optimistic": "Optimista",
-    "pessimistic": "Pesimista",
-    "ambivalent": "Ambivalente",
-    "universalist": "Universalista",
-    "particularist": "Particularista"
-  },
-  "axes": {
-    "freedom_vs_authority": "Libertad vs. Autoridad",
-    "state_vs_market": "Estado vs. Mercado",
-    "tradition_vs_rupture": "Tradición vs. Ruptura",
-    "individual_vs_collective": "Individual vs. Colectivo",
-    "epistemology": "Fuente del Conocimiento",
-    "ontology": "Motor de la Realidad Política",
-    "historicity": "Relación con la Historia",
-    "anthropology": "Antropología Filosófica",
-    "scope": "Alcance de Aplicación"
-  },
-  "fields": {
-    "historical_context": "Contexto Histórico",
-    "influences": "Influencias",
-    "impact": "Impacto",
-    "works": "Obras Principales",
-    "dimensions": "Dimensiones"
-  },
-  "tag_descriptions": {
-    "freedom": "Énfasis en la autonomía individual y limitación del poder estatal.",
-    "authority": "Valorización del orden, jerarquía y legitimidad del poder central.",
-    "state": "Defensa de un papel activo y regulador del Estado en la economía y sociedad.",
-    "market": "Confianza en los mecanismos del mercado libre y la competencia económica.",
-    "community": "Foco en formas de organización comunitaria y solidaridad local.",
-    "tradition": "Preservación de valores, instituciones y prácticas establecidas.",
-    "rupture": "Defensa de cambios radicales y transformación de las estructuras vigentes.",
-    "individual": "Priorización de los derechos e intereses del individuo.",
-    "collective": "Énfasis en los intereses del grupo, clase o nación.",
-    "rationalist": "Fundamentación mediante la razón deductiva y principios universales a priori, independientemente de la experiencia.",
-    "empiricist": "Fundamentación mediante la observación, la experiencia concreta y los datos del mundo real como base del conocimiento político.",
-    "idealist": "Primacía de las ideas, valores, conciencia y normas como fuerzas motrices de la realidad política.",
-    "materialist": "Primacía de los intereses materiales, las relaciones de poder y las estructuras concretas como fuerzas motrices de la realidad política.",
-    "interactionist": "Reconocimiento simultáneo de fuerzas ideales y materiales como motores de la realidad política, cuya interacción es el propio objeto explicativo — sin subordinar un polo al otro. (Ej: Tocqueville, Weber, Aristóteles, Arendt)",
-    "ahistorical": "Búsqueda de principios políticos atemporales y universales, válidos independientemente del contexto histórico.",
-    "historicist": "Comprensión de los fenómenos políticos a través de su evolución y determinación histórica, sin necesidad de una ley universal de movimiento.",
-    "dialectical": "La historia avanza por contradicciones internas necesarias que producen síntesis — la transformación es inmanente a la propia estructura de la realidad.",
-    "optimistic": "Visión positiva de la naturaleza humana y capacidad de progreso.",
-    "pessimistic": "Desconfianza respecto a la naturaleza humana y necesidad de control.",
-    "ambivalent": "Perspectiva equilibrada sobre la naturaleza humana: reconoce simultáneamente las potencialidades y los límites inherentes al ser humano, sin resolver la tensión en ninguno de los polos. (Ej: Aristóteles, Tocqueville, Arendt)",
-    "universalist": "Principios aplicables a toda la humanidad, independientemente del contexto.",
-    "particularist": "Valorización de contextos específicos, culturas y tradiciones locales."
-  },
-  "diagnostic": {
-    "tendency_freedom": "tendencia liberal y valorización de la autonomía individual",
-    "tendency_authority": "inclinación hacia el orden establecido y la autoridad",
-    "preference_state": "preferencia por la intervención estatal",
-    "preference_market": "valorización del mercado libre",
-    "community_value": "valorización de soluciones comunitarias",
-    "tradition_value": "respeto a la tradición y cambio gradual",
-    "rupture_value": "apertura a la ruptura y transformación",
-    "individual_focus": "foco en el individuo como unidad política",
-    "collective_focus": "énfasis en lo colectivo y el bien común",
-    "epistemology_rationalist": "orientación racionalista, fundada en la razón deductiva y principios universales a priori",
-    "epistemology_empiricist": "orientación empirista, anclada en la observación y la experiencia concreta",
-    "ontology_idealist": "primacía de las ideas y los valores como motor explicativo de la política",
-    "ontology_materialist": "énfasis en las fuerzas materiales, los intereses concretos y las relaciones de poder",
-    "ontology_interactionist": "perspectiva interaccionista — fuerzas ideales y materiales como motores simultáneos",
-    "historicity_ahistorical": "búsqueda de principios atemporales y universales, independientes del contexto histórico",
-    "historicity_historicist": "lectura historicista de los fenómenos políticos",
-    "historicity_dialectical": "visión dialéctica de la transformación histórica mediante contradicciones y síntesis",
-    "intro": "Tu biblioteca refleja",
-    "balanced": "Tus lecturas muestran un interesante equilibrio entre diferentes perspectivas políticas.",
-    "start": "¡Comienza marcando las obras que ya has leído!"
-  },
-  "consent": {
-    "message": "Usamos cookies y anuncios para mantener Lumen gratuito e independiente. Al continuar, aceptas el uso de cookies.",
-    "accept": "Aceptar",
-    "refuse": "Rechazar",
-    "privacy": "Política de Privacidad",
-    "terms": "Términos de Uso"
-  },
-  "footer": {
-    "privacy": "Política de Privacidad",
-    "terms": "Términos de Uso"
-  },
-  "adblock": {
-    "notice": "Los anuncios mantienen Lumen gratuito. Considera desactivar tu bloqueador en este sitio."
-  },
-  "language_selector": {
-    "label": "Idioma"
-  },
-  "theme": {
-    "dark": "Modo Oscuro",
-    "light": "Modo Claro"
-  },
-  "affiliate": {
-    "buy_this_work": "Comprar esta obra",
-    "also_available": "También disponible para compra en:",
-    "amazon_novo": "Amazon (nuevo)",
-    "amazon_ebook": "Amazon (e-book)",
-    "amazon_kindle": "Amazon (Kindle)",
-    "amazon_usado": "Amazon (usado)",
-    "estante_virtual_novo": "Estante Virtual (nuevo)",
-    "estante_virtual_ebook": "Estante Virtual (e-book)",
-    "estante_virtual_usado": "Estante Virtual (usado)"
-  },
-  "recommendations": {
-    "button_title": "Ampliar lecturas",
-    "button_subtitle_one": "{{count}} gap en tu perfil",
-    "button_subtitle_other": "{{count}} gaps en tu perfil",
-    "title": "Ampliar lecturas",
-    "subtitle_one": "Basado en {{works}} obras leídas · {{gaps}} eje desequilibrado",
-    "subtitle_other": "Basado en {{works}} obras leídas · {{gaps}} ejes desequilibrados",
-    "insufficient_data": "Marca al menos 5 obras como leídas para recibir recomendaciones personalizadas.",
-    "gaps_detected": "Gaps detectados en tu perfil",
-    "suggested_readings": "Lecturas recomendadas",
-    "high_compatibility": "Alta compatibilidad",
-    "medium_compatibility": "Compatibilidad media",
-    "justification": "Esta obra complementa tu perfil al abordar: {{tags}}",
-    "no_recommendations": "No hay recomendaciones disponibles en este momento."
-  }
+﻿{
+    "app":  {
+                "title":  "Lumen",
+                "subtitle":  "Mapa Multidimensional"
+            },
+    "header":  {
+                   "search_placeholder":  "Buscar pensadores...",
+                   "glossary":  "Glosario",
+                   "only_read":  "Solo LeÃ­dos",
+                   "view_profile":  "Ver Perfil ({{count}})",
+                   "clear":  "Limpiar",
+                   "clear_all_filters":  "Limpiar todos los filtros",
+                   "filter_all":  "Todos"
+               },
+    "sidebar":  {
+                    "historical_eras":  "Eras HistÃ³ricas"
+                },
+    "eras":  {
+                 "antiquity":  "AntigÃ¼edad",
+                 "renaissance_modernity":  "Renacimiento y Modernidad",
+                 "enlightenment":  "IlustraciÃ³n",
+                 "nineteenth_century":  "Siglo XIX",
+                 "turn_of_century":  "Cambio de siglo XIXâ€“XX",
+                 "twentieth_century":  "Siglo XX",
+                 "contemporary":  "ContemporÃ¡neo"
+             },
+    "thinker_card":  {
+                         "hide_details":  "Ocultar detalles",
+                         "show_details":  "Ver dimensiones e influencias",
+                         "hide":  "Ocultar",
+                         "show_more":  "Ver mÃ¡s",
+                         "read_count_of":  "{{read}}/{{total}} leÃ­das"
+                     },
+    "work_checkbox":  {
+                          "download":  "Descargar",
+                          "unavailable":  "No disponible",
+                          "unavailable_short":  "N/D",
+                          "mark_read":  "Marcar como leÃ­da",
+                          "mark_unread":  "Desmarcar como leÃ­da",
+                          "read_badge":  "LeÃ­da"
+                      },
+    "glossary":  {
+                     "title":  "Glosario de Dimensiones y Etiquetas",
+                     "description":  "Este glosario explica cada dimensiÃ³n analÃ­tica y sus respectivas etiquetas utilizadas en el mapeo de los pensadores polÃ­ticos.",
+                     "tip_label":  "Consejo",
+                     "tip":  "Usa los filtros en la parte superior de la pÃ¡gina para explorar pensadores por cualquier combinaciÃ³n de estas dimensiones."
+                 },
+    "profile":  {
+                    "title":  "Perfil de InclinaciÃ³n PolÃ­tica",
+                    "based_on":  "Basado en {{works}} obras leÃ­das de {{thinkers}} pensadores",
+                    "no_works_title":  "Ninguna obra marcada aÃºn",
+                    "no_works_hint":  "Marca las obras que ya has leÃ­do para visualizar tu perfil polÃ­tico",
+                    "radar_title":  "Mapa de Inclinaciones PolÃ­ticas",
+                    "radar_description":  "DistribuciÃ³n porcentual de las etiquetas polÃ­ticas presentes en las obras que has leÃ­do",
+                    "dominant_tags":  "Etiquetas Dominantes en tus Lecturas",
+                    "work_one":  "obra",
+                    "work_other":  "obras",
+                    "diagnostic_label":  "ðŸ’¡ DiagnÃ³stico",
+                    "clear_all":  "Limpiar Todas las Lecturas",
+                    "continue_reading":  "Continuar Leyendo",
+                    "methodological_title":  "Perfil MetodolÃ³gico",
+                    "methodological_description":  "CÃ³mo los pensadores leÃ­dos fundamentan, explican y sitÃºan histÃ³ricamente la polÃ­tica"
+                },
+    "results":  {
+                    "count_one":  "Pensador",
+                    "count_other":  "Pensadores",
+                    "no_results":  "NingÃºn pensador encontrado con los filtros seleccionados."
+                },
+    "era":  {
+                "read_works":  "{{read}}/{{total}} obras leÃ­das"
+            },
+    "tags":  {
+                 "freedom":  "Libertad",
+                 "authority":  "Autoridad",
+                 "state":  "Estado fuerte",
+                 "market":  "Mercado libre",
+                 "community":  "Comunidad",
+                 "tradition":  "TradiciÃ³n",
+                 "rupture":  "Ruptura",
+                 "individual":  "Individual",
+                 "collective":  "Colectivo",
+                 "rationalist":  "Racionalista",
+                 "empiricist":  "Empirista",
+                 "idealist":  "Idealista",
+                 "materialist":  "Materialista",
+                 "interactionist":  "Interaccionista",
+                 "ahistorical":  "A-histÃ³rico",
+                 "historicist":  "Historicista",
+                 "dialectical":  "DialÃ©ctico",
+                 "optimistic":  "Optimista",
+                 "pessimistic":  "Pesimista",
+                 "ambivalent":  "Ambivalente",
+                 "universalist":  "Universalista",
+                 "particularist":  "Particularista"
+             },
+    "axes":  {
+                 "freedom_vs_authority":  "Libertad vs. Autoridad",
+                 "state_vs_market":  "Estado vs. Mercado",
+                 "tradition_vs_rupture":  "TradiciÃ³n vs. Ruptura",
+                 "individual_vs_collective":  "Individual vs. Colectivo",
+                 "epistemology":  "Fuente del Conocimiento",
+                 "ontology":  "Motor de la Realidad PolÃ­tica",
+                 "historicity":  "RelaciÃ³n con la Historia",
+                 "anthropology":  "AntropologÃ­a FilosÃ³fica",
+                 "scope":  "Alcance de AplicaciÃ³n"
+             },
+    "fields":  {
+                   "historical_context":  "Contexto HistÃ³rico",
+                   "influences":  "Influencias",
+                   "impact":  "Impacto",
+                   "works":  "Obras Principales",
+                   "dimensions":  "Dimensiones"
+               },
+    "tag_descriptions":  {
+                             "freedom":  "Ã‰nfasis en la autonomÃ­a individual y limitaciÃ³n del poder estatal.",
+                             "authority":  "ValorizaciÃ³n del orden, jerarquÃ­a y legitimidad del poder central.",
+                             "state":  "Defensa de un papel activo y regulador del Estado en la economÃ­a y sociedad.",
+                             "market":  "Confianza en los mecanismos del mercado libre y la competencia econÃ³mica.",
+                             "community":  "Foco en formas de organizaciÃ³n comunitaria y solidaridad local.",
+                             "tradition":  "PreservaciÃ³n de valores, instituciones y prÃ¡cticas establecidas.",
+                             "rupture":  "Defensa de cambios radicales y transformaciÃ³n de las estructuras vigentes.",
+                             "individual":  "PriorizaciÃ³n de los derechos e intereses del individuo.",
+                             "collective":  "Ã‰nfasis en los intereses del grupo, clase o naciÃ³n.",
+                             "rationalist":  "FundamentaciÃ³n mediante la razÃ³n deductiva y principios universales a priori, independientemente de la experiencia.",
+                             "empiricist":  "FundamentaciÃ³n mediante la observaciÃ³n, la experiencia concreta y los datos del mundo real como base del conocimiento polÃ­tico.",
+                             "idealist":  "PrimacÃ­a de las ideas, valores, conciencia y normas como fuerzas motrices de la realidad polÃ­tica.",
+                             "materialist":  "PrimacÃ­a de los intereses materiales, las relaciones de poder y las estructuras concretas como fuerzas motrices de la realidad polÃ­tica.",
+                             "interactionist":  "Reconocimiento simultÃ¡neo de fuerzas ideales y materiales como motores de la realidad polÃ­tica, cuya interacciÃ³n es el propio objeto explicativo â€” sin subordinar un polo al otro. (Ej: Tocqueville, Weber, AristÃ³teles, Arendt)",
+                             "ahistorical":  "BÃºsqueda de principios polÃ­ticos atemporales y universales, vÃ¡lidos independientemente del contexto histÃ³rico.",
+                             "historicist":  "ComprensiÃ³n de los fenÃ³menos polÃ­ticos a travÃ©s de su evoluciÃ³n y determinaciÃ³n histÃ³rica, sin necesidad de una ley universal de movimiento.",
+                             "dialectical":  "La historia avanza por contradicciones internas necesarias que producen sÃ­ntesis â€” la transformaciÃ³n es inmanente a la propia estructura de la realidad.",
+                             "optimistic":  "VisiÃ³n positiva de la naturaleza humana y capacidad de progreso.",
+                             "pessimistic":  "Desconfianza respecto a la naturaleza humana y necesidad de control.",
+                             "ambivalent":  "Perspectiva equilibrada sobre la naturaleza humana: reconoce simultÃ¡neamente las potencialidades y los lÃ­mites inherentes al ser humano, sin resolver la tensiÃ³n en ninguno de los polos. (Ej: AristÃ³teles, Tocqueville, Arendt)",
+                             "universalist":  "Principios aplicables a toda la humanidad, independientemente del contexto.",
+                             "particularist":  "ValorizaciÃ³n de contextos especÃ­ficos, culturas y tradiciones locales."
+                         },
+    "diagnostic":  {
+                       "tendency_freedom":  "tendencia liberal y valorizaciÃ³n de la autonomÃ­a individual",
+                       "tendency_authority":  "inclinaciÃ³n hacia el orden establecido y la autoridad",
+                       "preference_state":  "preferencia por la intervenciÃ³n estatal",
+                       "preference_market":  "valorizaciÃ³n del mercado libre",
+                       "community_value":  "valorizaciÃ³n de soluciones comunitarias",
+                       "tradition_value":  "respeto a la tradiciÃ³n y cambio gradual",
+                       "rupture_value":  "apertura a la ruptura y transformaciÃ³n",
+                       "individual_focus":  "foco en el individuo como unidad polÃ­tica",
+                       "collective_focus":  "Ã©nfasis en lo colectivo y el bien comÃºn",
+                       "epistemology_rationalist":  "orientaciÃ³n racionalista, fundada en la razÃ³n deductiva y principios universales a priori",
+                       "epistemology_empiricist":  "orientaciÃ³n empirista, anclada en la observaciÃ³n y la experiencia concreta",
+                       "ontology_idealist":  "primacÃ­a de las ideas y los valores como motor explicativo de la polÃ­tica",
+                       "ontology_materialist":  "Ã©nfasis en las fuerzas materiales, los intereses concretos y las relaciones de poder",
+                       "ontology_interactionist":  "perspectiva interaccionista â€” fuerzas ideales y materiales como motores simultÃ¡neos",
+                       "historicity_ahistorical":  "bÃºsqueda de principios atemporales y universales, independientes del contexto histÃ³rico",
+                       "historicity_historicist":  "lectura historicista de los fenÃ³menos polÃ­ticos",
+                       "historicity_dialectical":  "visiÃ³n dialÃ©ctica de la transformaciÃ³n histÃ³rica mediante contradicciones y sÃ­ntesis",
+                       "intro":  "Tu biblioteca refleja",
+                       "balanced":  "Tus lecturas muestran un interesante equilibrio entre diferentes perspectivas polÃ­ticas.",
+                       "start":  "Â¡Comienza marcando las obras que ya has leÃ­do!"
+                   },
+    "consent":  {
+                    "message":  "Usamos cookies y anuncios para mantener Lumen gratuito e independiente. Al continuar, aceptas el uso de cookies.",
+                    "accept":  "Aceptar",
+                    "refuse":  "Rechazar",
+                    "privacy":  "PolÃ­tica de Privacidad",
+                    "terms":  "TÃ©rminos de Uso"
+                },
+    "footer":  {
+                   "privacy":  "PolÃ­tica de Privacidad",
+                   "terms":  "TÃ©rminos de Uso"
+               },
+    "adblock":  {
+                    "notice":  "Los anuncios mantienen Lumen gratuito. Considera desactivar tu bloqueador en este sitio."
+                },
+    "language_selector":  {
+                              "label":  "Idioma"
+                          },
+    "theme":  {
+                  "dark":  "Modo Oscuro",
+                  "light":  "Modo Claro"
+              },
+    "affiliate":  {
+                      "buy_this_work":  "Comprar esta obra",
+                      "also_available":  "TambiÃ©n disponible para compra en:",
+                      "amazon_novo":  "Amazon (nuevo)",
+                      "amazon_ebook":  "Amazon (e-book)",
+                      "amazon_kindle":  "Amazon (Kindle)",
+                      "amazon_usado":  "Amazon (usado)",
+                      "estante_virtual_novo":  "Estante Virtual (nuevo)",
+                      "estante_virtual_ebook":  "Estante Virtual (e-book)",
+                      "estante_virtual_usado":  "Estante Virtual (usado)"
+                  },
+    "recommendations":  {
+                            "button_title":  "Ampliar lecturas",
+                            "button_subtitle_one":  "{{count}} gap en tu perfil",
+                            "button_subtitle_other":  "{{count}} gaps en tu perfil",
+                            "title":  "Ampliar lecturas",
+                            "subtitle_one":  "Basado en {{works}} obras leÃ­das Â· {{gaps}} eje desequilibrado",
+                            "subtitle_other":  "Basado en {{works}} obras leÃ­das Â· {{gaps}} ejes desequilibrados",
+                            "insufficient_data":  "Marca al menos 5 obras como leÃ­das para recibir recomendaciones personalizadas.",
+                            "gaps_detected":  "Gaps detectados en tu perfil",
+                            "suggested_readings":  "Lecturas recomendadas",
+                            "high_compatibility":  "Alta compatibilidad",
+                            "medium_compatibility":  "Compatibilidad media",
+                            "justification":  "Esta obra complementa tu perfil al abordar: {{tags}}",
+                            "no_recommendations":  "No hay recomendaciones disponibles en este momento."
+                        },
+    "auth":  {
+                 "title":  {
+                               "login":  "Iniciar sesión",
+                               "register":  "Crear cuenta",
+                               "forgot":  "Recuperar contraseña",
+                               "reset":  "Restablecer contraseña"
+                           },
+                 "email":  "Correo electrónico",
+                 "name":  "Nombre (opcional)",
+                 "password":  "Contraseña",
+                 "resetToken":  "Token de recuperación",
+                 "loading":  "Espere...",
+                 "logout":  "Cerrar sesión",
+                 "close":  "Cerrar",
+                 "forgotSent":  "Si la cuenta existe, enviamos las instrucciones por correo.",
+                 "resetSuccess":  "Contraseña restablecida. Inicie sesión con la nueva contraseña.",
+                 "link":  {
+                              "login":  "¿Ya tiene cuenta? Iniciar sesión",
+                              "register":  "Crear cuenta",
+                              "forgot":  "¿Olvidó su contraseña?"
+                          },
+                 "submit":  {
+                                "login":  "Iniciar sesión",
+                                "register":  "Crear cuenta",
+                                "forgot":  "Enviar instrucciones",
+                                "reset":  "Restablecer contraseña"
+                            },
+                 "accountMenu":  "Cuenta",
+                 "errors":  {
+                                "rateLimited":  "Demasiados intentos — inténtelo de nuevo pronto.",
+                                "unexpected":  "Algo salió mal. Inténtelo de nuevo.",
+                                "ERR-100":  "Ingrese el correo electrónico.",
+                                "ERR-101":  "Ingrese un correo electrónico válido.",
+                                "ERR-102":  "Ingrese la contraseña.",
+                                "ERR-103":  "La contraseña debe tener al menos 8 caracteres.",
+                                "ERR-104":  "Token de recuperación inválido o expirado.",
+                                "ERR-110":  "Credenciales inválidas.",
+                                "ERR-111":  "Token de Google inválido.",
+                                "ERR-120":  "Correo electrónico ya registrado.",
+                                "ERR-121":  "El correo ya existe con contraseña — use inicio de sesión por contraseña."
+                            }
+             }
 }

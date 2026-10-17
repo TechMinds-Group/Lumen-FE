@@ -1,6 +1,8 @@
-import { Search, X, Menu, Filter, BarChart3, BookCheck, HelpCircle } from 'lucide-react';
+import { Search, X, Menu, Filter, BarChart3, BookCheck, HelpCircle, User, LogOut } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useAuth } from '../context/AuthContext';
+import AuthModal from './auth/AuthModal';
 
 interface Axis {
   id: string;
@@ -40,6 +42,9 @@ export function Header({
   onOpenGlossary,
 }: HeaderProps) {
   const { t } = useTranslation();
+  const { user, isAuthenticated, logout } = useAuth();
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [accountMenuOpen, setAccountMenuOpen] = useState(false);
 
   const [showFilters, setShowFilters] = useState(false);
   const hasActiveFilters = Object.values(selectedFilters).some(v => v !== 'all');
@@ -142,6 +147,47 @@ export function Header({
               {t('header.clear')}
             </button>
           )}
+
+          {/* Account (RN-033 — UI_SPEC §12.2) */}
+          {isAuthenticated && user ? (
+            <div className="relative">
+              <button
+                onClick={() => setAccountMenuOpen(!accountMenuOpen)}
+                className="flex items-center gap-2 px-3 py-2 bg-[#ECE7DA] dark:bg-[#131E30] rounded-lg hover:bg-[#DDD7C8] dark:hover:bg-[#1C2E44] transition-colors text-sm"
+                aria-label={t('auth.accountMenu')}
+              >
+                <span className="w-6 h-6 flex items-center justify-center rounded-full bg-[#C9A84C] text-[#0F1E35] text-xs font-bold">
+                  {(user.fullName || user.email).charAt(0).toUpperCase()}
+                </span>
+                <span className="hidden xl:inline max-w-[140px] truncate text-[#0F1E35] dark:text-[#A8B8C8]">
+                  {user.fullName || user.email}
+                </span>
+              </button>
+              {accountMenuOpen && (
+                <div className="absolute right-0 mt-2 w-56 rounded-lg border border-[#8A9BB8]/30 bg-[#0F1E35] shadow-xl z-50">
+                  <div className="px-4 py-3 border-b border-[#8A9BB8]/20">
+                    <p className="text-sm text-[#F2EEE2] truncate">{user.fullName || user.email}</p>
+                    <p className="text-xs text-[#8A9BB8] truncate">{user.email}</p>
+                  </div>
+                  <button
+                    onClick={() => { logout(); setAccountMenuOpen(false); }}
+                    className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-[#A8B8C8] hover:bg-[#1C2E44] transition-colors"
+                  >
+                    <LogOut size={14} />
+                    {t('auth.logout')}
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            <button
+              onClick={() => setShowAuthModal(true)}
+              className="flex items-center gap-2 px-3 lg:px-4 py-2 bg-[#ECE7DA] dark:bg-[#131E30] text-[#0F1E35] dark:text-[#A8B8C8] rounded-lg hover:bg-[#DDD7C8] dark:hover:bg-[#1C2E44] transition-colors text-sm whitespace-nowrap"
+            >
+              <User size={16} />
+              <span className="hidden sm:inline">{t('auth.link.login')}</span>
+            </button>
+          )}
         </div>
 
         {/* Filters row */}
@@ -205,6 +251,8 @@ export function Header({
             })}
           </div>
         </div>
+
+        {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} onAuthenticated={() => setShowAuthModal(false)} />}
       </div>
     </header>
   );
