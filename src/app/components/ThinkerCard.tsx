@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { DimensionBadge } from './DimensionBadge';
 import { WorkCheckbox } from './WorkCheckbox';
+import { AffiliateSection } from './AffiliateSection';
+import { getAffiliateLinks, type AffiliateLink } from '../utils/affiliateLinks';
 import { TAG_COLORS, TAG_COLOR_FALLBACK } from '../utils/tagColors';
 
 interface Work {
@@ -46,6 +48,22 @@ export function ThinkerCard({
 }: ThinkerCardProps) {
   const { t } = useTranslation();
   const [showDetails, setShowDetails] = useState(false);
+  const [affiliateLinks, setAffiliateLinks] = useState<Record<string, AffiliateLink[]>>({});
+
+  // Ao expandir o card, dispara fetch de links de afiliados para obras sem download
+  useEffect(() => {
+    if (!showDetails) return;
+    const works = thinker.works || [];
+    works
+      .filter(w => !w.download_url?.trim())
+      .forEach(work => {
+        getAffiliateLinks(thinker.id, work.title).then(links => {
+          if (links.length > 0) {
+            setAffiliateLinks(prev => ({ ...prev, [`${thinker.id}::${work.title}`]: links }));
+          }
+        });
+      });
+  }, [showDetails, thinker.id, thinker.works]);
 
   const influences      = thinker.influences || [];
   const impact          = thinker.impact || [];
@@ -202,14 +220,28 @@ export function ThinkerCard({
                 </div>
               </div>
               <div className="space-y-1.5">
-                {works.map((work, idx) => (
-                  <WorkCheckbox
-                    key={idx}
-                    work={work}
-                    isRead={isWorkRead(thinker.id, work.title)}
-                    onToggle={() => onToggleWork(thinker.id, work.title)}
-                  />
-                ))}
+                {works.map((work, idx) => {
+                  const linkKey = `${thinker.id}::${work.title}`;
+                  const links = affiliateLinks[linkKey];
+                  const hasDownload = !!(work.download_url && work.download_url.trim() !== '');
+                  return (
+                    <div key={idx}>
+                      <WorkCheckbox
+                        work={work}
+                        isRead={isWorkRead(thinker.id, work.title)}
+                        onToggle={() => onToggleWork(thinker.id, work.title)}
+                      />
+                      {links && (
+                        <AffiliateSection
+                          thinkerId={thinker.id}
+                          workTitle={work.title}
+                          links={links}
+                          hasDownload={hasDownload}
+                        />
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           )}
