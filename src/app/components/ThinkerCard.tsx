@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { DimensionBadge } from './DimensionBadge';
@@ -25,6 +25,10 @@ interface Thinker {
   works?: Work[];
 }
 
+import { isPersonaAvailable } from '../utils/persona';
+import PersonaChatModal from './persona/PersonaChatModal';
+import { useAuth } from '../context/AuthContext';
+
 interface ThinkerCardProps {
   thinker: Thinker;
   tagLabels: Record<string, string>;
@@ -35,7 +39,7 @@ interface ThinkerCardProps {
 }
 
 
-// Tags rendered as DimensionBadges — excluded from the inline tag list
+// Tags rendered as DimensionBadges â€” excluded from the inline tag list
 const ALWAYS_BADGE_TAGS = new Set(['optimistic', 'pessimistic', 'ambivalent', 'universalist', 'particularist']);
 
 export function ThinkerCard({
@@ -49,6 +53,9 @@ export function ThinkerCard({
   const { t } = useTranslation();
   const [showDetails, setShowDetails] = useState(false);
   const [affiliateLinks, setAffiliateLinks] = useState<Record<string, AffiliateLink[]>>({});
+  const { user, isAuthenticated } = useAuth();
+  const [personaAvailable, setPersonaAvailable] = useState(false);
+  const [showPersonaChat, setShowPersonaChat] = useState(false);
 
   // Ao expandir o card, dispara fetch de links de afiliados para obras sem download
   useEffect(() => {
@@ -64,6 +71,11 @@ export function ThinkerCard({
         });
       });
   }, [showDetails, thinker.id, thinker.works]);
+
+  // RN-029 â€” disponibilidade da persona (uma checagem por thinker)
+  useEffect(() => {
+    isPersonaAvailable(thinker.id).then(setPersonaAvailable);
+  }, [thinker.id]);
 
   const influences      = thinker.influences || [];
   const impact          = thinker.impact || [];
@@ -245,7 +257,34 @@ export function ThinkerCard({
               </div>
             </div>
           )}
+
+          {/* RN-029 â€” Conversar com o autor (persona de IA) */}
+          {personaAvailable && (
+            isAuthenticated ? (
+              <button
+                onClick={e => {
+                  e.stopPropagation();
+                  setShowPersonaChat(true);
+                }}
+                className="mt-3 flex w-full items-center justify-center gap-2 rounded border border-[#C9A84C]/40 px-3 py-2 text-xs font-medium text-[#C9A84C] hover:bg-[#C9A84C]/10 transition-colors"
+              >
+                ðŸ’¬ {t('persona.chatButton')}
+              </button>
+            ) : (
+              <p className="mt-3 rounded border border-[#8A9BB8]/30 px-3 py-2 text-center text-xs text-[#8A9BB8]">
+                {t('persona.requireLogin')}
+              </p>
+            )
+          )}
         </div>
+      )}
+
+      {showPersonaChat && (
+        <PersonaChatModal
+          thinkerId={thinker.id}
+          thinkerName={thinker.name}
+          onClose={() => setShowPersonaChat(false)}
+        />
       )}
     </div>
   );

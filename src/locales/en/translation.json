@@ -245,5 +245,22 @@
                                 "ERR-120":  "Email already registered.",
                                 "ERR-121":  "Email already exists with a password — use password sign-in."
                             }
-             }
+             },
+    "persona":  {
+                    "title":  "Talk to {{name}}",
+                    "chatButton":  "💬 Talk to the author",
+                    "requireLogin":  "Sign in to talk to the author",
+                    "placeholder":  "Ask the author something...",
+                    "send":  "Send",
+                    "loading":  "Loading conversation...",
+                    "empty":  "Say hi to {{name}} — ask about the work or the life.",
+                    "typing":  "...",
+                    "quota":  "{{remaining}} of {{total}} messages left today",
+                    "quotaReached":  "Daily quota reached — come back tomorrow to continue.",
+                    "offBaseBadge":  "⚠ This answer goes beyond the author\u0027s curated base.",
+                    "error":  {
+                                  "load":  "Could not load the conversation.",
+                                  "send":  "Failed to send. Please try again."
+                              }
+                }
 }
