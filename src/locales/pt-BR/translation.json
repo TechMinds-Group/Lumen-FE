@@ -245,5 +245,22 @@
                                 "ERR-120":  "Email já registrado.",
                                 "ERR-121":  "Email já existe com senha — use login por senha."
                             }
-             }
+             },
+    "persona":  {
+                    "title":  "Conversar com {{name}}",
+                    "chatButton":  "💬 Conversar com o autor",
+                    "requireLogin":  "Entre para conversar com o autor",
+                    "placeholder":  "Pergunte algo ao autor...",
+                    "send":  "Enviar",
+                    "loading":  "Carregando conversa...",
+                    "empty":  "Diga oi para {{name}} — pergunte sobre a obra ou a vida dele.",
+                    "typing":  "...",
+                    "quota":  "{{remaining}} de {{total}} mensagens restantes hoje",
+                    "quotaReached":  "Cota diária atingida — volte amanhã para continuar a conversa.",
+                    "offBaseBadge":  "⚠ Esta resposta vai além da base curada do autor.",
+                    "error":  {
+                                  "load":  "Não foi possível carregar a conversa.",
+                                  "send":  "Falha ao enviar. Tente novamente."
+                              }
+                }
 }

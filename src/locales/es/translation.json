@@ -245,5 +245,22 @@
                                 "ERR-120":  "Correo electrónico ya registrado.",
                                 "ERR-121":  "El correo ya existe con contraseña — use inicio de sesión por contraseña."
                             }
-             }
+             },
+    "persona":  {
+                    "title":  "Hablar con {{name}}",
+                    "chatButton":  "💬 Hablar con el autor",
+                    "requireLogin":  "Inicie sesión para hablar con el autor",
+                    "placeholder":  "Pregúntele algo al autor...",
+                    "send":  "Enviar",
+                    "loading":  "Cargando conversación...",
+                    "empty":  "Salude a {{name}} — pregunte sobre la obra o la vida.",
+                    "typing":  "...",
+                    "quota":  "{{remaining}} de {{total}} mensajes restantes hoy",
+                    "quotaReached":  "Cuota diaria alcanzada — vuelva mañana para continuar.",
+                    "offBaseBadge":  "⚠ Esta respuesta va más allá de la base curada del autor.",
+                    "error":  {
+                                  "load":  "No se pudo cargar la conversación.",
+                                  "send":  "Error al enviar. Inténtelo de nuevo."
+                              }
+                }
 }
